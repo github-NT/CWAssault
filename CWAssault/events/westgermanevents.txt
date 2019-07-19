@@ -109,6 +109,7 @@ country_event = {
 		DDR = { transfer_state = 56 }
 		DDR = { transfer_state = 59 }
 		DDR = { transfer_state = 58 }
+		DDR = { transfer_state = 795 }
 	}
 }
 
