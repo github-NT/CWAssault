@@ -1,0 +1,147 @@
+﻿capital = 286
+
+oob = "VIN_1970"
+
+set_research_slots = 3
+add_political_power = 200
+
+# Starting tech
+# clone of France
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	basic_medium_tank = 1 
+}
+set_global_flag = war_vietnam
+1974.1.1 = {
+oob = "VIN_1974"
+clr_global_flag = war_vietnam
+}
+
+	add_ideas = {
+		#laws
+		war_economy
+		extensive_conscription
+		American_Advisors_VIN
+		
+		viet_cong
+	}
+
+set_politics = {
+	ruling_party = Nationalism
+	last_election = "1967.2.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+    Nationalism = 70
+    communism = 30
+}
+
+#NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
+
+create_country_leader = {
+	name = "Nguyen Van Thieu"
+	desc = ""
+	picture = "gfx/leaders/VIN/Nguyen_Van_Thieu.dds"
+	expire = "1988.3.1"
+	ideology = Military
+	traits = {
+		
+	}
+}
+
+1974.1.1 = {
+create_country_leader = {
+	name = "Duong Van Minh"
+	desc = ""
+	picture = "gfx/leaders/VIN/Duong Van Minh.dds"
+	expire = "1988.3.1"
+	ideology = Military
+	traits = {
+		
+	}
+}
+}
+create_field_marshal = {
+	name = "Nguyen Van Thieu"
+	portrait_path = "gfx/leaders/VIN/Nguyen_Van_Thieu.dds"
+	traits = { old_guard politically_connected inflexible_strategist }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Do Cao Tri"
+	portrait_path = "gfx/leaders/VIN/Do Cao Tri.dds"
+	traits = { old_guard politically_connected inflexible_strategist }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Cao Van Vien"
+	portrait_path = "gfx/leaders/VIN/Caovanvien.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ngo Quang Trưong"
+	portrait_path = "gfx/leaders/VIN/Ngo Quang Truong.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+
+

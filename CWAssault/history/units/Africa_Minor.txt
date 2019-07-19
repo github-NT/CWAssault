@@ -1,0 +1,122 @@
+﻿division_template = {
+	name = "African Militia"				
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+	}
+
+
+}
+division_template = {
+
+	name = "Tank Group"				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+	}
+}
+
+division_template = {
+
+	name = "Artillery Division"				
+
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 500
+                producer = SOV
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 400
+                producer = BEL
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 200
+                producer = PRC
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 100
+                producer = PRC
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 200
+                producer = NVM
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 200
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = medium_tank_equipment
+                amount = 300
+                producer = SOV
+	}
+add_equipment_to_stockpile = {
+                type = medium_tank_equipment
+                amount = 100
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = fighter_equipment_0 
+                amount = 5
+                producer = SOV
+	}
+add_equipment_to_stockpile = {
+                type = tac_bomber_equipment_0
+                amount = 5
+                producer = PRC
+	}
+}

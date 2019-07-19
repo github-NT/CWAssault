@@ -1,0 +1,44 @@
+ideologies = {	
+	Market_Liberal = {
+	
+		types = {
+		
+			Market_Liberalist  = {
+			}
+			Libertarian  = {
+			}
+		}
+
+		
+		color = { 83  139  104 }
+		
+		
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.1
+				
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+
+		modifiers = {
+			puppet_cost_factor = -0.3
+			line_change_production_efficiency_factor = 0.5
+			production_factory_max_efficiency_factor = 0.6
+			production_speed_buildings_factor = 0.3
+			industry_repair_factor = -0.2
+
+
+		}
+		
+		faction_modifiers = {
+		}
+
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes 
+
+	}
+
+}

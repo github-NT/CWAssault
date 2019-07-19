@@ -1,0 +1,32 @@
+
+state={
+	id=806
+	name="STATE_806"
+	manpower =75076
+	
+	
+	state_category = city
+	
+	resources={
+		steel=7 # was: 10
+	}
+
+	history={
+		owner = AFG
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 2
+			air_base = 2
+		}
+		add_core_of = DRA
+		add_core_of = AFG
+		
+		1979.1.1 = {
+		owner = DRA
+		}
+	}
+
+	provinces={
+		13247 13246 13245 13244 13243 13242 13241 13240 13239 13238
+	}
+}

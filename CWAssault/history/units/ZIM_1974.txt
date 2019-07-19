@@ -1,0 +1,242 @@
+﻿division_template = {
+	name = "Liberation Militia"				
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Liberation Regulars"				
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+
+	name = "Revolutionary Tank Brigade"				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+	}
+}
+
+units = {					
+	division= {			
+		name = "1st Liberation Militia"		
+		location = 13373
+		division_template = "Liberation Militia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "13th District brigade"		
+		location = 13376
+		division_template = "Liberation Militia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "24th People's Militia"		
+		location = 13375
+		division_template = "Liberation Militia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "81st Liberation Militia"		
+		location = 13401
+		division_template = "Liberation Militia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "92nd District Brigade"		
+		location = 13398
+		division_template = "Liberation Militia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "45th Liberation Militia"		
+		location = 13385
+		division_template = "Liberation Militia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "2nd Liberation Militia"		
+		location = 13402
+		division_template = "Liberation Militia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "88th People's Militia"		
+		location = 13398
+		division_template = "Liberation Militia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "4th Liberation Regulars"		
+		location = 13404
+		division_template = "Liberation Regulars"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "249th Liberation Regulars"		
+		location = 13403
+		division_template = "Liberation Regulars"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "84th Liberation Regulars"		
+		location = 13403
+		division_template = "Liberation Regulars"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "1st. Liberation Regulars"		
+		location = 13401
+		division_template = "Liberation Regulars"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "35th Liberation Regulars"		
+		location = 13331
+		division_template = "Liberation Regulars"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "54th Liberation Regulars"		
+		location = 13322
+		division_template = "Liberation Regulars"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "53rd Liberation Regulars"		
+		location = 13326
+		division_template = "Liberation Regulars"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	#
+	division= {			
+		name = "33rd Liberation Regulars"		
+		location = 1874
+		division_template = "Liberation Regulars"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "20th Liberation Regulars"		
+		location = 13332
+		division_template = "Liberation Regulars"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "17th Liberation Regulars"		
+		location = 13335
+		division_template = "Liberation Regulars"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 500
+                producer = SOV
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 400
+                producer = BEL
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 200
+                producer = PRC
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 100
+                producer = PRC
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 200
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 200
+                producer = ROD
+	}
+add_equipment_to_stockpile = {
+                type = medium_tank_equipment
+                amount = 300
+                producer = SOV
+	}
+add_equipment_to_stockpile = {
+                type = medium_tank_equipment
+                amount = 100
+                producer = ENG
+	}
+}

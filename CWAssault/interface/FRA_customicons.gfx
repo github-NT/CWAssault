@@ -1,0 +1,27 @@
+spriteTypes = { 
+##Icon For: 655469
+ SpriteType = { 
+ name = "GFX_legacyofthefuhrer" 
+ texturefile = "gfx/interface/goals/GFX_legacyofthefuhrer.tga" 
+ }##Icon For: 655442
+ SpriteType = { 
+ name = "GFX_fighterjetinitiative" 
+ texturefile = "gfx/interface/goals/GFX_fighterjetinitiative.tga" 
+ }##Icon For: 655423
+ SpriteType = { 
+ name = "GFX_bomberdevelopment" 
+ texturefile = "gfx/interface/goals/GFX_bomberdevelopment.tga" 
+ }##Icon For: 655422
+ SpriteType = { 
+ name = "GFX_improvedfighterdesigns" 
+ texturefile = "gfx/interface/goals/GFX_improvedfighterdesigns.tga" 
+ }##Icon For: 655411
+ SpriteType = { 
+ name = "GFX_franceforthefrench" 
+ texturefile = "gfx/interface/goals/GFX_franceforthefrench.tga" 
+ }##Icon For: 655399
+ SpriteType = { 
+ name = "GFX_repatriationofvichyfrance" 
+ texturefile = "gfx/interface/goals/GFX_repatriationofvichyfrance.tga" 
+ } 
+ }

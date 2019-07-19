@@ -1,0 +1,1380 @@
+ideas = {
+
+	country = {
+		Dysfunctional_Government = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				stability_weekly = -0.001
+				political_power_gain = -0.05
+
+			}
+		}
+		Bourbon_Monarchy = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				political_power_gain = 0.05
+				Monarchism_drift = 0.01
+			}
+		}
+		Napoleonic_Monarchy = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				stability_weekly = 0.04
+				war_support_weekly = 0.05
+				political_power_gain = 0.6
+				Monarchism_drift = 0.06
+
+			}
+		}
+		Black_Power = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				stability_weekly = -0.01
+				war_support_weekly = -0.01
+				political_power_gain = -0.05
+
+			}
+		}
+		Incompetent_Military = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				army_armor_attack_factor = -0.01
+				army_infantry_attack_factor = -0.5
+				army_infantry_defence_factor = -0.01
+			}
+		}
+		Jim_Crow = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				stability_weekly = -0.01
+				war_support_weekly = -0.01
+				political_power_gain = -0.05
+
+			}
+		}
+		Quran_Teachings = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				stability_weekly = 0.05
+				war_support_weekly = 0.03
+				political_power_gain = 0.1
+				Radical_Islam_drift = 0.50
+			}
+		}
+		Tsar_Nicohlas = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				Monarchism_drift = 0.04
+				Christianity_drift = 0.01
+
+			}
+		}
+		White_Nationalist = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				Nationalism_drift = 0.10
+
+			}
+		}
+		United_China = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_weekly = 0.01
+				political_power_gain = 0.05
+
+			}
+		}
+		Unity_Under_Mao = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				political_power_gain = 0.05
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				Maoism_drift = 0.10
+
+			}
+		}
+		Great_Leader_Kim = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				Juche_drift = 0.10
+
+			}
+		}
+		Article_Nine = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				justify_war_goal_time = 10
+				conscription_factor = -0.5
+
+			}
+		}
+		Degenerate_Society = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				war_support_weekly = -0.01
+
+			}
+		}
+		De-Nazification = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				war_support_weekly = -0.01
+				fascism_drift = -0.10
+
+			}
+		}
+		Jihad = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				war_support_weekly = 0.01
+				army_armor_attack_factor = 0.1
+				army_infantry_attack_factor = 0.5
+				army_infantry_defence_factor = 0.2
+
+			}
+		}
+		UN_Member = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				ai_join_ally_desire_factor = 30
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		Bundeswehr = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				ai_join_ally_desire_factor = 30
+				army_infantry_defence_factor = 0.02
+				war_support_weekly = 0.07
+			}
+		}
+		Communism_Outlawed = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				communism_drift = -8
+				war_support_weekly = 0.01
+			}
+		}
+		Zionism_Outlawed = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				Zionism_drift = -0.10
+				war_support_weekly = 0.01
+			}
+		}
+		Marxist_Teachings = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				communism_drift = 0.10
+				war_support_weekly = 0.01
+			}
+		}
+		Prussian_Heritage = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_weekly = 0.01
+				conscription = 0.01
+				Monarchism_drift = 0.20
+				army_attack_factor = 0.1
+				army_speed_factor = 0.05
+			}
+		}
+		Fascism_Reborn = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				fascism_drift = 0.10
+				war_support_weekly = 0.01
+				stability_factor = 0.10
+			}
+		}
+		Divided_Nation = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				war_support_weekly = -0.01
+				stability_factor = -0.5
+				political_power_gain = -0.5
+
+			}
+		}
+		Perestroika = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				democratic_drift = 0.30
+				stability_weekly = 0.05
+				political_power_gain = -0.5
+
+			}
+		}
+		Glasnost = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_Dysfunctional_Government
+			
+			modifier = {
+				war_support_weekly = -0.01
+				stability_factor = -0.5
+				political_power_gain = -0.5
+				communism_drift = -0.30
+
+			}
+		}
+		Stalling_Economy = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = 0.25
+				conversion_cost_mil_to_civ_factor = 0.25
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.05
+
+			}
+		}
+		Shattered_Economy = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = 0.65
+				conversion_cost_mil_to_civ_factor = 0.65
+				industrial_capacity_factory = -0.70
+				consumer_goods_factor = 0.30
+
+			}
+		}
+		
+		Nationalist_Nostalgia = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			fascism_drift = 0.10
+			Monarchism_drift = 0.10
+			Nationalism_drift = 0.10
+
+			}
+		}
+		
+		Marxist_Rhetoric = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			Socialism_drift = 0.10
+			communism_drift = 0.10
+			}
+		}
+		
+		
+		Leningradskaya_Morskaya_Akademiya = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			naval_speed_factor = 0.1
+			experience_gain_navy = 0.5
+			experience_gain_navy_factor = 0.1
+			navy_capital_ship_attack_factor = 0.05
+			navy_capital_ship_defence_factor = 0.05
+			}
+		}
+		
+		Stalingradskaya_Letnaya_Akademiya = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			air_ace_generation_chance_factor = 0.20
+			air_weather_penalty = -0.1
+			experience_gain_air_factor = 0.1
+			air_close_air_support_attack_factor = 0.02
+			air_air_superiority_attack_factor = 0.02
+			air_interception_attack_factor = 0.02
+			}
+		}
+		
+		Smolenskaya_Voyennaya_Akademiya = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			conscription = 0.03
+			training_time_factor = -0.1
+			army_org = 5
+			supply_consumption_factor = -0.20
+			army_armor_defence_factor = 0.05
+			army_armor_attack_factor = 0.2
+			}
+		}
+		
+		De-Stalinization = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			neutrality_drift = 0.10
+			stability_factor = -0.03
+			justify_war_goal_time = 0.25
+			}
+		}
+		
+		Soviet_Advisors = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			army_attack_factor = 0.1
+			army_defence_factor = 0.1
+			attrition = -0.5
+			}
+		}
+		
+		Soviet_Academies = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			research_time_factor = -0.05
+			}
+		}
+		
+		Wheat_Program = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			conscription = 0.02
+			}
+		}
+		
+		Wheat_Failure = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			conscription = -0.04
+			training_time_factor = 0.5
+			army_org = -1
+			}
+		}
+		
+		Federalized_Schools = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			research_time_factor = -0.06
+			}
+		}
+		
+		White_Russia = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			fascism_drift = 0.1
+			Nationalism_drift = 0.1
+			conscription = 0.03
+			}
+		}
+		
+		State_Sponsored_Abductions = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+	
+			}
+		}
+		
+		Strong_Nato_Support = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+	
+			}
+		}
+		
+		State_Sponsored_Entertainment = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			stability_weekly = 0.01
+			war_support_weekly = 0.01
+			}
+		}
+		
+		University_Stalingrad = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			research_time_factor = -0.06
+			communism_drift = 0.01
+			}
+		}
+		
+		Socialist_Influence = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			Socialism_drift = 0.1
+			communism_drift = 0.04
+			}
+		}
+		
+		Communist_Terrorists = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			stability_factor = -0.10
+			Socialism_drift = 0.01
+			communism_drift = 0.01
+			}
+		}
+		
+		Anarchist_Terrorists = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			stability_factor = -0.70
+			Anarchy_drift = 0.01
+			}
+		}
+		
+		Anti_Communist = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			stability_factor = -0.30
+			democratic_drift = 0.01
+			Liberalism_drift = 0.01
+			}
+		}
+		
+		Ukraine_Nationalism = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			stability_factor = -0.20
+			democratic_drift = 0.01
+			communism_drift = -0.01
+			}
+		}
+		
+		Anti_Imperialism = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			research_time_factor = -0.08
+			Nationalism_drift = -0.05
+			fascism_drift = -0.01
+			democratic_drift = -0.01
+			communism_drift = 0.01
+			}
+		}
+		
+		Raised_Worker_Salaries = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			production_speed_arms_factory_factor = 0.2
+			stability_factor = 0.30
+			}
+		}
+		
+		Violence_of_Action = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			training_time_factor = -0.1
+			army_org_Factor = 0.05
+			planning_speed = 0.10
+			army_attack_factor = 0.1
+			army_speed_factor = 0.05
+			attrition = 0.2
+			}
+		}
+		
+		Armored_Assault = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			training_time_factor = -0.1
+			army_armor_speed_factor = 0.05
+			army_armor_attack_factor = 0.1
+			army_armor_defence_factor = -0.05
+			attrition = 0.2
+			}
+		}
+		
+		Extreme_Weather_Specialty = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			special_forces_attack_factor = 0.2
+			special_forces_defence_factor = 0.3
+			attrition = -0.2
+			}
+		}
+		
+		Commandement_des_Operations_Speciales = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			air_paradrop_attack_factor = 0.01
+			air_paradrop_defence_factor = 0.03
+			terrain_penalty_reduction = 0.5
+			attrition = -0.2
+			}
+		}
+		
+		Militarized_Youth = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			conscription_factor = 0.2
+			training_time_factor = 0.3
+			}
+		}
+		
+		Rhodesian_Security_Forces = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			conscription_factor = 0.2
+			training_time_factor = -0.3
+			army_attack_factor = 0.08
+			army_defence_factor = 0.08
+			}
+		}
+		
+		War_of_Independance = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			conscription_factor = 0.5
+			training_time_factor = 0.3
+			army_attack_factor = -0.1
+			army_defence_factor = 0.08
+			}
+		}
+		
+		Anti_Semetic_Propaganda = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			political_power_gain = 0.05
+			Zionism_drift = -0.5
+			}
+		}
+		
+		Anti_Socialist_Movement = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			political_power_gain = 0.05
+			Socialism_drift = -0.5
+			}
+		}
+		
+		Small_Arms = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+		
+		war_protests = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			political_power_gain = -0.5
+			stability_factor = -0.07
+			war_support_weekly = -0.01
+			}
+			
+			rule = {
+				can_send_volunteers = no
+			}
+		}
+		
+		Rampant_Defection = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			political_power_gain = -0.5
+			stability_weekly = -0.03
+			war_support_weekly = -0.03
+			conscription = -0.06
+			}
+			
+			rule = {
+				can_send_volunteers = no
+			}
+		}
+		
+		COMECON = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			consumer_goods_factor = 0.05
+			communism_drift = 0.10
+			production_speed_buildings_factor = 0.15
+
+			}
+			
+		}
+		
+		Abysmal_War_Support = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			consumer_goods_factor = 0.010
+			political_power_gain = -0.5
+			stability_weekly = -0.03
+			war_support_weekly = -0.03
+			}
+			
+		}
+		
+		abortions_outlawed = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			MONTHLY_POPULATION = 0.5 
+			stability_weekly = 0.01
+			}
+			
+		}
+		
+		industrial_growth = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			consumer_goods_factor = -0.1
+			production_factory_efficiency_gain_factor = 0.1
+			}
+			
+		}
+		
+		secret_police_rom = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			drift_defence_factor = 0.25
+			political_power_gain = 0.5
+			stability_factor = -0.03
+			}
+			
+		}
+		
+		isolationist = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			}
+			
+		}
+		
+		songun = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			war_support_weekly = 0.09
+			army_core_defence_factor = 0.1
+			army_core_attack_factor = 0.1
+			}
+			
+		}
+		
+		ddr_migration = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			MONTHLY_POPULATION = 0.7
+			stability_weekly = 0.02
+			drift_defence_factor = 0.35
+			}
+			
+		}
+		
+		American_Advisors_VIN = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			army_core_defence_factor = 0.25
+
+			}
+			
+		}
+		
+		stasi = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			stability_factor = -0.03
+			command_power_gain = 0.5
+			conscription_factor = 0.5
+			
+
+			}
+			
+		}
+		
+		viet_cong = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			stability_factor = -0.03
+			conscription_factor = -0.03
+			army_attack_factor = -0.25
+			}
+			
+		}
+		
+		kgb_military_integration = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			command_power_gain = 0.5
+			conscription_factor = -0.03
+			army_attack_factor = 0.25
+			}
+			
+		}
+		
+		stronger_security = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			drift_defence_factor = 0.25	
+			political_power_gain = 0.25
+			enemy_partisan_effect = -0.15
+			}
+			
+		}
+		
+		far_member = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			drift_defence_factor = 0.5	
+			political_power_gain = 0.25
+			}
+			
+		}
+		
+		soldier_mutinies = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			army_org_factor = -0.25
+
+			}
+			
+		}
+		
+		unhappy_soldiers = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			army_org_factor = -0.10
+			attrition = 0.07
+
+			}
+			
+		}
+		
+		disloyal_generals = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = GFX_idea_chi_hyper_inflation3
+			
+			modifier = {
+			max_planning = -0.25
+			army_morale_factor = -0.25
+			army_speed_factor = -0.15
+
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,7 @@
+spriteTypes = { 
+##Icon For: 640174
+ SpriteType = { 
+ name = "GFX_redguards" 
+ texturefile = "gfx/interface/goals/GFX_redguards.tga" 
+ } 
+ }

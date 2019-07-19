@@ -1,0 +1,730 @@
+﻿capital = 788
+
+oob = "SOV_1974"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SOV_1936_naval_mtg"
+	else = {
+		set_naval_oob = "Soviet_Naval_Legacy"
+	}
+}
+set_stability = 0.8
+set_war_support = 0.7
+
+set_research_slots = 5
+
+set_research_slots = 5
+set_stability = 0.5
+set_war_support = 0.8
+# Starting tech
+set_technology = {
+	unifornm_equip1 = 1
+	basic_medium_tank = 1
+	infantry_weapons = 1
+	rocket_artillery = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	transport = 1
+	fleet_in_being = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	btr_infantry = 1
+	motorized_rocket_unit = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	light_mechanised_infantry = 1
+	CAS1 = 1
+	basic_heavy_tank = 1 
+	basic_medium_tank = 1 
+	tactical_bomber1 = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	support_weapons = 1
+	paratroopers = 1
+	amphibious_tank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+	}
+}
+
+1939.1.1 = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			basic_submarine = 1
+			basic_destroyer = 1
+			basic_heavy_cruiser = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			improved_ship_hull_light = 1
+			improved_ship_hull_submarine = 1
+			basic_ship_hull_cruiser = 1
+		}
+	}
+}
+
+
+set_convoys = 50
+set_politics = {
+	ruling_party = communism
+	last_election = "1968.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 9
+	fascism = 1
+	Nationalism = 3
+	Socialism = 7
+	communism = 80
+}
+create_faction = "Warsaw Pact"
+add_to_faction = SOV
+add_to_faction = DDR
+add_to_faction = CZE
+add_to_faction = HUN
+add_to_faction = ROM
+add_to_faction = POL
+add_to_faction = BUL
+add_to_faction = MOL
+add_to_faction = UKR
+add_to_faction = BLR
+add_to_faction = LIT
+add_to_faction = LAT
+add_to_faction = EST
+
+### SSRS ###
+set_autonomy = {
+target = EST
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = LAT
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = LIT
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = BLR
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = UKR
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = MOL
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = GEO
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = ARM
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = AZR
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = TMS
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = UZB
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = TAJ
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = KYR
+autonomous_state = autonomy_socialist_republik
+}
+set_autonomy = {
+target = KAZ
+autonomous_state = autonomy_socialist_republik
+}
+
+set_autonomy = {
+target = DDR
+autonomous_state = autonomy_sov_satellite
+}
+set_autonomy = {
+target = POL
+autonomous_state = autonomy_sov_satellite
+}
+set_autonomy = {
+target = CZE
+autonomous_state = autonomy_sov_satellite
+}
+set_autonomy = {
+target = HUN
+autonomous_state = autonomy_sov_satellite
+}
+set_autonomy = {
+target = ROM
+autonomous_state = autonomy_sov_satellite
+}
+set_autonomy = {
+target = BUL
+autonomous_state = autonomy_sov_satellite
+}
+
+
+give_guarantee = DPR
+give_guarantee = CUB
+give_guarantee = YCM
+give_guarantee = MON
+give_guarantee = SOM
+
+add_ideas = {
+		limited_conscription
+		partial_economic_mobilisation
+		Dysfunctional_Government
+		De-Stalinization
+		Stalling_Economy
+		COMECON
+		UN_Member
+	home_of_revolution
+}
+
+#create_country_leader = {  #ONLY AVAILABLE THROUGH EVENT #SERIOUSLY WHO THE FUCK IS THIS GUY?
+#	name = "Nikita Levytsky"
+#	desc = "POLITICS_JOSEPH_STALIN_DESC"
+#	picture = "Portrait_Soviet_Joseph_Stalin.dds"
+#	expire = "2001.3.1"
+#	ideology = stalinism
+#	traits = {
+#		
+#	}
+#}
+
+create_country_leader = {
+	name = "Leonid Brezhnev"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/cold_majors/breznev.dds"
+	expire = "1982.11.10"
+	ideology = leninism
+	traits = {
+		Poor_Health
+	}
+}
+
+create_country_leader = {
+	name = "Albert Makashov"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/SOV/albert.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Tsarist Council"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/SOV/Tsarist Council.tga"
+	expire = "1953.3.1"
+	ideology = Tsarist
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Boris Yeltsin"
+	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
+	picture = "gfx/leaders/SOV/Boris Yeltsin.dds"
+	expire = "1953.3.1"
+	ideology = oligarchism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Alexander Barkashov"
+	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
+	picture = "gfx/leaders/SOV/alexander barkashov.dds"
+	expire = "1953.3.1"
+	ideology = Ultra-Nationalist
+	traits = {
+		
+	}
+}
+
+add_namespace = {
+	name = "unit_leader_sov"
+	type = unit_leader
+}
+
+create_corps_commander = {
+	name = "Boris Gromov"
+	portrait_path = "gfx/leaders/SOV/Boris Gromov.dds"
+	traits = { winter_specialist armor_officer media_personality war_hero }
+	skill = 5
+
+	
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Boris Snetkov"
+	portrait_path = "gfx/leaders/SOV/Boris Snetkov.dds"
+	traits = {  armor_officer trait_cautious brilliant_strategist }
+	skill = 4
+	
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Dmitri Ustinov"
+	portrait_path = "gfx/leaders/SOV/Dmitri Ustinov copy.dds"
+	traits = { armor_officer politically_connected }
+	skill = 4
+
+	
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dmitry Yazov"
+		portrait_path = "gfx/leaders/SOV/dmitry-yazov.dds"
+	traits = { trait_cautious career_officer }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ivan Bagramyan"
+		portrait_path = "gfx/leaders/SOV/Ivan Bagramyan.dds"
+	traits = { infantry_officer trait_reckless }
+	skill = 3
+	
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ivan Nikolayevich Banov"
+		portrait_path = "gfx/leaders/SOV/ivan nikolayevich banov.dds"
+	traits = { armor_officer harsh_leader politically_connected }
+	skill = 5
+
+
+	
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Ivan Savin"
+		portrait_path = "gfx/leaders/SOV/Ivan_Savin.dds"
+	traits = { cavalry_officer politically_connected career_officer }
+	skill = 3
+
+
+	
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Pavel Grachev"
+		portrait_path = "gfx/leaders/SOV/Pavel_Grachev.dds"
+	traits = { old_guard politically_connected inflexible_strategist }
+	skill = 1
+
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sergei Shtemenko"
+	portrait_path = "gfx/leaders/SOV/sergei shtemenko.dds"
+	traits = { offensive_doctrine brilliant_strategist career_officer infantry_officer trait_reckless }
+	skill = 4
+
+	
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Sergei Sokolov"
+		portrait_path = "gfx/leaders/SOV/sergei sokolov.dds"
+	traits = { old_guard politically_connected inflexible_strategist }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Valetin Varennikov"
+		portrait_path = "gfx/leaders/SOV/Valetin Varennikov.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vasily Ivanovich Andrianov"
+		portrait_path = "gfx/leaders/SOV/Vasily Andrianov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Matvei Zakharov"
+		portrait_path = "gfx/leaders/SOV/Generals/Matvei Zakharov.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Viktor Kulikov"
+		portrait_path = "gfx/leaders/SOV/Generals/Viktor Kulikov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Nikolai Ogarkov"
+		portrait_path = "gfx/leaders/SOV/Generals/Nikolai Ogarkov.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Sergey Akhromeyev"
+		portrait_path = "gfx/leaders/SOV/Generals/Sergey Akhromeyev.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Mikhail Moiseev"
+		portrait_path = "gfx/leaders/SOV/Generals/Mikhail Moiseev.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vladimir Lobov"
+		portrait_path = "gfx/leaders/SOV/Generals/Vladimir Lobov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Viktor Dubynin"
+		portrait_path = "gfx/leaders/SOV/Generals/Viktor Petrovich Dubynin.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mikhail Kolesnikov"
+		portrait_path = "gfx/leaders/SOV/Generals/Mikhail Kolesnikov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Anatoly Kvashnin"
+		portrait_path = "gfx/leaders/SOV/Generals/Anatoly Kvashnin.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Yuri Baluyevsky"
+		portrait_path = "gfx/leaders/SOV/Valetin Varennikov.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nikolai Makarov"
+		portrait_path = "gfx/leaders/SOV/Vasily_Ivanovich_Andrianov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vladimir Zhirinovsky"
+		portrait_path = "gfx/leaders/SOV/Vladimir-Zhirinovsky.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Filipp Oktyabrskiy"
+		picture = "Portrait_Soviet_Filipp_Oktyabrsky.dds"
+	traits = { ironside }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Sergey Gorshkov"
+	id = 411
+		picture = "Portrait_Soviet_Sergey_Gorshkov.dds"
+	traits = {  }
+	skill = 3
+}
+
+# Arrested in '41
+create_navy_leader = {
+	name = "Gordey Levchenko"
+	id = 406
+		picture = "Portrait_Soviet_Gordey_Levchenko.dds"
+	traits = {  }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Arseniy Golovko"
+	id = 409
+		picture = "Portrait_Soviet_Arseniy_Golovko.dds"
+	traits = { spotter }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Vladimir Kasatonov"
+	id = 403
+		picture = "Portrait_Soviet_Vladimir_Kasatonov.dds"
+	traits = { seawolf }
+	skill = 2
+}
+
+1970.1.1 = {
+set_global_flag = india_subversion
+}
+1980.1.1 = {
+clr_global_flag = india_subversion
+set_global_flag = yuri_elected
+set_global_flag = bezmenov_refuses
+set_global_flag = yuri_defected
+}
+
+1982.11.10 = {
+clr_global_flag = leonid_health_problems
+create_country_leader = {
+	name = "Yuri Andropov"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/SOV/yuri andropov.dds"
+	expire = "1984.2.9"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+}
+
+1984.2.10 = {
+create_country_leader = {
+	name = "Konstantin Chernenko"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/SOV/chernenko-4.dds"
+	expire = "1985.1.2"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+}
+
+1985.1.10 = {
+clr_global_flag = yuri_elected
+clr_global_flag = bezmenov_refuses
+create_country_leader = {
+	name = "Mikhail Gorvachev"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/SOV/Gorbachev.dds"
+	expire = "1991.12.25"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+}

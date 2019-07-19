@@ -1,0 +1,364 @@
+﻿division_template = {
+	name = "Division D'Infanterie Motorisée"		
+									
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		medium_sp_artillery_brigade = { x = 2 y = 2 }
+		medium_sp_artillery_brigade = { x = 2 y = 3 }
+		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Brigade de Défense Nationale / Gendarmerie"		
+									
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		medium_armor = { x = 2 y = 0 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Division blindée" 				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }	
+		medium_armor = { x = 0 y = 2 }	
+		medium_armor = { x = 0 y = 3 }	
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }		
+		mechanized = { x = 2 y = 0 }		
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }			
+		artillery_brigade = { x = 3 y = 0 }		
+		medium_sp_anti_air_brigade = { x = 3 y = 1 }
+		medium_sp_artillery_brigade = { x = 3 y = 2 }		
+	}
+	support = {
+		anti_air = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+	}
+}
+division_template = {
+	name = "Brigade Marine" 				
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }	
+		marine = { x = 0 y = 2 }	
+		marine = { x = 0 y = 3 }
+		marine = { x = 0 y = 4 }		
+		light_armor = { x = 1 y = 0 }				
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 }  	
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+division_template = {
+	name = "Brigade Alpine"			# Airborne Brigade
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }	
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }	
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }	
+		mountaineers = { x = 2 y = 3 }		
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 }  	 
+	}
+}
+units = {
+	##### PARIS #####						
+	division= {			
+		name = "1e Division Blindee"		
+		location = 9507
+		division_template = "Division blindée"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}			
+	division= {			
+		name = "3e Division Blindee"		
+		location = 9507
+		division_template = "Division blindée"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "2e Division Blindee"		
+		location = 9507
+		division_template = "Division blindée"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = " 6e Division D'Infanterie Motorisée"		
+		location = 9507
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "27e Division D'infanterie Alpine"		
+		location = 958
+		division_template = "Brigade Alpine"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "9e Brigade De Marine"		
+		location = 958
+		division_template = "Brigade Marine"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "22e Division Blindee"		
+		location = 9507
+		division_template = "Division blindée"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}			
+	division= {			
+		name = "48e Division Blindee"		
+		location = 9507
+		division_template = "Division blindée"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "8e Division Blindee"		
+		location = 9507
+		division_template = "Division blindée"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = " 84e Division D'Infanterie Motorisée"		
+		location = 9507
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = " 111e Division D'Infanterie Motorisée"		
+		location = 620
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = " 25e Division D'Infanterie Motorisée"		
+		location = 6929
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = " 124e Division D'Infanterie Motorisée"		
+		location = 6789
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = " 76e Division D'Infanterie Motorisée"		
+		location = 3681
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "82e Division D'infanterie Alpine"		
+		location = 958
+		division_template = "Brigade Alpine"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "64e Brigade De Marine"		
+		location = 958
+		division_template = "Brigade Marine"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "Legion Etrangere"		
+		location = 958
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+
+	division= {			
+		name = "1e Gendarmerie"		
+		location = 9507
+		division_template = "Brigade de Défense Nationale / Gendarmerie"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}			
+	division= {			
+		name = "3e Gendarmerie"		
+		location = 9507
+		division_template = "Brigade de Défense Nationale / Gendarmerie"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "2e Gendarmerie"		
+		location = 9507
+		division_template = "Brigade de Défense Nationale / Gendarmerie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = " 6e Gendarmerie"		
+		location = 9507
+		division_template = "Brigade de Défense Nationale / Gendarmerie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "27e Gendarmerie"		
+		location = 958
+		division_template = "Brigade de Défense Nationale / Gendarmerie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "9e Gendarmerie"		
+		location = 958
+		division_template = "Brigade de Défense Nationale / Gendarmerie"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "22e Gendarmerie"		
+		location = 9507
+		division_template = "Brigade de Défense Nationale / Gendarmerie"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}	
+}
+
+### Air Wings
+air_wings = {
+	16 = {															
+		fighter_equipment_1 = { owner = "FRA" amount = 92 }				
+		tac_bomber_equipment_1 =  { owner = "FRA" amount = 15 }			
+		CAS_equipment_1 =  { owner = "FRA" amount = 32 }			
+	}
+	
+	27 = {															
+		fighter_equipment_1 = { owner = "FRA" amount = 32 }				
+		tac_bomber_equipment_1 =  { owner = "FRA" amount = 26 }			
+	}
+	
+	28 = {															
+		fighter_equipment_1 = { owner = "FRA" amount = 125 }				
+		CAS_equipment_1 =  { owner = "FRA" amount = 54 }			
+		strat_bomber_equipment_1 = { owner = "FRA" amount = 96 }
+	}
+	
+	19 = {															
+		fighter_equipment_1 = { owner = "FRA" amount = 25 }							
+		nav_bomber_equipment_1 = { owner = "FRA" amount = 96 }
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 5000
+                producer = FRA
+	}
+add_equipment_to_stockpile = {
+                type = support_equipment_1
+                amount = 600
+                producer = FRA
+	}
+add_equipment_to_stockpile = {
+                type = light_tank_equipment_1
+                amount = 150
+                producer = FRA
+	}
+add_equipment_to_stockpile = {
+                type = gw_tank_equipment
+                amount = 300
+                producer = FRA
+	}
+add_equipment_to_stockpile = {
+                type = motorized_equipment_1
+                amount = 800
+                producer = FRA
+	}
+add_equipment_to_stockpile = {
+                type = fighter_equipment_0 
+                amount = 40
+                producer = FRA
+	}
+add_equipment_to_stockpile = {
+                type = tac_bomber_equipment_0
+                amount = 14
+                producer = FRA
+	}
+add_equipment_to_stockpile = {
+                type = strat_bomber_equipment_1
+                amount = 10
+                producer = FRA
+	}
+add_equipment_to_stockpile = {
+                type = transport_plane_equipment_1
+                amount = 1
+                producer = FRA
+	}
+}

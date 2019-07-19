@@ -1,0 +1,194 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1974.1.1.12
+		picture = "GFX_Iron_Curtain"
+		default_country = "USA"
+		default = yes
+		
+		"NVM"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+			
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "Man the Guns" }
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { NOT = { has_dlc = "Man the Guns" } }
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"WGR"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { has_dlc = "Waking the Tiger" }
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"WGR"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { NOT = { has_dlc = "Waking the Tiger" } }
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+
+			}	
+			focuses = {
+
+			}		
+		}
+		"VIN"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+
+			}	
+			focuses = {
+
+			}			
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+			Incompetent_Military
+			Dysfunctional_Government
+			Stalling_Economy
+			}
+			focuses = {
+
+			}	
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+		"ROM"={
+			minor = yes
+			history = "ROM_IRON_CURTAIN_DESC"
+			ideology = communism
+			ideas = {
+			abortions_outlawed
+			industrial_growth
+			secret_police_rom
+			}
+			focuses = {
+
+			}
+		}
+		
+		"DPR"={
+			minor = yes
+			history = "ROM_IRON_CURTAIN_DESC"
+			ideology = communism
+			ideas = {
+			Great_Leader_Kim
+			isolationist
+			songun
+			}
+			focuses = {
+
+			}
+		}
+		
+		"AFG"={
+			minor = yes
+			history = "ROM_IRON_CURTAIN_DESC"
+			ideology = communism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		"SYR"={
+			minor = yes
+			history = "ROM_IRON_CURTAIN_DESC"
+			ideology = communism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		"ISR"={
+			minor = yes
+			history = "ROM_IRON_CURTAIN_DESC"
+			ideology = communism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		"VIN"={
+			minor = yes
+			history = "ROM_IRON_CURTAIN_DESC"
+			ideology = communism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}	
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

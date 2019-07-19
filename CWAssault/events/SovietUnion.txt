@@ -1,0 +1,1276 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = soviet
+
+# Rouge Soviet Battleship
+country_event = {
+	id = soviet.63
+	title = soviet.63.t
+	desc = soviet.63.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.63.a
+	}
+}
+
+# Yuri Andropov Dies
+country_event = {
+	id = soviet.64
+	title = soviet.64.t
+	desc = soviet.64.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = no
+	trigger = {
+	tag = SOV
+	date >1984.2.1
+	has_global_flag = yuri_elected
+	}
+	fire_only_once = yes
+
+	option = {
+		name = soviet.64.a
+		news_event = { days = 1 id = news.334 }
+		add_political_power = -50
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Konstantin Chernenko"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/Konstantin Chernenko.dds"
+			expire = "1985.1.20"
+			ideology = stalinism
+			traits = {
+				
+			}
+		}
+		country_event = { days = 1 id = sovietelect.2 }
+	}
+}
+
+# Romania declares independance
+country_event = {
+	id = soviet.65
+	title = soviet.65.t
+	desc = soviet.65.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	trigger = {
+	tag = SOV
+	}
+	
+	option = {
+		name = soviet.65.a
+		remove_from_faction = ROM
+	}
+	option = {
+		name = soviet.65.b
+		remove_from_faction = ROM
+	}
+}
+
+# Hungary declares independance
+country_event = {
+	id = soviet.66
+	title = soviet.66.t
+	desc = soviet.66.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	trigger = {
+	tag = SOV
+	}
+	
+	option = {
+		name = soviet.66.a
+		remove_from_faction = HUN
+		end_puppet = HUN
+	}
+	option = {
+		name = soviet.66.b
+		remove_from_faction = HUN
+		end_puppet = HUN
+	}
+}
+
+# Gorbachev Resigns
+country_event = {
+	id = soviet.67
+	title = soviet.67.t
+	desc = soviet.67.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	tag = SOV
+	date >1991.12.5
+	}
+	
+	option = {
+		name = soviet.67.a
+		set_cosmetic_tag = SOV_FEDERATION
+		dismantle_faction= yes
+		news_event = { days = 1 id = news.344 }
+		set_politics = { ruling_party = neutrality elections_allowed = yes }
+	}
+}
+
+# Supreme Soviet Siege
+country_event = {
+	id = soviet.68
+	title = soviet.68.t
+	desc = soviet.68.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	trigger = {
+	tag = SOV
+	date > 1993.9.11
+	}
+	
+	option = {
+		name = soviet.68.a
+		news_event = { days = 1 id = rnews.70 }
+		release = SSC
+		declare_war_on = { target = SSC type = civil_war }
+		SSC = {
+		load_oob = "SSC_1992"
+		}
+	}
+	option = {
+		name = soviet.68.b
+		news_event = { days = 1 id = rnews.70 }
+		release = SSC
+		declare_war_on = { target = SSC type = civil_war }
+		SSC = {
+		load_oob = "SSC_1992"
+		}
+		change_tag_from = SSC
+		SSC = { change_tag_from = SOV }
+	}
+}
+
+# Supreme Soviet Supporters
+country_event = {
+	id = soviet.69
+	title = soviet.69.t
+	desc = soviet.69.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = SSC
+		date > 1993.9.11
+	}
+
+	option = {
+		name = soviet.69.a
+		add_manpower = 280000
+		load_oob = "SSC_civilwar"
+	}
+}
+
+# Reactor 4 Total Meltdown
+country_event = {
+	id = soviet.70
+	title = soviet.70.t
+	desc = soviet.70.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		date > 1985.3.26
+	}
+
+	option = {
+		name = soviet.70.a
+		news_event = { days = 1 id = news.348 }
+	}
+}
+
+# Withdraw Troops from Afghanistan
+country_event = {
+	id = soviet.71
+	title = soviet.71.t
+	desc = soviet.71.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		date > 1989.2.5
+		country_exists = TAL
+	}
+
+	option = {
+		name = soviet.71.a
+		news_event = { days = 1 id = news.353 }
+		white_peace = TAL
+		TAL = { country_event = mujihadeen.1.a }
+	}
+}
+
+# Brezhnev Arrested
+country_event = {
+	id = soviet.72
+	title = soviet.72.t
+	desc = soviet.72.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+	}
+
+	option = {
+		name = soviet.72.a
+		create_country_leader = {
+			name = "Yuri Andropov"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/yuri andropov.dds"
+			expire = "1977.1.20"
+			ideology = leninism
+			traits = {
+				
+			}
+		}
+	news_event = { days = 1 id = news.363 }
+	}
+}
+
+# Brezhnev Assassinated
+country_event = {
+	id = soviet.73
+	title = soviet.73.t
+	desc = soviet.73.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+	}
+
+	option = {
+		name = soviet.73.a
+		news_event = { days = 1 id = news.369 }
+		create_country_leader = {
+			name = "Yuri Andropov"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/yuri andropov.dds"
+			expire = "1977.1.20"
+			ideology = leninism
+			traits = {
+				
+			}
+		}
+	}
+}
+
+
+# Saudi Arabia Wants to Join 
+country_event = {
+	id = soviet.74
+	title = soviet.74.t
+	desc = soviet.74.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+	}
+
+	option = {
+		name = soviet.74.a
+		news_event = { days = 1 id = news.370 }
+		add_to_faction = SAU
+	}
+}
+
+# Spetsnaz Units 
+country_event = {
+	id = soviet.75
+	title = soviet.75.t
+	desc = soviet.75.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+	}
+
+	option = {
+		name = soviet.75.a
+				load_oob = "SOV_spetsnaz"
+	}
+}
+
+# Leonid Brezhnev Passes 
+country_event = {
+	id = soviet.76
+	title = soviet.76.t
+	desc = soviet.76.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = SOV
+		date> 1982.11.10
+		has_global_flag = leonid_health_problems
+	}
+
+	option = {
+		name = soviet.76.a
+		kill_country_leader = yes
+		add_political_power = -150
+		create_country_leader = {
+			name = "Yuri Andropov"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/yuri andropov.dds"
+			expire = "1985.1.20"
+			ideology = leninism
+			traits = {
+				
+			}
+		}
+		news_event = { days = 1 id = news.378 }
+		country_event = { days = 1 id = sovietelect.1 }
+	}
+}
+
+# Konstantin Chernenko Passes
+country_event = {
+	id = soviet.77
+	title = soviet.77.t
+	desc = soviet.77.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = SOV
+		date >1985.2.29
+		has_country_leader = { ruling_only = yes name = "Konstantin Chernenko" }
+	}
+
+	option = {
+		name = soviet.77.a
+		country_event = { days = 1 id = sovietelect.3 }
+	}
+}
+
+# Germany Unites 
+country_event = {
+	id = soviet.78
+	title = soviet.78.t
+	desc = soviet.78.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+		has_government = communism
+	}
+
+	option = {
+		name = soviet.78.a
+	}
+	option = {
+		name = soviet.78.b
+		news_event = { days = 1 id = news.372 }
+		create_wargoal = { type = annex_everything target = WGR }
+	}
+}
+
+# Subverting India 
+country_event = {
+	id = soviet.79
+	title = soviet.79.t
+	desc = soviet.79.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		date >1977.1.1
+		tag = SOV
+		has_government = communism
+		has_global_flag = india_subversion
+	}
+
+	option = {
+		name = soviet.79.a
+		hidden_effect = {
+		RAJ = {
+		add_timed_idea = { idea = Marxist_Rhetoric days = 250 }
+		}
+		country_event = { days = 1 id = soviet.80 }
+		}
+	}
+	option = {
+		name = soviet.79.b
+		hidden_effect = {
+			RAJ = {
+			add_timed_idea = { idea = Marxist_Rhetoric days = 550 }
+		  }
+		}
+	}
+}
+
+# Yuri Bezmenov Disapears 
+country_event = {
+	id = soviet.80
+	title = soviet.80.t
+	desc = soviet.80.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		date >1979.1.1
+		tag = SOV
+		has_government = communism
+	}
+
+	option = {
+		name = soviet.80.a
+			hidden_effect = {
+			CAN = {
+			country_event = { days = 400 id = canada.1 }
+		  }
+		}
+	}
+	option = {
+		name = soviet.80.b
+	}
+}
+
+# Canada Releases Yuri's Info
+country_event = {
+	id = soviet.81
+	title = soviet.81.t
+	desc = soviet.81.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+		has_government = communism
+	}
+
+	option = {
+		name = soviet.81.a
+		hidden_effect = {
+            random_list = {
+                3 = { country_event = { id = soviet.82 days = 50 }
+                    modifier = {
+                        add = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                7 = { country_event = { id = soviet.83 days = 50 } 
+                    modifier = {
+                        factor = 100
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+		}
+	}
+}
+
+# Yuri Bezmenov Heads Warning 
+country_event = {
+	id = soviet.82
+	title = soviet.82.t
+	desc = soviet.82.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+		has_government = communism
+	}
+
+	option = {
+		name = soviet.82.a
+	}
+}
+
+# Yuri Bezmenov Replies with threat 
+country_event = {
+	id = soviet.83
+	title = soviet.83.t
+	desc = soviet.83.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+		has_government = communism
+	}
+
+	option = {
+		name = soviet.83.a
+		hidden_effect = {
+		set_global_flag = bezmenov_refuses
+		}
+		hidden_effect = {
+            random_list = {
+                2 = { news_event = { id = rnews.10 days = 1 }
+						news_event = { id = rnews.11 days = 1 }
+                    modifier = {
+                        add = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                8 = { country_event = { id = rnews.10 days = 1 } 
+                    modifier = {
+                        factor = 100
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+		}
+	}
+}
+
+# France Wants to Join Warsaw 
+country_event = {
+	id = soviet.84
+	title = soviet.84.t
+	desc = soviet.84.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+		has_government = communism
+	}
+
+	option = {
+		name = soviet.84.a
+		add_to_faction = FRA
+		news_event = { days = 1 id = news.382 }
+	}
+	option = {
+		name = soviet.84.b
+			FRA = {
+			country_event = { days = 1 id = france.1 }
+		  }
+	}
+}
+
+# Border Clash at Damansky
+country_event = {
+	id = soviet.85
+	title = soviet.85.t
+	desc = soviet.85.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.85.a
+	}
+	option = {
+		name = soviet.85.b
+		PRC = {
+		country_event = { days = 1 id = china.703 }
+		}
+	}
+}
+
+# Brezhnev has heart attack
+country_event = {
+	id = soviet.86
+	title = soviet.86.t
+	desc = soviet.86.d
+	picture = GFX_Brezhnev_Stroke
+
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		has_government = communism
+		has_country_leader = { ruling_only = yes name = "Leonid Brezhnev" }
+	}
+	
+	option = {
+		name = soviet.86.a
+			hidden_effect = {
+				random_list = {
+                2 = { country_event = { id = soviet.86 days = 180 }
+                    modifier = {
+                        add = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = soviet.87 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = soviet.88 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				
+				2 = { country_event = { id = soviet.89 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				                
+				2 = { country_event = { id = soviet.90 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+		}
+	}
+}
+
+# Brezhnev has stroke
+country_event = {
+	id = soviet.87
+	title = soviet.87.t
+	desc = soviet.87.d
+	picture = GFX_Brezhnev_Stroke
+
+	is_triggered_only = yes
+	trigger = {
+		tag = SOV
+		has_government = communism
+		has_country_leader = { ruling_only = yes name = "Leonid Brezhnev" }
+	}
+	
+	option = {
+		name = soviet.87.a
+			hidden_effect = {
+				random_list = {
+                2 = { country_event = { id = soviet.86 days = 180 }
+                    modifier = {
+                        add = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = soviet.87 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = soviet.88 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				
+				2 = { country_event = { id = soviet.89 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				                
+				2 = { country_event = { id = soviet.90 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+		}
+	}
+}
+
+# Brezhnev Freaks out
+country_event = {
+	id = soviet.88
+	title = soviet.88.t
+	desc = soviet.88.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	trigger = {
+		tag = SOV
+		has_government = communism
+		has_country_leader = { ruling_only = yes name = "Leonid Brezhnev" }
+	}
+	
+	option = {
+		name = soviet.88.a
+			hidden_effect = {
+				random_list = {
+                2 = { country_event = { id = soviet.86 days = 180 }
+                    modifier = {
+                        add = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = soviet.87 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = soviet.88 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				
+				2 = { country_event = { id = soviet.89 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				                
+				2 = { country_event = { id = soviet.90 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+		}
+	}
+}
+
+# Brezhnev awards movie star
+country_event = {
+	id = soviet.89
+	title = soviet.89.t
+	desc = soviet.89.d
+	picture = GFX_Brezhnev_Hero_USSR
+
+	is_triggered_only = yes
+	trigger = {
+		tag = SOV
+		has_government = communism
+		has_country_leader = { ruling_only = yes name = "Leonid Brezhnev" }
+	}
+	
+	option = {
+		name = soviet.89.a
+			hidden_effect = {
+		}
+	}
+	
+	option = {
+		name = soviet.89.b
+			hidden_effect = {
+				random_list = {
+                2 = { country_event = { id = soviet.86 days = 180 }
+                    modifier = {
+                        add = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = soviet.87 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = soviet.88 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				
+				2 = { country_event = { id = soviet.89 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				                
+				2 = { country_event = { id = soviet.90 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+		}
+	}
+}
+
+# Brezhnev Found Unconscious
+country_event = {
+	id = soviet.90
+	title = soviet.90.t
+	desc = soviet.90.d
+	picture = GFX_Brezhnev_Drunk
+
+	is_triggered_only = yes
+	trigger = {
+		tag = SOV
+		has_government = communism
+		has_country_leader = { ruling_only = yes name = "Leonid Brezhnev" }
+	}
+	
+	option = {
+		name = soviet.90.a
+			hidden_effect = {
+				random_list = {
+                2 = { country_event = { id = soviet.86 days = 180 }
+                    modifier = {
+                        add = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = soviet.87 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = soviet.88 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				
+				2 = { country_event = { id = soviet.89 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				                
+				2 = { country_event = { id = soviet.90 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+		}
+	}
+	
+}
+
+# Brezhnev Accidentally Shoots Alexi Kosygin
+country_event = {
+	id = soviet.91
+	title = soviet.91.t
+	desc = soviet.91.d
+	picture = GFX_Brezhnev_Accident
+
+	is_triggered_only = yes
+	trigger = {
+		tag = SOV
+		has_government = communism
+		has_country_leader = { ruling_only = yes name = "Leonid Brezhnev" }
+	}
+	
+	option = {
+		name = soviet.91.a
+			hidden_effect = {
+				random_list = {
+                2 = { country_event = { id = soviet.86 days = 180 }
+                    modifier = {
+                        add = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = soviet.87 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = soviet.88 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				
+				2 = { country_event = { id = soviet.89 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				                
+				2 = { country_event = { id = soviet.90 days = 180 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+		}
+	}
+}
+
+# Tsarist Civil War
+country_event = {
+	id = soviet.92
+	title = soviet.92.t
+	desc = soviet.92.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.92.a	
+		news_event = { days = 3 id = news.366 }
+		declare_war_on= { 
+		target = RUS 
+		type = civil_war 
+		}	
+		release = RUS
+		change_tag_from = SOV
+		RUS = { change_tag_from = SOV }
+		RUS = {
+		set_politics= {
+		ruling_party = Monarchism
+		elections_allowed = no 
+}
+
+    set_popularities = {
+        Monarchism = 67
+        communism = 13
+        Christianity = 13
+        neutrality = 10
+    }
+		}
+	set_stability = 0.9
+	set_war_support = 0.8
+	hidden_effect = {
+	RUS = {
+	load_oob = "Soviet_Monarchist"
+	create_corps_commander = {
+	name = "Shura Azarova"
+	portrait_path = "gfx/leaders/SOV/Generals/Shura Azarova.dds"
+	traits = { armor_officer }
+	skill = 3 
+
+	
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+			}
+			##########
+create_corps_commander = {
+	name = "Ivan Savin"
+		portrait_path = "gfx/leaders/SOV/Ivan_Savin.dds"
+	traits = { cavalry_officer politically_connected career_officer }
+	skill = 3
+
+
+	
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Pavel Grachev"
+		portrait_path = "gfx/leaders/SOV/Pavel_Grachev.dds"
+	traits = { old_guard politically_connected inflexible_strategist }
+	skill = 1
+
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Mikhail Moiseev"
+		portrait_path = "gfx/leaders/SOV/Generals/Mikhail Moiseev.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Anatoly Kvashnin"
+		portrait_path = "gfx/leaders/SOV/Generals/Anatoly Kvashnin.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Vladimir Zhirinovsky"
+		portrait_path = "gfx/leaders/SOV/Vladimir-Zhirinovsky.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Nikolai Ogarkov"
+		portrait_path = "gfx/leaders/SOV/Generals/Nikolai Ogarkov.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+		}
+	}
+	set_global_flag = soviet_civil_war
+	}
+}
+
+# Tsarist Civil War Tsrists win
+country_event = {
+	id = soviet.93
+	title = soviet.93.t
+	desc = soviet.93.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = no
+	trigger = {
+	RUS = { controls_state = 224
+			controls_state = 222
+			controls_state = 223
+			controls_state = 205
+			controls_state = 219
+			controls_state = 788
+			controls_state = 209
+			controls_state = 208
+			controls_state = 195
+			controls_state = 263
+			controls_state = 246
+			controls_state = 260
+			controls_state = 258
+			controls_state = 257
+			controls_state = 254
+			controls_state = 245
+			controls_state = 217
+			controls_state = 265
+			controls_state = 401
+			controls_state = 239
+			controls_state = 652
+			controls_state = 146
+			controls_state = 243
+			controls_state = 242
+			controls_state = 210
+			controls_state = 247
+			controls_state = 264
+			controls_state = 244
+			controls_state = 236
+			controls_state = 237
+			controls_state = 218
+			controls_state = 234
+			controls_state = 253
+			controls_state = 238
+			controls_state = 235
+			controls_state = 233
+			controls_state = 791
+			controls_state = 232
+			controls_state = 250
+			controls_state = 251
+			controls_state = 255
+			controls_state = 252
+			controls_state = 256
+			controls_state = 249
+			controls_state = 273
+			controls_state = 582
+			controls_state = 573
+			controls_state = 581
+			controls_state = 262
+			controls_state = 214
+			controls_state = 216
+			controls_state = 215
+			controls_state = 213
+			controls_state = 147
+			controls_state = 722
+			controls_state = 351
+			controls_state = 248
+			controls_state = 400
+			controls_state = 256
+			controls_state = 398
+			controls_state = 651
+			controls_state = 399
+			controls_state = 397
+			controls_state = 572
+			controls_state = 653
+			controls_state = 580
+			controls_state = 579
+			controls_state = 516
+			controls_state = 403
+			controls_state = 571
+			
+		}
+	}
+	
+	option = {
+		name = soviet.92.a
+			add_state_core = 224
+			add_state_core = 222
+			add_state_core = 223
+			add_state_core = 205
+			add_state_core = 219
+			add_state_core = 788
+			add_state_core = 209
+			add_state_core = 208
+			add_state_core = 195
+			add_state_core = 263
+			add_state_core = 246
+			add_state_core = 260
+			add_state_core = 258
+			add_state_core = 257
+			add_state_core = 254
+			add_state_core = 245
+			add_state_core = 217
+			add_state_core = 265
+			add_state_core = 401
+			add_state_core = 239
+			add_state_core = 652
+			add_state_core = 146
+			add_state_core = 243
+			add_state_core = 242
+			add_state_core = 210
+			add_state_core = 247
+			add_state_core = 264
+			add_state_core = 244
+			add_state_core = 236
+			add_state_core = 237
+			add_state_core = 218
+			add_state_core = 234
+			add_state_core = 253
+			add_state_core = 238
+			add_state_core = 235
+			add_state_core = 233
+			add_state_core = 791
+			add_state_core = 232
+			add_state_core = 250
+			add_state_core = 251
+			add_state_core = 255
+			add_state_core = 252
+			add_state_core = 256
+			add_state_core = 249
+			add_state_core = 273
+			add_state_core = 582
+			add_state_core = 573
+			add_state_core = 581
+			add_state_core = 262
+			add_state_core = 214
+			add_state_core = 216
+			add_state_core = 215
+			add_state_core = 213
+			add_state_core = 147
+			add_state_core = 722
+			add_state_core = 351
+			add_state_core = 248
+			add_state_core = 400
+			add_state_core = 256
+			add_state_core = 398
+			add_state_core = 651
+			add_state_core = 399
+			add_state_core = 397
+			add_state_core = 572
+			add_state_core = 653
+			add_state_core = 580
+			add_state_core = 579
+			add_state_core = 516
+			add_state_core = 403
+			add_state_core = 571		
+
+	}
+}
+
+#  Arvīds Pelše has died
+country_event = {
+	id = soviet.94
+	title = soviet.94.t
+	desc = soviet.94.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+		has_government = communism
+		date >1983.5.19
+		has_country_leader = { ruling_only = yes name = "Arvīds Pelše" }
+	}
+
+	option = {
+		name = soviet.94.a
+		news_event = { days = 1 id = news.news.418 }
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Politburo of the Communist Party of the Soviet Union"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/Politburo of the Communist Party of the Soviet Union.dds"
+			expire = "1985.1.20"
+			ideology = stalinism
+			traits = {
+				
+			}
+		}
+	}
+}

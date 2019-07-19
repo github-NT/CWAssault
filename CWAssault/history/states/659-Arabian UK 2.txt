@@ -1,0 +1,39 @@
+
+state={
+	id=659
+	name="STATE_659"
+	manpower = 3891505
+
+	state_category = city
+
+	resources={
+		oil=2
+		steel=4
+	}
+
+	history={
+		owner = YCM
+		victory_points = {
+			5074 15 
+		}
+		buildings = {
+			arms_factory = 2
+			industrial_complex = 3 
+			dockyard = 1
+			infrastructure = 2
+			air_base = 1
+			5074 = {
+				naval_base = 4
+			}
+			8000 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = YEM
+		add_core_of = YCM
+	}
+
+	provinces={
+		2029 4976 5074 8000 12821 12894 13079 
+	}
+}

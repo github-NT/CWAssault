@@ -1,0 +1,119 @@
+﻿###########################
+# Nato Events
+###########################
+
+add_namespace = nato
+
+# Austria Wants to Join NATO
+country_event = {
+	id = nato.1
+	title = nato.1.t
+	desc = nato.1.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = AUS
+	}
+	
+	option = {
+		name = nato.1.a
+		add_to_faction = AUS
+	}
+}
+
+# Spain Wants to Join NATO
+country_event = {
+	id = nato.2
+	title = nato.2.t
+	desc = nato.2.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	
+	option = {
+		name = nato.2.a
+		add_to_faction = SPR
+	}
+}
+
+# Sweden Wants to Join NATO
+country_event = {
+	id = nato.3
+	title = nato.3.t
+	desc = nato.3.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SWE
+	}
+	
+	option = {
+		name = nato.3.a
+		add_to_faction = SWE
+	}
+}
+
+# Finland Wants to Join NATO
+country_event = {
+	id = nato.4
+	title = nato.4.t
+	desc = nato.4.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = FIN
+	}
+	
+	option = {
+		name = nato.4.a
+		add_to_faction = FIN
+	}
+}
+
+# Czechoslovakia Wants to Join NATO
+country_event = {
+	id = nato.5
+	title = nato.5.t
+	desc = nato.5.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CZE
+	}
+	
+	option = {
+		name = nato.5.a
+		add_to_faction = CZE
+	}
+}
+
+# Poland Wants to Join NATO
+country_event = {
+	id = nato.6
+	title = nato.6.t
+	desc = nato.6.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = POL
+	}
+	
+	option = {
+		name = nato.6.a
+		add_to_faction = POL
+	}
+}

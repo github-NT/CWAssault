@@ -1,0 +1,137 @@
+﻿###########################
+# vietnam Events
+###########################
+
+add_namespace = vietnam
+
+# North Vietnam Invades South Vietnam
+news_event = {
+	id = vietnam.1
+	title = vietnam.1.t
+	desc = vietnam.1.d
+	picture = GFX_Saigon_Falls
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = vietnam.1.a
+
+	}
+}
+
+# Saigon Falls
+news_event = {
+	id = vietnam.2
+	title = vietnam.2.t
+	desc = vietnam.2.d
+	picture = GFX_Saigon_Falls
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	286 = { is_owned_by = NVM }
+	date <1974.11.1
+	}
+	
+	immediate = {
+	set_global_flag = fall_of_saigon
+	}
+	
+	option = {
+		name = vietnam.2.a
+	}
+}
+
+# End of Sino-Vietnamese War
+news_event = {
+	id = vietnam.3
+	title = vietnam.3.t
+	desc = vietnam.3.d
+	picture = GFX_Saigon_Falls
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	date >1979.3.6
+	tag = PRC
+	}
+	
+	option = {
+		name = vietnam.3.a
+		white_peace = NVM
+	}
+}
+
+# America Sends Equipment
+country_event = {
+	id = vietnam.4
+	title = vietnam.4.t
+	desc = vietnam.4.d
+	picture = 
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	tag = VIN
+	}
+	
+	option = {
+		name = vietnam.4.a
+		add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 800
+		producer = USA
+		}
+	}
+}
+
+# America Denies Equipment
+country_event = {
+	id = vietnam.5
+	title = vietnam.5.t
+	desc = vietnam.5.d
+	picture = 
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	tag = VIN
+	}
+	
+	option = {
+		name = vietnam.5.a
+	}
+}
+
+# Paris Peace Accords
+country_event = {
+	id = vietnam.6
+	title = vietnam.6.t
+	desc = vietnam.6.d
+	picture = GFX_Paris_Peace_Accord
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	has_global_flag = war_vietnam
+	date >1973.1.17
+	}
+	
+	option = {
+		name = vietnam.6.a
+		news_event = { days = 1 id = news.413 }
+		white_peace = NVM
+	}
+}

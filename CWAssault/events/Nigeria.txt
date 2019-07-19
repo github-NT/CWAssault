@@ -1,0 +1,43 @@
+﻿###########################
+# Nigerian Events
+###########################
+
+add_namespace = nigeria
+
+# Lagos falls
+country_event = {
+	id = nigeria.1
+	title = nigeria.1.t
+	desc = nigeria.1.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	tag = NGA
+	}
+	
+	option = {
+		name = nigeria.1.a
+	}
+
+}
+
+# Lagos falls
+country_event = {
+	id = nigeria.2
+	title = nigeria.2.t
+	desc = nigeria.2.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	tag = NGA
+	}
+	
+	option = {
+		name = nigeria.2.a
+	}
+
+}

@@ -1,0 +1,475 @@
+﻿
+
+division_template = {
+	name = "Motorized Infantry Division"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		light_sp_artillery_brigade = { x = 3 y = 0 }
+		light_sp_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 	
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Mechanized Infantry Division"		
+
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		light_sp_artillery_brigade = { x = 3 y = 0 }
+		light_sp_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 	
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Armored Brigade"		
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }		
+		light_armor = { x = 2 y = 1 }		
+		light_armor = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 } 
+	}
+}
+
+division_template = {
+	name = "Armored Division"		
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+	    medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		medium_sp_anti_air_brigade = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }		
+		artillery_brigade = { x = 3 y = 1 }		
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 } 
+	}
+}
+
+division_template = {
+	name = "Motorized Brigade"		
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_sp_artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 } 
+	}
+}
+
+division_template = {
+	name = "Mountaineer Division"		
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 } 
+	}
+}
+
+units = {
+	######## LAND OOB ########
+	division = {
+		name = "1st Motorized Infantry Division"
+		location = 4003 
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = "2nd Motorized Infantry Division"
+		location = 1147
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3rd Motorized Infantry Division"
+		location = 1980 
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4th Motorized Infantry Division"
+		location = 4382
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "5th Motorized Infantry Division"
+		location = 7084
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = "6th Motorized Infantry Division"
+		location = 1971
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7th Motorized Infantry Division"
+		location = 12792
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "8th Motorized Infantry Division"
+		location = 10843 
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "9th Motorized Infantry Division"
+		location = 10772
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "10th Motorized Infantry Division"
+		location = 12822
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "11th Motorized Infantry Division"
+		location = 12005 
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "17th Motorized Infantry Division"
+		location = 10887 
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		name = "14th Motorized Infantry Division"
+		location = 7084 
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "15th Motorized Infantry Division"
+		location = 10887
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "16th Armored Brigade"
+		location = 12774
+		division_template = "Armored Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6th Armored Division"
+		location = 5043 
+		division_template = "Armored Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		name = "2nd Armored Division"
+		location = 12761 
+		division_template = "Armored Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3rd Armored Division"
+		location = 5075
+		division_template = "Armored Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4th Armored Division"
+		location = 8066 
+		division_template = "Armored Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5th Armored Division"
+		location = 12792 
+		division_template = "Armored Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "1st Mechanized Infantry Division"
+		location = 12717 
+		division_template = "Mechanized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = "2nd Mechanized Infantry Division"
+		location = 12763
+		division_template = "Mechanized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3rd Mechanized Infantry Division"
+		location = 12763 
+		division_template = "Mechanized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4th Mechanized Infantry Division"
+		location = 8013
+		division_template = "Mechanized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "5th Mechanized Infantry Division"
+		location = 5105
+		division_template = "Mechanized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = "1st Mountaineer Division"
+		location = 1910
+		division_template = "Mountaineer Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2nd Mountaineer Division"
+		location = 2041
+		division_template = "Mountaineer Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3rd Mountaineer Division"
+		location = 10821 
+		division_template = "Mountaineer Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4th Mountaineer Division"
+		location = 1910
+		division_template = "Mountaineer Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5th Mountaineer Division"
+		location = 12822
+		division_template = "Mountaineer Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6th Mountaineer Division"
+		location = 2041 
+		division_template = "Mountaineer Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7th Mountaineer Division"
+		location = 	12005
+		division_template = "Mountaineer Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+
+}
+
+
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "PAK"
+		}
+		requested_factories = 3
+		progress = 0.4
+		efficiency = 70
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "PAK"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_mechanized_equipment_1
+			creator = "PAK"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 70
+	}
+	add_equipment_production = {
+		equipment = {
+			type = unifornm_equipment_0
+			creator = "PAK"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 70
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "PAK"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 70
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "PAK"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 70
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_equipment_1
+			creator = "PAK"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 70
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = gw_tank_equipment
+			creator = "PAK"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 70
+	}
+}
+
+### Air Wings
+air_wings = {
+	454 = {															
+		fighter_equipment_1 = { owner = "USA" amount = 225 }				
+		tac_bomber_equipment_1 =  { owner = "USA" amount = 216 }			
+		nav_bomber_equipment_1 = { owner = "USA" amount = 96 }
+	}
+}
+#################################

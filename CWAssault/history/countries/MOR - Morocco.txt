@@ -1,0 +1,155 @@
+﻿capital = 461
+
+oob = "Africa_Minor"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+    gwtank = 1
+}
+
+set_convoys = 20
+
+1939.1.1 = {
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_convoys = 5
+
+1968.1.1 = {
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1968.1.1"
+	election_frequency = 84
+	elections_allowed = no
+}
+
+set_popularities = {
+    neutrality = 10
+    fascism = 0
+    Monarchism = 10
+    democratic = 80
+}
+}
+
+1971.1.1 = {
+set_politics = {	
+	ruling_party = Liberalism
+	last_election = "1968.1.1"
+	election_frequency = 84
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10
+    neutrality = 10
+    Monarchism = 10
+    Liberalism = 70
+}
+}
+
+1975.1.1 = {
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1968.1.1"
+	election_frequency = 84
+	elections_allowed = no
+}
+
+set_popularities = {
+    Liberalism = 10
+    neutrality = 10
+    Monarchism = 10
+    democratic = 70
+}
+}
+
+create_country_leader = {
+	name = "Hassan II"
+	desc = ""
+	expire = "1999.1.1"
+	picture = "gfx/leaders/MAR/Hassan II.dds"
+	ideology = Monarchist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahmed Laraki"
+	desc = ""
+	expire = "1972.1.1"
+	picture = "gfx/leaders/MAR/Ahmed Laraki.dds"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahmed Osman"
+	desc = ""
+	expire = "1972.1.1"
+	picture = "gfx/leaders/MAR/Ahmed Osman.dds"
+	ideology = Liberal
+	traits = {
+		#
+	}
+}
+
+1978.1.1 = {
+create_country_leader = {
+	name = "Maati Bouabid"
+	desc = ""
+	expire = "1983.1.1"
+	picture = "gfx/leaders/MAR/Maati Bouabid.dds"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+}
+1983.2.1 = {
+create_country_leader = {
+	name = "Lamrani Mohammed Karim"
+	desc = ""
+	expire = "1983.1.1"
+	picture = "gfx/leaders/MAR/Lamrani-Mohammed-Karim.dds"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+}

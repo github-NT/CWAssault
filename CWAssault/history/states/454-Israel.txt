@@ -1,0 +1,38 @@
+
+state={
+	id=454
+	name="STATE_454" #Palestine
+	manpower = 6933142
+	resources={
+		steel=23 
+		aluminium=8 
+		oil=15 
+	}
+	
+	state_category = metropolis
+
+	history={
+		owner = ISR
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 8
+			arms_factory = 8
+			air_base = 6
+			4206 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			1086 30 
+		}
+		victory_points = {
+			4206 20 
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+	}
+
+	provinces={
+		1015 1065 1086 1201 4206 7176 11970 1
+	}
+}

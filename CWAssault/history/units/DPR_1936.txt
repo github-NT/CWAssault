@@ -1,0 +1,331 @@
+﻿division_template = {
+	name = "KPA Regiment"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Pobyeong Bu"
+
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		light_tank_destroyer_brigade = { x = 1 y = 0 }
+		light_tank_destroyer_brigade = { x = 1 y = 1 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		motorized = { x = 3 y = 0 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "KPA Tank Brigade"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+        medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Gigyehwa Bobyeong Sadan"
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+	    medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+        mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 3 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "KPA Motorized Infantry"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+	    motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Guggyeong Subi"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	    infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "Je 1 Bumun"
+		location = 7171
+		division_template = "KPA Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Je 2 Bumun"
+		location = 7171
+		division_template = "KPA Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Je 3 Bumun"
+		location = 7171
+		division_template = "KPA Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Je 4 Bumun"
+		location = 7171
+		division_template = "KPA Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Je 5 Bumun"
+		location = 7171
+		division_template = "KPA Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Je 6 Bumun"
+		location = 7171
+		division_template = "KPA Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Je 8 Bumun"
+		location = 7171
+		division_template = "KPA Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Je 9 Bumun"
+		location = 7171
+		division_template = "KPA Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Je 1 Gigab Budae"
+		location = 7171
+		division_template = "KPA Tank Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Je 2 Gigab Budae"
+		location = 7171
+		division_template = "KPA Tank Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Je 3 Gigab Budae"
+		location = 7171
+		division_template = "KPA Tank Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Je 4 Gigab Budae"
+		location = 7171
+		division_template = "KPA Tank Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Je 5 Gigab Budae"
+		location = 7171
+		division_template = "KPA Tank Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Je 6 Gigab Budae"
+		location = 7171
+		division_template = "KPA Tank Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Je 1 Donglyeog Bobyeong Sadan"
+		location = 7171
+		division_template = "KPA Motorized Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Je 2 Donglyeog Bobyeong Sadan"
+		location = 7171
+		division_template = "KPA Motorized Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Je 3 Donglyeog Bobyeong Sadan"
+		location = 7171
+		division_template = "KPA Motorized Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Je 4 Donglyeog Bobyeong Sadan"
+		location = 7171
+		division_template = "KPA Motorized Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Je 6 Donglyeog Bobyeong Sadan"
+		location = 7171
+		division_template = "KPA Motorized Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Je 9 Donglyeog Bobyeong Sadan"
+		location = 7171
+		division_template = "KPA Motorized Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		name = "Je 1 Guggyeong Subi"
+		location = 7171
+		division_template = "Guggyeong Subi"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "Je 1 Guggyeong Subi"
+		location = 7171
+		division_template = "Guggyeong Subi"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "Je 1 Guggyeong Subi"
+		location = 7171
+		division_template = "Guggyeong Subi"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "Je 1 Guggyeong Subi"
+		location = 7171
+		division_template = "Guggyeong Subi"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "Je 1 Guggyeong Subi"
+		location = 7171
+		division_template = "Guggyeong Subi"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "Je 1 Guggyeong Subi"
+		location = 7171
+		division_template = "Guggyeong Subi"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+}

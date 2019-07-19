@@ -1,0 +1,25 @@
+﻿###########################
+# Hostage Events
+###########################
+
+add_namespace = hostage
+
+# Islamic Terrorists Capture Tourists
+country_event = {
+	id = hostage.1
+	title = hostage.1.t
+	desc = hostage.1.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hostage.1.a
+	}
+	option = {
+		name = hostage.1.b
+
+	}
+}

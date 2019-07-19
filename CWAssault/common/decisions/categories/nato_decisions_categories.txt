@@ -1,0 +1,14 @@
+nato_membership = {
+	icon = generic_formable_nations
+	
+	picture = GFX_decision_cat_generic_european_union
+
+	allowed = {
+		always = yes
+	}
+	
+	#visible = {
+	#	NOT = { has_government = democratic }
+	#	has_idea_with_trait = democratic_reformer
+	#}
+}

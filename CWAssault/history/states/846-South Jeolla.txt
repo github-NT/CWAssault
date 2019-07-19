@@ -1,0 +1,22 @@
+
+state={
+	id=846
+	name="STATE_846"
+	manpower = 1564615
+	
+	state_category = large_city
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		add_core_of = KOR
+		add_core_of = DPR
+	}
+
+	provinces={
+		1054 10085 4126 12085 10110 11948 1177
+	}
+}

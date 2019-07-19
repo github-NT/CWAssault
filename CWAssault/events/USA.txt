@@ -1,0 +1,316 @@
+﻿###########################
+# usa Events
+###########################
+
+add_namespace = usa
+
+# Nixon Resigns
+country_event = {
+	id = usa.13
+	title = usa.13.t
+	desc = usa.13.d
+	picture = GFX_report_event_usa_funeral
+
+	trigger = {
+		tag = USA
+		date > 1974.8.9
+		has_government = democratic
+		has_global_flag = water_gate
+	}
+
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	option = {
+		name = usa.13.a
+		add_political_power = -40
+		create_country_leader = {
+			name = "Gerald Ford"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/Gerald_Ford_.dds"
+			expire = "1977.1.20"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
+		news_event = { days = 1 id = news.350 }
+		NVM = { country_event = china.700 }
+		remove_ideas= war_protests
+	}
+}
+
+# Water Gate Developments
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	picture = GFX_Paris_Peace_Accord
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = no
+	trigger = {
+	VIN = { exists = yes }
+	date > 1974.2.29
+	tag = usa
+	}
+	immediate = { set_global_flag = water_gate }
+	option = {
+	name = usa.1.a
+		news_event = { days = 1 id = watergate.1 }
+	}
+}
+
+# Congress Nears Inpeachment
+country_event = {
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.d
+	picture = GFX_Paris_Peace_Accord
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		trigger = {
+		tag = USA
+		date > 1974.7.9
+		has_government = democratic
+		has_global_flag = water_gate
+	}
+
+	option = {
+	name = usa.3.a
+	hidden_effect = {
+	country_event = { days = 40 id = usa.13 }
+		}
+	}
+	option = {
+	name = usa.3.b
+	}
+}
+
+# Intervene in election
+country_event = {
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+	picture = GFX_Paris_Peace_Accord
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+	name = usa.4.a
+	}
+	option = {
+	name = usa.4.b
+	}
+}
+
+# Reagan Assassination Attempt
+country_event = {
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = GFX_Paris_Peace_Accord
+	
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = USA
+		date > 1981.3.20
+		has_government = democratic
+		has_global_flag = regean_elected
+	}
+	
+	is_triggered_only = no
+
+	option = {
+	name = usa.5.a
+	news_event = { days = 1 id = news.408 }
+	}
+}
+
+# Reagan Assassinated
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_Paris_Peace_Accord
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+	name = usa.6.a
+	kill_country_leader= yes
+		create_country_leader = {
+		name = "George H. W. Bush"
+		desc = ""
+		picture = "gfx/leaders/USA/George H. W. Bush.dds"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+			#
+			}
+		}
+	}
+}
+
+# Vietnam Requests Small arms
+country_event = {
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+	picture = GFX_Paris_Peace_Accord
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+	name = usa.7.a
+	VIN = {
+		country_event = { days = 1 id = vietnam.4 }
+		}
+	}
+	option = {
+	name = usa.7.b
+	VIN = {
+		country_event = { days = 1 id = vietnam.5 }
+		}
+	}
+}
+
+# Students Occuyp Embassay in Iran
+country_event = {
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = GFX_Iran_Embassy_Siege_Alt
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+	name = usa.8.a
+	PER = {
+	country_event = { days = 1 id = iran.6 }
+		}
+	}
+}
+
+# Students persist 
+country_event = {
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+	picture = GFX_Iran_Embassy_Siege_Alt
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+	name = usa.9.a
+	}
+}
+
+# Iraq Invades Kuwait 
+country_event = {
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	picture = GFX_Iran_Embassy_Siege_Alt
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+	name = usa.10.a
+	}
+}
+
+# Texas Abortion 
+country_event = {
+	id = usa.11
+	title = usa.11.t
+	desc = usa.11.d
+	picture = GFX_Iran_Embassy_Siege_Alt
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+	name = usa.11.a
+	}
+}
+
+# Supreme Court Decision  
+country_event = {
+	id = usa.12
+	title = usa.12.t
+	desc = usa.12.d
+	picture = GFX_Iran_Embassy_Siege_Alt
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+	name = usa.12.a
+	}
+}
+
+# Vote Passes  
+country_event = {
+	id = usa.13
+	title = usa.13.t
+	desc = usa.13.d
+	picture = GFX_Iran_Embassy_Siege_Alt
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+	name = usa.13.a
+	}
+}
+
+# Vote Fails  
+country_event = {
+	id = usa.14
+	title = usa.14.t
+	desc = usa.14.d
+	picture = GFX_Iran_Embassy_Siege_Alt
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	
+	}
+
+	option = {
+	name = usa.14.a
+	}
+}

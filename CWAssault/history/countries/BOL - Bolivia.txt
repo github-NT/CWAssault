@@ -1,0 +1,160 @@
+﻿capital = 302
+
+oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+set_country_flag = monroe_doctrine
+
+1939.1.1 = {
+	
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_refining = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+1970.1.1 = {
+set_politics = {	
+	ruling_party = Nationalism
+	last_election = "1934.11.11"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_popularities = {
+    Nationalism = 85
+    fascism = 6
+    communism = 9
+    neutrality = 0
+}
+
+create_country_leader = {
+	name = "Alfredo Ovando Candia"
+	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
+	picture = "gfx/leaders/BOL/Alfredo Ovando Candia.dds"
+	expire = "1971.1.1"
+	ideology = Nationalist 
+	traits = {
+		#
+	}
+}
+}
+
+
+
+1971.1.1 = {
+	set_politics = {	
+	ruling_party = Nationalism
+		last_election = "1934.11.11"
+		election_frequency = 72
+		elections_allowed = yes
+}
+
+set_popularities = {
+    Nationalism = 85
+    fascism = 6
+    communism = 9
+    neutrality = 0
+}
+
+	create_country_leader = {
+		name = "Hugo Banzer"
+		desc = "POLITICS_CARLOS_QUINTANILLA_DESC"
+		picture = "gfx/leaders/BOL/Hugo Banzer.dds"
+		expire = "1978.1.1"
+		ideology = Nationalist
+		traits = {
+			#
+		}
+	}
+}
+
+1982.1.1 = {
+	set_politics = {	
+	ruling_party = democratic
+		last_election = "1934.11.11"
+		election_frequency = 72
+		elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 80
+    Liberalism = 11
+    Market_Liberal = 6
+    Nationalism = 4
+}
+
+	create_country_leader = {
+		name = "Hernan Siles Zuazo"
+		desc = "POLITICS_CARLOS_QUINTANILLA_DESC"
+		picture = "gfx/leaders/BOL/Hernan Siles Zuazo.dds"
+		expire = "1985.1.1"
+		ideology = conservatism
+		traits = {
+			#
+		}
+	}
+}
+
+1985.1.1 = {
+	set_politics = {	
+	ruling_party = democratic
+		last_election = "1934.11.11"
+		election_frequency = 72
+		elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 80
+    Liberalism = 11
+    Market_Liberal = 6
+    Nationalism = 4
+}
+
+	create_country_leader = {
+		name = "Víctor Paz Estenssoro"
+		desc = "POLITICS_CARLOS_QUINTANILLA_DESC"
+		picture = "gfx/leaders/BOL/Victor Paz Estenssoro.dds"
+		expire = "1989.1.1"
+		ideology = conservatism
+		traits = {
+			#
+		}
+	}
+}

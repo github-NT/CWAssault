@@ -1,0 +1,18 @@
+scripted_gui = {
+
+	fuhrer_mana_powers = {
+		context_type = player_context
+		
+		window_name = "fuhrer_mana_country_powers_container"
+		
+		visible = {
+			check_variable = { show_fuhrer_powers > 0.0 }
+            is_soviet_union = yes
+		} 
+		
+		supreme_load_button_click = {
+			set_variable = { kgb.menu_selected = 1 }
+		}
+		
+	}			
+}

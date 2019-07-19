@@ -1,0 +1,37 @@
+################
+##### VIN ######
+################
+
+american_equipment_packages = {
+	icon = generic_form_nation
+	
+	picture = GFX_American_Advisor
+	
+	allowed = {
+		original_tag = VIN
+	}
+	
+	available = {
+		original_tag = VIN
+		has_defensive_war = yes
+	}
+	
+	
+}
+
+viet_cong_insurgency = {
+	icon = generic_form_nation
+	
+	picture = GFX_ARVN_Soldiers
+	
+	allowed = {
+		original_tag = VIN
+	}
+	
+	available = {
+		original_tag = VIN
+		has_defensive_war = yes
+	}
+	
+	
+}

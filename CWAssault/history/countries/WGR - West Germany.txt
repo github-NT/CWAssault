@@ -1,0 +1,421 @@
+﻿capital = 51
+
+oob = "WGR_1974"
+
+set_research_slots = 4
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	transport = 1
+	support_weapons2 = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	mechanised_infantry = 1
+
+}
+
+
+add_ideas = {
+De-Nazification
+Bundeswehr
+}
+
+
+set_research_slots = 4
+set_convoys = 50
+set_stability = 0.7
+
+1939.1.1 = {
+	
+
+	#BUILDINGS
+	
+
+	set_technology = {
+		improved_light_tank = 1 
+		basic_medium_tank = 1 
+		CAS2 = 1
+		heavy_fighter1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		support_weapons = 1
+		paratroopers = 1
+		basic_heavy_cruiser = 1
+		improved_heavy_cruiser = 1
+		basic_battleship = 1
+		improved_battleship = 1
+
+	}
+}
+
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1972.11.19"
+	election_frequency = 56
+	elections_allowed = yes
+
+}
+
+set_popularities = {
+    democratic = 45
+    Christianity = 44
+    Liberalism = 11
+}
+give_guarantee = KOR
+
+create_country_leader = {
+	name = "Adolf Von Thadden"
+	desc = ""
+	picture = "gfx/leaders/WGR/adolf von thadden.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Michael Kühnen"
+	desc = ""
+	picture = "gfx/leaders/WGR/Michael-Kuehnen.dds"
+	expire = "1965.1.1"
+	ideology = Nationalist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Louis Ferdinand Von Preußen"
+	desc = ""
+	picture = "gfx/leaders/WGR/louis.dds"
+	expire = "1965.1.1"
+	ideology = Monarchist
+	traits = {
+	}
+}
+
+#create_country_leader = {
+#	name = "Karl Donitz"
+#	desc = ""
+#	picture = "gfx/leaders/DDR/Karl Donitz.dds"
+#	expire = "1965.1.1"
+#	ideology = nazism
+#	traits = {
+#	}
+#}
+
+#create_country_leader = {
+#	name = "Ulrike Meinhof"
+#	desc = ""
+#	picture = "gfx/leaders/WGR/Ulrike Meinhof.dds"
+#	expire = "1965.1.1"
+#	ideology = vanguard_communism
+#	traits = {
+#	}
+#}
+
+create_country_leader = {
+	name = "Willy Brandt"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "gfx/leaders/cold_majors/Brandt.dds"
+	expire = "1976.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Willi Dickhut"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "gfx/leaders/WGR/Willi Dickhut.dds"
+	expire = "1976.1.1"
+	ideology = Maoist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Helmut Kohl"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "gfx/leaders/WGR/kohl.dds"
+	expire = "1979.1.1"
+	ideology = Protestant
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Walter Scheel"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "gfx/leaders/WGR/scheel.dds"
+	expire = "1980.1.1"
+	ideology = Classical_Liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Patrik Köbele"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "gfx/leaders/WGR/Patrik Köbele.dds"
+	expire = "1980.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Bern Von Baer"
+		portrait_path = "gfx/leaders/WGR/Bern Bon Baer.dds"
+	traits = { infantry_officer }
+	skill = 1 
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Eckart Afheldt"
+		portrait_path = "gfx/leaders/WGR/Eckart Afheldt.dds"
+	traits = { career_officer }
+	skill = 3
+
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Gerhard Barkhorn"
+		portrait_path = "gfx/leaders/WGR/gerhard barkhorn.dds"
+	traits = { winter_specialist infantry_officer brilliant_strategist }
+	skill = 2
+
+	
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Gert Bastian"
+		portrait_path = "gfx/leaders/WGR/gert bastian.dds"
+	traits = { infantry_officer }
+	skill = 3
+	
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hartmut Bagger"
+		portrait_path = "gfx/leaders/WGR/hartmut bagger.dds"
+	traits = { career_officer cavalry_officer }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Jurgen Brandt"
+		portrait_path = "gfx/leaders/WGR/jurgen brandt.dds"
+	traits = {  }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Albert Schenz"
+		portrait_path = "gfx/leaders/WGR/Albert Schenz.dds"
+	traits = {  }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Wolfgang Altenburg"
+		portrait_path = "gfx/leaders/WGR/Wolfgang_Altenburg_1983.dds"
+	traits = { career_officer old_guard trait_cautious politically_connected }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Harald Wust"
+		portrait_path = "gfx/leaders/WGR/harald wust.dds"
+	traits = { career_officer old_guard trait_cautious politically_connected }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Hans Peter von Kirchbach"
+		portrait_path = "gfx/leaders/WGR/Hans-Peter von Kirchbach.dds"
+	traits = { career_officer old_guard trait_cautious politically_connected }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ulrich de Maizière"
+		portrait_path = "gfx/leaders/WGR/Ulrich de Maizière.dds"
+	traits = { career_officer old_guard trait_cautious politically_connected }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Klaus Naumann"
+		portrait_path = "gfx/leaders/WGR/klaus naumann.dds"
+	traits = { career_officer old_guard trait_cautious politically_connected }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+1976.1.1 = {
+
+set_politics = {	
+	ruling_party = Christianity
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+
+set_popularities = {
+    democratic = 42
+    Christianity = 48
+    Liberalism = 10
+}
+
+create_country_leader = {
+	name = "Helmut Kohl"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "gfx/leaders/WGR/kohl.dds"
+	expire = "1998.1.1"
+	ideology = Protestant
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Helmut Schmidt"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "gfx/leaders/WGR/Helmut Schmidt.dds"
+	expire = "1976.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+}
+
+1980.1.1 = {
+
+set_politics = {	
+	ruling_party = Christianity
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+
+set_popularities = {
+    democratic = 38
+    Christianity = 51
+    Market_Liberal = 11
+}
+
+create_country_leader = {
+	name = "Helmut Kohl"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "gfx/leaders/WGR/kohl.dds"
+	expire = "1998.1.1"
+	ideology = Protestant
+	traits = {
+	}
+}
+
+}

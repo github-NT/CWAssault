@@ -1,0 +1,36 @@
+
+state={
+	id=827
+	name="STATE_827"
+	manpower =4257354
+	
+	
+	state_category = rural
+
+	history={
+		owner = COG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		
+		victory_points = {
+			191 1 
+		}
+		add_core_of = COG
+		add_core_of = KAT
+		
+		1978.1.1 = {
+		owner = KAT
+		}
+		
+		1982.1.1 = {
+		owner = COG
+		}
+	}
+
+	provinces={
+		12795 1968 4515 1516 191 1929 12907 1817
+	}
+}

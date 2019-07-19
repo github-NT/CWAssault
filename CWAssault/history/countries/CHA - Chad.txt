@@ -1,0 +1,61 @@
+﻿capital = 774
+
+oob = "Africa_Minor"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
+
+set_convoys = 10
+
+set_stability = 0.8
+
+set_politics = {	
+	ruling_party = Nationalism
+	last_election = "1969.1.1"
+	election_frequency = 84
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 20
+    communism = 10
+    Nationalism = 70
+}
+
+
+create_country_leader = {
+	name = "François Tombalbaye"
+	desc = "POLITICS_DESC"
+	picture = "gfx/leaders/CHA/Francois Tombalbaye.dds"
+	expire = "1975.1.1"
+	ideology = Nationalist
+	traits = {
+	}
+}
+
+1975.1.1 = {
+create_country_leader = {
+	name = "Felix Malloum"
+	desc = "POLITICS_DESC"
+	picture = "gfx/leaders/CHA/Felix Malloum.dds"
+	expire = "1979.1.1"
+	ideology = Nationalist
+	traits = {
+	}
+}
+}
+
+1979.1.1 = {
+create_country_leader = {
+	name = "Hissène Habré"
+	desc = "POLITICS_DESC"
+	picture = "gfx/leaders/CHA/Hissene Habre.dds"
+	expire = "1990.1.1"
+	ideology = Nationalist
+	traits = {
+	}
+}
+}

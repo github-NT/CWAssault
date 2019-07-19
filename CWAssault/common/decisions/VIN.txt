@@ -1,0 +1,146 @@
+american_equipment_packages = {
+
+	VIN_request_equipment = {
+
+		available = {
+			original_tag = VIN
+			owns_state = 286
+			has_full_control_of_state = 286
+			has_defensive_war = yes
+		}
+		
+		cost = 50
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			original_tag = VIN
+			has_full_control_of_state = 286
+		}
+		fire_only_once = no
+		complete_effect = {
+		USA = {
+		country_event = { days = 1 id = usa.7 }
+			}
+		}
+	}
+	
+	VIN_request_aircraft = {
+
+		available = {
+			original_tag = VIN
+			owns_state = 286
+			has_full_control_of_state = 286
+			has_defensive_war = yes
+		}
+		
+		cost = 150
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			original_tag = VIN
+			has_full_control_of_state = 286
+		}
+		fire_only_once = no
+		complete_effect = {
+		USA = {
+		
+			}
+		}
+	}
+	
+	VIN_request_heavy_equipment = {
+
+		available = {
+			original_tag = VIN
+			owns_state = 286
+			has_full_control_of_state = 286
+			has_defensive_war = yes
+		}
+		
+		cost = 100
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			original_tag = VIN
+			has_full_control_of_state = 286
+		}
+		fire_only_once = no
+		complete_effect = {
+		USA = {
+		
+			}
+		}
+	}
+}
+
+viet_cong_insurgency = {
+
+	pro_nationalist_propaganda = {
+
+		available = {
+			original_tag = VIN
+			has_defensive_war = yes
+		}
+		
+		cost = 25
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			original_tag = VIN
+		}
+		fire_only_once = no
+		complete_effect = {
+
+		}
+	}
+	
+	VIN_anti_communist_raids = {
+
+		available = {
+			original_tag = VIN
+			has_defensive_war = yes
+		}
+		
+		cost = 50
+		ai_will_do = {
+			factor = 5
+		}
+
+		visible = {
+			original_tag = VIN
+		}
+		fire_only_once = no
+		complete_effect = {
+
+		}
+	}
+	
+	strike_vietcong_stronghold = {
+
+		available = {
+			original_tag = VIN
+			has_defensive_war = yes
+		}
+		
+		cost = 150
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			original_tag = VIN
+		}
+		fire_only_once = no
+		complete_effect = {
+
+		}
+	}
+}

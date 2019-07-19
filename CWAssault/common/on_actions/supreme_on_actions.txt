@@ -1,0 +1,22 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { 
+                    is_soviet_union = yes
+                }
+                set_variable = { sov_army_loyalty = 70 }
+                set_variable = { sov_army_loyalty_max = 100 }
+            }
+			
+			every_country = {
+				limit = { 
+                    is_soviet_union = yes
+                }
+                set_variable = { sov_general_loyalty = 90 }
+                set_variable = { sov_general_loyalty_max = 100 }
+            }
+		}
+	}
+}

@@ -1,0 +1,22 @@
+scripted_gui = {
+
+	fuhrer_mana = {
+		context_type = player_context
+		
+		window_name = "fuhrer_mana_container"
+		
+		visible = {
+            TAG = SOV
+		}
+		
+		effects = {
+			fuhrer_mana_bg_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = show_fuhrer_powers }
+				set_variable = { show_fuhrer_powers = show }
+			}         
+		}
+	}
+    
+}
+

@@ -1,0 +1,25 @@
+
+state={
+	id=538
+	name="STATE_538" # Central Congo
+	manpower = 11693974
+	
+	state_category = town
+	resources={
+		rubber=10 # was: 5
+		tungsten=11 # was: 5
+	}
+	history={
+		owner = COG
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 3
+		}
+		add_core_of = COG
+	}
+
+	provinces={
+		988 7219 7931 8016 8048 10071 10883 10951 12741 12775 12824 
+	}
+}

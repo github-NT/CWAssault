@@ -1,0 +1,317 @@
+﻿division_template = {
+	name = "Motorisierte-Schützen-Division"					
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+   		light_mechanized = { x = 2 y = 0 }
+		light_mechanized = { x = 2 y = 1 }
+		light_sp_artillery_brigade = { x = 2 y = 2 }
+  		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
+		light_sp_anti_air_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 }  	
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = { 						
+	name = "Fallschirmjäger-Division"				
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Mechanisierte Infanteriedivision" 			
+
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		light_mechanized = { x = 2 y = 0 }
+		light_mechanized = { x = 2 y = 1 }
+		light_mechanized = { x = 2 y = 1 }
+		light_sp_artillery_brigade = { x = 3 y = 0 }
+		light_sp_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 }  	
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+division_template = {
+	name = "Ersatz Regiment"				
+
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		light_sp_artillery_brigade = { x = 2 y = 0 }
+		light_mechanized = { x = 2 y = 1 }
+		light_mechanized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 }  	
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+division_template = {
+	name = "Panzer-Division"				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }		
+		medium_armor = { x = 0 y = 1 }		
+		medium_armor = { x = 0 y = 2 }		
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		light_mechanized = { x = 2 y = 2 }
+		medium_sp_artillery_brigade = { x = 3 y = 0 }	
+		medium_sp_artillery_brigade = { x = 3 y = 1 }	
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 }  	
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+division_template = {
+	name = "Aufklärungs Bataillon"					
+
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_mechanized = { x = 2 y = 0 }
+		light_mechanized = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 }  	
+		anti_tank = { x = 0 y = 3 } 
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Sicherungs-Division"	# Represents Border Guard Commands, Fortress Groups, etc.
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Lower-quality equipment and training
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 0
+	
+	support = {
+        artillery = { x = 0 y = 0 }			
+	}
+}
+
+units = {
+	division= {			
+		name = "1. Motorisierte-Schützen-Division"		
+		location = 3522
+		division_template = "Motorisierte-Schützen-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "4. Motorisierte-Schützen-Division"		
+		location = 1468
+		division_template = "Motorisierte-Schützen-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "7. Panzerdivision"		
+		location = 6521
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}	
+	division= {			
+		name = "8. Motorisierte-Schützen-Division"		
+		location = 11359
+		division_template = "Motorisierte-Schützen-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "9. Panzerdivision"		
+		location = 11305
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "11. Motorisierte-Schützen-Division"		
+		location = 3535
+		division_template = "Motorisierte-Schützen-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "12. Motorisierte-Schützen-Division"		
+		location = 514
+		division_template = "Motorisierte-Schützen-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "14. Motorisierte-Schützen-Division"		
+		location = 538
+		division_template = "Motorisierte-Schützen-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "15. Motorisierte-Schützen-Division"		
+		location = 375
+		division_template = "Motorisierte-Schützen-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}	
+	division= {			
+		name = "18. Motorisierte-Schützen-Division"		
+		location = 9497
+		division_template = "Motorisierte-Schützen-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "19. Aufklärungs Bataillon"		
+		location = 9294
+		division_template = "Aufklärungs Bataillon"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "20. Aufklärungs Bataillon"		
+		location = 11468
+		division_template = "Aufklärungs Bataillon"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "21. Mechanisierte Infanteriedivision"		
+		location = 3500
+		division_template = "Mechanisierte Infanteriedivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "22. Mechanisierte Infanteriedivision"		
+		location = 11505
+		division_template = "Mechanisierte Infanteriedivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "23. Mechanisierte Infanteriedivision"		
+		location = 6521
+		division_template = "Mechanisierte Infanteriedivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}	
+	division= {			
+		name = "1. Ersatz Regiment"		
+		location = 6441
+		division_template = "Ersatz Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "4. Ersatz Regiment"		
+		location = 6441
+		division_template = "Ersatz Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "6. Ersatz Regiment"		
+		location = 6441
+		division_template = "Ersatz Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "23. Panzer-Division"		
+		location = 9456
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}	
+	division= {			
+		name = "1. Panzer-Division"		
+		location = 3258
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "4. Panzer-Division"		
+		location = 11481
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {			
+		name = "6. Panzer-Division"		
+		location = 6487
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+
+#####################

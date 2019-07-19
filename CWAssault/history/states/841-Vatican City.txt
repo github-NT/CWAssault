@@ -1,0 +1,23 @@
+
+state={
+	id=841
+	name="STATE_841" #Vatican POPEMOBILE
+	manpower = 33142
+	
+	state_category = large_city
+
+	history={
+		owner = VAT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		add_core_of = VAT
+		add_core_of = ITA
+	}
+
+	provinces={
+		13412
+	}
+}

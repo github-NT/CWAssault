@@ -1,0 +1,215 @@
+﻿capital = 41
+
+oob = ""
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battleship = 1
+	transport = 1
+	support_weapons2 = 1
+	basic_medium_tank = 1 # PLACEHOLDER
+	basic_battlecruiser = 1
+	basic_light_cruiser = 1`
+	strategic_bomber1 = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
+
+1968.1.1 = {
+	set_politics = {		
+		ruling_party = fascism
+		last_election = "1939.3.26"
+		election_frequency = 60
+		elections_allowed = no
+}
+
+    set_popularities = {
+        democratic = 22
+        fascism = 76
+        communism = 2
+    }
+}
+
+set_convoys = 150
+set_stability = 0.5
+
+create_country_leader = {
+	name = "Adolfo Suárez"
+	desc = "POLITICS_MANUEL_AZANA_DESC"
+	picture = "gfx/leaders/SPR/Adolfo Suarez.dds"
+	expire = "1981.1.1"
+	ideology = Catholicism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Santiago Carrillo"
+	desc = "POLITICS_JOSE_DIAZ_DESC"
+	picture = "gfx/leaders/SPR/santigao carrillo.tga"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Francisco Franco"
+	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+	picture = "gfx/leaders/Europe/franco.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Juan Carlos I"
+	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+	picture = "gfx/leaders/SPR/REPLICAS-Rey-Juan-Carlos.tga"
+	expire = "1965.1.1"
+	ideology = Monarchist
+	traits = {
+		#
+	}
+}
+
+#create_country_leader = {
+#	name = "Sofia of Greece"
+#	desc = "POLITICS_JOSE_DIAZ_DESC"
+#	picture = "gfx/leaders/SPR/Sofia Of Greece.dds"
+#	expire = "1965.1.1"
+#	ideology = Monarchist
+#	traits = {
+#		#
+#	}
+#}
+
+create_country_leader = {
+	name = "Felipe González"
+	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+	picture = "gfx/leaders/SPR/phillipe.dds"
+	expire = "1965.1.1"
+	ideology = Socialist
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "José Asensio Torrado"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { defensive_doctrine }
+	skill = 2
+    attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+1976.1.1 = {
+
+create_country_leader = {
+	name = "Manuel Fraga"
+	desc = "POLITICS_JOSE_DIAZ_DESC"
+	picture = "gfx/leaders/SPR/Manuel Fraga Iribarne.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Jordi Pujol"
+	desc = "POLITICS_JOSE_DIAZ_DESC"
+	picture = "gfx/leaders/SPR/Jordi Pujol.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Blas Piñar"
+	desc = "POLITICS_JOSE_DIAZ_DESC"
+	picture = "gfx/leaders/SPR/Blas Piñar.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+}
+
+1976.1.1 = {
+
+set_politics = {	
+	ruling_party = Christianity
+	last_election = "1976.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    Christianity = 34
+    Socialism = 30
+    communism = 10
+    democratic = 6
+    neutrality = 2
+    fascism = 2
+}
+
+}

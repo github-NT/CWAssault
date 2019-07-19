@@ -1,0 +1,11 @@
+spriteTypes = { 
+##Icon For: 730003
+ SpriteType = { 
+ name = "GFX_supportthezanu" 
+ texturefile = "gfx/interface/goals/GFX_supportthezanu.tga" 
+ }##Icon For: 730002
+ SpriteType = { 
+ name = "GFX_supportrhodesia" 
+ texturefile = "gfx/interface/goals/GFX_supportrhodesia.tga" 
+ } 
+ }

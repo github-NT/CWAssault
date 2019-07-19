@@ -1,0 +1,104 @@
+﻿capital = 330
+
+oob = "MON_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+limited_conscription
+}
+
+
+1939.1.1 = {
+
+	
+	oob = "MON_1939"
+	set_technology = {
+		support_weapons = 1
+		gw_artillery = 1
+		
+		#doctrines
+		air_superiority = 1
+		
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+	}
+}
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    Socialism = 22
+    communism = 68
+    Maoism = 10
+}
+
+1970.1.1 = {
+create_country_leader = {
+	name = "Jamsrangiin Sambuu"
+	desc = "POLITICS_ANANDYN_AMAR_DESC"
+	picture = "gfx/leaders/MON/Jamsrangiin Sambuu.dds"
+	expire = "1972.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+}
+
+1974.1.1 = {
+
+	add_ideas = {
+	limited_conscription
+	}	
+
+	set_politics = {		
+		ruling_party = communism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+}
+
+    set_popularities = {
+        Socialism = 22
+        Maoism = 10
+        communism = 68
+    }
+	
+	create_country_leader = {
+	name = "Yumjaagiin Tsedenbal"
+	desc = "POLITICS_ANANDYN_AMAR_DESC"
+	picture = "gfx/leaders/MON/Yumjaagiin Tsedenbal.dds"
+	expire = "1977.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+}

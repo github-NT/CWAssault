@@ -1,0 +1,26 @@
+
+state={
+	id=796
+	name="STATE_796"
+	manpower = 874200
+	state_category = metropolis
+
+	history={
+		owner = DDR
+		victory_points = {
+			6521 50
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 5
+		}
+		
+
+		add_core_of = DDR
+		add_core_of = WGR
+	}
+
+	provinces={
+		6521
+	}
+}

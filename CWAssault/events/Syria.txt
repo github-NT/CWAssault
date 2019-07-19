@@ -1,0 +1,328 @@
+﻿###########################
+# Spanish Events
+###########################
+
+add_namespace = syria
+
+# Atassi arrested
+country_event = {
+	id = syria.1
+	title = syria.1.t
+	desc = syria.1.d
+	picture = GFX_Corrective_Movement
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = SYR
+		has_country_leader = { ruling_only = yes name = "Nureddin al-Atassi" }
+		date >1970.11.3
+	}
+
+	option = {
+		name = syria.1.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Hafez al-Assad"
+			desc = ""
+			picture = "gfx/leaders/SYR/Hafez al-Assad.tga"
+			expire = "1985.1.20"
+			ideology = Nationalist
+			traits = {
+				
+			}
+		}
+		EGY = {
+		country_event = { id = egypt.1 days = 1 }
+		}
+	}
+}
+
+# Preparations for War
+country_event = {
+	id = syria.2
+	title = syria.2.t
+	desc = syria.2.d
+	picture = GFX_Yom_Kippur_Preparations
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = SYR
+		date >1973.5.3
+		NOT = {
+		has_global_flag = yom_kippur_over
+		}
+	}
+
+	option = {
+		name = syria.2.a
+		EGY = {
+		country_event = { id = egypt.2 days = 1 }
+		}
+	}
+}
+
+# Preparations for War (Egypt agrees)
+country_event = {
+	id = syria.3
+	title = syria.3.t
+	desc = syria.3.d
+	picture = GFX_Yom_Kippur_Preparations
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SYR
+	}
+
+	option = {
+		name = syria.3.a
+		set_global_flag = egypt_joins
+	}
+}
+
+# Preparations for War (Egypt Denies)
+country_event = {
+	id = syria.4
+	title = syria.4.t
+	desc = syria.4.d
+	picture = GFX_Yom_Kippur_Preparations
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SYR
+	}
+
+	option = {
+		name = syria.4.a
+		set_global_flag = egypt_refused
+	}
+}
+
+# Launch Attack Against Christian Militias
+country_event = {
+	id = syria.5
+	title = syria.5.t
+	desc = syria.5.d
+	picture = GFX_Yom_Kippur_Preparations
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SYR
+		has_country_leader = { ruling_only = yes name = "Hafez al-Assad" }
+		date <1976.1.1
+		has_completed_focus= SYR_interventionistpolicies
+	}
+
+	option = {
+		name = syria.5.a
+			random_list = {
+                8 = { country_event = { id = syria.7 days = 1 }
+                    modifier = {
+                        add = 100
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = syria.6 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+	}
+	option = {
+		name = syria.5.b
+		add_political_power = -50
+	}
+}
+
+# Attack Fails
+country_event = {
+	id = syria.6
+	title = syria.6.t
+	desc = syria.6.d
+	picture = GFX_Yom_Kippur_Preparations
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SYR
+	}
+
+	option = {
+		name = syria.6.a
+		add_manpower= -89
+		create_wargoal= { 
+		type = annex_everything 
+		target = LAF
+		}
+	}
+}
+
+# Attack Succeeds
+country_event = {
+	id = syria.7
+	title = syria.7.t
+	desc = syria.7.d
+	picture = GFX_Yom_Kippur_Preparations
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SYR
+	}
+
+	option = {
+		name = syria.7.a
+		SYR = {
+		transfer_state = 799
+		}
+		add_manpower= -67
+	}
+}
+
+# Attack on Yom Kippur
+country_event = {
+	id = syria.8
+	title = syria.8.t
+	desc = syria.8.d
+	picture = GFX_Yom_Kippur_Preparations
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SYR
+		date <1973.9.26
+		has_global_flag = egypt_joins
+	}
+
+	option = {
+		name = syria.8.a
+		declare_war_on= { 
+		target = ISR 
+		type = annex_everything 
+		}
+		EGY = {
+		declare_war_on= { 
+		target = ISR 
+		type = annex_everything 
+			}
+		}
+		USA = {
+		diplomatic_relation = {
+			country = ISR
+			relation = guarantee
+			active = no
+			}
+		}
+	}	
+}
+
+# Yom Kippur War Defeated
+country_event = {
+	id = syria.9
+	title = syria.9.t
+	desc = syria.9.d
+	picture = GFX_Yom_Kippur_Preparations
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SYR
+		date <1973.10.15
+		has_global_flag = egypt_joins
+	}
+
+	option = {
+		name = syria.8.a
+		ISR = {
+		white_peace = SYR
+		white_peace = EGY
+		}
+		set_global_flag = yom_kippur_over
+		USA = {
+		diplomatic_relation = {
+			country = ISR
+			relation = guarantee
+			active = yes
+			}
+		}
+	}
+}
+
+# Attack on Yom Kippur (Egypt Refused)
+country_event = {
+	id = syria.10
+	title = syria.10.t
+	desc = syria.10.d
+	picture = GFX_Yom_Kippur_Preparations
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SYR
+		date <1973.9.26
+		has_global_flag = egypt_refused
+	}
+
+	option = {
+		name = syria.10.a
+		declare_war_on= { 
+		target = ISR 
+		type = annex_everything 
+		}
+		USA = {
+		diplomatic_relation = {
+			country = ISR
+			relation = guarantee
+			active = no
+			}
+		}
+	}	
+}
+
+# Yom Kippur War Defeated (egypt refused
+country_event = {
+	id = syria.11
+	title = syria.11.t
+	desc = syria.11.d
+	picture = GFX_Yom_Kippur_Preparations
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SYR
+		date <1973.10.15
+		has_global_flag = egypt_refused
+	}
+
+	option = {
+		name = syria.11.a
+		ISR = {
+		white_peace = SYR
+		}
+		set_global_flag = yom_kippur_over
+		USA = {
+		diplomatic_relation = {
+			country = ISR
+			relation = guarantee
+			active = yes
+			}
+		}
+	}
+}

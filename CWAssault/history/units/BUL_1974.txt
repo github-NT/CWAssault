@@ -1,0 +1,284 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Mekhanizirano Razdelenie"
+
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+   		medium_armor = { x = 0 y = 3 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+  		mechanized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 } 
+	}
+}
+division_template = {
+	name = "Tank Razdelenie"
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }			
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }	
+		mechanized = { x = 2 y = 2 }	
+		mechanized = { x = 2 y = 3 }	
+		motorized = { x = 3 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 } 
+	}
+}
+division_template = {
+	name = "Tankova Brigada" 	
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars
+	}
+}
+
+division_template = {
+	name = "Mekhanizirana Brigada" 	
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+	}
+}
+
+division_template = {
+	name = "Motorno Razdelenie" 	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+	}
+}
+
+division_template = {
+	name = "Granichna Brigada"
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+  		infantry = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+	}
+
+}
+
+division_template = {
+	name = "Artileriyska Brigada"
+
+
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		light_tank_destroyer_brigade = { x = 1 y = 0 }
+		light_tank_destroyer_brigade = { x = 1 y = 1 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		anti_air = { x = 0 y = 2 } 
+	}
+}
+
+division_template = {
+	name = "Vuzdushno Razdelenie" 	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 
+	}
+}
+
+
+division_template = {
+	name = "Otdelna Brigada Ot Spetsialni Sili" 	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Otdelna Morska Brigada" 	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Otdelna Morska Brigada" 	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 
+	}
+}
+units = {
+	division = {
+		name = "1st Tank Razdelenie"
+		location = 949
+		division_template = "Tank Razdelenie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "1a Mekhanizirano Razdelenie"
+		location = 893
+		division_template = "Mekhanizirano Razdelenie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2a Mekhanizirano Razdelenie"
+		location = 9818
+		division_template = "Mekhanizirano Razdelenie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "1a Granichna Brigada"
+		location = 9818
+		division_template = "Granichna Brigada"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "2a Granichna Brigada"
+		location = 6923
+		division_template = "Granichna Brigada"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3a Granichna Brigada"
+		location = 9783
+		division_template = "Granichna Brigada"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "4a Granichna Brigada"
+		location = 6967
+		division_template = "Granichna Brigada"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5a Granichna Brigada"
+		location = 6842
+		division_template = "Granichna Brigada"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "1a Artileriyska Brigada"
+		location = 6982
+		division_template = "Artileriyska Brigada"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "1a Otdelna Brigada Ot Spetsialni Sili"
+		location = 11754
+		division_template = "Otdelna Brigada Ot Spetsialni Sili"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}		
+
+}

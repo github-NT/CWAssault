@@ -1,0 +1,301 @@
+﻿capital = 277
+
+oob = "SAminors"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		coastal_defense_ships = 1
+	}
+}
+
+set_convoys = 45
+set_stability = 0.2
+set_war_support = 0.1
+
+1939.1.1 = {
+
+	set_global_flag = flag_mexico_cedillo_has_revolted
+	
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_refining2 = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+}
+
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1964.7.1"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 14
+    Socialism = 1
+    communism = 1
+    neutrality = 84
+}
+
+create_country_leader = {
+	name = "Luis Echeverria"
+	desc = "POLITICS_LAZARO_CARDENAS_DESC"
+	picture = "gfx/leaders/MEX/Luis Echeverría mex.dds"
+	expire = "1976.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = { 
+	name = "Efraín González Morfín"
+	desc = "POLITICS_ADOLFO_DE_LA_HUERTA_DESC"
+	picture = "gfx/leaders/MEX/Efraín González Morfín.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Arnoldo Martínez Verdugo"
+	desc = "POLITICS_HERNAN_LABORDE_DESC"
+	picture = "gfx/leaders/MEX/Arnoldo Martínez Verdugo.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+}
+
+create_country_leader = {
+	name = "Marcelino García Barragan"
+	desc = "POLITICS_HERNAN_LABORDE_DESC"
+	picture = "gfx/leaders/MEX/Marcelino García Barragan.dds"
+	expire = "1965.1.1"
+	ideology = Military
+}
+
+create_field_marshal = {
+	name = "Marcelino García Barragan"
+	id = 712
+	portrait_path = "gfx/leaders/MEX/Marcelino García Barragan.dds"
+	traits = { politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Heliodoro Charis"
+	id = 700
+	gfx = "GFX_portrait_mex_heliodoro_charis"
+	traits = { infantry_officer } # Veteran of many assaults
+	skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Luis Farell"
+	id = 701
+	gfx = "GFX_portrait_mex_luis_farell"
+	traits = { war_hero } # Personally piloted missions against rebels etc
+	skill = 3
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Gildardo Magaña"
+	id = 702
+	gfx = "GFX_portrait_mex_gildardo_magana"
+	traits = { media_personality } # Headed some political organisations like trade unions
+	skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Manuel Pérez Treviño"
+	id = 703
+	gfx = "GFX_portrait_mex_manuel_perez_trevino"
+	traits = { career_officer } # Pre-Revolutionary officer training
+	skill = 3
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Abelardo L. Rodríguez"
+	id = 704
+	gfx = "GFX_portrait_mex_abelardo_rodriguez"
+	traits = { politically_connected } # President prior to Cardenas
+	skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Manuel Ávila Camacho"
+	id = 705
+	gfx = "GFX_portrait_mex_avila_military"
+	traits = { politically_connected } # Future president
+	skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Othón P. Blanco Núñez de Cáceres"
+	id = 706
+	gfx = "GFX_portrait_mex_othon_blanco"
+	traits = { old_guard_navy }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Heriberto Jara Corona"
+	id = 707
+	gfx = "GFX_portrait_mex_heriberto_corona"
+	traits = { navy_media_personality }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+1976.1.1 = {
+	set_politics = {	
+	ruling_party = democratic
+		last_election = "1970.12.1"
+		election_frequency = 72
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        democratic = 60
+        Socialism = 40
+        communism = 1
+    }
+
+	create_country_leader = { #from 1940, but he's prettier so he gets to win early
+		name = "José López Portillo"
+		desc = "POLITICS_LAZARO_CARDENAS_DESC"
+		picture = "gfx/leaders/MEX/Jose Lopez Portillo.dds"
+		expire = "1982.1.1"
+		ideology = conservatism
+		traits = {
+			#
+		}
+	}
+}
+
+1982.1.1 = {
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1976.7.1"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_popularities = {
+    neutrality = 74
+    democratic = 16
+    communism = 4
+    Christianity = 5
+}
+create_country_leader = { 
+	name = "Miguel de la Madrid"
+	desc = "POLITICS_ADOLFO_DE_LA_HUERTA_DESC"
+	picture = "gfx/leaders/MEX/Miguel de la Madrid.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = { 
+	name = "Miguel de la Madrid"
+	desc = "POLITICS_ADOLFO_DE_LA_HUERTA_DESC"
+	picture = "gfx/leaders/MEX/Miguel de la Madrid.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+}

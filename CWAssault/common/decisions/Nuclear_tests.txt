@@ -1,0 +1,62 @@
+nuclear_program = {
+
+	conduct_test = {
+
+		available = {
+		has_tech = nukes
+		}
+		
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+
+		}
+		fire_only_once = no
+		complete_effect = {
+
+		}
+	}
+	
+	icbm_research = {
+
+		available = {
+		has_tech = rocket_artillery
+		}
+		
+		cost = 150
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+
+		}
+		fire_only_once = no
+		complete_effect = {
+
+		}
+	}
+	
+	nuclear_funding = {
+
+		available = {
+		can_research = atomic_research
+		}
+		
+		cost = 100
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+
+		}
+		fire_only_once = no
+		complete_effect = {
+
+		}
+	}
+}

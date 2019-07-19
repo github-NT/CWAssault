@@ -1,0 +1,37 @@
+
+state={
+	id=803
+	name="STATE_803"
+	manpower =2545076
+	
+	
+	state_category = large_city
+	
+	resources={
+		aluminium=7 # was: 10
+	}
+
+	history={
+		owner = AFG
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 3
+			arms_factory = 3
+			air_base = 2
+		}
+		
+		victory_points = {
+			13259 30
+		}
+		add_core_of = DRA
+		add_core_of = AFG
+		
+		1979.1.1 = {
+		owner = DRA
+		}
+	}
+
+	provinces={
+		13259
+	}
+}

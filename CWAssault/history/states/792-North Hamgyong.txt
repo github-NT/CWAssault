@@ -1,0 +1,30 @@
+
+state={
+	id=792
+	name="STATE_792"
+	manpower = 774200
+	state_category = town
+	resources={
+		steel=18 # was: 30
+		tungsten=28 # was: 52
+	}
+
+	history={
+		owner = DPR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		
+		victory_points = {
+			4052 30
+		}	
+
+		add_core_of = KOR
+		add_core_of = DPR
+	}
+
+	provinces={
+		6922 11878 3803 959 6822 3860 898 6944
+	}
+}

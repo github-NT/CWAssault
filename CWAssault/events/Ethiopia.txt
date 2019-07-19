@@ -1,0 +1,115 @@
+﻿###########################
+# Italian Events
+###########################
+
+add_namespace = ethiopia
+
+# Government Coup
+country_event = {
+	id = ethiopia.1
+	title = ethiopia.1.t
+	desc = ethiopia.1.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ethiopia.1.a
+		start_civil_war = { ideology = communism size = 0.5 }
+	}
+}
+
+# Haile Selassie Dies
+country_event = {
+	id = ethiopia.2
+	title = ethiopia.2.t
+	desc = ethiopia.2.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ethiopia.2.a
+	}
+}
+
+# Soviet Union Sends Aid
+country_event = {
+	id = ethiopia.3
+	title = ethiopia.3.t
+	desc = ethiopia.3.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ethiopia.3.a
+	}
+}
+
+# United States Aids Anti Communists
+country_event = {
+	id = ethiopia.4
+	title = ethiopia.4.t
+	desc = ethiopia.4.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ethiopia.4.a
+	}
+}
+
+# Somalia Funds Anti Government Groups
+country_event = {
+	id = ethiopia.5
+	title = ethiopia.5.t
+	desc = ethiopia.5.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ethiopia.5.a
+		add_opinion_modifier = { target = SOM modifier = somali_anti_gov_aid }
+	}
+}
+
+# Aman Mikael Is killed
+country_event = {
+	id = ethiopia.5
+	title = ethiopia.5.t
+	desc = ethiopia.5.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ethiopia.5.a
+	create_country_leader = {
+	name = "Tafari Benti" ###Pro Soviet###
+	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+	picture = "gfx/leaders/USA/jimmy carter.dds"
+	expire = "1979.8.9"
+	ideology = marxism
+	traits = {
+		
+	}
+	}
+}
+
+# Peace with Etrian Rebels
+country_event = {
+	id = ethiopia.6
+	title = ethiopia.6.t
+	desc = ethiopia.6.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ethiopia.6.a
+		add_opinion_modifier = { target = SOM modifier = somali_anti_gov_aid }
+	}
+}

@@ -1,0 +1,28 @@
+﻿###########################
+# Argentine Events
+###########################
+
+add_namespace = argentina
+
+# Falklands Are Argentine
+country_event = {
+	id = argentina.1
+	title = argentina.1.t
+	desc = argentina.1.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = no
+	trigger = {
+	has_government = Nationalism
+	tag = ARG
+	date >1982.6.14
+	NOT = { date <1982.6.14 }
+	}
+	fire_only_once = yes
+
+	option = {
+		name = argentina.1.a
+		news_event = { days = 1 id = news.335 }
+		add_state_claim = 299
+		}
+}

@@ -1,0 +1,14 @@
+damansky_island = {
+	icon = generic_formable_nations
+	
+	picture = GFX_Damansky_Conflict
+
+	allowed = {
+		always = yes
+	}
+	
+	#visible = {
+	#	NOT = { has_government = democratic }
+	#	has_idea_with_trait = democratic_reformer
+	#}
+}

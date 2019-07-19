@@ -1,0 +1,484 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Tankоvaya Diviziya"	
+
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+   		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+  		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 	
+		artillery = { x = 0 y = 1 } 
+		recon = { x = 0 y = 2 } 		
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+division_template = {
+	name = "Otd. Tankovaya Brigada"
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }	
+		medium_armor = { x = 0 y = 1 }	
+		mechanized = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 	
+		artillery = { x = 0 y = 1 } 
+	}
+}
+
+division_template = {
+	name = "Mekhanizirovannaya Pekhotnaya Diviziya"		# Motor Rifle Division
+											# Note: only represents Moscow Proletariat Division in 1936; after 1938-40, Motor Rifle Divisions had +1 mot regiment (3 bns) 
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		motorized_rocket_brigade = { x = 3 y = 0 }
+		motorized_rocket_brigade = { x = 3 y = 1 }
+		motorized_rocket_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 }  	
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Brigada PVO" 				# Represents regular mechanized corps (4 existed in 1935-38); 
+													# Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge 
+										# (2x M/L tank + 1x mot), and 2x mech bge (2x L tank + 1x mot)
+	regiments = {
+		light_sp_anti_air_brigade = { x = 0 y = 0 }
+		light_sp_anti_air_brigade = { x = 0 y = 1 }
+		light_sp_anti_air_brigade = { x = 0 y = 2 }	
+		light_sp_anti_air_brigade = { x = 1 y = 0 }
+		light_sp_anti_air_brigade = { x = 1 y = 1 }
+		light_sp_anti_air_brigade = { x = 1 y = 2 }		
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+		motorized = { x = 2 y = 2 }				
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 	
+	}
+}
+
+division_template = {
+	name = "Motostrelkovaya Diviziya" 	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 } 	
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Garnizonnaya Brigada" 	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 } 	
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Artillyeriyskaya brigada"
+
+
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		light_tank_destroyer_brigade = { x = 1 y = 0 }
+		light_tank_destroyer_brigade = { x = 1 y = 1 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		anti_air = { x = 0 y = 2 } 
+	}
+}
+
+division_template = {
+	name = "Vozdusno-Desantnaya Diviziya"
+
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		anti_air = { x = 0 y = 2 } 
+	}
+}
+
+division_template = {
+	name = "Otdelnaya Desantno-Shturmovaya Brigada"
+
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		anti_air = { x = 0 y = 2 } 
+	}
+}
+
+division_template = {
+	name = "Otdelnaya Brigada SpecNaza"
+
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		anti_air = { x = 0 y = 2 } 
+	}
+}
+
+division_template = {
+	name = "Gornostrelkovaya Brigada"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 0 y = 3 }	
+		mountaineers = { x = 0 y = 4 }	
+		mountaineers = { x = 1 y = 0 }	
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }	
+		mountaineers = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	 
+	}
+}
+
+units = {
+	division = {
+		name = "3ya gv. Tankovaja Diviziya"
+		location = 13278
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "6ya gv. Tankovaja Diviziya"
+		location = 13273
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8ya gv. Tankovaja Diviziya"
+		location = 13275
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11ya gv. Tankovaja Diviziya"
+		location = 13252
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "19ya gv. Tankovaja Diviziya"
+		location = 13250
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "28ya gv. Tankovaja Diviziya"
+		location = 13249
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "29ya gv. Tankovaja Diviziya"
+		location = 13240
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "34ya Tankovaja Diviziya"
+		location = 13242
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "37ya gv. Tankovaja Diviziya"
+		location = 13262
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "72y okr. Uchebnyy Centr"
+		location = 13261
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "193ya BHVT"
+		location = 13260
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "5356ya BHVT"
+		location = 13287
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "30ya gv. Motostrelkovaya Diviziya"
+		location = 13284
+		division_template = "Mekhanizirovannaya Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "50ya gv. Motostrelkovaya Diviziya"
+		location = 13283
+		division_template = "Mekhanizirovannaya Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "120ya gv. Motostrelkovaya Diviziya"
+		location = 13282
+		division_template = "Mekhanizirovannaya Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "103ya gv. Vozdusno-Desantnaya Diviziya"
+		location = 13300
+		division_template = "Vozdusno-Desantnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5ya otd. Brigada SpN"
+		location = 13299
+		division_template = "Otdelnaya Brigada SpecNaza"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "191ya Motorizovannaya Strelkovaya Diviziya"
+		location = 13278
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "231yaMotorizovannaya Strelkovaya Diviziya"
+		location = 13256
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "306ya Motorizovannaya Strelkovaya Diviziya"
+		location = 13258
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+
+	division = {
+		name = "36ya gv.Motorizovannaya Strelkovaya Diviziya"
+		location = 13259
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "52ya  Motorizovannaya Strelkovaya Diviziya"
+		location = 13259
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "103ya gv. Motorizovannaya Strelkovaya Diviziya"
+		location = 13259
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5ya Motorizovannaya Strelkovaya Diviziya"
+		location = 13259
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "36ya Otd. Tankovaya Brigada"
+		location = 13248
+		division_template = "Otd. Tankovaya Brigada"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "52ya  Otd. Tankovaya Brigada"
+		location = 13249
+		division_template = "Otd. Tankovaya Brigada"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "103ya Otd. Tankovaya Brigada"
+		location = 13242
+		division_template = "Otd. Tankovaya Brigada"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "22ya Artillyeriyskaya brigada"
+		location = 13244
+		division_template = "Artillyeriyskaya brigada"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+
+	division = {
+		name = "31ya Artillyeriyskaya brigada"
+		location = 13246
+		division_template = "Otd. Artillyeriyskaya brigada"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "47ya  Tankоvaya Diviziya"
+		location = 13286
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "20ya Tankоvaya Diviziya"
+		location = 13236
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "90ya Tankоvaya Diviziya"
+		location = 13237
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "211ya Tankоvaya Diviziya"
+		location = 13237
+		division_template = "Tankоvaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "306ya Mekhanizirovannaya Pekhotnaya Diviziya"
+		location = 13237
+		division_template = "Mekhanizirovannaya Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+
+	division = {
+		name = "38ya Mekhanizirovannaya Pekhotnaya Diviziya"
+		location = 13237
+		division_template = "Mekhanizirovannaya Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "152ya  Mekhanizirovannaya Pekhotnaya Diviziya"
+		location = 13237
+		division_template = "Mekhanizirovannaya Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "161ya Mekhanizirovannaya Pekhotnaya Diviziya"
+		location = 13237
+		division_template = "Mekhanizirovannaya Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+}

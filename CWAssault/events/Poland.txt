@@ -1,0 +1,131 @@
+﻿###########################
+# Polish Events
+###########################
+
+add_namespace = poland
+
+# 1989 Elections
+country_event = {
+	id = poland.1
+	title = poland.1.t
+	desc = poland.1.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	tag = POL
+	date >1989.6.8
+	}
+	
+	option = {
+		name = poland.1.a
+			hidden_effect = {
+				random_list = {
+                6 = { country_event = { id = poland.2 days = 2 }
+                    modifier = {
+                        add = 100
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = poland.3 days = 2 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }	
+            }
+		}
+	}
+
+}
+
+# Communists Win (historical)
+country_event = {
+	id = poland.2
+	title = poland.2.t
+	desc = poland.2.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	trigger = {
+	tag = POL
+	date >1989.6.8
+	}
+	
+	option = {
+		name = poland.2.a
+	set_politics = {	
+	ruling_party = communism
+	last_election = "1989.6.18"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    Liberalism = 5
+    neutrality = 16
+    Christianity = 35
+    communism = 37
+}
+	}
+}
+
+# Christian Democrats won (marginal victory)
+country_event = {
+	id = poland.3
+	title = poland.3.t
+	desc = poland.3.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	trigger = {
+	tag = POL
+	date >1989.6.8
+	}
+	
+	option = {
+		name = poland.3.a
+		news_event = { id = news.392 }
+	set_politics = {	
+	ruling_party = Christianity
+	last_election = "1989.6.18"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    Liberalism = 5
+    neutrality = 16
+    Christianity = 37
+    communism = 35
+}
+	}
+}
+
+# Communists Support Solidarity
+country_event = {
+	id = poland.4
+	title = poland.4.t
+	desc = poland.4.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	tag = POL
+	date >1989.11.20
+	}
+	
+	option = {
+		name = poland.4.a
+		set_politics = { ruling_party = Christianity elections_allowed = Yes }
+		add_popularity = { ideology = Christianity popularity = 0.2 }
+		news_event = { id = news.392 }
+		SOV = {
+		remove_from_faction = POL
+		end_puppet = POL
+		}
+	}
+
+}

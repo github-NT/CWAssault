@@ -1,0 +1,423 @@
+nato_membership = {
+join_nato = {
+#AUSTRIA
+		icon = generic_form_nation
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+		any_owned_state = { is_on_continent = europe }
+		is_in_faction = no
+		num_of_civilian_factories > 14
+		num_of_military_factories > 15
+		has_manpower > 80000
+		has_army_manpower = { size >149999 }
+		NOT = {
+		has_government = communism
+		has_government = Maoism
+		has_government = Juche
+		}
+		}
+
+		cost = 250
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		TAG = AUS
+		}
+
+		complete_effect = {
+		USA = {
+		country_event = { days = 1 id = nato.1 }
+		}
+		}
+	}
+	
+	join_nato2 = {
+#SPAIN
+		icon = generic_form_nation
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+		any_owned_state = { is_on_continent = europe }
+		is_in_faction = no
+		num_of_civilian_factories > 14
+		num_of_military_factories > 15
+		has_manpower > 80000
+		has_army_manpower = { size > 149999 }
+		NOT = {
+		has_government = communism
+		has_government = Maoism
+		has_government = Juche
+		}
+		}
+
+		cost = 250
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		TAG = SPR
+		}
+
+		complete_effect = {
+		USA = {
+		country_event = { days = 1 id = nato.2 }
+		}
+		}
+	}
+	
+	join_nato3 = {
+#Sweden
+		icon = generic_form_nation
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+		any_owned_state = { is_on_continent = europe }
+		is_in_faction = no
+		num_of_civilian_factories > 14
+		num_of_military_factories > 15
+		has_manpower > 80000
+		has_army_manpower = { size > 149999 }
+		NOT = {
+		has_government = communism
+		has_government = Maoism
+		has_government = Juche
+		}
+		}
+
+		cost = 250
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		TAG = SWE
+		}
+
+		complete_effect = {
+		USA = {
+		country_event = { days = 1 id = nato.3 }
+		}
+		}
+	}
+	
+	join_nato4 = {
+#FINLAND
+		icon = generic_form_nation
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+		any_owned_state = { is_on_continent = europe }
+		is_in_faction = no
+		num_of_civilian_factories > 14
+		num_of_military_factories > 15
+		has_manpower > 80000
+		has_army_manpower = { size > 149999 }
+		NOT = {
+		has_government = communism
+		has_government = Maoism
+		has_government = Juche
+		}
+		}
+
+		cost = 250
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		TAG = FIN
+		}
+
+		complete_effect = {
+		USA = {
+		country_event = { days = 1 id = nato.4 }
+		}
+		}
+	}
+	
+	join_nato5 = {
+#CZECHOSLOVAKIA
+		icon = generic_form_nation
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+		any_owned_state = { is_on_continent = europe }
+		is_in_faction = no
+		num_of_civilian_factories > 14
+		num_of_military_factories > 15
+		has_manpower > 80000
+		has_army_manpower = { size > 149999 }
+		NOT = {
+		has_government = communism
+		has_government = Maoism
+		has_government = Juche
+		}
+		}
+
+		cost = 250
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		TAG = CZE
+		}
+
+		complete_effect = {
+		USA = {
+		country_event = { days = 1 id = nato.5 }
+		}
+		}
+	}
+	
+		join_nato6 = {
+#POLAND
+		icon = generic_form_nation
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+		any_owned_state = { is_on_continent = europe }
+		is_in_faction = no
+		num_of_civilian_factories > 14
+		num_of_military_factories > 15
+		has_manpower > 80000
+		has_army_manpower = { size > 149999 }
+		NOT = {
+		has_government = communism
+		has_government = Maoism
+		has_government = Juche
+		}
+		}
+
+		cost = 250
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		TAG = POL
+		}
+
+		complete_effect = {
+		USA = {
+		country_event = { days = 1 id = nato.6 }
+		}
+		}
+	}
+	
+		join_nato7 = {
+#SLOVAKIA
+		icon = generic_form_nation
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+		any_owned_state = { is_on_continent = europe }
+		is_in_faction = no
+		num_of_civilian_factories > 14
+		num_of_military_factories > 15
+		has_manpower > 80000
+		has_army_manpower = { size > 149999 }
+		NOT = {
+		has_government = communism
+		has_government = Maoism
+		has_government = Juche
+		}
+		}
+
+		cost = 250
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		TAG = SLO
+		}
+
+		complete_effect = {
+		USA = {
+		country_event = { days = 1 id = political.36 }
+		}
+		}
+	}
+	
+	joint_exercise_with_france = {
+
+		icon = GFX_decision_generic_army_support
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+		has_army_manpower = { size > 119999 }
+		NOT = {
+		has_government = communism
+		has_government = Maoism
+		has_government = Juche
+		TAG = FRA
+		}
+		is_in_faction_with = USA
+		}
+
+		days_remove = 30
+		cost = 40
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		any_owned_state = { is_on_continent = europe }
+		}
+
+		complete_effect = {
+		army_experience = 10
+		air_experience = 8
+		FRA = {
+		army_experience = 10
+		air_experience = 10
+		}
+		}
+	}
+	
+	joint_exercise_with_germany = {
+
+		icon = GFX_decision_generic_army_support
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+		has_army_manpower = { size > 129999 }
+		NOT = {
+		has_government = communism
+		has_government = Maoism
+		has_government = Juche
+		TAG = WGR
+		}
+		is_in_faction_with = USA
+		}
+
+		days_remove = 60
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		any_owned_state = { is_on_continent = europe }
+		}
+
+		complete_effect = {
+		army_experience = 10
+		air_experience = 10
+		WGR = {
+		army_experience = 10
+		air_experience = 10
+		}
+		}
+	}
+	
+	joint_exercise_with_england = {
+
+		icon = GFX_decision_generic_army_support
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+		has_army_manpower = { size > 159999 }
+		NOT = {
+		has_government = communism
+		has_government = Maoism
+		has_government = Juche
+		TAG = ENG
+		}
+		is_in_faction_with = USA
+		}
+
+		days_remove = 90
+		cost = 100
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		any_owned_state = { is_on_continent = europe }
+		}
+
+		complete_effect = {
+		army_experience = 15
+		air_experience = 15
+		ENG = {
+		army_experience = 20
+		air_experience = 30
+		}
+		}
+	}
+	
+	joint_exercise_with_united_states = {
+
+		icon = GFX_decision_generic_army_support
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+		has_army_manpower = { size > 259999 }
+		NOT = {
+		has_government = communism
+		has_government = Maoism
+		has_government = Juche
+		TAG = USA
+		}
+		is_in_faction_with = USA
+		}
+
+		days_remove = 90
+		cost = 250
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		any_owned_state = { is_on_continent = europe }
+		}
+
+		complete_effect = {
+		army_experience = 30
+		air_experience = 30
+		USA = {
+		army_experience = 50
+		air_experience = 50
+		}
+		}
+	}
+}

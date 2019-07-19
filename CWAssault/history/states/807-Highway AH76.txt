@@ -1,0 +1,31 @@
+
+state={
+	id=807
+	name="STATE_807"
+	manpower =25076
+	
+	
+	state_category = city
+	
+	resources={
+		steel=7 # was: 10
+	}
+
+	history={
+		owner = AFG
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 2
+		}
+		add_core_of = DRA
+		
+		1982.1.1 = {
+		owner = SVT
+		add_core_of = SVT
+		}
+	}
+
+	provinces={
+		13287 13286 13285 13284 13283 13282 13281 13280 13279 13278 13277 13276 13275 13274 13273 13272
+	}
+}

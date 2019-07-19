@@ -1,0 +1,2931 @@
+focus_tree = {
+id = 'germanfocus'
+country = {
+factor=0
+modifier = {
+add = 10
+tag = WGR
+}
+}
+default = no
+#Custom focuses start here
+#Focus for German Economy 
+		focus = { 
+		id = germaneconomy 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =1 
+ y =0 
+ mutually_exclusive = { } 
+ prerequisite = { } 
+ cost = 10  
+  available_if_capitulated = yes 
+completion_reward = {
+army_experience = 25
+add_tech_bonus = {
+name = electronics_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+category = electronics
+}
+}  
+ }#Focus for Opening Stage for Political Discourse 
+		focus = { 
+		id = openingstageforpoliticaldiscourse 
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties 
+		ai_will_do = { factor = 1} 
+ x =17 
+ y =0 
+ mutually_exclusive = { } 
+ prerequisite = { } 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_political_power = 150
+}  
+ }#Focus for Fund the Bundeswehr 
+		focus = { 
+		id = fundthebundeswehr 
+		icon = GFX_goal_rhineland 
+		ai_will_do = { factor = 1} 
+ x =33 
+ y =0 
+ mutually_exclusive = { } 
+ prerequisite = { } 
+ cost = 5  
+  available_if_capitulated = yes 
+completion_reward = {
+army_experience = 35
+}   
+ }#Focus for USA Trade 
+		focus = { 
+		id = usatrade 
+		icon = GFX_goal_generic_occypy_states_coastal 
+		ai_will_do = { factor = 1} 
+ x =41 
+ y =0 
+ mutually_exclusive = { focus = eastblocktrade} 
+ prerequisite = { } 
+ cost = 5  
+  available_if_capitulated = yes
+completion_reward = {
+					USA = {
+							army_experience = 5
+						}
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 600
+							producer = USA
+						}
+}   
+ }#Focus for East Block Trade 
+		focus = { 
+		id = eastblocktrade 
+		icon = GFX_focus_generic_soviet_politics 
+		ai_will_do = { factor = 1} 
+ x =44 
+ y =0 
+ mutually_exclusive = { focus = usatrade} 
+ prerequisite = { } 
+ cost = 5  
+  available_if_capitulated = yes
+available = {
+is_subject = no
+has_government = communism
+}  
+ }#Focus for EU Trade 
+		focus = { 
+		id = eutrade 
+		icon = GFX_goal_generic_intelligence_exchange 
+		ai_will_do = { factor = 1} 
+ x =48 
+ y =0 
+ mutually_exclusive = { focus = eutrades} 
+ prerequisite = { } 
+ cost = 5 
+  available_if_capitulated = yes  
+ }#Focus for EU Trades 
+		focus = { 
+		id = eutrades 
+		icon = GFX_goal_generic_trade 
+		ai_will_do = { factor = 1} 
+ x =52 
+ y =0 
+ mutually_exclusive = { focus = eutrade} 
+ prerequisite = { } 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Civilian Industry 
+		focus = { 
+		id = civilianindustry 
+		icon = GFX_goal_generic_construct_civ_factory 
+		ai_will_do = { factor = 1} 
+ x =0 
+ y =1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = germaneconomy} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+							random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = industrial_complex
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+						
+}  
+ }#Focus for Military Industry 
+		focus = { 
+		id = militaryindustry 
+		icon = GFX_goal_generic_construct_mil_factory 
+		ai_will_do = { factor = 1} 
+ x =2 
+ y =1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = germaneconomy} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+							random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = arms_factory
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+						
+} 
+ }#Focus for Improve German Infrastructure 
+		focus = { 
+		id = improvegermaninfrastructure 
+		icon = GFX_goal_generic_construct_infrastructure 
+		ai_will_do = { factor = 1} 
+ x =5 
+ y =1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = germaneconomy} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				} 
+ }#Focus for Strengthen Democracy 
+		focus = { 
+		id = strengthendemocracy 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =10 
+ y =1 
+ mutually_exclusive = { focus = socialism} 
+  mutually_exclusive = { focus =lookbacktotheoldways} 
+ prerequisite = { focus = openingstageforpoliticaldiscourse} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_popularity = { ideology = democratic popularity = 0.1 }
+add_popularity = { ideology = Christianity popularity = 0.1 }
+add_popularity = { ideology = Liberalism popularity = 0.1 }
+}  
+ }#Focus for Socialism 
+		focus = { 
+		id = socialism 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =16 
+ y =1 
+ mutually_exclusive = { focus = strengthendemocracy} 
+  mutually_exclusive = { focus =lookbacktotheoldways} 
+ prerequisite = { focus = openingstageforpoliticaldiscourse} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_timed_idea = { idea = Marxist_Rhetoric days = 150 }
+}  
+ }#Focus for Look Back to the Old Ways 
+		focus = { 
+		id = lookbacktotheoldways 
+		icon = GFX_goal_generic_support_fascism 
+		ai_will_do = { factor = 1} 
+ x =23 
+ y =1 
+ mutually_exclusive = { focus = socialism} 
+  mutually_exclusive = { focus =strengthendemocracy} 
+ prerequisite = { focus = openingstageforpoliticaldiscourse} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_timed_idea = { idea = Nationalist_Nostalgia days = 150 }
+}    
+ }#Focus for Heer Funding 
+		focus = { 
+		id = heerfunding 
+		icon = GFX_goal_generic_axis_build_infantry 
+		ai_will_do = { factor = 1} 
+ x =29 
+ y =1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = fundthebundeswehr} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 0.5
+uses = 1
+category = land_doctrine
+}
+}    
+ }#Focus for Luftwaffe Funding 
+		focus = { 
+		id = luftwaffefunding 
+		icon = GFX_goal_generic_build_airforce 
+		ai_will_do = { factor = 1} 
+ x =33 
+ y =1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = fundthebundeswehr} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_tech_bonus = {
+name = air_doc_bonus
+bonus = 0.5
+uses = 1
+category = air_doctrine
+}
+}  
+ }#Focus for Bundesmarine Funding 
+		focus = { 
+		id = bundesmarinefunding 
+		icon = GFX_goal_generic_build_nay 
+		ai_will_do = { factor = 1} 
+ x =37 
+ y =1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = fundthebundeswehr} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}  
+ }#Focus for M16 Rifle 
+		focus = { 
+		id = m16rifle 
+		icon = GFX_goal_generic_air_production 
+		ai_will_do = { factor = 1} 
+ x =41 
+ y =1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = usatrade} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 50
+					USA = {
+							army_experience = 5
+						}
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 1600
+							producer = USA
+						}
+				}  
+ }#Focus for Polish T-54 
+		focus = { 
+		id = polisht54 
+		icon = GFX_focus_generic_polish_deal 
+		ai_will_do = { factor = 1} 
+ x =43 
+ y =1 
+ mutually_exclusive = { focus = russianweapons} 
+ prerequisite = { focus = eastblocktrade} 
+ cost = 10  
+  available_if_capitulated = yes
+  			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = medium_tank_equipment_1
+							amount = 100
+							producer = SOV
+						}
+					create_equipment_variant = {
+							name = "T-54"
+							type = medium_tank_equipment_1
+							upgrades = {
+									tank_reliability_upgrade = 2
+									tank_engine_upgrade = 1
+									tank_armor_upgrade = 1
+									tank_gun_upgrade = 1
+								}
+						}
+}						
+ }#Focus for Russian Weapons 
+		focus = { 
+		id = russianweapons 
+		icon = GFX_focus_generic_soviet_politics 
+		ai_will_do = { factor = 1} 
+ x =45 
+ y =1 
+ mutually_exclusive = { focus = polisht54} 
+ prerequisite = { focus = eastblocktrade} 
+ cost = 10  
+  available_if_capitulated = yes
+    			completion_reward = {
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 6000
+producer = SOV
+}
+}  
+ }#Focus for UK Tanks 
+		focus = { 
+		id = uktanks 
+		icon = GFX_goal_generic_army_tanks 
+		ai_will_do = { factor = 1} 
+ x =47 
+ y =1 
+ mutually_exclusive = { focus = fnfal} 
+ prerequisite = { focus = eutrade} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+ENG = {
+army_experience = 5
+}
+add_equipment_to_stockpile = {
+type = medium_tank_equipment_1
+amount = 100
+producer = ENG
+}
+}  
+ }#Focus for FN FAL 
+		focus = { 
+		id = fnfal 
+		icon = GFX_goal_generic_military_sphere 
+		ai_will_do = { factor = 1} 
+ x =49 
+ y =1 
+ mutually_exclusive = { focus = uktanks} 
+ prerequisite = { focus = eutrade} 
+ cost = 10  
+  available_if_capitulated = yes
+		completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 600
+							producer = BEL
+						}
+				}  
+ }#Focus for China Post WW2 Tanks 
+		focus = { 
+		id = chinapostww2tanks 
+		icon = GFX_goal_generic_army_tanks 
+		ai_will_do = { factor = 1} 
+ x =51 
+ y =1 
+ mutually_exclusive = { focus = infantryweapons} 
+ prerequisite = { focus = eutrades} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+PRC = {
+army_experience = 5
+}
+add_equipment_to_stockpile = {
+type = medium_tank_equipment_1
+amount = 100
+producer = PRC
+}
+}  
+ }#Focus for Infantry Weapons 
+		focus = { 
+		id = infantryweapons 
+		icon = GFX_goal_generic_military_sphere 
+		ai_will_do = { factor = 1} 
+ x =53 
+ y =1 
+ mutually_exclusive = { focus = chinapostww2tanks} 
+ prerequisite = { focus = eutrades} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 50
+					YUG = {
+							army_experience = 5
+						}
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 600
+							producer = YUG
+						}
+				}  
+ }#Focus for Improved Civilian Industry 
+		focus = { 
+		id = improvedcivilianindustry 
+		icon = GFX_goal_generic_construct_civ_factory 
+		ai_will_do = { factor = 1} 
+ x =0 
+ y =2 
+ mutually_exclusive = { focus = improvedmilitaryindustry} 
+ prerequisite = { focus = civilianindustry} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+										random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = industrial_complex
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+						
+}			
+ }#Focus for Improved Military Industry 
+		focus = { 
+		id = improvedmilitaryindustry 
+		icon = GFX_goal_generic_construct_mil_factory 
+		ai_will_do = { factor = 1} 
+ x =2 
+ y =2 
+ mutually_exclusive = { focus = improvedcivilianindustry} 
+ prerequisite = { focus = militaryindustry} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+										random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = arms_factory
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+													random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = arms_factory
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+						
+			
+}			
+ }#Focus for Improved Roads 
+		focus = { 
+		id = improvedroads 
+		icon = GFX_goal_generic_construct_infrastructure 
+		ai_will_do = { factor = 1} 
+ x =4 
+ y =2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = improvegermaninfrastructure} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}  
+ }#Focus for Defense Against Communist Invasion 
+		focus = { 
+		id = defenseagainstcommunistinvasion 
+		icon = GFX_goal_generic_fortify_city 
+		ai_will_do = { factor = 1} 
+ x =6 
+ y =2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = improvegermaninfrastructure} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+		58 = {
+			add_building_construction = {
+				type = bunker
+				province = 9320
+				level = 2
+				instant_build = yes
+			}
+		}
+		59 = {
+			add_building_construction = {
+				type = bunker
+				province = 6298
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9264
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9238
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9375
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11468
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11402
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 6513
+				level = 2
+				instant_build = yes
+			}
+					55 = {
+			add_building_construction = {
+				type = bunker
+				province = 564
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9524
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11445
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 13116
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 6421
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3474
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11404
+				level = 2
+				instant_build = yes
+			}
+		}
+}
+}  
+ }#Focus for Strengthen Ties With NATO 
+		focus = { 
+		id = strengthentieswithnato 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =10 
+ y =2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = strengthendemocracy} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Teachings of Marx 
+		focus = { 
+		id = teachingsofmarx 
+		icon = GFX_focus_generic_soviet_politics 
+		ai_will_do = { factor = 1} 
+ x =16 
+ y =2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = socialism} 
+ cost = 10  
+  available_if_capitulated = yes 
+completion_reward = {
+add_ideas = Marxist_Teachings 
+} 
+ }#Focus for the Kaisers Legacy 
+		focus = { 
+		id = thekaiserslegacy 
+		icon = GFX_focus_ger_revive_kaiserreich 
+		ai_will_do = { factor = 1} 
+ x =22 
+ y =2 
+ mutually_exclusive = { focus = liftfascistban} 
+ prerequisite = { focus = lookbacktotheoldways} 
+ cost = 10  
+  available_if_capitulated = yes 
+completion_reward = {
+remove_ideas = De-Nazification 
+}   
+ }#Focus for Lift Fascist Ban 
+		focus = { 
+		id = liftfascistban 
+		icon = GFX_focus_ger_reichskommisariats 
+		ai_will_do = { factor = 1} 
+ x =24 
+ y =2 
+ mutually_exclusive = { focus = thekaiserslegacy} 
+ prerequisite = { focus = lookbacktotheoldways} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_political_power = 250
+remove_ideas = De-Nazification
+news_event = { days = 1 id = news.340 } 
+}  
+ }#Focus for Small Arms Development 
+		focus = { 
+		id = smallarmsdevelopment 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =28 
+ y =2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = heerfunding} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_tech_bonus = {
+name = infantry_weapons_bonus
+bonus = 0.5
+uses = 1
+category = infantry_weapons
+category = artillery
+}
+}  
+ }#Focus for Troop Transportation 
+		focus = { 
+		id = trooptransportation 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =30 
+ y =2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = heerfunding} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							bonus = 0.50
+							technology = motorised_infantry
+						}
+				}  
+ }#Focus for Air Superiority 
+		focus = { 
+		id = airsuperiority 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =32 
+ y =2 
+ mutually_exclusive = { focus = aerialbombardment} 
+ prerequisite = { focus = luftwaffefunding} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 0.5
+							uses = 2
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}  
+ }#Focus for Aerial Bombardment 
+		focus = { 
+		id = aerialbombardment 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =34 
+ y =2 
+ mutually_exclusive = { focus = airsuperiority} 
+ prerequisite = { focus = luftwaffefunding} 
+ cost = 10  
+  available_if_capitulated = yes 
+			completion_reward = {
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 0.5
+							uses = 2
+							technology = strategic_bomber1
+							technology = strategic_bomber2
+							technology = strategic_bomber3
+							category = tactical_bomber
+						}
+				}  
+ }#Focus for Destroyer Development 
+		focus = { 
+		id = destroyerdevelopment 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =36 
+ y =2 
+ mutually_exclusive = { focus = cruiserdevelopment} 
+ prerequisite = { focus = bundesmarinefunding} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 0.5
+							ahead_reduction = 1
+							uses = 1
+							technology = early_destroyer
+							technology = basic_destroyer
+							technology = improved_destroyer
+							technology = advanced_destroyer
+						}
+				}  
+ }#Focus for Cruiser Development 
+		focus = { 
+		id = cruiserdevelopment 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =38 
+ y =2 
+ mutually_exclusive = { focus = destroyerdevelopment} 
+ prerequisite = { focus = bundesmarinefunding} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 0.5
+							ahead_reduction = 1
+							uses = 1
+							technology = improved_light_cruiser
+							technology = advanced_light_cruiser
+							technology = improved_heavy_cruiser
+							technology = advanced_heavy_cruiser
+						}
+				}  
+ }#Focus for M48a3 Tank Variant 
+		focus = { 
+		id = m48a3tankvariant 
+		icon = GFX_goal_generic_army_tanks 
+		ai_will_do = { factor = 1} 
+ x =41 
+ y =2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = m16rifle} 
+ cost = 10  
+  available_if_capitulated = yes
+  			completion_reward = {
+					USA = {
+							army_experience = 10
+						}
+					add_equipment_to_stockpile = {
+							type = medium_tank_equipment
+							amount = 100
+							producer = USA
+						}
+					create_equipment_variant = {
+							name = "M48A3"
+							type = medium_tank_equipment
+							upgrades = {
+									tank_reliability_upgrade = 2
+									tank_engine_upgrade = 1
+									tank_armor_upgrade = 1
+									tank_gun_upgrade = 1
+								}
+						}
+				}
+ }#Focus for Czech T-54 Variant 
+		focus = { 
+		id = czecht54variant 
+		icon = GFX_goal_generic_army_motorized 
+		ai_will_do = { factor = 1} 
+ x =43 
+ y =2 
+ mutually_exclusive = { focus = russiant54tankvariant} 
+ prerequisite = { focus = polisht54} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+CZE = {
+army_experience = 10
+}
+add_equipment_to_stockpile = {
+type = medium_tank_equipment
+amount = 100
+producer = CZE
+}
+create_equipment_variant = {
+name = "T-54AM"
+type = medium_tank_equipment
+upgrades = {
+tank_reliability_upgrade = 2
+tank_engine_upgrade = 1
+tank_armor_upgrade = 1
+tank_gun_upgrade = 1
+}
+}
+}						
+ }#Focus for Russian T-54 Tank Variant 
+		focus = { 
+		id = russiant54tankvariant 
+		icon = GFX_goal_generic_army_tanks 
+		ai_will_do = { factor = 1} 
+ x =45 
+ y =2 
+ mutually_exclusive = { focus = czecht54variant} 
+ prerequisite = { focus = russianweapons} 
+ cost = 10  
+  available_if_capitulated = yes
+      			completion_reward = {
+					SOV = {
+							army_experience = 10
+						}
+					add_equipment_to_stockpile = {
+							type = medium_tank_equipment
+							amount = 100
+							producer = SOV
+						}
+					create_equipment_variant = {
+							name = "T-54"
+							type = medium_tank_equipment
+							upgrades = {
+									tank_reliability_upgrade = 2
+									tank_engine_upgrade = 1
+									tank_armor_upgrade = 1
+									tank_gun_upgrade = 1
+								}
+						}
+}	
+ }#Focus for Army Motorized 
+		focus = { 
+		id = armymotorized 
+		icon = GFX_goal_generic_army_motorized 
+		ai_will_do = { factor = 1} 
+ x =47 
+ y =2 
+ mutually_exclusive = { focus = frenchamx32variant} 
+ prerequisite = { focus = uktanks} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					ENG = {
+							army_experience = 10
+						}
+					WGR = {
+							army_experience = 5
+						}
+					add_equipment_to_stockpile = {
+							type = medium_tank_equipment
+							amount = 20
+							producer = ENG
+						}
+					add_equipment_to_stockpile = {
+							type = motorized_equipment_1
+							amount = 150
+							producer = WGR
+						}
+					create_equipment_variant = {
+							name = "Centurion Mk 6"
+							type = medium_tank_equipment
+							upgrades = {
+									tank_reliability_upgrade = 2
+									tank_engine_upgrade = 1
+									tank_armor_upgrade = 1
+									tank_gun_upgrade = 2
+								}
+						}
+				}  
+ }#Focus for French AMX-32 Variant 
+		focus = { 
+		id = frenchamx32variant 
+		icon = GFX_goal_generic_cavalry 
+		ai_will_do = { factor = 1} 
+ x =49 
+ y =2 
+ mutually_exclusive = { focus = armymotorized} 
+ prerequisite = { focus = fnfal} 
+ cost = 10  
+  available_if_capitulated = yes
+      			completion_reward = {
+					FRA = {
+							army_experience = 10
+						}
+					add_equipment_to_stockpile = {
+							type = medium_tank_equipment
+							amount = 100
+							producer = FRA
+						}
+					create_equipment_variant = {
+							name = "AMX-32"
+							type = medium_tank_equipment
+							upgrades = {
+									tank_reliability_upgrade = 2
+									tank_engine_upgrade = 1
+									tank_armor_upgrade = 1
+									tank_gun_upgrade = 1
+								}
+						}
+}  
+ }#Focus for China Trucks 
+		focus = { 
+		id = chinatrucks 
+		icon = GFX_goal_generic_army_motorized 
+		ai_will_do = { factor = 1} 
+ x =51 
+ y =2 
+ mutually_exclusive = { focus = yugoslavianmig21variant} 
+ prerequisite = { focus = chinapostww2tanks} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					PRC = {
+							army_experience = 10
+						}
+					add_equipment_to_stockpile = {
+							type = medium_tank_equipment
+							amount = 20
+							producer = PRC
+						}
+					add_equipment_to_stockpile = {
+							type = motorized_equipment_1
+							amount = 2000
+							producer = PRC
+						}
+}						
+ }#Focus for Yugoslavian MiG-21 Variant 
+		focus = { 
+		id = yugoslavianmig21variant 
+		icon = GFX_goal_generic_build_airforce 
+		ai_will_do = { factor = 1} 
+ x =53 
+ y =2 
+ mutually_exclusive = { focus = chinatrucks} 
+ prerequisite = { focus = infantryweapons} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Improved Civilian Industry II 
+		focus = { 
+		id = improvedcivilianindustryii 
+		icon = GFX_goal_generic_construct_civ_factory 
+		ai_will_do = { factor = 1} 
+ x =0 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = improvedcivilianindustry} 
+ cost = 10  
+  available_if_capitulated = yes
+  			completion_reward = {
+							random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = industrial_complex
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+							random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = industrial_complex
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+	}
+						  
+ }#Focus for Improved Military Industry II 
+		focus = { 
+		id = improvedmilitaryindustryii 
+		icon = GFX_goal_generic_construct_mil_factory 
+		ai_will_do = { factor = 1} 
+ x =2 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = improvedmilitaryindustry} 
+ cost = 10  
+  available_if_capitulated = yes
+  			completion_reward = {
+							random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = arms_factory
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+							random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = arms_factory
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+						
+						
+	}   
+ }#Focus for Expanded Highways 
+		focus = { 
+		id = expandedhighways 
+		icon = GFX_goal_generic_construct_infrastructure 
+		ai_will_do = { factor = 1} 
+ x =4 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = improvedroads} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+											random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+											random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}   
+ }#Focus for Czechoslovak Border Defences 
+		focus = { 
+		id = czechoslovakborderdefences 
+		icon = GFX_goal_generic_fortify_city 
+		ai_will_do = { factor = 1} 
+ x =6 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = defenseagainstcommunistinvasion} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+		53 = {
+			add_building_construction = {
+				type = bunker
+				province = 586
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3571
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11497
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 532
+				level = 2
+				instant_build = yes
+			}
+		}
+		54 = {
+			add_building_construction = {
+				type = bunker
+				province = 11404
+				level = 2
+				instant_build = yes
+			}
+		}
+}			
+ }#Focus for Follow By Their Example 
+		focus = { 
+		id = followbytheirexample 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =9 
+ y =3 
+ mutually_exclusive = { focus = achristiandemocracy} 
+ prerequisite = { focus = strengthentieswithnato} 
+ cost = 10  
+  available_if_capitulated = yes 
+			completion_reward = {
+					add_timed_idea = {
+							idea = deterrence
+							days = 910
+						}
+					set_rule = {
+							can_send_volunteers = yes
+						}
+				}  
+ }#Focus for A Christian Democracy 
+		focus = { 
+		id = achristiandemocracy 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =11 
+ y =3 
+ mutually_exclusive = { focus = followbytheirexample} 
+ prerequisite = { focus = strengthentieswithnato} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Contempt for the Proletariat 
+		focus = { 
+		id = contemptfortheproletariat 
+		icon = GFX_focus_prc_agrarian_socialism 
+		ai_will_do = { factor = 1} 
+ x =15 
+ y =3 
+ mutually_exclusive = { focus = lessradicalapproach} 
+ prerequisite = { focus = teachingsofmarx} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_timed_idea = {
+							idea = internationalism
+							days = 750
+						}
+				}  
+ }#Focus for Less Radical Approach 
+		focus = { 
+		id = lessradicalapproach 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =17 
+ y =3 
+ mutually_exclusive = { focus = contemptfortheproletariat} 
+ prerequisite = { focus = teachingsofmarx} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Prussian Heritage 
+		focus = { 
+		id = prussianheritage 
+		icon = GFX_focus_ger_accept_british_naval_dominance 
+		ai_will_do = { factor = 1} 
+ x =22 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = thekaiserslegacy} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_ideas = Prussian_Heritage
+}    
+ }#Focus for NSDAP Reforms 
+		focus = { 
+		id = nsdapreforms 
+		icon = GFX_goal_generic_support_fascism 
+		ai_will_do = { factor = 1} 
+ x =24 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = liftfascistban} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_ideas = Fascism_Reborn
+}  
+ }#Focus for Small Arms Development II 
+		focus = { 
+		id = smallarmsdevelopmentii 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =28 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = smallarmsdevelopment} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_tech_bonus = {
+name = infantry_weapons_bonus
+bonus = 0.5
+uses = 2
+category = infantry_weapons
+category = artillery
+}
+}  
+ }#Focus for Mechanized Infantry 
+		focus = { 
+		id = mechanizedinfantry 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =30 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = trooptransportation} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 0.75
+							uses = 1
+							category = motorized_equipment
+						}
+				}  
+ }#Focus for Close Air Support 
+		focus = { 
+		id = closeairsupport 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =32 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = airsuperiority} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 0.5
+							uses = 2
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}  
+ }#Focus for Naval Bombers 
+		focus = { 
+		id = navalbombers 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =34 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = aerialbombardment} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = nav_bomber_bonus
+							bonus = 0.5
+							ahead_reduction = 1
+							uses = 1
+							category = naval_bomber
+						}
+				}  
+ }#Focus for Submarine Development 
+		focus = { 
+		id = submarinedevelopment 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =36 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = destroyerdevelopment} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 0.5
+							ahead_reduction = 1
+							uses = 1
+							technology = early_submarine
+							technology = basic_submarine
+							technology = improved_submarine
+							technology = advanced_submarine
+						}
+				}  
+ }#Focus for Capital Ships 
+		focus = { 
+		id = capitalships 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =38 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = cruiserdevelopment} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 0.5
+							ahead_reduction = 1
+							uses = 1
+							technology = basic_battlecruiser
+							technology = basic_battleship
+							technology = improved_battleship
+							technology = advanced_battleship
+							technology = heavy_battleship
+							technology = heavy_battleship2
+							technology = early_carrier
+							technology = basic_carrier
+							technology = improved_carrier
+							technology = advanced_carrier
+						}
+				}  
+ }#Focus for US Transfer 
+		focus = { 
+		id = ustransfer 
+		icon = GFX_focus_generic_license_production 
+		ai_will_do = { factor = 1} 
+ x =41 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = m48a3tankvariant} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					USA = {
+							army_experience = 10
+							air_experience = 10
+						}
+					add_equipment_to_stockpile = {
+							type = fighter_equipment_3
+							amount = 5
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = light_tank_equipment_1
+							amount = 200
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = medium_tank_equipment_1
+							amount = 200
+							producer = USA
+						}
+				}  
+ }#Focus for Czech MiG-17 Variant 
+		focus = { 
+		id = czechmig17variant 
+		icon = GFX_goal_generic_army_doctrines 
+		ai_will_do = { factor = 1} 
+ x =43 
+ y =3 
+ mutually_exclusive = { focus = russianweapons2} 
+ prerequisite = { focus = czecht54variant} 
+ cost = 10  
+  available_if_capitulated = yes
+			available = {
+					has_tech = early_fighter
+				}
+			completion_reward = {
+					CZE = {
+							air_experience = 10
+						}
+					add_equipment_to_stockpile = {
+							type = medium_tank_equipment
+							amount = 200
+							producer = CZE
+						}
+					add_equipment_to_stockpile = {
+							type = motorized_equipment_1
+							amount = 200
+							producer = CZE
+						}
+					create_equipment_variant = {
+							name = "AVIA A-105S"
+							type = fighter_equipment_2
+							upgrades = {
+									plane_gun_upgrade = 1
+									plane_range_upgrade = 1
+									plane_engine_upgrade = 1
+									plane_reliability_upgrade = 2
+								}
+						}
+				}  
+ }#Focus for Russian Weapons 2 
+		focus = { 
+		id = russianweapons2 
+		icon = GFX_focus_generic_license_production 
+		ai_will_do = { factor = 1} 
+ x =45 
+ y =3 
+ mutually_exclusive = { focus = czechmig17variant} 
+ prerequisite = { focus = russiant54tankvariant} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 10
+					SOV = {
+							army_experience = 10
+						}
+					add_equipment_to_stockpile = {
+							type = fighter_equipment_1
+							amount = 100
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = light_tank_equipment_1
+							amount = 100
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = medium_tank_equipment_1
+							amount = 100
+							producer = SOV
+						}
+				}  
+ }#Focus for UK Hunter Plane Variant 
+		focus = { 
+		id = ukhunterplanevariant 
+		icon = GFX_goal_generic_air_bomber 
+		ai_will_do = { factor = 1} 
+ x =47 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = armymotorized} 
+ cost = 10  
+  available_if_capitulated = yes
+			available = {
+					has_tech = early_fighter
+				}
+			completion_reward = {
+					ENG = {
+							air_experience = 10
+						}
+					create_equipment_variant = {
+							name = "Hawker Hunter 50"
+							type = fighter_equipment_2
+							upgrades = {
+									plane_gun_upgrade = 2
+									plane_range_upgrade = 2
+									plane_engine_upgrade = 2
+									plane_reliability_upgrade = 4
+								}
+						}
+				}  
+ }#Focus for French Navy 
+		focus = { 
+		id = frenchnavy 
+		icon = GFX_goal_generic_military_sphere 
+		ai_will_do = { factor = 1} 
+ x =49 
+ y =3 
+ mutually_exclusive = { focus = ukhunterplanevariant} 
+ prerequisite = { focus = frenchamx32variant} 
+ cost = 10  
+  available_if_capitulated = yes
+			available = {
+					has_tech = early_destroyer
+				}
+			completion_reward = {
+					FRA = {
+							air_experience = 5
+							navy_experience = 10
+						}
+					add_equipment_to_stockpile = {
+							type = fighter_equipment_2
+							amount = 100
+							producer = FRA
+						}
+					create_equipment_variant = {
+							name = "T 53-class M69"
+							type = destroyer_1
+							upgrades = {
+									ship_torpedo_upgrade = 3
+									destroyer_engine_upgrade = 3
+									ship_ASW_upgrade = 3
+									ship_anti_air_upgrade = 3
+								}
+						}
+				}  
+ }#Focus for Strv 103 Tank Variant 
+		focus = { 
+		id = strv103tankvariant 
+		icon = GFX_goal_generic_army_artillery 
+		ai_will_do = { factor = 1} 
+ x =51 
+ y =3 
+ mutually_exclusive = { focus = chinesetype59variant} 
+ prerequisite = { focus = chinatrucks} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Chinese Type 59 Variant 
+		focus = { 
+		id = chinesetype59variant 
+		icon = GFX_focus_generic_license_production 
+		ai_will_do = { factor = 1} 
+ x =53 
+ y =3 
+ mutually_exclusive = { focus = strv103tankvariant} 
+ prerequisite = { focus = yugoslavianmig21variant} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Improved Civilian Industry III 
+		focus = { 
+		id = improvedcivilianindustryiii 
+		icon = GFX_goal_generic_construct_civ_factory 
+		ai_will_do = { factor = 1} 
+ x =0 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = improvedcivilianindustryii} 
+ cost = 10  
+  available_if_capitulated = yes
+  			completion_reward = {
+							random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = industrial_complex
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+							random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = industrial_complex
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+	}  
+ }#Focus for Improved Military Industry III 
+		focus = { 
+		id = improvedmilitaryindustryiii 
+		icon = GFX_goal_generic_construct_mil_factory 
+		ai_will_do = { factor = 1} 
+ x =2 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = improvedmilitaryindustryii} 
+ cost = 10  
+  available_if_capitulated = yes
+  			completion_reward = {
+							random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = arms_factory
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+							random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = arms_factory
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+														random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = arms_factory
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+														random_owned_controlled_state = {
+									limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+										}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+										type = arms_factory
+										level = 1
+										instant_build = yes
+									}
+									set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+							}
+						
+						
+	}     
+ }#Focus for Democratic Values 
+		focus = { 
+		id = democraticvalues 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =9 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = followbytheirexample} 
+ cost = 10  
+  available_if_capitulated = yes 
+			completion_reward = {
+					add_political_power = 150
+					add_timed_idea = {
+							idea = idea_political_correctness
+							days = 540
+						}
+				}
+ }#Focus for Spread Christian Values 
+		focus = { 
+		id = spreadchristianvalues 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =11 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = achristiandemocracy} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Mass Produce the Manifesto 
+		focus = { 
+		id = massproducethemanifesto 
+		icon = GFX_focus_generic_join_comintern 
+		ai_will_do = { factor = 1} 
+ x =15 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = contemptfortheproletariat} 
+ cost = 10  
+  available_if_capitulated = yes 
+completion_reward = {
+add_popularity = { ideology = communism popularity = 0.1 }
+}			
+ }#Focus for Universal Income 
+		focus = { 
+		id = universalincome 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =17 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = lessradicalapproach} 
+ cost = 10  
+  available_if_capitulated = yes
+ completion_reward = {
+ add_popularity = { ideology = Socialism popularity = 0.1 }
+} 
+ }#Focus for Kaiserreich 
+		focus = { 
+		id = kaiserreich 
+		icon = GFX_focus_ger_return_of_the_kaiser 
+		ai_will_do = { factor = 1} 
+ x =21 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = prussianheritage} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+set_politics = { ruling_party = Monarchism elections_allowed = no }
+news_event = { days = 1 id = news.338 }
+}			
+ }#Focus for Fascist Rallies 
+		focus = { 
+		id = fascistrallies 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =24 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = nsdapreforms} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_political_power = 150
+news_event = { days = 1 id = news.341 }
+}    
+ }#Focus for Army Doctrine 
+		focus = { 
+		id = armydoctrine 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =29 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = smallarmsdevelopmentii  focus = mechanizedinfantry} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 25
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+				}  
+ }#Focus for Air Doctrine 
+		focus = { 
+		id = airdoctrine 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =33 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = closeairsupport  focus = navalbombers} 
+ cost = 10  
+  available_if_capitulated = yes 
+completion_reward = {
+add_tech_bonus = {
+name = air_doc_bonus
+bonus = 0.5
+uses = 1
+category = air_doctrine
+}
+}  
+ }#Focus for Navy Doctrine 
+		focus = { 
+		id = navydoctrine 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =37 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = capitalships  focus = submarinedevelopment} 
+ cost = 10  
+  available_if_capitulated = yes 
+			completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 0.5
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}  
+ }#Focus for US Navy 
+		focus = { 
+		id = usnavy 
+		icon = GFX_focus_generic_coastal_fort 
+		ai_will_do = { factor = 1} 
+ x =41 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = ustransfer} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					navy_experience = 25
+					USA = {
+							navy_experience = 10
+						}
+					create_equipment_variant = {
+							name = "Oliver Hazard Perry-class"
+							type = destroyer_1
+							upgrades = {
+									ship_torpedo_upgrade = 4
+									destroyer_engine_upgrade = 4
+									ship_ASW_upgrade = 4
+									ship_anti_air_upgrade = 4
+								}
+						}
+				}  
+ }#Focus for Czech IL-28 Variant 
+		focus = { 
+		id = czechil28variant 
+		icon = GFX_goal_generic_air_fighter 
+		ai_will_do = { factor = 1} 
+ x =43 
+ y =4 
+ mutually_exclusive = { focus = russianweapons3} 
+ prerequisite = { focus = czechmig17variant} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					POL = {
+							army_experience = 15
+						}
+					add_equipment_to_stockpile = {
+							type = medium_tank_equipment
+							amount = 200
+							producer = POL
+						}
+					create_equipment_variant = {
+							name = "T-54M2 PL"
+							type = medium_tank_equipment
+							upgrades = {
+									tank_reliability_upgrade = 5
+									tank_engine_upgrade = 3
+									tank_armor_upgrade = 3
+									tank_gun_upgrade = 5
+								}
+						}
+				}  
+ }#Focus for Russian Weapons 3 
+		focus = { 
+		id = russianweapons3 
+		icon = GFX_goal_generic_production2 
+		ai_will_do = { factor = 1} 
+ x =45 
+ y =4 
+ mutually_exclusive = { focus = czechil28variant} 
+ prerequisite = { focus = russianweapons2} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					SOV = {
+							army_experience = 10
+						}
+					add_equipment_to_stockpile = {
+							type = fighter_equipment_1
+							amount = 5
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = medium_tank_equipment
+							amount = 300
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = light_tank_equipment_1
+							amount = 300
+							producer = SOV
+						}
+				}  
+ }#Focus for EU Bombers 
+		focus = { 
+		id = eubombers 
+		icon = GFX_goal_generic_build_airforce 
+		ai_will_do = { factor = 1} 
+ x =47 
+ y =4 
+ mutually_exclusive = { focus = frenchdestroyervariant} 
+ prerequisite = { focus = ukhunterplanevariant} 
+ cost = 10  
+  available_if_capitulated = yes
+			available = {
+					has_tech = early_bomber
+				}
+			completion_reward = {
+					FRA = {
+							air_experience = 5
+						}
+					ENG = {
+							air_experience = 10
+						}
+					add_equipment_to_stockpile = {
+							type = tac_bomber_equipment_0
+							amount = 100
+							producer = FRA
+						}
+					create_equipment_variant = {
+							name = "Vautour IIA"
+							type = tac_bomber_equipment_2
+							upgrades = {
+									plane_tac_bomb_upgrade = 2
+									plane_range_upgrade = 2
+									plane_engine_upgrade = 1
+									plane_reliability_upgrade = 4
+								}
+						}
+				}  
+ }#Focus for French Destroyer Variant 
+		focus = { 
+		id = frenchdestroyervariant 
+		icon = GFX_goal_generic_build_nay 
+		ai_will_do = { factor = 1} 
+ x =49 
+ y =4 
+ mutually_exclusive = { focus = eubombers} 
+ prerequisite = { focus = frenchnavy} 
+ cost = 10  
+  available_if_capitulated = yes
+			available = {
+					has_tech = early_bomber
+				}
+			completion_reward = {
+					FRA = {
+							air_experience = 5
+						}
+					ENG = {
+							air_experience = 10
+						}
+					add_equipment_to_stockpile = {
+							type = tac_bomber_equipment_3
+							amount = 300
+							producer = FRA
+						}
+					create_equipment_variant = {
+							name = "Vautour IIA"
+							type = tac_bomber_equipment_3
+							upgrades = {
+									plane_tac_bomb_upgrade = 2
+									plane_range_upgrade = 2
+									plane_engine_upgrade = 1
+									plane_reliability_upgrade = 4
+								}
+						}
+				}  
+ }#Focus for SAAB 35 Fighter Variant 
+		focus = { 
+		id = saab35fightervariant 
+		icon = GFX_goal_generic_air_fighter 
+		ai_will_do = { factor = 1} 
+ x =51 
+ y =4 
+ mutually_exclusive = { focus = japanesedestroyer} 
+ prerequisite = { focus = strv103tankvariant} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Japanese Destroyer 
+		focus = { 
+		id = japanesedestroyer 
+		icon = GFX_goal_generic_build_nay 
+		ai_will_do = { factor = 1} 
+ x =53 
+ y =4 
+ mutually_exclusive = { focus = saab35fightervariant} 
+ prerequisite = { focus = chinesetype59variant} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Extra Research Slot 
+		focus = { 
+		id = extraresearchslot 
+		icon = GFX_focus_research 
+		ai_will_do = { factor = 1} 
+ x =1 
+ y =5 
+ mutually_exclusive = { } 
+ prerequisite = { focus = improvedmilitaryindustryiii  focus = improvedcivilianindustryiii} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {  
+add_research_slot = 2
+}  
+ }#Focus for Democracy Is Non Negotiable 
+		focus = { 
+		id = democracyisnonnegotiable 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =9 
+ y =5 
+ mutually_exclusive = { } 
+ prerequisite = { focus = democraticvalues} 
+ cost = 10  
+  available_if_capitulated = yes 
+			completion_reward = {
+add_popularity = { ideology = democratic popularity = 0.2 }
+				}  
+ }#Focus for Christ is King 
+		focus = { 
+		id = christisking 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =11 
+ y =5 
+ mutually_exclusive = { } 
+ prerequisite = { focus = spreadchristianvalues} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Political Revolution 
+		focus = { 
+		id = politicalrevolution 
+		icon = GFX_focus_generic_join_comintern 
+		ai_will_do = { factor = 1} 
+ x =14 
+ y =5 
+ mutually_exclusive = { } 
+ prerequisite = { focus = massproducethemanifesto} 
+ cost = 10  
+  available_if_capitulated = yes 
+			completion_reward = {
+set_politics = { ruling_party = communism elections_allowed = no }
+				}  
+ }#Focus for Democratic Socialism 
+		focus = { 
+		id = democraticsocialism 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =18 
+ y =5 
+ mutually_exclusive = { } 
+ prerequisite = { focus = universalincome} 
+ cost = null  
+  available_if_capitulated = yes 
+completion_reward = {
+set_politics = { ruling_party = Socialism elections_allowed = yes }
+}			
+ }#Focus for United Germany 
+		focus = { 
+		id = unitedgermany 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =20 
+ y =5 
+ mutually_exclusive = { } 
+ prerequisite = { focus = kaiserreich} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+country_event = { days = 1 id = wgr.5 }
+}  
+ }#Focus for Der Fuhrer 
+		focus = { 
+		id = derfuhrer 
+		icon = GFX_focus_ger_reichskommisariats 
+		ai_will_do = { factor = 1} 
+ x =24 
+ y =5 
+ mutually_exclusive = { } 
+ prerequisite = { focus = fascistrallies} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+set_politics = { ruling_party = Fascism elections_allowed = no }
+add_timed_idea = { idea = Divided_Nation days = 150 }
+}  
+ }#Focus for Artillery Development 
+		focus = { 
+		id = artillerydevelopment 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =28 
+ y =5 
+ mutually_exclusive = { } 
+ prerequisite = { focus = armydoctrine} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_tech_bonus = {
+name = infantry_weapons_bonus
+bonus = 0.5
+uses = 1
+category = artillery
+}
+}  
+ }#Focus for Tank Development 
+		focus = { 
+		id = tankdevelopment 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =30 
+ y =5 
+ mutually_exclusive = { } 
+ prerequisite = { focus = armydoctrine} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+							category = artillery
+						}
+				}  
+ }#Focus for Phantom 
+		focus = { 
+		id = phantom 
+		icon = GFX_goal_generic_navy_carrier 
+		ai_will_do = { factor = 1} 
+ x =41 
+ y =5 
+ mutually_exclusive = { } 
+ prerequisite = { focus = usnavy} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					navy_experience = 5
+					USA = {
+							navy_experience = 10
+							air_experience = 10
+						}
+					create_equipment_variant = {
+							name = "M70 Light Class"
+							type = carrier_1
+							upgrades = {
+									ship_deckspace_upgrade = 1
+									carrier_armor_upgrade = 1
+									ship_engine_upgrade = 1
+									ship_reliability_upgrade = 1
+								}
+						}
+					create_equipment_variant = {
+							name = "F-4BS Phantom 2"
+							type = cv_CAS_equipment_1
+							upgrades = {
+									plane_cas_upgrade = 2
+									plane_range_upgrade = 1
+									plane_engine_upgrade = 1
+									plane_reliability_upgrade = 3
+								}
+						}
+				}  
+ }#Focus for Polish T-55A Merida 
+		focus = { 
+		id = polisht55amerida 
+		icon = GFX_goal_generic_army_tanks 
+		ai_will_do = { factor = 1} 
+ x =43 
+ y =5 
+ mutually_exclusive = { focus = russianmig21mvariant} 
+ prerequisite = { focus = czechil28variant} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Russian MiG-21M Variant 
+		focus = { 
+		id = russianmig21mvariant 
+		icon = GFX_goal_generic_build_tank 
+		ai_will_do = { factor = 1} 
+ x =45 
+ y =5 
+ mutually_exclusive = { focus = polisht55amerida} 
+ prerequisite = { focus = russianweapons3} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for West Germany Leopard Variant 
+		focus = { 
+		id = westgermanyleopardvariant 
+		icon = GFX_goal_generic_build_tank 
+		ai_will_do = { factor = 1} 
+ x =47 
+ y =5 
+ mutually_exclusive = { focus = frenchmiragevariant} 
+ prerequisite = { focus = eubombers} 
+ cost = 10  
+  available_if_capitulated = yes
+			available = {
+					has_tech = basic_medium_tank
+				}
+			completion_reward = {
+					WGR = {
+							army_experience = 25
+						}
+					add_equipment_to_stockpile = {
+							type = medium_tank_equipment_1
+							amount = 200
+							producer = WGR
+						}
+					create_equipment_variant = {
+							name = "Leopard 1A1-S"
+							type = medium_tank_equipment_1
+							upgrades = {
+									tank_reliability_upgrade = 3
+									tank_engine_upgrade = 1
+									tank_armor_upgrade = 2
+									tank_gun_upgrade = 1
+								}
+						}
+				}  
+ }#Focus for French Mirage Variant 
+		focus = { 
+		id = frenchmiragevariant 
+		icon = GFX_goal_generic_occypy_states_ongoing_war 
+		ai_will_do = { factor = 1} 
+ x =49 
+ y =5 
+ mutually_exclusive = { focus = westgermanyleopardvariant} 
+ prerequisite = { focus = frenchdestroyervariant} 
+ cost = 10  
+  available_if_capitulated = yes
+			available = {
+					has_tech = fighter1
+				}
+			completion_reward = {
+					FRA = {
+							air_experience = 15
+						}
+					create_equipment_variant = {
+							name = "Mirage IIIS"
+							type = fighter_equipment_2
+							upgrades = {
+									plane_gun_upgrade = 2
+									plane_range_upgrade = 2
+									plane_engine_upgrade = 3
+									plane_reliability_upgrade = 4
+								}
+						}
+				}  
+ }#Focus for Army Exp 
+		focus = { 
+		id = armyexp 
+		icon = GFX_goal_generic_amphibious_assault 
+		ai_will_do = { factor = 1} 
+ x =52 
+ y =5 
+ mutually_exclusive = { } 
+ prerequisite = { focus = japanesedestroyer  focus = saab35fightervariant} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for German Nuclear Program 
+		focus = { 
+		id = germannuclearprogram 
+		icon = GFX_focus_wonderweapons 
+		ai_will_do = { factor = 1} 
+ x =1 
+ y =6 
+ mutually_exclusive = { } 
+ prerequisite = { focus = extraresearchslot} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = nuclear_bonus
+							ahead_reduction = 0.5
+							category = nuclear
+						}
+				}  
+ }#Focus for Join The DDR 
+		focus = { 
+		id = jointheddr 
+		icon = GFX_focus_chi_mission_to_the_soviet_union 
+		ai_will_do = { factor = 1} 
+ x =13 
+ y =6 
+ mutually_exclusive = { } 
+ prerequisite = { focus = politicalrevolution} 
+ cost = 10  
+  available_if_capitulated = yes 
+completion_reward = {
+country_event = { days = 1 id = wgr.4 }
+} 
+ }#Focus for NATO Defenses 
+		focus = { 
+		id = natodefenses 
+		icon = GFX_goal_generic_fortify_city 
+		ai_will_do = { factor = 1} 
+ x =16 
+ y =6 
+ mutually_exclusive = { } 
+ prerequisite = { focus = democraticsocialism  focus = politicalrevolution} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+		50 = {
+			add_building_construction = {
+				type = bunker
+				province = 11640
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 6712
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 6542
+				level = 2
+				instant_build = yes
+			}
+
+		}
+		42 = {
+			add_building_construction = {
+				type = bunker
+				province = 3558
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 563
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11531
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9575
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11435
+				level = 2
+				instant_build = yes
+			}
+		}
+		51 = {
+			add_building_construction = {
+				type = bunker
+				province = 3547
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9522
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3444
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3512
+				level = 2
+				instant_build = yes
+			}
+		}
+		57 = {
+			add_building_construction = {
+				type = bunker
+				province = 6622
+				level = 2
+				instant_build = yes
+			}
+		}
+		56 = {
+			add_building_construction = {
+				type = bunker
+				province = 9281
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11264
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11360
+				level = 2
+				instant_build = yes
+			}
+		}
+		51 = {
+			add_building_construction = {
+				type = bunker
+				province = 11366
+				level = 2
+				instant_build = yes
+			}
+		}
+			
+	}
+  
+ }#Focus for Demand Return of Prussia 
+		focus = { 
+		id = demandreturnofprussia 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =20 
+ y =6 
+ mutually_exclusive = { } 
+ prerequisite = { focus = unitedgermany} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+news_event = { days = 1 id = news.339 }
+add_state_claim = 67
+add_state_claim = 66
+add_state_claim = 68
+add_state_claim = 63
+add_state_claim = 781
+add_state_claim = 546
+add_state_claim = 86
+add_state_claim = 87
+add_state_claim = 762
+add_state_claim = 98
+add_state_claim = 85
+add_state_claim = 5
+add_state_claim = 790
+}  
+ }#Focus for Military Youth 
+		focus = { 
+		id = militaryyouth 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =22 
+ y =6 
+ mutually_exclusive = { } 
+ prerequisite = { focus = kaiserreich  focus = derfuhrer} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Ein Volk Ein Reich Ein Fuhrer 
+		focus = { 
+		id = einvolkeinreicheinfuhrer 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =24 
+ y =6 
+ mutually_exclusive = { } 
+ prerequisite = { focus = derfuhrer} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_political_power = 150
+news_event = { days = 1 id = news.340 }
+}    
+ }#Focus for Reclaim Whats Ours 
+		focus = { 
+		id = reclaimwhatsours 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =26 
+ y =6 
+ mutually_exclusive = { } 
+ prerequisite = { focus = derfuhrer} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Peoples Army 
+		focus = { 
+		id = peoplesarmy 
+		icon = GFX_goal_generic_support_communism 
+		ai_will_do = { factor = 1} 
+ x =13 
+ y =7 
+ mutually_exclusive = { } 
+ prerequisite = { focus = jointheddr} 
+ cost = 10  
+  available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = political_commissars_focus
+					add_political_power = 100
+				}  
+ }#Focus for Spread the Revolution 
+		focus = { 
+		id = spreadtherevolution 
+		icon = GFX_focus_ger_great_red_menace 
+		ai_will_do = { factor = 1} 
+ x =15 
+ y =7 
+ mutually_exclusive = { } 
+ prerequisite = { focus = politicalrevolution} 
+ cost = 10  
+  available_if_capitulated = yes  
+ }#Focus for Reclaim Former Colonies 
+		focus = { 
+		id = reclaimformercolonies 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =20 
+ y =7 
+ mutually_exclusive = { } 
+ prerequisite = { focus = demandreturnofprussia} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+country_event = { days = 1 id = news.357 }
+add_state_claim = 773
+add_state_claim = 781
+add_state_claim = 546
+}			
+ }#Focus for Finish What We Started 
+		focus = { 
+		id = finishwhatwestarted 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =26 
+ y =7 
+ mutually_exclusive = { } 
+ prerequisite = { focus = reclaimwhatsours} 
+ cost = 10  
+  available_if_capitulated = yes 
+completion_reward = {
+add_political_power = 150
+declare_war_on = { target = SOV type = annex_everything }
+}    
+ }#Focus for Lebensraum 
+		focus = { 
+		id = lebensraum 
+		icon = GFX_goal_unknown 
+		ai_will_do = { factor = 1} 
+ x =26 
+ y =8 
+ mutually_exclusive = { } 
+ prerequisite = { focus = finishwhatwestarted} 
+ cost = 10  
+  available_if_capitulated = yes
+completion_reward = {
+add_political_power = 150
+		AUS = { country_event = news.342 }
+}   
+ }#End of focuses 
+}

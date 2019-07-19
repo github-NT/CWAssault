@@ -1,0 +1,26 @@
+
+state={
+	id=795
+	name="STATE_795"
+	manpower = 1374200
+	state_category = megalopolis
+
+	history={
+		owner = WGR
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 5
+		}
+		
+		victory_points = {
+			13229 50
+		}	
+
+		add_core_of = WGR
+		add_core_of = DDR
+	}
+
+	provinces={
+		13229
+	}
+}

@@ -1,0 +1,104 @@
+﻿###########################
+# Chile Events
+###########################
+
+add_namespace = chilepoli
+
+# Allende Won
+country_event = {
+	id = chilepoli.1
+	title = chilepoli.1.t
+	desc = chilepoli.1.d
+	picture = GFX_La_Moneda
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = CHL
+	}
+
+	option = {
+	name = chilepoli.1.a
+	create_country_leader = {
+		name = "Salvador Allende"
+		desc = "POLITICS_PEDRO_AGUIRRE_CERDA_DESC"
+		picture = "gfx/leaders/cold_majors/Allende.dds"
+		expire = "1965.1.1"
+		ideology = Socialist
+		traits = {
+			#
+		}
+	}
+		add_popularity = { ideology = Socialism popularity = 0.1 }
+		set_politics = { ruling_party = Socialism elections_allowed = yes }
+		subtract_from_variable  = { var = CHL_army_loyalty value = 60}
+		subtract_from_variable  = { var = CHL_general_loyalty value = 60}
+	}
+}
+
+# Jorge Alessandri Won
+country_event = {
+	id = chilepoli.2
+	title = chilepoli.2.t
+	desc = chilepoli.2.d
+	picture = GFX_La_Moneda
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = CHL
+	}
+
+	option = {
+	name = chilepoli.2.a
+	create_country_leader = {
+		name = "Jorge Alessandri"
+		desc = "POLITICS_PEDRO_AGUIRRE_CERDA_DESC"
+		picture = "gfx/leaders/CHL/Jorge Alessandri.dds"
+		expire = "1965.1.1"
+		ideology = centrism
+		traits = {
+			#
+		}
+	}
+		add_popularity = { ideology = neutrality popularity = 0.1 }
+		set_politics = { ruling_party = neutrality elections_allowed = yes }
+	}
+}
+
+# Radomiro Tomic Won
+country_event = {
+	id = chilepoli.3
+	title = chilepoli.3.t
+	desc = chilepoli.3.d
+	picture = GFX_La_Moneda
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = CHL
+	}
+
+	option = {
+	name = chilepoli.3.a
+	create_country_leader = {
+		name = "Radomiro Tomic"
+		desc = "POLITICS_PEDRO_AGUIRRE_CERDA_DESC"
+		picture = "gfx/leaders/CHL/Radomiro Tomic.dds"
+		expire = "1965.1.1"
+		ideology = Catholicism
+		traits = {
+			#
+		}
+	}
+		add_popularity = { ideology = Christianity popularity = 0.4 }
+		set_politics = { ruling_party = Christianity elections_allowed = yes }
+	}
+}
+

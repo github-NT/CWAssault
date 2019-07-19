@@ -1,0 +1,199 @@
+﻿division_template = {
+	name = "Motorized Infantry Division"		
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+	}
+}
+
+division_template = {
+	name = "African Militia"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 
+		artillery = { x = 0 y = 2 }		
+	}
+}
+
+division_template = {
+	name = "Tank Brigade"		
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }				
+		infantry = { x = 1 y = 1 }				
+		infantry = { x = 1 y = 2 }				
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Militia Brigade"
+		location = 12795
+		division_template = "African Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "115th Militia Brigade"
+		location = 1516
+		division_template = "African Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "35th Militia Brigade"
+		location = 1929
+		division_template = "African Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "22nd Militia Brigade"
+		location = 12907
+		division_template = "African Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "72nd Militia Brigade"
+		location = 1817
+		division_template = "African Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3rd Militia Brigade"
+		location = 1516
+		division_template = "African Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "75th Militia Brigade"
+		location = 12795
+		division_template = "African Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "221st Militia Brigade"
+		location = 1968
+		division_template = "African Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "172nd Militia Brigade"
+		location = 12907
+		division_template = "African Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "54th Militia Brigade"
+		location = 1181
+		division_template = "African Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "1st Armoured Brigade"
+		location = 1817
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th Armoured Brigade"
+		location = 12795
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 500
+                producer = SOV
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 400
+                producer = BEL
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 200
+                producer = PRC
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 100
+                producer = PRC
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 200
+                producer = NVM
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 200
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = medium_tank_equipment
+                amount = 300
+                producer = SOV
+	}
+add_equipment_to_stockpile = {
+                type = medium_tank_equipment
+                amount = 100
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = fighter_equipment_0 
+                amount = 5
+                producer = SOV
+	}
+add_equipment_to_stockpile = {
+                type = tac_bomber_equipment_0
+                amount = 5
+                producer = PRC
+	}
+}

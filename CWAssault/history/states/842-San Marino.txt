@@ -1,0 +1,23 @@
+
+state={
+	id=842
+	name="STATE_842" #San Marino NOT COMMUNISTS
+	manpower = 63142
+	
+	state_category = large_city
+
+	history={
+		owner = MAR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		add_core_of = MAR
+		add_core_of = ITA
+	}
+
+	provinces={
+		13413
+	}
+}

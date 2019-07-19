@@ -1,0 +1,191 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Firqat Musha"					# Represents Infanterie Welles 1-4
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Qasam Alkhizanat" 	
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars
+	}
+}
+division_template = {
+	name = "Firqat Almashat Alaly" 	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars
+	}
+}
+
+units = {
+	division = {
+		name = "Firqat Musha. 31"
+		location = 7011
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Musha. 32"
+		location = 4076
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Musha. 33"
+		location = 7117
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Musha. 34"
+		location = 7117
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Musha. 88"
+		location = 10126
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Musha. 98"
+		location = 12049
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Musha. 94"
+		location = 12049
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Almashat Alaly. 111"
+		location = 4073
+		division_template = "Firqat Almashat Alaly"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Almashat Alaly. 47"
+		location = 4073
+		division_template = "Firqat Almashat Alaly"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	
+	division = {
+		name = "Qasam Alkhizanat. 15"
+		location = 992
+		division_template = "Firqat Almashat Alaly"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "Qasam Alkhizanat. 40"
+		location = 10073
+		division_template = "Firqat Almashat Alaly"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Almashat Alaly. 22"
+		location = 4073
+		division_template = "Firqat Almashat Alaly"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}		
+}
+
+### Starting Production ###
+instant_effect = {
+
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 750
+                producer = SOV
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 200
+                producer = BEL
+	}
+add_equipment_to_stockpile = {
+                type = medium_tank_equipment
+                amount = 150
+                producer = SOV
+	}
+add_equipment_to_stockpile = {
+                type = medium_tank_equipment
+                amount = 100
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = food_equipment_1
+                amount = 550
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = unifornm_equipment_0
+                amount = 500
+                producer = SOV
+	}
+add_equipment_to_stockpile = {
+                type = fighter_equipment_0 
+                amount = 60
+                producer = CZE
+	}
+add_equipment_to_stockpile = {
+                type = fighter_equipment_1 
+                amount = 20
+                producer = SOV
+	}
+add_equipment_to_stockpile = {
+                type = tac_bomber_equipment_0
+                amount = 20
+                producer = SOV
+	}
+}

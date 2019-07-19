@@ -1,0 +1,179 @@
+﻿capital = 113
+
+oob = "IRE_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons2 = 1
+	support_weapons = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	basic_medium_tank = 1 # PLACEHOLDER
+	basic_battlecruiser = 1
+	basic_light_cruiser = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+}
+
+set_convoys = 10
+
+1939.1.1 = {
+	set_technology = {
+		gw_artillery = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		fuel_refining = 1
+	}
+}
+
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1933.1.24"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 98
+    fascism = 1
+    communism = 1
+}
+
+1974.1.1 = {
+	set_politics = {		
+		ruling_party = democratic
+		last_election = "1938.6.17"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        democratic = 46
+        Christianity = 35
+        Socialism = 19
+    }
+}
+create_country_leader = {
+	name = "Taoiseach Liam"
+	desc = ""
+	picture = "gfx/leaders/IRE/8efef9d3555f7ff888e913298d6c0b58 copy.dds"
+	expire = "1977.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Michael Costello"
+	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+###
+1977.1.1 = {
+	set_politics = {		
+		ruling_party = democratic
+		last_election = "1938.6.17"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        democratic = 46
+        Christianity = 35
+        Socialism = 19
+    }
+}
+1977.1.1 = {
+create_country_leader = {
+	name = "Jack Lynch"
+	desc = ""
+	picture = "gfx/leaders/IRE/jack lynch 77-79 66-73.dds"
+	expire = "1979.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+}
+####
+1981.1.1 = {
+	set_politics = {		
+		ruling_party = democratic
+		last_election = "1938.6.17"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        democratic = 55
+        Christianity = 36
+        Socialism = 9
+    }
+}
+1981.1.1 = {
+create_country_leader = {
+	name = "Garret Fitzgerald"
+	desc = ""
+	picture = "gfx/leaders/IRE/garret fitzgerald 82-87.dds"
+	expire = "1982.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+}
+
+1987.1.1 = {
+create_country_leader = {
+	name = "Charles Haughey"
+	desc = ""
+	picture = "gfx/leaders/IRE/charles haughey 87-92.tga"
+	expire = "1992.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+}

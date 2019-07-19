@@ -1,0 +1,109 @@
+﻿capital = 781
+
+oob = "BIA_1970"
+set_stability = 0.9
+set_war_support = 0.9
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	tech_support = 1
+	tech_recon = 1
+	support_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	interwar_antitank = 1
+}
+
+add_ideas = {
+		limited_conscription
+		partial_economic_mobilisation
+}
+
+set_convoys = 200
+
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1968.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 40
+    Socialism = 20
+    communism = 20
+    Nationalism = 20
+}
+
+
+create_country_leader = {
+	name = "Odumegwu Ojukwu"
+	desc = ""
+	expire = "1970.1.1"
+	picture = "gfx/leaders/BIA/Odumegwu Ojukwu.dds"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Odumegwu Ojukwu"
+	portrait_path = "gfx/leaders/BIA/Portrait_Arabia_Generic_land_3.dds"
+	traits = { desert_fox }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Philip Effiong"
+	portrait_path = "gfx/leaders/BIA/Philip Effiong.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Albert Okonkwo"
+	portrait_path = "gfx/leaders/BIA/Albert Okonkwo.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Victor Banjo"
+	portrait_path = "gfx/leaders/BIA/Victor Banjo.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ogbugo Kalu"
+	portrait_path = "gfx/leaders/BIA/Ogbugo Kalu.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+1971.1.1 = {
+white_peace = NIA
+}

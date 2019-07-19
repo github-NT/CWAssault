@@ -1,0 +1,93 @@
+﻿###########################
+# Yugoslavian Events
+###########################
+
+add_namespace = yugoslavia
+
+# Slovenia and Croatia Break away
+country_event = {
+	id = yugoslavia.1
+	title = yugoslavia.1.t
+	desc = yugoslavia.1.d
+	picture = GFX_report_event_finnish_letter
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	tag = YUG
+	date >1991.6.15
+	}
+	
+	option = {
+		name = yugoslavia.1.a
+		news_event = { days = 1 id = news.383 }
+		news_event = { days = 1 id = news.384 }
+		release = CRO
+		release = SLV
+	}
+}
+
+# Macedonia Break away
+country_event = {
+	id = yugoslavia.2
+	title = yugoslavia.2.t
+	desc = yugoslavia.2.d
+	picture = GFX_report_event_finnish_letter
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	tag = YUG
+	date >1991.9.8
+	}
+	
+	option = {
+		name = yugoslavia.2.a
+		release = MAC
+	}
+}
+
+# Bosnia Break away
+country_event = {
+	id = yugoslavia.3
+	title = yugoslavia.3.t
+	desc = yugoslavia.3.d
+	picture = GFX_report_event_finnish_letter
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	tag = YUG
+	date >1991.2.21
+	}
+	
+	option = {
+		name = yugoslavia.3.a
+		release = BOS
+	}
+}
+
+# Srpska Break away
+country_event = {
+	id = yugoslavia.4
+	title = yugoslavia.4.t
+	desc = yugoslavia.4.d
+	picture = GFX_report_event_finnish_letter
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	tag = BOS
+	date >1991.12.30
+	}
+	
+	option = {
+		name = yugoslavia.3.a
+		release = SRP
+		declare_war_on = { target = SRP type = civil_war }
+		BOS = {
+		load_oob = "BOS_1992"
+		}
+	}
+}
+

@@ -1,0 +1,375 @@
+﻿division_template = {
+	name = "Motorisierte Abteilung"					# Represents Infanterie Welles 1-4
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Gebirgs-Division"						# Gebirgs-Divisions
+
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = { 						
+	name = "Fallschirmjäger-Division"				# Represents Fallschirm-jaeger Rgts 1 and 2
+
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+	}
+}
+
+division_template = { 						
+	name = "Fallschirmjäger-Brigade"				# Represents Fallschirm-jaeger Rgts 1 and 2
+
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Infanterie-Division Mechanisiert" 			# Infanterie-Divisionen (mot)
+
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	    mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+	    motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }	
+		light_sp_anti_air_brigade = { x = 3 y = 0 }
+	    light_sp_anti_air_brigade = { x = 3 y = 1 }
+		light_sp_anti_air_brigade = { x = 3 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }	
+		anti_air = { x = 0 y = 3 }		
+	}
+}
+division_template = {
+	name = "Panzerbrigade"
+
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }			
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		light_sp_anti_air_brigade = { x = 3 y = 0 }
+	    light_sp_anti_air_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Panzer-Division"				# Represents Panzer Divisions 1-5
+
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }		# REVISIT -- L Arm = Pz IIC (variant?) for all
+		medium_armor = { x = 0 y = 1 }		
+		medium_armor = { x = 0 y = 2 }	
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }	
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		light_sp_anti_air_brigade = { x = 4 y = 0 }		
+		medium_sp_artillery_brigade = { x = 4 y = 1 }	
+	}
+	support = {
+	 	engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }	
+		anti_air = { x = 0 y = 2 }	
+		anti_tank = { x = 0 y = 3 }	
+	}
+}
+division_template = {
+	name = "Wachbataillon"
+
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+	    mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+	    mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		medium_sp_artillery_brigade = { x = 3 y = 0 }
+		medium_sp_artillery_brigade = { x = 3 y = 1 }
+		medium_sp_artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }	
+		anti_air = { x = 0 y = 1 }	
+		anti_tank = { x = 0 y = 2 }		
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Sicherungs-Division"				# Represents Border Guard Commands, Fortress Groups, etc.
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }				# Lower-quality equipment and training
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+
+units = {					
+	division= {			
+		name = "35. Infanterie-Abteilung"		
+		location = 9482
+		division_template = "Motorisierte Abteilung"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "12. Infanterie-Abteilung"		
+		location = 6535
+		division_template = "Motorisierte Abteilung"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "65. Infanterie-Abteilung"		
+		location = 6444
+		division_template = "Motorisierte Abteilung"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "144. Infanterie-Abteilung"		
+		location = 11494
+		division_template = "Motorisierte Abteilung"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "182. Infanterie-Abteilung"		
+		location = 6568
+		division_template = "Motorisierte Abteilung"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "87. Infanterie-Abteilung"		
+		location = 11417
+		division_template = "Motorisierte Abteilung"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "1. Infanterie-Abteilung"		
+		location = 9545
+		division_template = "Motorisierte Abteilung"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "62. Infanterie-Abteilung"		
+		location = 708
+		division_template = "Motorisierte Abteilung"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "37. Infanterie-Abteilung"		
+		location = 11486
+		division_template = "Motorisierte Abteilung"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}	
+	division= {			
+		name = "26. Panzerbrigade"		
+		location = 11486
+		division_template = "Panzerbrigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "1. Infanterie-Abteilung"		
+		location = 11468
+		division_template = "Sicherungs-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "2. Infanterie-Abteilung"		
+		location = 9238
+		division_template = "Sicherungs-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "3. Infanterie-Abteilung"		
+		location = 9320
+		division_template = "Sicherungs-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "4. Infanterie-Abteilung"		
+		location = 6513
+		division_template = "Sicherungs-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "5. Infanterie-Abteilung"		
+		location = 6421
+		division_template = "Sicherungs-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "6. Infanterie-Abteilung"		
+		location = 11497
+		division_template = "Sicherungs-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 1200
+                producer = WGR
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 200
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = support_equipment_1
+                amount = 600
+                producer = WGR
+	}
+add_equipment_to_stockpile = {
+                type = food_equipment_1
+                amount = 600
+                producer = WGR
+	}
+add_equipment_to_stockpile = {
+                type = unifornm_equipment_0
+                amount = 700
+                producer = WGR
+	}
+add_equipment_to_stockpile = {
+                type = mechanized_equipment_1
+                amount = 350
+                producer = WGR
+	}
+add_equipment_to_stockpile = {
+                type = light_tank_equipment_1
+                amount = 100
+                producer = WGR
+	}
+add_equipment_to_stockpile = {
+                type = medium_tank_equipment
+                amount = 150
+                producer = WGR
+	}
+add_equipment_to_stockpile = {
+                type = motorized_equipment_1
+                amount = 300
+                producer = WGR
+	}
+add_equipment_to_stockpile = {
+                type = fighter_equipment_0 
+                amount = 25
+                producer = WGR
+	}
+add_equipment_to_stockpile = {
+                type = tac_bomber_equipment_0
+                amount = 10
+                producer = WGR
+	}
+}

@@ -1,0 +1,145 @@
+﻿division_template = {
+	name = "Brigade De Défense Locale"				
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+
+}
+division_template = {
+
+	name = "Division D'Infanterie Motorisée"				
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+	}
+}
+
+division_template = {
+
+	name = "Gepantserde Divisie"				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+	}
+}
+units = {
+	division= {			
+		name = "18e Division D'Infanterie Motorisée"		
+		location = 516
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.75
+
+	}
+	division= {			
+		name = "19e Division D'Infanterie Motorisée"		
+		location = 6598
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.75
+
+	}
+	division= {			
+		name = "5e Division D'Infanterie Motorisée"		
+		location = 6560
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.75
+
+	}
+	division= {			
+		name = "22e Division D'Infanterie Motorisée"		
+		location = 9536
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.75
+
+	}
+	division= {			
+		name = "87e Division D'Infanterie Motorisée"		
+		location = 516
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.75
+
+	}
+	division= {			
+		name = "9e Division D'Infanterie Motorisée"		
+		location = 6598
+		division_template = "Division D'Infanterie Motorisée"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.75
+
+	}
+	division= {			
+		name = "5e Gepantserde Divisie"		
+		location = 6560
+		division_template = "Gepantserde Divisie"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.75
+
+	}
+	division= {			
+		name = "222e Gepantserde Divisie"		
+		location = 9536
+		division_template = "Gepantserde Divisie"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.75
+
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 500
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 100
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = light_tank_equipment_1
+                amount = 100
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = food_equipment_1
+                amount = 100
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = unifornm_equipment_0
+                amount = 100
+                producer = USA
+	}
+}

@@ -1,0 +1,462 @@
+﻿capital = 608
+
+oob = "PRC_1974"
+
+set_research_slots = 4
+
+# Starting tech
+set_technology = {
+	unifornm_equip1 = 1
+	support_weapons = 1
+	mass_assault = 1
+	basic_medium_tank = 1
+	improved_medium_tank = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	basic_medium_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	paratroopers = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
+	base_strike = 1
+	support_weapons2 = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	btr_infantry = 1
+	mechanised_infantry = 1
+	air_superiority = 1
+	pocket_defence = 1
+	defence_in_depth = 1
+	motorised_infantry = 1
+	basic_machine_tools = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	improved_oil_processing = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+set_stability = 0.6
+set_war_support = 0.7
+add_named_threat = { threat = 5 name = prc_nuclear_tests }
+save_global_event_target_as = WTT_communist_china
+
+	add_ideas = {
+		#laws
+		partial_economic_mobilisation
+		service_by_requirement
+		closed_economy
+
+		United_China
+		Unity_Under_Mao
+		Strong_Nato_Support
+		UN_Member
+		industrial_growth
+	}
+
+
+create_faction = Chinese-Bloc
+add_to_faction = PRC
+add_to_faction = TIB
+add_to_faction = SIK
+
+give_guarantee = DPR
+
+	set_autonomy = {
+		target = TIB
+		autonomous_state = autonomy_auton_region
+	}
+	set_autonomy = {
+		target = SIK
+		autonomous_state = autonomy_auton_region
+	}
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 0
+    fascism = 0
+    Maoism = 100
+}
+
+1968.1.1 = {
+	set_global_flag = mao_health
+set_politics = {	
+	ruling_party = Maoism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 0
+    fascism = 0
+    Maoism = 100
+}
+}
+
+1976.1.1 = {
+clr_global_flag = mao_health
+	set_politics = {		
+		ruling_party = Maoism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+}
+
+    set_popularities = {
+        democratic = 0
+        fascism = 0
+        Maoism = 100
+    }
+}
+
+1976.1.1 = {
+create_country_leader = {
+	name = "Hua Guofeng"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "gfx/leaders/CHI/hua guofeng.dds"
+	expire = "1989.1.1"
+	ideology = Maoist
+	traits = {
+		cornered_fox
+	}
+}
+}
+
+1981.1.1 = {
+clr_global_flag = mao_health
+clr_global_flag = mao_death
+
+create_country_leader = {
+	name = "Hu Yaobang"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "gfx/leaders/CHI/hu yaobang.dds"
+	expire = "1987.1.1"
+	ideology = Maoist
+	traits = {
+		cornered_fox
+	}
+}
+}
+
+1987.1.2 = {
+clr_global_flag = mao_death
+create_country_leader = {
+	name = "Zhao Ziyang"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "gfx/leaders/CHI/zhao ziyang.dds"
+	expire = "1989.1.1"
+	ideology = Maoist
+	traits = {
+		cornered_fox
+	}
+}
+}
+
+create_country_leader = {
+	name = "Mao Zedong"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "gfx/leaders/Asia/Mao-Zedong.dds"
+	expire = "1976.1.1"
+	ideology = Maoist
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "Xu Xiangqian"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "gfx/leaders/CHI/200px-Xu_Xiangqian.dds"
+	expire = "1976.1.1"
+	ideology = Military
+	traits = {
+	
+	}
+}
+
+create_field_marshal = {
+	name = "Mao Zedong"
+	portrait_path = "gfx/leaders/Asia/Mao-Zedong.dds"
+	traits = { defensive_doctrine trait_cautious politically_connected }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "He Long"
+	portrait_path = "gfx/leaders/CHI/He_Long.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Xu Guangda"
+	portrait_path = "gfx/leaders/CHI/220px-Xu_Guangda.dds"
+	traits = { infantry_officer trait_mountaineer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Chen Yi"
+	portrait_path = "gfx/leaders/CHI/Chen_Yi(communist).dds"
+	traits = { infantry_officer trait_mountaineer }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Huang Kecheng"
+	portrait_path = "gfx/leaders/CHI/Huang_Kecheng.dds"
+	traits = { infantry_officer organizer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Lin Biao"
+	portrait_path = "gfx/leaders/CHI/Lin_Biao.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Liu Bocheng"
+	portrait_path = "gfx/leaders/CHI/Liu_Bocheng.dds"
+	traits = { infantry_officer trait_mountaineer }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Xu Xianqian"
+	portrait_path = "gfx/leaders/CHI/Long-March-Xu-Xianqian.dds"
+	traits = { infantry_officer trait_mountaineer }
+	skill = 1
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_field_marshal = {
+	name = "Luo Ronghuan"
+	portrait_path = "gfx/leaders/CHI/Luo_Ronghuan.dds"
+	traits = { infantry_officer organizer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Luo Ruiqing"
+	portrait_path = "gfx/leaders/CHI/Luo_Ruiqing.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Nie Rongzhen"
+	portrait_path = "gfx/leaders/CHI/Marshal_Nie_Rongzhen.dds"
+	traits = { infantry_officer trait_mountaineer }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Wang shusheng"
+	portrait_path = "gfx/leaders/CHI/Wang-shusheng.dds"
+	traits = { infantry_officer trait_mountaineer }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Ye Jianying"
+	portrait_path = "gfx/leaders/CHI/Ye_Jianying.dds"
+	traits = { infantry_officer organizer }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Li Zuopeng"
+	portrait_path = "gfx/leaders/CHI/Li-Zuopeng.dds"
+	traits = { infantry_officer organizer }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Zhang Zhen"
+	portrait_path = "gfx/leaders/CHI/Zhang_Zhen.dds"
+	traits = { infantry_officer organizer }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Wang Bingzhang"
+	portrait_path = "gfx/leaders/CHI/Wang_Bingzhang.dds"
+	traits = { infantry_officer organizer }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+#####
+
+create_field_marshal = {
+	name = "Liu Zhen"
+	portrait_path = "gfx/leaders/CHI/Liu Zhen.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Wang Enmao"
+	portrait_path = "gfx/leaders/CHI/Wang Enmao.dds"
+	traits = {   }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Wang Jian'an"
+	portrait_path = "gfx/leaders/CHI/Wang Jian'an.dds"
+	traits = {   }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Yang Chengwu"
+	portrait_path = "gfx/leaders/CHI/Yang Chengwu.dds"
+	traits = {   }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Yang Yong"
+	portrait_path = "gfx/leaders/CHI/Yang Yong.dds"
+	traits = {   }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Zhang Aiping"
+	portrait_path = "gfx/leaders/CHI/Zhang Aiping.dds"
+	traits = {   }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Zhou Xihan"
+	portrait_path = "gfx/leaders/CHI/Zhou Xihan.dds"
+	traits = {   }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}

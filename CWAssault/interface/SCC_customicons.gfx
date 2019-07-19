@@ -1,0 +1,11 @@
+spriteTypes = { 
+##Icon For: 349200
+ SpriteType = { 
+ name = "GFX_revengeforgrozny" 
+ texturefile = "gfx/interface/goals/GFX_revengeforgrozny.tga" 
+ }##Icon For: 349197
+ SpriteType = { 
+ name = "GFX_proclaimvictoryoveryeltsin" 
+ texturefile = "gfx/interface/goals/GFX_proclaimvictoryoveryeltsin.tga" 
+ } 
+ }

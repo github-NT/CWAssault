@@ -1,0 +1,311 @@
+﻿division_template = {
+	name = "Divisione Di Fanteria"				
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }			
+	}
+
+
+}
+
+division_template = {
+	name = "Divisione Di Bersagliere "				
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		medium_sp_artillery_brigade = { x = 2 y = 0 }
+		medium_sp_artillery_brigade = { x = 2 y = 1 }
+		medium_sp_artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }	
+		artillery = { x = 0 y = 2 }	
+	}
+
+
+}
+
+division_template = {
+	name = "Brigata Paracadutisti "				
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 }
+	}
+
+
+}
+
+division_template = {
+	name = "Divisione Paracadutisti "				
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }	
+	}
+
+
+}
+
+division_template = {
+
+	name = "Divisione Del Carro Armato"				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }	
+		artillery = { x = 0 y = 2 }	
+	}
+}
+
+division_template = {
+
+	name = "Brigata Del Carro Armato"				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }	
+	}
+}
+
+###DIVISIONS###
+units = {
+	division= {			
+		name = "1ª Divisione di fanteria"		
+		location = 3857
+		division_template = "Divisione Di Fanteria"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "2ª Divisione di fanteria"		
+		location = 9752
+		division_template = "Divisione Di Fanteria"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "3ª Divisione di fanteria"		
+		location = 3780
+		division_template = "Divisione Di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "4ª Divisione di fanteria"		
+		location = 6626
+		division_template = "Divisione Di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "5ª Divisione di fanteria"		
+		location = 3901
+		division_template = "Divisione Di Fanteria"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "6ª Divisione di fanteria"		
+		location = 3857
+		division_template = "Divisione Di Fanteria"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "7ª Divisione di fanteria"		
+		location = 9752
+		division_template = "Divisione Di Fanteria"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "8ª Divisione di fanteria"		
+		location = 3780
+		division_template = "Divisione Di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "9ª Divisione di fanteria"		
+		location = 6626
+		division_template = "Divisione Di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "10ª Divisione di fanteria"		
+		location = 3901
+		division_template = "Divisione Di Fanteria"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}	
+	division= {			
+		name = "1ª Divisione di Bersagliere"		
+		location = 9904
+		division_template = "Divisione Di Bersagliere "
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "24ª Divisione Del Carro Armato"		
+		location = 11861
+		division_template = "Divisione Del Carro Armato"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+		division= {			
+		name = "7ª Divisione di fanteria"		
+		location = 11568
+		division_template = "Divisione Di Fanteria"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "8ª Divisione di fanteria"		
+		location = 11584
+		division_template = "Divisione Di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "9ª Divisione di fanteria"		
+		location = 656
+		division_template = "Divisione Di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "10ª Divisione di fanteria"		
+		location = 6788
+		division_template = "Divisione Di Fanteria"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}	
+	division= {			
+		name = "1ª Divisione di Bersagliere"		
+		location = 6790
+		division_template = "Divisione Di Bersagliere "
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "24ª Divisione Del Carro Armato"		
+		location = 3657
+		division_template = "Divisione Del Carro Armato"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "10ª Divisione di fanteria"		
+		location = 11837
+		division_template = "Divisione Di Fanteria"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}	
+	division= {			
+		name = "1ª Divisione di Bersagliere"		
+		location = 3958
+		division_template = "Divisione Di Bersagliere "
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "24ª Divisione Del Carro Armato"		
+		location = 9826
+		division_template = "Divisione Del Carro Armato"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+}
+### Starting Production ###
+instant_effect = {
+
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 2500
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = food_equipment_1
+                amount = 2700
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = unifornm_equipment_0
+                amount = 2700
+                producer = USA
+	}
+}

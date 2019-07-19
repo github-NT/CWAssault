@@ -1,0 +1,104 @@
+﻿###########################
+# Terrorist Events
+###########################
+
+add_namespace = terror
+
+# Car Bombing
+country_event = {
+	id = terror.1
+	title = terror.1.t
+	desc = terror.1.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+	trigger = {
+	}
+	fire_only_once = yes
+
+	option = {
+		name = terror.1.a
+		news_event = { days = 1 id = news.345 }
+		}
+}
+
+# Politician Assassinated
+country_event = {
+	id = terror.2
+	title = terror.2.t
+	desc = terror.2.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+	trigger = {
+	tag = ROD
+	has_offensive_war_with = MZB
+	}
+	fire_only_once = yes
+
+	option = {
+		name = terror.2.a
+		news_event = { days = 1 id = news.345 }
+		}
+}
+
+# Hostage Crisis
+country_event = {
+	id = terror.3
+	title = terror.3.t
+	desc = terror.3.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+	trigger = {
+	tag = ROD
+	has_offensive_war_with = MZB
+	}
+	fire_only_once = yes
+
+	option = {
+		name = terror.3.a
+		news_event = { days = 1 id = news.345 }
+		}
+}
+
+# Civilian Massacre (suicide bomber) #ONLY FOR RADICAL ISLAMIC NATIONS
+country_event = {
+	id = terror.5
+	title = terror.5.t
+	desc = terror.5.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+	trigger = {
+	tag = ROD
+	has_offensive_war_with = MZB
+	}
+	fire_only_once = yes
+
+	option = {
+		name = terror.5.a
+		news_event = { days = 1 id = news.345 }
+		}
+}
+
+# Politician Held Hostage
+country_event = {
+	id = terror.6
+	title = terror.6.t
+	desc = terror.6.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+	trigger = {
+	tag = ROD
+	has_offensive_war_with = MZB
+	}
+	fire_only_once = yes
+
+	option = {
+		name = terror.6.a
+		news_event = { days = 1 id = news.345 }
+		}
+}
+

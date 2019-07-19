@@ -1,0 +1,21 @@
+
+state={
+	id=857
+	name="STATE_857"
+	manpower = 1256500
+	
+	state_category = town
+
+	history={
+		owner = ANG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+		}
+		add_core_of = ANG
+	}
+
+	provinces={
+		13418 2126
+	}
+}

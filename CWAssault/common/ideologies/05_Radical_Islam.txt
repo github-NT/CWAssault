@@ -1,0 +1,46 @@
+ideologies = {	
+	Radical_Islam = {
+	
+		types = {
+		
+			Shia-Islam  = {
+			}
+			Sunni-Islam  = {
+			}
+			Caliphate  = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_ISLAMISM_1"
+			"FACTION_NAME_ISLAMISM_2"
+			"FACTION_NAME_ISLAMISM_3"
+		}
+
+		
+		color = { 0 40 0 }
+		
+		
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.1
+				
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+
+		modifiers = {
+			puppet_cost_factor = -0.3
+
+		}
+		
+		faction_modifiers = {
+		}
+
+		can_be_boosted = yes
+		can_collaborate = yes
+
+	}
+
+}

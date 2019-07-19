@@ -1,0 +1,43 @@
+spriteTypes = { 
+##Icon For: 331426
+ SpriteType = { 
+ name = "GFX_rhodesiansecurityforces" 
+ texturefile = "gfx/interface/goals/GFX_rhodesiansecurityforces.tga" 
+ }##Icon For: 816548
+ SpriteType = { 
+ name = "GFX_precisionbombers" 
+ texturefile = "gfx/interface/goals/GFX_precisionbombers.tga" 
+ }##Icon For: 816547
+ SpriteType = { 
+ name = "GFX_jpeDYIwa" 
+ texturefile = "gfx/interface/goals/GFX_jpeDYIwa.tga" 
+ }##Icon For: 816549
+ SpriteType = { 
+ name = "GFX_bpXwIrtA" 
+ texturefile = "gfx/interface/goals/GFX_bpXwIrtA.tga" 
+ }##Icon For: 816552
+ SpriteType = { 
+ name = "GFX_AZQuIPln" 
+ texturefile = "gfx/interface/goals/GFX_AZQuIPln.tga" 
+ }##Icon For: 841101
+ SpriteType = { 
+ name = "GFX_diplomaticmissiontoportugal" 
+ texturefile = "gfx/interface/goals/GFX_diplomaticmissiontoportugal.tga" 
+ }##Icon For: 785377
+ SpriteType = { 
+ name = "GFX_diplomaticmissiontosouthafrica" 
+ texturefile = "gfx/interface/goals/GFX_diplomaticmissiontosouthafrica.tga" 
+ }##Icon For: 785242
+ SpriteType = { 
+ name = "GFX_appealtotheun" 
+ texturefile = "gfx/interface/goals/GFX_appealtotheun.tga" 
+ }##Icon For: 789485
+ SpriteType = { 
+ name = "GFX_rxIpSQvG" 
+ texturefile = "gfx/interface/goals/GFX_rxIpSQvG.tga" 
+ }##Icon For: 816246
+ SpriteType = { 
+ name = "GFX_purchasesurplusaircraft" 
+ texturefile = "gfx/interface/goals/GFX_purchasesurplusaircraft.tga" 
+ } 
+ }

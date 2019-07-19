@@ -1,0 +1,52 @@
+ideologies = {	
+	Liberalism = {
+	
+		types = {
+		
+			Classical_Liberalism = {
+			}
+			Radical_Liberalism = {
+			}
+			Liberal = {
+			}
+			Left_Wing_Populist = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_LIBERALISM_1"
+			"FACTION_NAME_LIBERALISM_2"
+		}
+
+		
+		color = { 97 161 206 }
+		
+		
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.1
+				
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+
+		modifiers = {
+			puppet_cost_factor = -0.3
+			drift_defence_factor = 0.25
+			war_support_factor = 0.10	
+			training_time_factor = 0.1
+			research_speed_factor = -0.7
+
+		}
+		
+		faction_modifiers = {
+		}
+
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes 
+
+	}
+
+}

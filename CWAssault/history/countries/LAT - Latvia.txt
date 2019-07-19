@@ -1,0 +1,118 @@
+﻿capital = 12
+
+oob = "LAT_1936"
+
+add_ideas = {
+	limited_conscription
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		submarine_mine_laying = 1
+		early_ship_hull_submarine = 1
+	}
+}
+
+set_research_slots = 3
+
+set_convoys = 10
+
+1939.1.1 = {
+
+	set_technology = {
+		tech_support = 1		
+		tech_engineers = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antiair = 1
+		support_weapons = 1
+
+	}
+}
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1931.10.3"
+	election_frequency = 108
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10
+    Liberalism = 15
+    communism = 85
+}
+
+1939.1.1 = {
+	set_politics = {		
+		ruling_party = communism
+		last_election = "1931.10.3"
+		election_frequency = 108
+		elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10
+    Liberalism = 15
+    communism = 85
+}
+}
+
+create_country_leader = {
+	name = "Jurijs Rubenis"
+	desc = ""
+	picture = "gfx/leaders/LAT/Jurijs_Rubenis.dds"
+	expire = "1987.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Eduards Berklavs"
+	desc = ""
+	picture = "gfx/leaders/LAT/Eduards Berklavs.dds"
+	expire = "1987.1.1"
+	ideology = Nationalist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Anatolijs Gorbunovs"
+	desc = ""
+	picture = "gfx/leaders/LAT/anatolijs gorbunovs.dds"
+	expire = "1987.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+1988.1.1 = {
+	
+	create_country_leader = {
+	name = "Vilnis Edvīns Bresis"
+	desc = ""
+	picture = "gfx/leaders/LAT/Vilnis Edvīns Bresis 88-91.tga"
+	expire = "1991.1.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+}

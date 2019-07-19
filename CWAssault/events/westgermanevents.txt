@@ -1,0 +1,258 @@
+﻿###########################
+# wgr Events
+###########################
+
+add_namespace = wgr
+
+# Anti Fascists Fight Fascists
+country_event = {
+	id = wgr.1
+	title = wgr.1.t
+	desc = wgr.1.d
+	picture = GFX_report_event_usa_funeral
+
+	trigger = {
+		tag = wgr
+		has_government = democratic
+		fascism > 0.03
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = wgr.1.a
+		add_political_power = -40
+		news_event = { days = 1 id = news.346 }
+	}
+	option = {
+		name = wgr.1.a
+		add_political_power = -40
+		country_event = { days = 1 id = wgr.2 }
+		news_event = { days = 26 id = news.346 }
+	}
+}
+
+# Communist Terrorist Attack
+country_event = {
+	id = wgr.2
+	title = wgr.2.t
+	desc = wgr.2.d
+	picture = GFX_report_event_usa_funeral
+
+	trigger = {
+		tag = wgr
+		has_government = democratic
+		fascism > 0.05
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = wgr.2.a
+		add_political_power = -70
+		country_event = { days = 1 id = wgr.3 }
+		add_ideas = Divided_Nation
+	}
+}
+
+# Civil War for Fascism
+country_event = {
+	id = wgr.3
+	title = wgr.3.t
+	desc = wgr.3.d
+	picture = GFX_report_event_usa_funeral
+
+	trigger = {
+		tag = wgr
+		has_government = fascism
+		fascism > 0.03
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = wgr.3.a
+		add_political_power = -240
+		news_event = { days = 1 id = news.347 }
+		start_civil_war = { ideology = democratic size = 0.5 }
+		add_ideas = Communism_Outlawed
+	}
+}
+
+# Reunite Germany (communism)
+country_event = {
+	id = wgr.4
+	title = wgr.4.t
+	desc = wgr.4.d
+	picture = GFX_report_event_usa_funeral
+	
+	
+	fire_only_once = yes
+	trigger = {
+		tag = wgr
+		has_government = communism
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wgr.4.a
+		news_event = { days = 1 id = news.355 }
+		DDR = { transfer_state = 53 }
+		DDR = { transfer_state = 52 }
+		DDR = { transfer_state = 50 }
+		DDR = { transfer_state = 54 }
+		DDR = { transfer_state = 42 }
+		DDR = { transfer_state = 51 }
+		DDR = { transfer_state = 55 }
+		DDR = { transfer_state = 57 }
+		DDR = { transfer_state = 56 }
+		DDR = { transfer_state = 59 }
+		DDR = { transfer_state = 58 }
+	}
+}
+
+# Reunite Germany (monarchism)
+country_event = {
+	id = wgr.5
+	title = wgr.5.t
+	desc = wgr.5.d
+	picture = GFX_report_event_usa_funeral
+	
+	
+	fire_only_once = yes
+	trigger = {
+		tag = WGR
+		has_government = monarchism
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wgr.5.a
+		news_event = { days = 1 id = news.356 }
+		WGR = { transfer_state = 60 }
+		WGR = { transfer_state = 65 }
+		WGR = { transfer_state = 64 }
+		WGR = { transfer_state = 62 }
+		WGR = { transfer_state = 61 }
+	}
+}
+
+# Berlin Wall Removed (democratic)
+country_event = {
+	id = wgr.6
+	title = wgr.6.t
+	desc = wgr.6.d
+	picture = GFX_report_event_usa_funeral
+	
+	
+	fire_only_once = yes
+	trigger = {
+		tag = WGR
+		date >1989.6.1
+		has_country_leader = { ruling_only = yes name = "Helmut Kohl" }
+	}
+
+	is_triggered_only = no
+	
+	option = {
+		name = wgr.6.a
+		news_event = { days = 1 id = news.371 }
+		add_timed_idea= { 
+		idea = ddr_migration 
+		days = 350 
+		}
+	}
+}
+
+# Actual Reunification (democratic)
+country_event = {
+	id = wgr.7
+	title = wgr.7.t
+	desc = wgr.7.d
+	picture = GFX_report_event_usa_funeral
+	
+	
+	fire_only_once = yes
+	trigger = {
+		tag = WGR
+		date >1990.8.3
+		has_country_leader = { ruling_only = yes name = "Helmut Kohl" }
+	}
+
+	is_triggered_only = no
+	
+	option = {
+		name = wgr.7.a
+		news_event = { days = 1 id = news.371 }
+		WGR = { transfer_state = 60 }
+		WGR = { transfer_state = 65 }
+		WGR = { transfer_state = 64 }
+		WGR = { transfer_state = 62 }
+		WGR = { transfer_state = 61 }
+		WGR = { transfer_state = 796 }
+
+	}
+}
+
+# 1976 Federal Elections
+country_event = {
+	id = wgr.8
+	title = wgr.8.t
+	desc = wgr.8.d
+	picture = GFX_report_event_usa_funeral
+	
+	
+	fire_only_once = yes
+	trigger = {
+		tag = WGR
+		date >1976.10.3
+		has_country_leader = { ruling_only = yes name = "Willy Brandt" }
+	}
+
+	is_triggered_only = no
+	
+	option = {
+		name = wgr.8.a
+		hidden_effect = {
+		country_event = { days = 1 id = wgr.9 }
+		}
+	}
+}
+
+# CDU wins election
+country_event = {
+	id = wgr.9
+	title = wgr.9.t
+	desc = wgr.9.d
+	picture = GFX_report_event_usa_funeral
+	
+	
+	fire_only_once = yes
+	trigger = {
+		tag = WGR
+		has_country_leader = { ruling_only = yes name = "Willy Brandt" }
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wgr.9.a
+	set_politics = {	
+	ruling_party = Christianity
+	last_election = "1976.10.3"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 42
+    Christianity = 48
+    Liberalism = 7
+    communism = 1
+    Socialism = 1
+    fascism = 1
+}
+	}
+}

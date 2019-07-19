@@ -1,0 +1,324 @@
+﻿capital = 282
+
+oob = "JAP_1974"
+
+set_stability = 0.7
+set_war_support = 0.2
+
+set_research_slots = 4
+set_fuel_ratio = 1.0
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	marines  = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	
+	trench_warfare = 1
+	base_strike = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_medium_battery = 1
+		improved_ship_torpedo_launcher = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		cruiser_submarines = 1
+	}
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+
+}
+
+1939.1.1 = {
+
+	set_technology = {
+
+		#PLACEHOLDERS for vehicles
+		
+		cv_fighter1 = 1
+		fighter1 = 1
+		tactical_bomber1 = 1
+	
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			improved_ship_hull_submarine = 1
+			basic_ship_hull_light = 1
+			improved_ship_hull_light = 1
+			improved_ship_hull_cruiser = 1
+			improved_ship_hull_carrier = 1
+			ship_hull_super_heavy = 1
+		}
+	
+	}
+	if = {
+		limit = {
+			not = { has_dlc = "Man the Guns" }
+		}
+		set_technology = {
+			improved_submarine = 1
+			basic_destroyer = 1
+			improved_destroyer = 1
+			improved_heavy_cruiser = 1
+			improved_carrier = 1
+			heavy_battleship = 1
+		}
+		
+	}
+}
+
+set_convoys = 400
+
+
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1969.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 47
+    Socialism = 21
+    communism = 6
+    Nationalism = 11
+    neutrality = 11
+    Monarchism = 4
+}
+
+
+1974.1.1 = {
+	set_politics = {		
+		ruling_party = democratic
+		last_election = "1972.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        democratic = 65
+        fascism = 3
+        communism = 10
+        Socialism = 10
+        Nationalism = 12
+    }
+}
+
+create_country_leader = {
+	name = "Hirohito"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "gfx/leaders/JAP/hirohito.dds"
+	expire = "1989.1.1"
+	ideology = Monarchist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Masashi Ishibashi"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "gfx/leaders/JAP/masashi ishibashi.dds"
+	expire = "1989.1.1"
+	ideology = Socialist
+	traits = {
+	}
+}
+
+
+create_country_leader = {
+	name = "Sanzō Nosaka"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "gfx/leaders/JAP/Sanzō Nosaka.dds"
+	expire = "1989.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Yukio Mishima"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "gfx/leaders/JAP/Sanzō Nosaka.dds"
+	expire = "1989.1.1"
+	ideology = Ultra-Nationalist
+	traits = {
+	}
+}
+
+1970.1.1 = {
+create_country_leader = {
+	name = "Eisaku Sato"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "gfx/leaders/Asia/Eisaku Sato japan.dds"
+	expire = "1972.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+}
+	
+1974.1.1 = {
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1983.1.1"
+	election_frequency = 32
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 56
+    Socialism = 30
+    communism = 8
+    Liberalism = 6
+}
+
+create_country_leader = {
+	name = "Kakuei Tanaka"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "gfx/leaders/JAP/Kakuei_Tanaka_197207.dds"
+	expire = "1989.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+}
+
+1976.1.1 = {
+create_country_leader = {
+	name = "Takeo Miki"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "gfx/leaders/JAP/Takeo Miki.dds"
+	expire = "1989.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+}
+	
+1983.1.1 = {
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1983.1.1"
+	election_frequency = 32
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 56
+    Socialism = 30
+    communism = 8
+    Liberalism = 6
+}
+
+create_country_leader = {
+	name = "Yasuhiro Nakasone"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "gfx/leaders/JAP/Yasuhiro_Nakasone.dds"
+	expire = "1989.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+}
+
+1986.1.1 = {
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1983.1.1"
+	election_frequency = 32
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 56
+    Socialism = 30
+    communism = 8
+    Liberalism = 6
+}
+
+create_country_leader = {
+	name = "Seiichi Tagawa"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "gfx/leaders/JAP/Seiichi Tagawa.dds"
+	expire = "1989.1.1"
+	ideology = Liberal
+	traits = {
+		#
+	}
+}
+}
+	
+1988.1.1 = {
+create_country_leader = {
+	name = "Akihito"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "gfx/leaders/JAP/akihito.dds"
+	expire = "1989.1.1"
+	ideology = Monarchist
+	traits = {
+		#
+	}
+}
+}

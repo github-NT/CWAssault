@@ -1,0 +1,573 @@
+﻿###########################
+# Politician Events
+###########################
+
+add_namespace = amerpolitician
+
+#Richard Milhous Win Election
+country_event = {
+	id = amerpolitician.1
+	title = amerpolitician.1.t
+	desc = amerpolitician.1.d
+	picture = GFX_report_event_political_gathering
+	immediate = { set_global_flag = yuri_elected }
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Richard Milhous Nixon"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/cold_majors/nixon.dds"
+			expire = "1985.1.20"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+	}
+	
+}
+
+#George Stanley Win Election
+country_event = {
+	id = amerpolitician.2
+	title = amerpolitician.2.t
+	desc = amerpolitician.2.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "George McGovern"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/george mcgovern.dds"
+			expire = "1983.5.29"
+			ideology = Liberal
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = Liberalism popularity = 0.1 }
+		set_politics = { ruling_party = Liberalism elections_allowed = yes }
+	}
+	
+}
+
+#John G Schmitz Win Election
+country_event = {
+	id = amerpolitician.3
+	title = amerpolitician.3.t
+	desc = amerpolitician.3.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "John G. Schmitz"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/john schmitz.dds"
+			expire = "1983.5.29"
+			ideology = centrism
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = neutrality popularity = 0.5 }
+		set_politics = { ruling_party = neutrality elections_allowed = yes }
+	}
+	
+}
+
+#Linda Jenness Win Election
+country_event = {
+	id = amerpolitician.4
+	title = amerpolitician.4.t
+	desc = amerpolitician.4.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Linda Jenness"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/linda jenness.dds"
+			expire = "1983.5.29"
+			ideology = Socialist
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = Socialism popularity = 0.6 }
+		set_politics = { ruling_party = Socialism elections_allowed = yes }
+	}
+	
+}
+
+#Guss Hall Win Election ###BURN IN HELL###
+country_event = {
+	id = amerpolitician.5
+	title = amerpolitician.5.t
+	desc = amerpolitician.5.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Guss Hall"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/Gus_Hall_Cropped.dds"
+			expire = "1983.5.29"
+			ideology = marxism
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = communism popularity = 0.5 }
+		set_politics = { ruling_party = communism elections_allowed = no }
+		country_event = { days = 1 id = usa.4 }
+	}
+	
+}
+
+#John G. Hospers Win Election
+country_event = {
+	id = amerpolitician.6
+	title = amerpolitician.6.t
+	desc = amerpolitician.6.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "John G. Hospers"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/John_Hospers.dds"
+			expire = "1983.5.29"
+			ideology = Libertarian
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = Market_Liberal popularity = 0.6 }
+		set_politics = { ruling_party = Market_Liberal elections_allowed = yes }
+	}
+	
+}
+#####				   #####
+##### Election of 1976 #####
+#####				   #####
+
+
+#Jimmy Carter Win Election
+country_event = {
+	id = amerpolitician.7
+	title = amerpolitician.7.t
+	desc = amerpolitician.7.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Jimmy Carter"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/jimmy carter.dds"
+			expire = "1983.5.29"
+			ideology = Liberal
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = Liberalism popularity = 0.3 }
+		set_politics = { ruling_party = Liberalism elections_allowed = yes }
+		set_global_flag = election_1976
+	}
+	
+}
+
+#Gerald Ford Win Election
+country_event = {
+	id = amerpolitician.8
+	title = amerpolitician.8.t
+	desc = amerpolitician.8.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Gerald Ford"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/Gerald_Ford_.dds"
+			expire = "1983.5.29"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = democratic popularity = 0.3 }
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		set_global_flag = election_1976
+	}
+	
+}
+
+#Roger Macbride Win Election
+country_event = {
+	id = amerpolitician.9
+	title = amerpolitician.9.t
+	desc = amerpolitician.9.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Roger Macbride"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/roger macbride.dds"
+			expire = "1983.5.29"
+			ideology = Libertarian
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = Market_Liberal popularity = 0.5 }
+		set_politics = { ruling_party = Market_Liberal elections_allowed = yes }
+		set_global_flag = election_1976
+	}
+	
+}
+
+#Lester Maddox Win Election
+country_event = {
+	id = amerpolitician.10
+	title = amerpolitician.10.t
+	desc = amerpolitician.10.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Lester Maddox"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/lester-maddox.dds"
+			expire = "1983.5.29"
+			ideology = centrism
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = neutrality popularity = 0.5 }
+		set_politics = { ruling_party = neutrality elections_allowed = yes }
+		set_global_flag = election_1976
+	}
+	
+}
+
+#Peter Camejo Win Election
+country_event = {
+	id = amerpolitician.11
+	title = amerpolitician.11.t
+	desc = amerpolitician.11.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Peter Camejo"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/peter camejo.dds"
+			expire = "1983.5.29"
+			ideology = Socialist
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = Socialism popularity = 0.5 }
+		set_politics = { ruling_party = Socialism elections_allowed = yes }
+		set_global_flag = election_1976
+	}
+	
+}
+
+
+######					######
+###### Election of 1980 ######
+######					######
+
+#Ronald Reagan Win Election
+country_event = {
+	id = amerpolitician.12
+	title = amerpolitician.12.t
+	desc = amerpolitician.12.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Ronald Reagan"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/ronald reagan.dds"
+			expire = "1983.5.29"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
+		set_politics = {		
+		ruling_party = democratic
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        democratic = 50
+        Liberalism = 41
+        neutrality = 2
+        Market_Liberal = 2
+        communism = 2
+        Nationalism = 2
+        Socialism = 2
+    }
+	set_global_flag = regean_elected
+}
+	
+}
+
+#Jimmy Carter Win Election
+country_event = {
+	id = amerpolitician.13
+	title = amerpolitician.13.t
+	desc = amerpolitician.13.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Jimmy Carter"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/Jimmy Carter 1980.dds"
+			expire = "1983.5.29"
+			ideology = Liberal
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = Liberalism popularity = 0.3 }
+		set_politics = { ruling_party = Liberalism elections_allowed = yes }
+	}
+	
+}
+
+#John Anderson Win Election
+country_event = {
+	id = amerpolitician.14
+	title = amerpolitician.14.t
+	desc = amerpolitician.14.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "John B. Anderson"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/John_B_Anderson.dds"
+			expire = "1983.5.29"
+			ideology = centrism
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = neutrality popularity = 0.5 }
+		set_politics = { ruling_party = neutrality elections_allowed = yes }
+	}
+	
+}
+
+#Ed Clark Win Election
+country_event = {
+	id = amerpolitician.15
+	title = amerpolitician.15.t
+	desc = amerpolitician.15.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Ed Clark"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/ed clark.dds"
+			expire = "1983.5.29"
+			ideology = Libertarian
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = Market_Liberal popularity = 0.4 }
+		set_politics = { ruling_party = Market_Liberal elections_allowed = yes }
+	}
+	
+}
+
+#Clifton DeBerry Win Election
+country_event = {
+	id = amerpolitician.16
+	title = amerpolitician.16.t
+	desc = amerpolitician.16.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Clifton DeBerry"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/Clifton DeBerry.dds"
+			expire = "1983.5.29"
+			ideology = Socialist
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = Socialism popularity = 0.4 }
+		set_politics = { ruling_party = Socialism elections_allowed = yes }
+	}
+	
+}
+
+#Walter Mondale
+country_event = {
+	id = amerpolitician.17
+	title = amerpolitician.17.t
+	desc = amerpolitician.17.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Clifton DeBerry"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/Clifton DeBerry.dds"
+			expire = "1983.5.29"
+			ideology = Liberal
+			traits = {
+				
+			}
+		}
+		set_politics = {		
+		ruling_party = Liberalism
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        Liberalism = 50
+        democratic = 41
+        neutrality = 2
+        Market_Liberal = 2
+        communism = 2
+        Nationalism = 2
+        Socialism = 2
+    }
+	}
+	
+}
+
+#David Bergland
+country_event = {
+	id = amerpolitician.18
+	title = amerpolitician.18.t
+	desc = amerpolitician.18.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Clifton DeBerry"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/David Bergland.dds"
+			expire = "1983.5.29"
+			ideology = Libertarian
+			traits = {
+				
+			}
+		}
+		set_politics = {		
+		ruling_party = Market_Liberal
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        Market_Liberal = 46
+        democratic = 23
+        Liberalism = 25
+        neutrality = 2
+        Market_Liberal = 2
+        communism = 2
+        Nationalism = 2
+        Socialism = 2
+    }
+	}
+	
+}
+
+#Lyndon LaRouche
+country_event = {
+	id = amerpolitician.19
+	title = amerpolitician.19.t
+	desc = amerpolitician.19.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = amerpolitician.1
+		create_country_leader = {
+			name = "Lyndon LaRouche"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/USA/Lyndon LaRouche.dds"
+			expire = "1983.5.29"
+			ideology = centrism
+			traits = {
+				
+			}
+		}
+		set_politics = {		
+		ruling_party = neutrality
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        neutrality = 46
+        democratic = 23
+        Liberalism = 25
+        Market_Liberal = 2
+        Market_Liberal = 2
+        communism = 2
+        Nationalism = 2
+        Socialism = 2
+    }
+	}
+	
+}

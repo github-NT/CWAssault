@@ -1,0 +1,27 @@
+
+state={
+	id=838
+	name="STATE_838"
+	resources={
+		steel=4
+	}
+
+	history={
+		owner = ISR
+		add_core_of = ISR
+		add_core_of = SYR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		13411
+	}
+	manpower=9315
+	buildings_max_level_factor=1.000
+	state_category=town
+}

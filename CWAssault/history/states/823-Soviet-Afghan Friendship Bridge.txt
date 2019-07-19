@@ -1,0 +1,23 @@
+
+state={
+	id=823
+	name="STATE_823"
+	manpower =24
+	
+	
+	state_category = town
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+		add_core_of = SOV
+		add_core_of = TAJ
+	}
+
+	provinces={
+		13270 13409
+	}
+}

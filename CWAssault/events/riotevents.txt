@@ -1,0 +1,105 @@
+﻿###########################
+# Riot Events
+###########################
+
+add_namespace = riot
+
+# TEST
+country_event = {
+	id = riot.1
+	title = riot.1.t
+	desc = riot.1.d
+	picture = GFX_Saigon_Falls
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = riot.1.a
+		release = ANR
+		add_state_core = 55
+		ANR = {
+		add_state_core = 55
+		load_oob = "ANR_1970"
+		}
+		declare_war_on = { target = ANR type = take_state }
+	}
+}
+
+#Supreme Soviet Civil War AKA MASSIVE FUCKING CLUSTER FUCKING
+country_event = {
+	id = riot.2
+	title = riot.2.t
+	desc = riot.2.d
+	picture = GFX_Saigon_Falls
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+		trigger = {
+	has_government = communism
+	tag = SSC
+	}
+	
+	option = {
+		name = riot.2.a
+		release = ANR
+		declare_war_on = { target = ANR type = civil_war }
+		ANR = {
+		load_oob = "Anarchists_Supreme_Soviet"
+		}
+	}
+}
+
+#Chechnya Declares Independance
+country_event = {
+	id = riot.3
+	title = riot.3.t
+	desc = riot.3.d
+	picture = GFX_Saigon_Falls
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	has_government = communism
+	tag = SSC
+	}
+	
+	option = {
+		name = riot.3.a
+		release = CHE
+		declare_war_on = { target = CHE type = civil_war }
+		news_event = { days = 1 id = news.387 }
+	}
+}
+
+#Anarchists Riot
+country_event = {
+	id = riot.4
+	title = riot.4.t
+	desc = riot.4.d
+	picture = GFX_Saigon_Falls
+	
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	Anarchy > 0.30
+	}
+	
+	option = {
+		name = riot.3.a
+		add_popularity = { ideology = Anarchy popularity = 0.2 }
+	}
+	option = {
+		name = riot.3.b
+		add_popularity = { ideology = Anarchy popularity = 0.1 }
+		hidden_effect = {
+		add_timed_idea = { idea = Anarchist_Terrorists days = 550 }
+		}
+	}
+}

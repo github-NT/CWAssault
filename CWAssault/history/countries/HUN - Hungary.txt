@@ -1,0 +1,237 @@
+﻿capital = 43
+
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 0.6
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	support_weapons2 = 1
+	basic_medium_tank = 1 # PLACEHOLDER
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	fuel_silos = 1
+}
+
+1939.1.1 = {
+	
+	oob = "HUN_1974"
+	set_technology = {
+		fighter1 = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		support_weapons = 1
+	}
+}
+
+add_ideas = {
+COMECON
+		limited_conscription
+		partial_economic_mobilisation
+}
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1935.3.31"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 25
+    fascism = 0
+    neutrality = 0
+    communism = 78
+}
+
+create_country_leader = {
+	name = "Kadar Janos"
+	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
+	picture = "gfx/leaders/cold_majors/Kadar.dds"
+	expire = "1980.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Mátyás Szűrös"
+	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
+	picture = "gfx/leaders/HUN/Matyas Szuros.dds"
+	expire = "1980.1.1"
+	ideology = conservatism
+	traits = {
+		anti_communist
+	}
+}
+
+1968.1.1 = {
+	set_politics = {		
+		ruling_party = communism
+		last_election = "1939.5.29"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        democratic = 27
+        communism = 70
+        fascism = 3
+    }
+	
+	create_country_leader = {
+	name = "Kadar Janos"
+	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
+	picture = "gfx/leaders/cold_majors/Kadar.dds"
+	expire = "1980.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+}
+
+create_country_leader = {
+	name = "Lajos Czinege"
+	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
+	picture = "gfx/leaders/HUN/Lajos Czinege.dds"
+	expire = "1980.1.1"
+	ideology = Military
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Ferenc Kárpáti"
+	portrait_path = "gfx/leaders/HUN/Ferenc Kárpáti.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Géza Révész"
+	portrait_path = "gfx/leaders/HUN/Géza Révész.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "István Oláh"
+	portrait_path = "gfx/leaders/HUN/István Oláh.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Lajos Czinege"
+	portrait_path = "gfx/leaders/HUN/Lajos Czinege.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Rácz Lajos"
+	portrait_path = "gfx/leaders/HUN/rácz lajos.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Zsinka Gyula"
+	portrait_path = "gfx/leaders/HUN/generichungen.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Pálinkás Jozsef"
+	portrait_path = "gfx/leaders/HUN/generichungen2.dds"
+	traits = {  trickster }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Gyenes Izsak"
+	portrait_path = "gfx/leaders/HUN/generichungen3.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Kocsis Zerind"
+	portrait_path = "gfx/leaders/HUN/generichungen4.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+1988.1.1 = {
+	create_country_leader = {
+	name = "Károly Grósz"
+	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
+	picture = "gfx/leaders/HUN/Károly Grósz.dds"
+	expire = "1980.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+}

@@ -1,0 +1,142 @@
+﻿###########################
+# Damansky Events
+###########################
+
+add_namespace = damansky
+
+# Land Troops on Damansky
+country_event = {
+	id = damansky.1
+	title = damansky.1.t
+	desc = damansky.1.d
+	picture = GFX_Norway_Camp
+
+	is_triggered_only = yes
+	trigger = {
+	tag = PRC
+	date >1969.1.1
+	}
+	fire_only_once = yes
+
+	option = {
+		name = damansky.1.a
+	}
+	option = {
+		name = damansky.1.b
+		SOV = {
+		country_event = { days = 1 id = damansky.2 }
+		}
+	}
+}
+
+# Damansky Response -Soviet-
+country_event = {
+	id = damansky.2
+	title = damansky.2.t
+	desc = damansky.2.d
+	picture = GFX_Norway_Camp
+
+	is_triggered_only = yes
+	trigger = {
+	tag = SOV
+	date >1969.1.1
+	}
+	fire_only_once = yes
+
+	option = {
+		name = damansky.3.a
+	}
+	option = {
+		name = damansky.3.b
+		PRC = {
+		country_event = { days = 1 id = damansky.3 }
+		country_event = { days = 1 id = damansky.4 }
+		}
+		country_event = { days = 1 id = damansky.3 }
+	}
+}
+
+# Soviets respond 
+country_event = {
+	id = damansky.3
+	title = damansky.3.t
+	desc = damansky.3.d
+	picture = GFX_Norway_Camp
+
+	is_triggered_only = yes
+	trigger = {
+	tag = SOV
+	date >1969.1.1
+	}
+	fire_only_once = yes
+
+	option = {
+		name = damansky.3.a
+		add_manpower = -24
+	}
+	option = {
+		name = damansky.3.b
+		add_manpower= -24
+		PRC = {
+		country_event = { days = 1 id = damansky.3 }
+		}
+	}
+}
+
+# Chinese Response 
+country_event = {
+	id = damansky.4
+	title = damansky.4.t
+	desc = damansky.4.d
+	picture = GFX_Norway_Camp
+
+	is_triggered_only = yes
+	trigger = {
+	tag = PRC
+	date >1969.1.1
+	}
+	fire_only_once = yes
+
+	option = {
+		name = damansky.4.a
+		add_manpower = -24
+	}
+	option = {
+		name = damansky.4.b
+		add_manpower= -24
+		SOV = {
+		country_event = { days = 1 id = damansky.5 }
+		}
+	}
+}
+
+# Escalate Response 
+country_event = {
+	id = damansky.5
+	title = damansky.5.t
+	desc = damansky.5.d
+	picture = GFX_Norway_Camp
+
+	is_triggered_only = yes
+	trigger = {
+	tag = SOV
+	date >1969.1.1
+	}
+	fire_only_once = yes
+
+	option = {
+		name = damansky.5.a
+		add_manpower = -44
+	}
+	option = {
+		name = damansky.5.b
+		add_manpower= -44
+		SOV = {
+		country_event = { days = 1 id = damansky.5 }
+		}
+	}
+	option = {
+		name = damansky.5.b
+		add_manpower= -44
+	}
+}

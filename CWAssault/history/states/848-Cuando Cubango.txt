@@ -1,0 +1,21 @@
+
+state={
+	id=848
+	name="STATE_848"
+	manpower = 564615
+	
+	state_category = rural
+
+	history={
+		owner = ANG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		add_core_of = ANG
+	}
+
+	provinces={
+		4735
+	}
+}

@@ -1,0 +1,302 @@
+﻿capital = 49
+
+oob = "NATO_minors"
+
+set_research_slots = 3
+
+add_ideas = {
+	limited_conscription
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	transport = 1
+	motorised_infantry = 1
+	support_weapons2 = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	basic_medium_tank = 1 # PLACEHOLDER
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+}
+
+
+1939.1.1 = {
+
+	set_technology = {
+		fighter1 = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
+		interwar_artillery = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+		
+		fleet_in_being = 1
+		convoy_sailing = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		synth_oil_experiments = 1
+		fuel_silos = 1
+		oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			basic_submarine = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+		}
+	}
+}
+
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1935.2.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 10
+    fascism = 0
+    communism = 0
+    neutrality = 100
+}
+
+set_convoys = 20
+set_stability = 0.55
+
+1939.1.1 = {
+	set_politics = {	
+	ruling_party = neutrality
+		last_election = "1939.2.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        democratic = 10
+        fascism = 0
+        communism = 0
+        neutrality = 90
+    }
+
+	create_country_leader = {
+		name = "Fahri Korutürk"
+		desc = "POLITICS_ISMET_INÖNÜ_DESC"
+		picture = "gfx/leaders/TUR/fahrikoruturk 1980.tga"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+			#
+		}
+	}
+
+}
+
+	create_country_leader = {
+		name = "Ertuğrul Osman"
+		desc = "POLITICS_ISMET_INÖNÜ_DESC"
+		picture = "gfx/leaders/TUR/Ertugrul_Osman.dds"
+		expire = "1965.1.1"
+		ideology = Monarchist
+		traits = {
+			#
+		}
+	}
+
+create_corps_commander = {
+	name = "Faruk Gürler"
+	portrait_path = "gfx/leaders/TUR/Generals/Faruk Gürler.dds"
+	traits = {  }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hulusi Akar"
+	portrait_path = "gfx/leaders/TUR/Generals/Hulusi-Akar.dds"
+	traits = {  }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kenan Evren"
+	portrait_path = "gfx/leaders/TUR/Generals/Kenan Evren.dds"
+	traits = {   }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Memduh Tağmaç"
+	portrait_path = "gfx/leaders/TUR/Generals/Memduh Tağmaç.dds"
+	traits = {  }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Muhsin Batur"
+	portrait_path = "gfx/leaders/TUR/Generals/Muhsin Batur.dds"
+	traits = {  }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Necdet Üruğ"
+	portrait_path = "gfx/leaders/TUR/Generals/Necdet Üruğ.dds"
+	traits = {   }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Cemil Cahit Toydemir"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+	traits = {  }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Necip Torumtay"
+	portrait_path = "gfx/leaders/TUR/Generals/Necip Torumtay.dds"
+	traits = {  }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nurettin Ersin"
+	portrait_path = "gfx/leaders/TUR/Generals/Nurettin Ersin.dds"
+	traits = {   }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Semih Sancar"
+	portrait_path = "gfx/leaders/TUR/Generals/Semih Sancar.dds"
+	traits = {  }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Turgut Sunalp"
+	portrait_path = "gfx/leaders/TUR/Generals/Turgut Sunalp.dds"
+	traits = {  }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}

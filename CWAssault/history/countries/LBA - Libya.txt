@@ -1,0 +1,120 @@
+﻿capital = 448
+
+oob = "LBA1974"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_destroyer = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	motorised_infantry = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	basic_medium_tank = 1
+	fuel_silos = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	mechanised_infantry = 1
+}
+
+set_convoys = 20
+
+1939.1.1 = {
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+	}
+}
+
+add_ideas = {
+	partial_economic_mobilisation
+	far_member
+	service_by_requirement
+	closed_economy
+	industrial_growth
+}
+	
+set_politics = {	
+	ruling_party = Nationalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 0
+    fascism = 0
+    communism = 0
+    Nationalism = 100
+}
+
+create_country_leader = {
+	name = "Muammar al-Gaddafi"
+	desc = ""
+	picture = "gfx/leaders/LBA/Gaddafi.dds"
+	ideology = Military
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Muammar al-Gaddafi"
+	portrait_path = "gfx/leaders/LBA/General Gadaffi.dds"
+	traits = {  }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Yousef Mangoush"
+	portrait_path = "gfx/leaders/LBA/Yousef Mangoush.dds"
+	traits = {  }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Abu-Bakr Yunis Jabr"
+	portrait_path = "gfx/leaders/LBA/Abu-Bakr Yunis Jabr.dds"
+	traits = { trickster }
+	skill = 3
+	
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}

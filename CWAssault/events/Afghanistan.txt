@@ -1,0 +1,248 @@
+﻿###########################
+# Afghanistan Events
+###########################
+
+add_namespace = afghan
+
+# Saur Revolution
+country_event = {
+	id = afghan.1
+	title = afghan.1.t
+	desc = afghan.1.d
+	picture = GFX_Saur_Revolution
+
+	is_triggered_only = no
+	trigger = {
+	has_government = neutrality
+	tag = AFG
+	date >1978.4.18
+	country_exists = AFG
+	}
+	fire_only_once = yes
+
+	option = {
+		name = afghan.1.a
+		release = DRA
+		kill_country_leader = yes
+		annex_country = { target = AFG }
+		change_tag_from = DRA
+		DRA = { change_tag_from = AFG }
+	}
+}
+
+# Soviets Offer Support
+country_event = {
+	id = afghan.2
+	title = afghan.2.t
+	desc = afghan.2.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	tag = DRA
+	date >1979.12.17
+	}
+
+	option = {
+		name = afghan.2.a
+		SVT = {
+		add_state_core= 804
+		add_state_core= 807
+		add_state_core= 808
+		puppet = DRA
+		}
+		release = SVT
+		
+	}
+}
+
+# Equpiment Captured From Soviets
+country_event = {
+	id = afghan.3
+	title = afghan.3.t
+	desc = afghan.3.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = no
+	trigger = {
+	OR = {
+	tag = NFA
+	tag = AMF
+	tag = HZI
+	tag = HIG
+	tag = JMI
+		}
+	has_offensive_war_with = DRA
+	}
+	fire_only_once = no
+	mean_time_to_happen = {
+		days = 90
+	}
+
+	option = {
+		name = afghan.3.a
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = 800
+                producer = SOV
+		}
+		add_equipment_to_stockpile = {
+                type = unifornm_equipment_0
+                amount = 1300
+                producer = SOV
+		}
+		add_equipment_to_stockpile = {
+                type = motorized_equipment_1
+                amount = 300
+                producer = SOV
+		}
+	}
+}
+
+# Pakistan Provides Support
+country_event = {
+	id = afghan.4
+	title = afghan.4.t
+	desc = afghan.4.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = no
+	trigger = {
+	OR = {
+	tag = NFA
+	tag = AMF
+	tag = HZI
+	tag = HIG
+	tag = JMI
+		}
+	has_offensive_war_with = DRA
+	}
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {
+		name = afghan.4.a
+			add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = 700
+                producer = PAK
+		}
+		add_equipment_to_stockpile = {
+                type = unifornm_equipment_0
+                amount = 500
+                producer = PAK
+		}
+	}
+	
+	}
+}
+
+# Chechen Volunteers
+country_event = {
+	id = afghan.5
+	title = afghan.5.t
+	desc = afghan.5.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = no
+	is_triggered_only = no
+	trigger = {
+	OR = {
+	tag = NFA
+	tag = AMF
+	tag = HZI
+	tag = HIG
+	tag = JMI
+	}
+	has_offensive_war_with = DRA
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = afghan.5.a
+		add_manpower= 3000
+	}
+}
+
+# New Flag Design
+country_event = {
+	id = afghan.6
+	title = afghan.6.t
+	desc = afghan.6.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+	has_government = neutrality
+	tag = AFG
+	date > 1974.4.1
+	}
+
+	option = {
+		name = afghan.6.a
+		set_cosmetic_tag = AFG_74
+	}
+}
+
+# Soviet Reinforcements 
+country_event = {
+	id = afghan.7
+	title = afghan.7.t
+	desc = afghan.7.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	tag = SVT
+	}
+
+	option = {
+		name = afghan.7.a
+		add_manpower = 5817256
+	}
+}
+
+# Storm 333 
+country_event = {
+	id = afghan.8
+	title = afghan.8.t
+	desc = afghan.8.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+	tag = DRA
+	date >1979.12.17
+	has_country_leader = { ruling_only = yes name = "Hafizullah Amin" }
+	}
+
+	option = {
+		name = afghan.8.a
+		kill_country_leader = yes
+	create_country_leader = {
+	name = "Babrak Karmal"
+	desc = ""
+	picture = "gfx/leaders/DRA/babrak karmal.dds"
+	expire = "1986.1.1"
+	ideology = leninism
+	traits = {
+		#
+			}	
+		}
+		release = HIG
+		declare_war_on= { 
+		target = HIG 
+		type = civil_war 
+		}
+	}
+}

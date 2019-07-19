@@ -1,0 +1,248 @@
+﻿###########################
+# supreme soviet Events
+###########################
+
+add_namespace = supreme
+
+# Survied Siege
+country_event = {
+	id = supreme.1
+	title = supreme.1.t
+	desc = supreme.1.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	has_government = communism
+	tag = SSC
+	date >1993.12.4
+	SSC = { exists = yes }
+	}
+	
+	option = {
+		name = supreme.1.a
+		set_cosmetic_tag = SSC_RSFSR
+	create_country_leader = {
+	name = "Viktor Anpilov"
+	desc = "POLITICS_STANLEY_BALDWIN_DESC"
+	picture = "gfx/leaders/SOV/viktor anpilov.dds"
+	expire = "2018.1.1"
+	ideology = vanguard_communism
+	traits = {
+		
+	}
+	}
+	annex_country = { target = SOV }
+	start_civil_war = {
+				ideology = democratic
+				size = 0.5
+				capital = 801
+				states = { 254 258 223 205 242 243 210 146 215 213 147 722 256 250 249 399 651 652 398 397 262 582 573 581 579 580 653 572 403 571 577 516 578 576 568 569 564 570 329 566 567 575 644 562 560 561 657 408 409 655 796 735 235 238 218 245 265}
+			}
+		ANR = {
+		add_state_core = 264
+		add_state_core = 351
+		add_state_core = 217
+		add_state_core = 235
+		add_state_core = 214
+		add_state_core = 236
+		add_state_core = 232
+		}
+		CHE = {
+		add_state_core = 233
+		add_state_core = 234
+		add_state_core = 235
+		}
+	random_other_country = {
+	limit = {
+	original_tag = SSC
+	has_government = democratic
+	}
+	set_stability = 0.9
+	set_war_support = 0.8
+	load_oob = "SSC_civilwar"
+	}
+hidden_effect = {
+	load_oob = "SSC_civilwarcommunist"
+		create_field_marshal = {
+	name = "Matvei Zakharov"
+		portrait_path = "gfx/leaders/SOV/Generals/Matvei Zakharov.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Viktor Kulikov"
+		portrait_path = "gfx/leaders/SOV/Generals/Viktor Kulikov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Nikolai Ogarkov"
+		portrait_path = "gfx/leaders/SOV/Generals/Nikolai Ogarkov.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Sergey Akhromeyev"
+		portrait_path = "gfx/leaders/SOV/Generals/Sergey Akhromeyev.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Mikhail Moiseev"
+		portrait_path = "gfx/leaders/SOV/Generals/Mikhail Moiseev.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vladimir Lobov"
+		portrait_path = "gfx/leaders/SOV/Generals/Vladimir Lobov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Viktor Dubynin"
+		portrait_path = "gfx/leaders/SOV/Generals/Viktor Petrovich Dubynin.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mikhail Kolesnikov"
+		portrait_path = "gfx/leaders/SOV/Generals/Mikhail Kolesnikov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Anatoly Kvashnin"
+		portrait_path = "gfx/leaders/SOV/Generals/Anatoly Kvashnin.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Yuri Baluyevsky"
+		portrait_path = "gfx/leaders/SOV/Valetin Varennikov.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nikolai Makarov"
+		portrait_path = "gfx/leaders/SOV/Vasily_Ivanovich_Andrianov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+}
+random_list = {
+                5 = { country_event = { id = riot.2 days = 1 }
+                    modifier = {
+                        add = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				3 = { country_event = { id = riot.3 days = 1 }
+						country_event = { id = riot.2 days = 1 }
+                    modifier = {
+                        add = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+				2 = {
+                    modifier = {
+                        add = 100
+                        is_historical_focus_on = yes
+                    }
+                }
+}
+	}
+}
+
+# Survied Siege
+country_event = {
+	id = supreme.2
+	title = supreme.2.t
+	desc = supreme.2.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = supreme.1.a
+
+
+	}
+}
+
+
+

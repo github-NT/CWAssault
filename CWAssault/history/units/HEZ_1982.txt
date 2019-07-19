@@ -1,0 +1,130 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Firqat Musha"					# Represents Infanterie Welles 1-4
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Qasam Alkhizanat" 	
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		light_tank_destroyer_brigade = { x = 3 y = 0 }
+		light_tank_destroyer_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars
+	}
+}
+division_template = {
+	name = "Firqat Almashat Alaly" 	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars
+	}
+}
+
+units = {
+	division = {
+		name = "Firqat Musha. 31"
+		location = 13234
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Musha. 32"
+		location = 13234
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Musha. 33"
+		location = 13234
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Musha. 35"
+		location = 13234
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Musha. 36"
+		location = 13234
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Musha. 37"
+		location = 13234
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Musha. 34"
+		location = 13234
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Almashat Alaly. 11"
+		location = 11919
+		division_template = "Firqat Almashat Alaly"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Almashat Alaly. 4"
+		location = 11919
+		division_template = "Firqat Almashat Alaly"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Almashat Alaly. 17"
+		location = 11919
+		division_template = "Firqat Almashat Alaly"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}		
+
+}

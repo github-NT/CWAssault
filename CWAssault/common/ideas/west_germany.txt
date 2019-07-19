@@ -1,0 +1,322 @@
+ideas = {
+	
+	political_advisor = {
+		
+		gabi_fechtner = {
+			
+			
+			allowed = {
+				original_tag = "WGR"
+			}
+			
+
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		adolf_von_thadden = {
+			
+			
+			allowed = {
+				original_tag = "WGR"
+			}
+			
+
+			
+			traits = { fascist_demagogue }
+
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		michael_kuhnen = {
+			
+			
+			allowed = {
+				original_tag = "WGR"
+			}
+			
+
+			
+			traits = { Nationalist_Demagogue }
+
+			do_effect = {
+				NOT = {
+					has_government = Nationalism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	
+	# TECHNOLOGY
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		krauss_maffei_wegmann = {
+
+			picture = GER_MAN
+			
+			allowed = {
+				original_tag = WGR
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		dassault_aviation1 = {
+			
+			allowed = {
+				original_tag = WGR
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+
+		panavia_tornado = { 
+
+			
+			allowed = {
+				original_tag = WGR
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		dornier1 = {
+
+			allowed = {
+				original_tag = WGR
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+
+	}
+	
+
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+
+		
+		heckler_koch = {
+
+			
+			allowed = {
+				original_tag = WGR
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		
+
+		
+		rheinmetall1 = {
+			
+			allowed = {
+				original_tag = WGR
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	theorist = {
+		ulrich_de_maizier1 = {
+			
+			allowed = {
+				original_tag = WGR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { mobile_warfare_expert }
+		}
+		
+	}	
+		
+	# MILITARY
+	army_chief = {
+
+		wolfgang_altenburg = {
+
+			
+			allowed = {
+				original_tag = WGR
+			}
+			
+			traits = { army_chief_organizational_2 }			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		klaus_naumann = {
+
+			
+			allowed = {
+				original_tag = WGR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			
+			traits = { blitzkrieg_theorist }
+		}
+		
+		harald_wust2  = {
+
+			
+			allowed = {
+				original_tag = WGR
+			}
+						
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+	
+	air_chief = {
+		
+		harald_wust = {
+
+			
+			allowed = {
+				original_tag = WGR
+			}
+						
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	
+	navy_chief = { #CHIEF OF NAVY
+		
+		armin_zimmermann = {
+
+			
+			allowed = {
+				original_tag = WGR
+			}
+						
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+		
+	}
+
+	high_command = {
+
+		ulrich_de_maizier = {
+
+			
+			allowed = {
+				original_tag = WGR
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+
+}

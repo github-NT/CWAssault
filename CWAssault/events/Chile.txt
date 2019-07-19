@@ -1,0 +1,101 @@
+﻿###########################
+# Chile Events
+###########################
+
+add_namespace = chile
+
+# Chilean Coup
+country_event = {
+	id = chile.1
+	title = chile.1.t
+	desc = chile.1.d
+	picture = GFX_Chilean_Coup
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = no
+	trigger = {
+	tag = CHL
+	has_government = Socialism
+	date >1973.9.11
+	}
+
+	option = {
+	name = chile.1.a
+	set_politics = { ruling_party = Nationalism elections_allowed = no }
+	add_popularity = { ideology = Nationalism popularity = 0.3 }
+	start_civil_war = { ideology = Socialism size = 0.5 }
+	news_event = { days = 1 id = rnews.13 }
+	}
+}
+
+# Chilean Coup Victory (Nationalist)
+country_event = {
+	id = chile.2
+	title = chile.2.t
+	desc = chile.2.d
+	picture = GFX_Allende_Dead
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = no
+	trigger = {
+	tag = CHL
+	has_government = Nationalism
+	date >1973.9.11
+	has_global_flag = chilean_coup
+	CHL = { owns_state = 506 }
+	CHL = { owns_state = 279 }
+	}
+
+	option = {
+	name = chile.2.a
+	news_event = { days = 1 id = rnews.14 }
+	}
+}
+
+# Chilean Presidential Elections 1970
+country_event = {
+	id = chile.3
+	title = chile.3.t
+	desc = chile.3.d
+	picture = GFX_La_Moneda
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = no
+	trigger = {
+	tag = CHL
+	has_government = Christianity
+	date >1970.7.26
+	has_country_leader = { ruling_only = yes name = "Eduardo Frei" }
+	}
+
+	option = {
+	name = chile.3.a
+	random_list = {
+                6 = { country_event = { id = chilepoli.1 days = 1 }
+                    modifier = {
+                        add = 100
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = chilepoli.2 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = chilepoli.3 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+	}
+}
+

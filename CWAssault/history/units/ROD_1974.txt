@@ -1,0 +1,370 @@
+﻿division_template = {
+	name = "White Infantry Brigade"				
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+	}
+	support = {
+	    artillery = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 } 			
+	}
+
+
+}
+
+division_template = {
+	name = "African Infantry Brigade"				
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	    artillery = { x = 0 y = 0 }	
+		engineer = { x = 0 y = 1 } 					
+	}
+
+}
+
+division_template = {
+	name = "Grey Scouts"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+	}
+	support = {
+	    recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motor Infantry"		
+									
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {	
+		engineer = { x = 0 y = 0 } 	
+		artillery = { x = 0 y = 1 } 
+		anti_air = { x = 0 y = 2 } 	
+	}
+}
+division_template = {
+	name = "Armor Brigade" 				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }	
+		medium_armor = { x = 0 y = 2 }						
+	}
+	support = {	
+	artillery = { x = 0 y = 0 }
+	}
+}
+units = {						
+	division= {			
+		name = "1st Grey's Scouts"		
+		location = 13387
+		division_template = "Grey Scouts"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		name = "1st Rhodesian Motor Infantry"		
+		location = 13387
+		division_template = "Motor Infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "82nd Rhodesian Motor Infantry"		
+		location = 13387
+		division_template = "Motor Infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+
+	}
+	
+	division= {			
+		name = "72nd Rhodesian Motor Infantry"		
+		location = 13323
+		division_template = "Motor Infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "23rd Rhodesian Motor Infantry"		
+		location = 13325
+		division_template = "Motor Infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+
+	}
+	
+	division= {			
+		name = "11th Armored Brigade 'Black Devils'"		
+		location = 13333
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+
+	}
+	
+	division= {			
+		name = "10th Armored Brigade"		
+		location = 13405
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+
+	}
+	
+	division= {			
+		name = "74th Rhodesian Light Infantry"		
+		location = 13406
+		division_template = "White Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	
+	division= {			
+		name = "78th Rhodesian Light Infantry"		
+		location = 13368
+		division_template = "White Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	
+	division= {			
+		name = "11th Rhodesian Light Infantry"		
+		location = 13367
+		division_template = "White Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	
+	division= {			
+		name = "71st Rhodesian Light Infantry"		
+		location = 13399
+		division_template = "White Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+
+	division= {			
+		name = "73rd Rhodesian Light Infantry"		
+		location = 13374
+		division_template = "White Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}	
+	
+	division= {			
+		name = "3rd Rhodesian Light Infantry"		
+		location = 13371
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	
+	division= {			
+		name = "28th Rhodesian Light Infantry"		
+		location = 13372
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "24th Rhodesian Light Infantry"		
+		location = 13395
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "23rd Rhodesian Light Infantry"		
+		location = 13377
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "22nd Rhodesian Light Infantry"		
+		location = 13378
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}	
+	division= {			
+		name = "47th Rhodesian Light Infantry"		
+		location = 13337
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	
+	division= {			
+		name = "9th Rhodesian Light Infantry"		
+		location = 13338
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "10th Rhodesian Light Infantry"		
+		location = 13407
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	
+	division= {			
+		name = "29th Rhodesian Light Infantry"		
+		location = 13356
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "21st Rhodesian Light Infantry"		
+		location = 13358
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "14th Rhodesian Light Infantry"		
+		location = 13364
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "30th Rhodesian Light Infantry"		
+		location = 13379
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}	
+	division= {			
+		name = "23rd Rhodesian Light Infantry"		
+		location = 13359
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "17th Rhodesian Light Infantry"		
+		location = 13352
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "37th Rhodesian Light Infantry"		
+		location = 7842
+		division_template = "African Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}	
+}
+
+
+### Starting Production ###
+instant_effect = {
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 800
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = support_equipment_1
+                amount = 250
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = food_equipment_1
+                amount = 400
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = unifornm_equipment_0
+                amount = 400
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = mechanized_equipment_1
+                amount = 200
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = gw_tank_equipment
+                amount = 60
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = motorized_equipment_1
+                amount = 400
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = fighter_equipment_0 
+                amount = 50
+                producer = ENG
+	}
+add_equipment_to_stockpile = {
+                type = tac_bomber_equipment_0
+                amount = 5
+                producer = ENG
+	}
+}

@@ -1,0 +1,341 @@
+﻿capital = 454
+
+oob = "ISR_1974"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	support_weapons2 = 1
+	basic_medium_tank = 1 # PLACEHOLDER
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	fuel_silos = 1
+	tech_signal_company = 1
+	tech_logistics_company = 1
+	tech_field_hospital = 1
+	tech_maintenance_company = 1
+	tech_military_police = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	light_mechanised_infantry = 1
+}
+
+
+set_convoys = 5
+
+1973.8.1 = {
+add_named_threat = { threat = -2 name = yom_kippur_peace_conference }
+	add_political_power = 22
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+	}
+}
+
+add_ideas = {
+	limited_conscription
+}
+
+set_politics = {	
+	ruling_party = Socialism
+	last_election = "1968.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    Socialism = 46
+    democratic = 21
+    neutrality = 10
+    communism = 4
+    Zionism = 9
+    Radical_Islam = 5
+    Liberalism = 5
+}
+
+create_country_leader = {
+	name = "Golda Meir"
+	desc = ""
+	picture = "gfx/leaders/cold_majors/meir.dds"
+	ideology = Socialist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Menachem Begin"
+	desc = ""
+	picture = "gfx/leaders/ISR/Menachem Begin.dds"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "David Ben-Gurion"
+	desc = ""
+	picture = "gfx/leaders/ISR/david.dds"
+	ideology = Liberal
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kalman Kahana"
+	desc = ""
+	picture = "gfx/leaders/ISR/Kalman Kahana.dds"
+	ideology = Zionist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Meir Vilner"
+	desc = ""
+	picture = "gfx/leaders/ISR/meir vilner.dds"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wadie Haddad"
+	desc = ""
+	picture = "gfx/leaders/ISR/Wadie Haddad.dds"
+	ideology = Sunni-Islam
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Seif el-Din el-Zoubi"
+	desc = ""
+	picture = "gfx/leaders/ISR/Seif el-Din el-Zoubi.dds"
+	ideology = Islamic_Republic
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Moshe Dayan"
+	portrait_path = "gfx/leaders/ISR/Moshe Dayan.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Israel Tal"
+	portrait_path = "gfx/leaders/ISR/Israel Tal.dds"
+	traits = { infantry_officer organizer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Uzi Narkis"
+	portrait_path = "gfx/leaders/ISR/220px-Uzi_Narkis_1959 copy.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Aluf Shmuel Eyal"
+	portrait_path = "gfx/leaders/ISR/Aluf_Shmuel_Eyal.dds"
+	traits = { infantry_officer trait_mountaineer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Avraham Adan"
+	portrait_path = "gfx/leaders/ISR/Avraham Adan.dds"
+	traits = { infantry_officer trait_mountaineer }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Ben Reuven Eyal"
+	portrait_path = "gfx/leaders/ISR/ben_reuven_eyal_large.dds"
+	traits = { infantry_officer organizer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "David Elazar"
+	portrait_path = "gfx/leaders/ISR/David_Elazar_-_1964.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Doron Almong"
+	portrait_path = "gfx/leaders/ISR/Doron Almong.dds"
+	traits = { infantry_officer trait_mountaineer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Amir Drori"
+	portrait_path = "gfx/leaders/ISR/GenAmirDrori.dds"
+	traits = { infantry_officer trait_mountaineer }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Jeremiah Halpern"
+	portrait_path = "gfx/leaders/ISR/Jeremiah_Halpern.dds"
+	traits = { infantry_officer trait_mountaineer }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Shlomo Arel"
+	portrait_path = "gfx/leaders/ISR/200px-Shlomo_Arel.dds"
+	traits = { infantry_officer trait_mountaineer }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_country_leader = {
+	name = "Birendra Bir Bikram Shah"
+	desc = ""
+	picture = "gfx/leaders/ISR/Yuval Ne'eman.dds"
+	ideology = Orthodox
+	traits = {
+		#
+	}
+}
+
+1977.1.1 = {
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1973.12.31"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 37
+    Socialism = 36
+    Zionism = 12
+    communism = 5
+    Nationalism = 6
+    Liberalism = 5
+}
+
+create_country_leader = {
+	name = "Avraham Yosef Shapira"
+	desc = ""
+	picture = "gfx/leaders/ISR/Avraham Yosef Shapira.dds"
+	ideology = Zionist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Yuval Ne'eman"
+	desc = ""
+	picture = "gfx/leaders/ISR/Yuval Ne'eman.dds"
+	ideology = Nationalist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Shimon Peres"
+	desc = ""
+	picture = "gfx/leaders/ISR/Shimon-Peres.dds"
+	ideology = Socialist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Amnon Rubinstein"
+	desc = ""
+	picture = "gfx/leaders/ISR/amnon rubinstein.dds"
+	ideology = Liberal
+	traits = {
+		#
+	}
+}
+}

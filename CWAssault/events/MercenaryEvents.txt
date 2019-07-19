@@ -1,0 +1,267 @@
+﻿###########################
+# Mercenary Events
+###########################
+
+add_namespace = merc
+
+# White Mercenaries
+country_event = {
+	id = merc.1
+	title = merc.1.t
+	desc = merc.1.d
+	picture = GFX_White_Mercenaries
+
+	is_triggered_only = no
+	trigger = {
+	any_owned_state = { is_on_continent = africa }
+		OR = {
+	has_war= yes
+	has_civil_war = yes
+		}
+	}
+	fire_only_once = no
+	
+	mean_time_to_happen = {
+		days = 140
+	}
+
+	option = {
+		name = merc.1.a
+		add_manpower= 3000
+		}
+	option = {
+		name = merc.1.b
+
+		}
+}
+
+# White Mercenaries 2
+country_event = {
+	id = merc.2
+	title = merc.2.t
+	desc = merc.2.d
+	picture = GFX_White_Mercenaries
+
+	is_triggered_only = no
+	trigger = {
+	any_owned_state = { is_on_continent = africa }
+		OR = {
+	has_war= yes
+	has_civil_war = yes
+		}
+	}
+	fire_only_once = no
+	
+	mean_time_to_happen = {
+		days = 150
+	}
+
+	option = {
+		name = merc.2.a
+		add_manpower= 1500
+		}
+	option = {
+		name = merc.2.b
+
+		}
+}
+
+# White Mercenaries Detained
+country_event = {
+	id = merc.3
+	title = merc.3.t
+	desc = merc.3.d
+	picture = GFX_White_Mercenaries_Detained
+
+	is_triggered_only = no
+	trigger = {
+	any_owned_state = { is_on_continent = africa }
+		OR = {
+	has_war= yes
+	has_civil_war = yes
+		}
+	}
+	fire_only_once = no
+	
+	mean_time_to_happen = {
+		days = 160
+	}
+
+	option = {
+		name = merc.3.a
+	
+		}
+	option = {
+		name = merc.3.b
+		add_manpower = 1300
+		}
+}
+
+# Mad Mike offers Service
+country_event = {
+	id = merc.4
+	title = merc.4.t
+	desc = merc.4.d
+	picture = GFX_MAD_MIKE
+
+	is_triggered_only = no
+	trigger = {
+	any_owned_state = { is_on_continent = africa }
+	has_war= yes
+	NOT = {
+	has_country_flag = mike_enlisted
+
+			}
+	}
+	fire_only_once = no
+	
+	mean_time_to_happen = {
+		days = 270
+	}
+
+	option = {
+		name = merc.4.a
+		create_corps_commander = {
+	name = "Thomas Hoare 'Mad Mike'"
+	id = 1900
+	portrait_path = "gfx/leaders/Africa/Mad Mike.dds"
+	traits = {  }
+	skill = 5
+
+	
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 6
+			}
+		set_country_flag = mike_enlisted
+		}
+	option = {
+		name = merc.4.b
+		}
+}
+
+# Taffy Williams offers Service
+country_event = {
+	id = merc.5
+	title = merc.5.t
+	desc = merc.5.d
+	picture = GFX_Taffy_Mercenary
+
+	is_triggered_only = no
+	trigger = {
+	any_owned_state = { is_on_continent = africa }
+	OR = {
+	has_war= yes
+	has_civil_war = yes
+		}
+	NOT = {
+	has_country_flag = taffy_enlisted
+	}
+	}
+	fire_only_once = no
+	
+	mean_time_to_happen = {
+		days = 300
+	}
+
+	option = {
+		name = merc.5.a
+		create_corps_commander = {
+	name = "Taffy Williams"
+	id = 1901
+	portrait_path = "gfx/leaders/Africa/Taffy Williams.dds"
+	traits = {  }
+	skill = 5
+
+	
+	attack_skill = 4
+	defense_skill = 6
+	planning_skill = 4
+	logistics_skill = 6
+			}
+		set_country_flag = taffy_enlisted
+		}
+	option = {
+		name = merc.5.b
+		}
+}
+
+# Siegfried Muller offers Service
+country_event = {
+	id = merc.6
+	title = merc.6.t
+	desc = merc.6.d
+	picture = GFX_Generic_Mercenaries
+
+	is_triggered_only = no
+	trigger = {
+	any_owned_state = { is_on_continent = africa }
+	OR = {
+	has_war= yes
+	has_civil_war = yes
+		}
+	NOT = {
+	has_country_flag = muller_enlisted
+	}
+	}
+	fire_only_once = no
+	
+	mean_time_to_happen = {
+		days = 280
+	}
+
+	option = {
+		name = merc.6.a
+		create_corps_commander = {
+	name = "Siegfried Müller"
+	id = 1902
+	portrait_path = "gfx/leaders/Africa/Siegfried Müller.dds"
+	traits = {  }
+	skill = 6
+
+	
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 4
+			}
+		set_country_flag = muller_enlisted
+		}
+	option = {
+		name = merc.6.b
+		}
+}
+
+# Mike Ventures Elsewhere
+country_event = {
+	id = merc.7
+	title = merc.7.t
+	desc = merc.7.d
+	picture = GFX_Generic_Mercenaries
+
+	is_triggered_only = no
+	trigger = {
+	any_owned_state = { is_on_continent = africa }
+	NOT = {
+	has_war = yes
+	has_civil_war = yes
+		}
+	has_country_flag = mike_enlisted
+	}
+	fire_only_once = no
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = merc.7.a
+		clr_country_flag = mike_enlisted
+		remove_unit_leader = 1900
+		add_political_power = -50
+		}
+	option = {
+		name = merc.7.b
+		}
+}`

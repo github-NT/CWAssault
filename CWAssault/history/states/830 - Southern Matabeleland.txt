@@ -1,0 +1,35 @@
+
+state={
+	id=830
+	name="STATE_830"
+	resources={
+		steel=16
+	}
+
+	history={
+		owner = ROD
+		add_core_of = ROD
+		add_core_of = ZIM
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		
+		1970.1.1 = {
+				ZIM = {
+				set_province_controller = 13326
+				set_province_controller = 1874
+				set_province_controller = 13332
+			}
+		}
+
+	}
+
+	provinces={
+		13323 13326 13325 13324 13332 1874
+	}
+	manpower=987032
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

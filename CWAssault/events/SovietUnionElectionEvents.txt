@@ -1,0 +1,170 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = sovietelect
+
+# Election after Brezhnev
+country_event = {
+    id = sovietelect.1
+    title = sovietelect.1.t
+    desc = sovietelect.1.d
+    picture = GFX_report_event_soviet_tanks
+
+    is_triggered_only = yes
+
+    option = {
+        name = sovietelect.1.a
+            random_list = {
+                6 = { country_event = { id = politician.1 days = 1 }
+                    modifier = {
+                        add = 100
+                        is_historical_focus_on = yes
+                    }
+                }
+                1 = { country_event = { id = politician.2 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                3 = { country_event = { id = politician.3 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = politician.4 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+
+    }
+}
+
+# Election after Yuri 
+country_event = {
+	id = sovietelect.2
+	title = sovietelect.2.t
+	desc = sovietelect.2.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	
+    option = {
+        name = sovietelect.1.a
+            random_list = {
+                2 = { country_event = { id = politician.5 days = 1 }
+                    modifier = {
+                        add = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                7 = { country_event = { id = politician.6 days = 1 } 
+                    modifier = {
+                        factor = 100
+                        is_historical_focus_on = yes
+                    }
+                }
+                3 = { country_event = { id = politician.7 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                4 = { country_event = { id = politician.8 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+
+    }
+}
+
+# Election after Cherneko #FAGGIT 
+country_event = {
+	id = sovietelect.3
+	title = sovietelect.3.t
+	desc = sovietelect.3.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	
+    option = {
+        name = sovietelect.3.a
+            random_list = {
+                7 = { country_event = { id = politician.9 days = 1 } 
+                    modifier = {
+                        factor = 100
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = politician.7 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                2 = { country_event = { id = politician.8 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+
+    }
+}
+
+# Election of 1991 
+country_event = {
+	id = sovietelect.4
+	title = sovietelect.4.t
+	desc = sovietelect.4.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+	tag = SOV
+	date > 1991.6.2
+	}
+	
+    option = {
+        name = sovietelect.4.a
+            random_list = {
+                1 = { country_event = { id = politician.14 days = 1 }
+                    modifier = {
+                        add = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                7 = { country_event = { id = politician.11 days = 1 } 
+                    modifier = {
+                        factor = 100
+                        is_historical_focus_on = yes
+                    }
+                }
+                3 = { country_event = { id = politician.13 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+                4 = { country_event = { id = politician.12 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+		set_party_name = { ideology = neutrality long_name = SOV_neutrality_party name = SOV_neutrality2000_party }
+
+    }
+}
+

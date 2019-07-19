@@ -1,0 +1,35 @@
+
+state={
+	id=804
+	name="STATE_804"
+	manpower =1545076
+	
+	
+	state_category = large_city
+	
+	resources={
+		aluminium=7 # was: 10
+	}
+
+	history={
+		owner = AFG
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 2
+			air_base = 2
+		}
+		add_core_of = DRA
+		victory_points = {
+			13237 25 
+		}
+		
+		1982.1.1 = {
+		owner = SVT
+		add_core_of = SVT
+		}
+	}
+
+	provinces={
+		13237 13236
+	}
+}

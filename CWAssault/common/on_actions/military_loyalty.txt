@@ -1,0 +1,42 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { 
+                    original_tag = CZE
+                }
+                set_variable = { army_loyalty = 70 }
+                set_variable = { army_loyalty_max = 100 }
+            }
+			
+			every_country = {
+				limit = { 
+                    original_tag = CZE
+                }
+                set_variable = { general_loyalty = 90 }
+                set_variable = { general_loyalty_max = 100 }
+            }
+		}
+	}
+	
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { 
+                    original_tag = CHL
+                }
+                set_variable = { CHL_army_loyalty = 87 }
+                set_variable = { CHL_army_loyalty_max = 100 }
+            }
+			
+			every_country = {
+				limit = { 
+                    original_tag = CHL
+                }
+                set_variable = { CHL_general_loyalty = 84 }
+                set_variable = { CHL_general_loyalty_max = 100 }
+            }
+		}
+	}
+}

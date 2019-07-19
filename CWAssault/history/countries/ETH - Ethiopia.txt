@@ -1,0 +1,103 @@
+﻿capital = 271
+
+oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+}
+
+set_convoys = 5
+
+1939.1.1 = {
+	
+	set_technology = {
+
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+set_politics = {	
+	ruling_party = Monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 4
+    Socialism = 11
+    communism = 22
+    Nationalism = 3
+    neutrality = 10
+    Monarchism = 50
+}
+
+1974.3.1 = {
+set_politics = {	
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 4
+    Socialism = 23
+    communism = 60
+    Nationalism = 3
+    neutrality = 10
+}
+}
+
+create_country_leader = {
+	name = "Haile Selassie"
+	desc = "POLITICS_HAILE_SELASSIE_DESC"
+	picture = "gfx/leaders/ETH/haile selassie i.dds"
+	expire = "1965.1.1"
+	ideology = Monarchist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Provisional Military Government"
+	desc = "POLITICS_YEEBIO_WOLDAI_DESC"
+	picture = "gfx/leaders/ETH/derg.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Seyoum Mengesha"
+	portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+	traits = {  desert_fox }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}

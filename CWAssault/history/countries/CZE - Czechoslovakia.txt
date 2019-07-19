@@ -1,0 +1,261 @@
+﻿capital = 9
+
+oob = "CZE_1974"
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	support_weapons2 = 1
+	basic_medium_tank = 1 # PLACEHOLDER
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	fuel_silos = 1
+	tech_signal_company = 1
+	tech_logistics_company = 1
+	tech_field_hospital = 1
+	tech_maintenance_company = 1
+	tech_military_police = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+add_ideas = {
+Anti_Communist
+COMECON
+		limited_conscription
+		partial_economic_mobilisation
+}
+
+1968.1.1 = {
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1935.5.19"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10
+    Socialism = 10
+    communism = 80
+}
+
+create_country_leader = {
+	name = "Alexander Dubček"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "gfx/leaders/CZE/Alexander Dubcek.dds"
+	expire = "1969.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+}
+
+set_research_slots = 3
+
+1970.1.1 = {
+set_politics = {	
+	ruling_party = communism
+	last_election = "1935.5.19"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10
+    Socialism = 10
+    communism = 80
+}
+
+create_country_leader = {
+	name = "Ludvik Svoboda"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "gfx/leaders/cold_majors/Svoboda.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+}
+1975.1.1 = {
+create_country_leader = {
+	name = "Gustáv Husák"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "gfx/leaders/CZE/Gustav Husak.dds"
+	expire = "1989.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+}
+
+create_country_leader = {
+	name = "Vaclav Havel"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "gfx/leaders/CZE/vaclav havel.dds"
+	expire = "1980.1.1"
+	ideology = Liberal
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Anton Slimák"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "gfx/leaders/CZE/Anton Slimák.dds"
+	expire = "1980.1.1"
+	ideology = Military
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Imrich Andrejčák"
+	portrait_path = "gfx/leaders/CZE/Imrich Andrejčák.dds"
+	traits = { fast_planner offensive_doctrine }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Milán Václavík"
+	portrait_path = "gfx/leaders/CZE/Milán Václavík.dds"
+	traits = { thorough_planner defensive_doctrine }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Miroslav Vacek"
+	portrait_path = "gfx/leaders/CZE/Miroslav Vacek.dds"
+	traits = { armor_officer }
+	skill = 2
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vasil Viščak"
+	portrait_path = "gfx/leaders/CZE/Vasil Viščak.dds"
+	traits = { winter_specialist }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jan Nejedlo"
+	portrait_path = "gfx/leaders/CZE/Jan Nejedlo.dds"
+	traits = { armor_officer }
+	skill = 2
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "František Veselý"
+	portrait_path = "gfx/leaders/CZE/františek veselý.dds"
+	traits = { winter_specialist }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Miloslav Blahník"
+	portrait_path = "gfx/leaders/CZE/Miloslav Blahník.dds"
+	traits = {  }
+	skill = 1
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Karel Rusov"
+	portrait_path = "gfx/leaders/CZE/Karel Rusov.dds"
+	traits = {  }
+	skill = 1
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Anton Slimák"
+	portrait_path = "gfx/leaders/CZE/Anton Slimák.dds"
+	traits = { winter_specialist }
+	skill = 2
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jaroslav Klícha"
+	portrait_path = "gfx/leaders/CZE/Jaroslav Klícha.dds"
+	traits = {  }
+	skill = 1
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+1987.1.1 = {
+create_country_leader = {
+	name = "Miloš Jakeš"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "gfx/leaders/CZE/Miloš Jakeš.dds"
+	expire = "1989.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+}

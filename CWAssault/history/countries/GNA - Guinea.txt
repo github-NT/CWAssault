@@ -1,0 +1,45 @@
+﻿capital = 780
+
+oob = "Africa_Minor"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 10
+
+1939.1.1 = {
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+	}
+}
+
+
+set_politics = {	
+	ruling_party = Nationalism
+	last_election = "1969.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 15
+    fascism = 20
+    communism = 5
+    Nationalism = 60
+}
+
+create_country_leader = {
+	name = "Ahmed Sékou Touré"
+	desc = "POLITICS_DESC"
+	picture = "gfx/leaders/GUI/Ahmed Sekou Toure.dds"
+	expire = "1999.1.1"
+	ideology = Nationalist
+	traits = {
+	}
+}

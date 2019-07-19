@@ -1,0 +1,31 @@
+
+state={
+	id=820
+	name="STATE_820"
+	manpower =93076
+	
+	
+	state_category = town
+
+	history={
+		owner = AFG
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = AFG
+		add_core_of = DRA
+		add_core_of = HIG
+		
+		1979.1.1 = {
+		owner = DRA
+		}
+		
+		1982.1.1 = {
+		owner = HIG
+		}
+	}
+
+	provinces={
+		13317 13312
+	}
+}

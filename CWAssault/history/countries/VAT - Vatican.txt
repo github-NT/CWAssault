@@ -1,0 +1,133 @@
+﻿capital = 841
+
+oob = "VAT_1974"
+
+# Starting tech
+set_technology = {
+	improved_medium_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	synth_oil_experiments = 1
+	transport = 1
+}
+
+set_convoys = 10
+
+set_politics = {	
+	ruling_party = Monarchism
+	last_election = "1968.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    Monarchism = 100
+}
+
+
+create_country_leader = {
+	name = "Paul Paolo VI"
+	desc = "POLITICS_DESC"
+	picture = "gfx/leaders/VAT/Paul Paolovi VI 63-78.dds"
+	expire = "1978.1.1"
+	ideology = Monarchist
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Franz Pfyffer von Altishofen"
+	portrait_path = "gfx/leaders/VAT/Franz Pfyffer von Altishofen.dds"
+	traits = { career_officer old_guard trait_cautious politically_connected }
+	skill = 4 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+1978.1.1 = {
+create_country_leader = {
+	name = "John Paul I"
+	desc = "POLITICS_DESC"
+	picture = "gfx/leaders/VAT/John Paul I.dds"
+	expire = "1978.11.28"
+	ideology = Monarchist
+	traits = {
+		
+	}
+}
+}
+
+1980.1.1 = {
+create_country_leader = {
+	name = "John Paul II"
+	desc = "POLITICS_DESC"
+	picture = "gfx/leaders/VAT/John Paul II.dds"
+	expire = "1978.11.28"
+	ideology = Monarchist
+	traits = {
+		
+	}
+}
+}
+1988.1.1 = {
+create_corps_commander = {
+	name = "Alois Estermann"
+	portrait_path = "gfx/leaders/VAT/alois-estermann.dds"
+	traits = { career_officer old_guard trait_cautious politically_connected }
+	skill = 4 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Roland Buchs"
+	portrait_path = "gfx/leaders/VAT/Roland Buchs.dds"
+	traits = { career_officer old_guard trait_cautious politically_connected }
+	skill = 4 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+}

@@ -1,0 +1,823 @@
+﻿division_template = {
+	name = "Mínbīng Lǚ"				
+	division_names_group = PRC_INF_01
+									
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }	
+		infantry = { x = 2 y = 3 }	
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+	}
+	support = {
+        anti_air = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Jīxièhuà Bùbīng Shī"				
+	division_names_group = PRC_GAR_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }		
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_sp_artillery_brigade = { x = 3 y = 2 }	
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+	}
+	support = {
+        anti_air = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+	}
+	
+	priority = 1
+}
+
+division_template = {
+	name = "Mǎdá Bùqiāng Shī"				# Represents three-column local militia groups (Triangular Corps); poorly-equipped, lowest experience
+	division_names_group = PRC_GAR_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+	
+	priority = 1
+}
+
+###
+division_template = {
+	name = "Zhuāngjiǎ Lǚ"				
+	division_names_group = PRC_GAR_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+	
+	priority = 1
+}
+
+division_template = {
+	name = "Zhuāngjiǎ Shī"				
+	division_names_group = PRC_GAR_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 0 y = 3 }
+		medium_sp_artillery_brigade = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		heavy_armor = { x = 1 y = 3 }
+		medium_sp_artillery_brigade = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }	
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		infantry = { x = 3 y = 4 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 3 }
+		artillery_brigade = { x = 4 y = 4 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+	}
+	
+	priority = 2
+}
+
+division_template = {
+	name = "Sǎnbīng"				
+	division_names_group = PRC_GAR_01
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 0 y = 4 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		paratrooper = { x = 1 y = 4 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+		paratrooper = { x = 2 y = 3 }
+		paratrooper = { x = 2 y = 4 }	
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+	}
+	
+	priority = 2
+}
+
+units = {
+	##### Eighth Route Army (CO: Mao Zedong, Zhu De) #####
+	division = {
+		name = "115 Bubing Shi"
+		location = 2045
+		division_template = "Mǎdá Bùqiāng Shī"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "120 Bubing Shi"
+		location = 6999
+		division_template = "Mǎdá Bùqiāng Shī"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "129 Bubing Shi"
+		location = 10404
+		division_template = "Mǎdá Bùqiāng Shī"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = { #  "1 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1319
+		division_template = "Mǎdá Bùqiāng Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "2 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12414
+		division_template = "Mǎdá Bùqiāng Shī"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "3 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7418
+		division_template = "Mǎdá Bùqiāng Shī"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "4 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4009
+		division_template = "Mǎdá Bùqiāng Shī"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "5 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12012
+		division_template = "Mǎdá Bùqiāng Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = { #  "6 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9958
+		division_template = "Mǎdá Bùqiāng Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "7 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4144
+		division_template = "Mǎdá Bùqiāng Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "8 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1069
+		division_template = "Mǎdá Bùqiāng Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "9 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7222
+		division_template = "Mǎdá Bùqiāng Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "10 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11913
+		division_template = "Mǎdá Bùqiāng Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = { #  "1 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12055
+		division_template = "Mǎdá Bùqiāng Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "2 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4181
+		division_template = "Mǎdá Bùqiāng Shī"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "3 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10000
+		division_template = "Zhuāngjiǎ Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Zhàn chē dì 3 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7000
+		division_template = "Zhuāngjiǎ Shī"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Zhàn chē dì 28 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 9843
+		division_template = "Zhuāngjiǎ Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	
+		division = { #  "Zhàn chē dì 126 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9843
+		division_template = "Zhuāngjiǎ Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Zhàn chē dì 217 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1137
+		division_template = "Zhuāngjiǎ Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Zhàn chē dì 351 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1134
+		division_template = "Zhuāngjiǎ Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Zhàn chē dì 46 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3830
+		division_template = "Zhuāngjiǎ Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "5 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 9768
+		division_template = "Jīxièhuà Bùbīng Shī"	
+		start_equipment_factor = 0.5
+
+	}
+		division = { #  "1 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1150
+		division_template = "Jīxièhuà Bùbīng Shī"
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "2 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1522
+		division_template = "Jīxièhuà Bùbīng Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "3 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1114
+		division_template = "Jīxièhuà Bùbīng Shī"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "4 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1196
+		division_template = "Jīxièhuà Bùbīng Shī"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "5 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1172
+		division_template = "Jīxièhuà Bùbīng Shī"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "2 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4656
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "3 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1469
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "4 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4121
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "5 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10004
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "2 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7137
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "3 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1884
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "4 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1047
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "5 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1187
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "2 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1202
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "3 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1448
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "4 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3992
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "5 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11988
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	#############################################
+	division = { #  "2 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7101
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "3 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4619
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "4 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4619
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "5 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11913
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "2 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7222
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "3 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4005
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "4 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4105
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "5 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7191
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Lùjūn dì 8 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3970
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  Lùjūn dì 15 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4572
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Lùjūn dì 55 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11864
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Lùjūn dì 52 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12500
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Lùjūn dì 218 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12500
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Lùjūn dì 71 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3843
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  Lùjūn dì 137 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6811
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Lùjūn dì 122 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6806
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Lùjūn dì 78 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4551
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Lùjūn dì 55 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7569
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Lùjūn dì 89 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7743
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  Lùjūn dì 37 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10541
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Lùjūn dì 11 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10675
+		division_template = "Mínbīng Lǚ"	
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Lùjūn dì 67 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12548
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+	division = { #  "Lùjūn dì 42 shī"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10698
+		division_template = "Mínbīng Lǚ"		
+		start_equipment_factor = 0.5
+
+	}
+}
+
+##### STARTING PRODUCTION #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "PRC"
+		}
+		requested_factories = 2
+		progress = 0.33
+		efficiency = 100
+	}
+}

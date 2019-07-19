@@ -1,0 +1,1354 @@
+focus_tree = { 
+id = syria
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = SYR 
+} 
+} 
+#Focus for Reaffirm Golan
+focus = { 
+id = SYR_reaffirmgolan
+icon = GFX_goal_generic_forceful_treaty
+x = 40
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_theoldentente } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Chinese Diplomacy
+focus = { 
+id = SYR_chinesediplomacy
+icon = GFX_chinesediplomacy
+x = 35
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_easterntrades } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Arab Supremacy
+focus = { 
+id = SYR_arabsupremacy
+icon = GFX_goal_unknown
+x = 32
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_womenintheworkforce } 
+prerequisite = { focus = SYR_subsidizetheindustry } 
+prerequisite = { focus = SYR_equipmentmoderization } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Lift the Social Nationalist Ban
+focus = { 
+id = SYR_liftthesocialnationalistban
+icon = GFX_goal_unknown
+x = 42
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_secularreforms } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Syrian Arab Army
+focus = { 
+id = SYR_syrianarabarmy
+icon = GFX_syrianarabarmy
+x = 3
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Annual Ba'ath Party Congress
+focus = { 
+id = SYR_annualbaathpartycongress
+icon = GFX_annualbaathpartycongress
+x = 40
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Study Soviet Doctrine
+focus = { 
+id = SYR_studysovietdoctrine
+icon = GFX_focus_chi_mission_to_the_soviet_union
+x = 8
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_lessonsfromyomkippur } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Approach Israel
+focus = { 
+id = SYR_approachisrael
+icon = GFX_approachisrael
+x = 51
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_deposeassad } 
+mutually_exclusive = { focus = SYR_introduceislamicreforms } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Eastern Trades
+focus = { 
+id = SYR_easterntrades
+icon = GFX_goal_generic_positive_trade_relations
+x = 35
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_reachouttoyugoslavia focus = SYR_missionstothesovietunion } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Heavy Industrial Expansion
+focus = { 
+id = SYR_heavyindustrialexpansion
+icon = GFX_goal_generic_production2
+x = 59
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_civilianbuildupii } 
+mutually_exclusive = { focus = SYR_localmodernization } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Local Modernization
+focus = { 
+id = SYR_localmodernization
+icon = GFX_goal_generic_construct_civ_factory
+x = 57
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_modernizedeirezzur } 
+prerequisite = { focus = SYR_civilianbuildupii } 
+mutually_exclusive = { focus = SYR_heavyindustrialexpansion } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Study Soviet Bombers
+focus = { 
+id = SYR_studysovietbombers
+icon = GFX_studysovietbombers
+x = 25
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_syrianarabairforce } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Syrian Arab Air force
+focus = { 
+id = SYR_syrianarabairforce
+icon = GFX_syrianarabairforce
+x = 23
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Fighter Research
+focus = { 
+id = SYR_fighterresearch
+icon = GFX_fighterresearch
+x = 21
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_syrianarabairforce } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Multi-Role Fighters
+focus = { 
+id = SYR_multirolefighters
+icon = GFX_multirolefighters
+x = 20
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_fighterresearch } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for CAS Development
+focus = { 
+id = SYR_casdevelopment
+icon = GFX_casdevelopment
+x = 21
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_multirolefighters focus = SYR_airdoctrinefunding } 
+mutually_exclusive = { focus = SYR_multirolefighterii } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Extensive Rail Plans
+focus = { 
+id = SYR_extensiverailplans
+icon = GFX_goal_generic_construct_infrastructure
+x = 61
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Integrated Economies
+focus = { 
+id = SYR_integratedeconomies
+icon = GFX_goal_generic_trade
+x = 40
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Golan Negotiations
+focus = { 
+id = SYR_golannegotiations
+icon = GFX_goal_generic_intelligence_exchange
+x = 52
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for New Arab Frontier
+focus = { 
+id = SYR_newarabfrontier
+icon = GFX_newarabfrontier
+x = 31
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_annualbaathpartycongress } 
+mutually_exclusive = { focus = SYR_theoldentente } 
+mutually_exclusive = { focus = SYR_deposeassad } 
+mutually_exclusive = { focus = SYR_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Combined Arms Offensives
+focus = { 
+id = SYR_combinedarmsoffensives
+icon = GFX_goal_generic_army_doctrines
+x = 30
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_equipmentmoderization focus = SYR_subsidizetheindustry } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Syrian Officer Corps
+focus = { 
+id = SYR_syrianofficercorps
+icon = GFX_syrianofficercorps
+x = 2
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_artillerydivisions } 
+prerequisite = { focus = SYR_ywxZagbL } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The Old Entente
+focus = { 
+id = SYR_theoldentente
+icon = GFX_theoldentente
+x = 40
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_annualbaathpartycongress } 
+mutually_exclusive = { focus = SYR_newarabfrontier } 
+mutually_exclusive = { focus = SYR_deposeassad } 
+mutually_exclusive = { focus = SYR_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Missions to The Soviet Union
+focus = { 
+id = SYR_missionstothesovietunion
+icon = GFX_focus_generic_soviet_politics
+x = 38
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_theoldentente } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Southern Airfield Expansion
+focus = { 
+id = SYR_southernairfieldexpansion
+icon = GFX_goal_generic_air_fighter2
+x = 23
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_airdoctrinefunding } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Damascus Military Academy
+focus = { 
+id = SYR_damascusmilitaryacademy
+icon = GFX_focus_research2
+x = 2
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_syrianofficercorps } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Escalate the Purge
+focus = { 
+id = SYR_escalatethepurge
+icon = GFX_goal_generic_attack_allies
+x = 45
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_baathpartypurge } 
+mutually_exclusive = { focus = SYR_13thnationalcongress } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Ba'ath Party Purge
+focus = { 
+id = SYR_baathpartypurge
+icon = GFX_focus_CZE_german_puppet
+x = 44
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_secularreforms } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for 13th National Congress
+focus = { 
+id = SYR_13thnationalcongress
+icon = GFX_13thnationalcongress
+x = 43
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_baathpartypurge } 
+mutually_exclusive = { focus = SYR_escalatethepurge } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Unification Process
+focus = { 
+id = SYR_unificationprocess
+icon = GFX_goal_generic_alliance
+x = 47
+y = 7
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Telecom-Research
+focus = { 
+id = SYR_telecomresearch
+icon = GFX_goal_generic_radar
+x = 54
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_civilianindustry } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Modernize Deir ez-Zur
+focus = { 
+id = SYR_modernizedeirezzur
+icon = GFX_goal_generic_construction2
+x = 57
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_civilianbuildup } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Civilian Industry
+focus = { 
+id = SYR_civilianindustry
+icon = GFX_goal_generic_production
+x = 59
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Civilian Buildup
+focus = { 
+id = SYR_civilianbuildup
+icon = GFX_goal_generic_construct_civ_factory
+x = 58
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for ICBM Research
+focus = { 
+id = SYR_icbmresearch
+icon = GFX_focus_rocketry
+x = 55
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_telecomresearch focus = SYR_modernizedeirezzur } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Civilian Buildup II
+focus = { 
+id = SYR_civilianbuildupii
+icon = GFX_goal_generic_construct_civ_factory
+x = 58
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_civilianbuildup } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Resource Excavation
+focus = { 
+id = SYR_resourceexcavation
+icon = GFX_goal_generic_construct_civilian
+x = 63
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Air Doctrine Funding
+focus = { 
+id = SYR_airdoctrinefunding
+icon = GFX_goal_generic_build_airforce
+x = 23
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_fighterresearch focus = SYR_studysovietbombers } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Syrian Nuclear Program
+focus = { 
+id = SYR_syriannuclearprogram
+icon = GFX_focus_wonderweapons
+x = 36
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_chinesediplomacy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Mechanization Effort
+focus = { 
+id = SYR_MNQcBGfH
+icon = GFX_goal_generic_army_motorized
+x = 5
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_equipmenteffort focus = SYR_lessonsfromyomkippur } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for National Defense Industry
+focus = { 
+id = SYR_nationaldefenseindustry
+icon = GFX_goal_generic_construct_mil_factory
+x = 30
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_newarabfrontier } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Heavy Industrial Expansion
+focus = { 
+id = SYR_uFdLGWbV
+icon = GFX_goal_generic_construct_civ_factory
+x = 37
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_woosaddam } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Equipment Effort
+focus = { 
+id = SYR_equipmenteffort
+icon = GFX_goal_generic_allies_build_infantry
+x = 5
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_syrianarabarmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Oil Excavation
+focus = { 
+id = SYR_oilexcavation
+icon = GFX_goal_generic_oil_refinery
+x = 62
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_resourceexcavation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Syrian Arab Navy
+focus = { 
+id = SYR_syrianarabnavy
+icon = GFX_goal_generic_navy_battleship
+x = 14
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Defensive Preparations
+focus = { 
+id = SYR_defensivepreparations
+icon = GFX_focus_generic_destroyer
+x = 13
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_syrianarabnavy } 
+mutually_exclusive = { focus = SYR_offensivecapabilities } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Offensive Capabilities
+focus = { 
+id = SYR_offensivecapabilities
+icon = GFX_focus_generic_navy_battleship2
+x = 15
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_syrianarabnavy } 
+mutually_exclusive = { focus = SYR_defensivepreparations } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Heavy Mechanization
+focus = { 
+id = SYR_heavymechanization
+icon = GFX_focus_generic_army_tanks2
+x = 38
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_uFdLGWbV focus = SYR_missionstonorthkorea } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Strike First
+focus = { 
+id = SYR_strikefirst
+icon = GFX_strikefirst
+x = 38
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_syriannuclearprogram focus = SYR_recruitmentcampaign focus = SYR_integratedeconomies } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Defensive Doctrine
+focus = { 
+id = SYR_defensivedoctrine
+icon = GFX_goal_generic_navy_cruiser
+x = 13
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_defensivepreparations } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Small Arms Development
+focus = { 
+id = SYR_ywxZagbL
+icon = GFX_goal_generic_small_arms
+x = 3
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_equipmenteffort } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Submarine Development
+focus = { 
+id = SYR_submarinedevelopment
+icon = GFX_goal_generic_navy_anti_submarine
+x = 16
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_offensivecapabilities } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Artillery Divisions
+focus = { 
+id = SYR_artillerydivisions
+icon = GFX_goal_generic_army_artillery2
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_syrianarabarmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Missions to North Korea
+focus = { 
+id = SYR_missionstonorthkorea
+icon = GFX_missionstonorthkorea
+x = 39
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_appeasesadat } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Purchase Soviet Tanks
+focus = { 
+id = SYR_purchasesoviettanks
+icon = GFX_goal_generic_army_tanks
+x = 9
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_studysovietdoctrine } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Invite Soviet Advisors
+focus = { 
+id = SYR_invitesovietadvisors
+icon = GFX_goal_support_communism
+x = 7
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_studysovietdoctrine } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Women in The Workforce
+focus = { 
+id = SYR_womenintheworkforce
+icon = GFX_goal_generic_consumer_goods
+x = 31
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_nationaldefenseindustry focus = SYR_reachouttoyugoslavia } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Multi-Role Fighter II
+focus = { 
+id = SYR_multirolefighterii
+icon = GFX_multirolefighterii
+x = 19
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_multirolefighters } 
+mutually_exclusive = { focus = SYR_casdevelopment } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Resource Exploitation
+focus = { 
+id = SYR_resourceexploitation
+icon = GFX_focus_generic_tungsten
+x = 64
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_resourceexcavation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Destroyer Development
+focus = { 
+id = SYR_destroyerdevelopment
+icon = GFX_focus_generic_destroyer
+x = 10
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_defensivepreparations } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Coastal Defenses
+focus = { 
+id = SYR_coastaldefenses
+icon = GFX_goal_generic_navy_doctrines_tactics
+x = 10
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_destroyerdevelopment } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Maritime Patrol Squadrons
+focus = { 
+id = SYR_maritimepatrolsquadrons
+icon = GFX_goal_generic_navy_carrier
+x = 14
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_destroyerdevelopment focus = SYR_cruiserdevelopment } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Defend The Kurds
+focus = { 
+id = SYR_defendthekurds
+icon = GFX_defendthekurds
+x = 50
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Lessons from Yom Kippur
+focus = { 
+id = SYR_lessonsfromyomkippur
+icon = GFX_focus_generic_license_production
+x = 7
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_equipmenteffort } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Cruiser Development
+focus = { 
+id = SYR_cruiserdevelopment
+icon = GFX_focus_generic_cruiser2
+x = 14
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_offensivecapabilities } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Recruitment Campaign
+focus = { 
+id = SYR_recruitmentcampaign
+icon = GFX_focus_generic_military_academy
+x = 38
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_heavymechanization } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Introduce Islamic Reforms
+focus = { 
+id = SYR_introduceislamicreforms
+icon = GFX_introduceislamicreforms
+x = 47
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_deposeassad } 
+mutually_exclusive = { focus = SYR_approachisrael } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Diplomatic Mission to Lebanon
+focus = { 
+id = SYR_diplomaticmissiontolebanon
+icon = GFX_diplomaticmissiontolebanon
+x = 44
+y = 5
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Equipment Moderization
+focus = { 
+id = SYR_equipmentmoderization
+icon = GFX_goal_generic_small_arms
+x = 29
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_nationaldefenseindustry } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Defend Palestine
+focus = { 
+id = SYR_defendpalestine
+icon = GFX_defendpalestine
+x = 40
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_reaffirmgolan } 
+prerequisite = { focus = SYR_aidtheplo } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reach out To Yugoslavia
+focus = { 
+id = SYR_reachouttoyugoslavia
+icon = GFX_reachouttoyugoslavia
+x = 32
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_newarabfrontier } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Embrace Jihad
+focus = { 
+id = SYR_embracejihad
+icon = GFX_embracejihad
+x = 47
+y = 5
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Missile Defense Systems
+focus = { 
+id = SYR_missiledefensesystems
+icon = GFX_goal_generic_construct_military
+x = 24
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_airdoctrinefunding } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Interventionist Policies
+focus = { 
+id = SYR_interventionistpolicies
+icon = GFX_goal_generic_occupy_states_ongoing_war
+x = 44
+y = 7
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Greater Syria
+focus = { 
+id = SYR_greatersyria
+icon = GFX_goal_unknown
+x = 49
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Depose Assad
+focus = { 
+id = SYR_deposeassad
+icon = GFX_deposeassad
+x = 49
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_annualbaathpartycongress } 
+mutually_exclusive = { focus = SYR_theoldentente } 
+mutually_exclusive = { focus = SYR_newarabfrontier } 
+mutually_exclusive = { focus = SYR_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Dry Dock Construction
+focus = { 
+id = SYR_drydockconstruction
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 12
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_destroyerdevelopment focus = SYR_defensivepreparations focus = SYR_cruiserdevelopment } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Purchase Surplus Soviet Equipment
+focus = { 
+id = SYR_purchasesurplussovietequipment
+icon = GFX_goal_unknown
+x = 8
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_invitesovietadvisors } 
+prerequisite = { focus = SYR_purchasesoviettanks } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Arab Federation Referendum
+focus = { 
+id = SYR_arabfederationreferendum
+icon = GFX_focus_hol_the_foundations_of_defense
+x = 31
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Expand the Missile Defense Program
+focus = { 
+id = SYR_expandthemissiledefenseprogram
+icon = GFX_goal_generic_army_artillery2
+x = 55
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_icbmresearch } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Invite Western Tech Companies
+focus = { 
+id = SYR_invitewesterntechcompanies
+icon = GFX_goal_generic_consumer_goods
+x = 54
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_telecomresearch } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Aid The PLO
+focus = { 
+id = SYR_aidtheplo
+icon = GFX_goal_unknown
+x = 41
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_reaffirmgolan } 
+prerequisite = { focus = SYR_secularreforms } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Secular Reforms
+focus = { 
+id = SYR_secularreforms
+icon = GFX_focus_generic_treaty
+x = 42
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_theoldentente } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Helicopter Development
+focus = { 
+id = SYR_helicopterdevelopment
+icon = GFX_helicopterdevelopment
+x = 20
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_multirolefighters } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Appease Sadat
+focus = { 
+id = SYR_appeasesadat
+icon = GFX_goal_unknown
+x = 39
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_missionstothesovietunion } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Woo Saddam
+focus = { 
+id = SYR_woosaddam
+icon = GFX_goal_unknown
+x = 37
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_missionstothesovietunion } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Oil Refining
+focus = { 
+id = SYR_oilrefining
+icon = GFX_goal_unknown
+x = 61
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_oilexcavation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reach out To Egypt
+focus = { 
+id = SYR_reachouttoegypt
+icon = GFX_reachouttoegypt
+x = 31
+y = 5
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Subsidize the Industry
+focus = { 
+id = SYR_subsidizetheindustry
+icon = GFX_goal_generic_construct_mil_factory
+x = 33
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SYR_nationaldefenseindustry focus = SYR_reachouttoyugoslavia } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

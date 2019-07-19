@@ -1,0 +1,32 @@
+
+state={
+	id=828
+	name="STATE_828"
+	resources={
+		steel=16
+	}
+
+	history={
+		owner = ROD
+		add_core_of = ROD
+		add_core_of = ZIM
+		victory_points = { 13387 20 }
+		victory_points = { 13389 5 }
+		victory_points = { 13388 5 }
+		victory_points = { 13390 5 }
+		buildings = {
+			infrastructure = 8
+			arms_factory = 5
+			industrial_complex = 2
+
+		}
+
+	}
+
+	provinces={
+		13389 13388 13387 13390
+	}
+	manpower=2687032
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

@@ -1,0 +1,1191 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = rnews
+
+# State retaken
+news_event = {
+	id = rnews.1
+	title = rnews.1.t
+	desc = rnews.1.d
+	picture = GFX_news_event_006
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.1.a
+
+	}
+}
+
+# State retaken refused
+news_event = {
+	id = rnews.2
+	title = rnews.2.t
+	desc = rnews.2.d
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.2.a
+
+	}
+}
+
+# Muslim unrest
+country_event = {
+	id = rnews.9
+	title = jihad.2.t
+	desc = jihad.2.d
+	picture = GFX_Muslim_Majority
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Jihad.2.a
+
+	}
+}
+
+# support civil war
+news_event = {
+	id = rnews.3
+	title = rnews.3.t
+	desc = rnews.3.d
+	picture = GFX_news_event_tank_factory
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.3.a
+
+	}
+}
+
+# Yuri Bezmenov
+news_event = {
+	id = rnews.10
+	title = rnews.10.t
+	desc = rnews.10.d
+	picture = GFX_Ideological_Subversion
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	date >1984.1.1
+	has_global_flag = bezmenov_refuses
+	}
+	
+	option = {
+		name = rnews.10.a
+	}
+}
+
+# Yuri Bezmenov Assassinated
+news_event = {
+	id = rnews.11
+	title = rnews.11.t
+	desc = rnews.11.d
+	picture = GFX_Yuri_Assassinated
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	has_global_flag = bezmenov_refuses
+	}
+	
+	option = {
+		name = rnews.11.a
+	}
+}
+
+# Land Green Berets in North Korea
+country_event = {
+	id = rnews.78
+	title = rnews.78.t
+	desc = rnews.78.d
+	picture = GFX_Assassinate_Kim_Il_Sung
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = USA
+	date > 1974.1.12
+	}
+
+	
+	option = {
+		name = rnews.78.a
+	}
+		option = {
+		name = rnews.78.b
+		DPR = { country_event = china.79 }
+	}
+}
+
+# Green Berets Landed!
+country_event = {
+	id = rnews.80
+	title = rnews.80.t
+	desc = rnews.80.d
+	picture = GFX_Green_Berets
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+
+		option = {
+		name = rnews.80.a
+		DPR = { country_event = china.82 }
+	}
+}
+
+
+# Green Berets Captured!!
+country_event = {
+	id = rnews.81
+	title = rnews.81.t
+	desc = rnews.81.d
+	picture = GFX_Korea_Catpured_Berets
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.81.a
+		news_event = { days = 1 id = rnews.86 }
+	}
+	option = {
+		name = rnews.81.b
+		hidden_effect = {
+		news_event = { days = 1 id = rnews.86 }
+		}
+	}
+}
+
+# American Berets Captured
+news_event = {
+	id = rnews.86
+	title = rnews.86.t
+	desc = rnews.86.d
+	picture = GFX_Korea_Catpured_Berets
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.86.a
+
+	}
+}
+
+# Philippe Petain Grave
+news_event = {
+	id = rnews.58
+	title = rnews.58.t
+	desc = rnews.58.d
+	picture = GFX_Philippe_Petain_Prave
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.58.a
+	}
+}
+
+# Grave robbers
+country_event = {
+	id = rnews.59
+	title = rnews.59.t
+	desc = rnews.59.d
+	picture = GFX_Grave_Robbers
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = no
+		trigger = {
+		tag = FRA
+		Nationalism > 0.25
+	}
+	
+	option = {
+		name = rnews.59.a
+		news_event = { days = 2 id = rnews.58 }
+	}
+	option = {
+		name = rnews.59.b
+		news_event = { days = 2 id = rnews.58 }
+		news_event = { days = 5 id = rnews.60 }
+	}
+}
+
+# Grave Robbers Arrested
+news_event = {
+	id = rnews.60
+	title = rnews.60.t
+	desc = rnews.60.d
+	picture = GFX_Courte_Trail
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.60.a
+	}
+}
+
+# Chechnya independance
+news_event = {
+	id = rnews.61
+	title = rnews.61.t
+	desc = rnews.61.d
+	picture = GFX_Chechen_Indepenence
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.61.a
+	}
+}
+
+# hungary independance
+news_event = {
+	id = rnews.66
+	title = rnews.66.t
+	desc = rnews.66.d
+	picture = GFX_hungarian_indep
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.66.a
+	}
+}
+
+# romania independance
+news_event = {
+	id = rnews.67
+	title = rnews.67.t
+	desc = rnews.67.d
+	picture = GFX_romanian_indep
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.67.a
+	}
+}
+
+# latvia independance
+news_event = {
+	id = rnews.69
+	title = rnews.69.t
+	desc = rnews.69.d
+	picture = GFX_latvian_indep
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.69.a
+	}
+}
+
+# Soviet Supreme Command Siege
+news_event = {
+	id = rnews.70
+	title = rnews.70.t
+	desc = rnews.70.d
+	picture = GFX_Soviet_Supreme_Command_Siege
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.70.a
+	}
+}
+
+# Soviet Supreme Command successful
+news_event = {
+	id = rnews.71
+	title = rnews.71.t
+	desc = rnews.71.d
+	picture = GFX_Supreme_Soviet
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.71.a
+	}
+}
+
+# Soviet Supreme Command successful
+news_event = {
+	id = rnews.72
+	title = rnews.72.t
+	desc = rnews.72.d
+	picture = GFX_Communist_Coup_Sov
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.72.a
+	}
+}
+
+# 2nd Russian Civil War
+news_event = {
+	id = rnews.73
+	title = rnews.73.t
+	desc = rnews.73.d
+	picture = GFX_Russian_Civil_War
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.73.a
+	}
+}
+
+# Bilderberg France
+news_event = {
+	id = rnews.74
+	title = rnews.74.t
+	desc = rnews.74.d
+	picture = GFX_Bilderberg
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.74.a
+	}
+}
+
+# Decide Where Bilderberg will meet
+country_event = {
+	id = rnews.75
+	title = rnews.75.t
+	desc = rnews.75.d
+	picture = GFX_Bilderberg
+	
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = no
+	trigger = {
+	tag = ISR
+	date >1974.9.11
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = rnews.75.a
+		news_event = { days = 1 id = rnews.74 }
+	}
+}
+
+# Assassinate Yuri
+country_event = {
+	id = rnews.12
+	title = rnews.12.t
+	desc = rnews.12.d
+	picture = GFX_Yuri_Bez_Assassination
+	
+	major = yes	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		trigger = {
+		tag = SOV
+		date > 1984.4.29
+	}
+	option = {
+		name = rnews.12.a
+	ai_chance = {
+	factor = 60
+	}
+	}
+	option = {
+		name = rnews.12.b
+	ai_chance = {
+	factor = 40
+	}
+		country_event = { days = 1 id = rnews.11 }
+	}
+}
+
+# civil war protest
+news_event = {
+	id = rnews.4
+	title = rnews.4.t
+	desc = rnews.4.d
+	picture = GFX_news_event_soviet_soldiers_ruins
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.4.a
+
+	}
+}
+
+# Chilean Civil War
+news_event = {
+	id = rnews.13
+	title = rnews.13.t
+	desc = rnews.13.d
+	picture = GFX_Chilean_Coup
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = rnews.13.a
+
+	}
+}
+
+# Allende is Dead
+news_event = {
+	id = rnews.14
+	title = rnews.14.t
+	desc = rnews.14.d
+	picture = GFX_Allende_Dead
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.14.a
+
+	}
+}
+
+# Assassinate Leon Degrelle
+country_event = {
+	id = rnews.46
+	title = rnews.46.t
+	desc = rnews.46.d
+	picture = GFX_Assassinate_Degrelle_Alt
+	
+	major = yes
+	
+	is_triggered_only = yes
+		trigger = {
+	tag = ISR
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.46.a
+	news_event = { days = 25 id = rnews.47 }
+	}
+	option = {
+		name = rnews.46.b
+
+	}
+}
+
+# Leon Degrelle Assassinated
+news_event = {
+	id = rnews.47
+	title = rnews.47.t
+	desc = rnews.47.d
+	picture = GFX_Allende_Dead
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.47.a
+	}
+}
+
+# mujihadeen rise up
+country_event = {
+	id = rnews.95
+	title = rnews.95.t
+	desc = rnews.95.d
+	picture = GFX_Allende_Dead
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = SOV
+	267 = { is_controlled_by = SOV }
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.95.a
+		news_event = { days = 2 id = rnews.96 }
+		release = EIK
+	}
+}
+
+# taliban
+country_event = {
+	id = rnews.96
+	title = rnews.96.t
+	desc = rnews.96.d
+	picture = GFX_Allende_Dead
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = AFG
+	267 = { is_controlled_by = SOV }
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.96.a
+		news_event = { days = 2 id = rnews.97 }
+		release = TAL
+		release = HZI
+	}
+}
+
+# Assassinate Mugabe
+country_event = {
+	id = rnews.90
+	title = rnews.90.t
+	desc = rnews.90.d
+	picture = GFX_Assassinate_Mugabe
+	
+	major = yes
+	
+	is_triggered_only = yes
+		trigger = {
+	tag = ISR
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.90.a
+	news_event = { days = 2 id = rnews.91 }
+	}
+	option = {
+		name = rnews.90.b
+
+	}
+}
+
+# Mugabe Assassinated
+news_event = {
+	id = rnews.91
+	title = rnews.91.t
+	desc = rnews.91.d
+	picture = GFX_Allende_Dead
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.91.a
+	}
+}
+
+# Grozny Offensive
+news_event = {
+	id = rnews.92
+	title = rnews.92.t
+	desc = rnews.92.d
+	picture = GFX_Russian_tank_column
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.92.a
+	hidden_effect = {
+	news_event = { days = 1 id = rnews.93 }
+	}
+	}
+}
+
+# Tank column destroyed
+news_event = {
+	id = rnews.93
+	title = rnews.93.t
+	desc = rnews.93.d
+	picture = GFX_Tank_Column_Destroyed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.93.a
+	hidden_effect = {
+	news_event = { days = 1 id = rnews.94 }
+	}
+	}
+}
+
+# Russian and chechen officer talk
+news_event = {
+	id = rnews.94
+	title = rnews.94.t
+	desc = rnews.94.d
+	picture = GFX_Russian_tank_column
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.94.a
+	}
+}
+
+# REPLACE
+news_event = {
+	id = rnews.15
+	title = rnews.15.t
+	desc = rnews.15.d
+	picture = 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.15.a
+
+	}
+}
+
+# Yuri Andropov Dies
+news_event = {
+	id = rnews.16
+	title = rnews.16.t
+	desc = rnews.16.d
+	picture = GFX_Andropov_Funeral
+	
+	major = no
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.16.a
+
+	}
+}
+
+# Nikita Khruschev is Dead
+news_event = {
+	id = rnews.17
+	title = rnews.17.t
+	desc = rnews.17.d
+	picture = GFX_Chrustschov_grave
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	date >1971.9.11
+}
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.17.a
+
+	}
+}
+
+# Resentment in Poland!
+country_event = {
+	id = rnews.20
+	title = rnews.20.t
+	desc = rnews.20.d
+	picture = GFX_Soviet_Troops_Poland
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = USA
+	}
+	option = {
+		name = rnews.20.b
+	}
+}
+
+# Disputed succession
+country_event = {
+	id = rnews.36
+	title = rnews.36.t
+	desc = rnews.36.d
+	picture = GFX_Romanov_Dispute
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = rnews.36.a
+	create_country_leader = {
+	name = "Andrew II of Russia"
+	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+	picture = "gfx/leaders/SOV/fd65eaf78c9145a89dfb0a2e026b746c.tga"
+	expire = "1981.1.20"
+	ideology = Tsarist
+	traits = {
+		
+	}
+	hidden_effect = {
+	news_event = { days = 1 id = rnews.37 }
+	}
+}
+	}
+	option = {
+		name = rnews.36.b
+	create_country_leader = {
+	name = "Vladimir Kirillovich of Russia"
+	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+	picture = "gfx/leaders/SOV/vladimir kirillovich.dds"
+	expire = "1981.1.20"
+	ideology = Tsarist
+	traits = {
+		
+	}
+}
+	}
+	option = {
+		name = rnews.36.c
+	news_event = { days = 1 id = rnews.48 }
+	create_country_leader = {
+	name = "Grand Duke Nikolai Krillovich"
+	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+	picture = "gfx/leaders/SOV/pes_196965.tga"
+	expire = "1981.1.20"
+	ideology = Tsarist
+	traits = {
+		
+	}
+}
+	}
+}
+
+# 
+news_event = {
+	id = rnews.88
+	title = rnews.88.t
+	desc = rnews.88.d
+	picture = 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.88.a
+
+	}
+}
+
+# Pablo Escobar Killed
+news_event = {
+	id = rnews.89
+	title = rnews.89.t
+	desc = rnews.89.d
+	picture = GFX_Pablo_Escobar_Dead
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.89.a
+
+	}
+}
+
+# Nikolai Kril Tsar
+news_event = {
+	id = rnews.48
+	title = rnews.48.t
+	desc = rnews.37.d
+	picture = GFX_Tsar_Crownation
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.37.a
+
+	}
+}
+
+# Resentment in Hungary!
+country_event = {
+	id = rnews.21
+	title = rnews.21.t
+	desc = rnews.21.d
+	picture = GFX_Gener_Eastern_Revolt
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = USA
+	}
+	option = {
+		name = rnews.21.b
+		white_peace = NVA
+	}
+}
+
+# Resentment in Ukraine!
+country_event = {
+	id = rnews.22
+	title = rnews.22.t
+	desc = rnews.22.d
+	picture = GFX_Gener_Eastern_Revolt
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = USA
+	}
+	option = {
+		name = rnews.22.b
+		white_peace = NVA
+	}
+}
+
+# Resentment in Khazakstan!
+country_event = {
+	id = rnews.23
+	title = rnews.23.t
+	desc = rnews.23.d
+	picture = GFX_Gener_Eastern_Revolt
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = USA
+	}
+	option = {
+		name = rnews.23.b
+		white_peace = NVA
+	}
+}
+
+# Resentment in Estonia!
+country_event = {
+	id = rnews.24
+	title = rnews.24.t
+	desc = rnews.24.d
+	picture = GFX_Gener_Eastern_Revolt
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = USA
+	}
+	option = {
+		name = rnews.24.b
+		white_peace = NVA
+	}
+}
+
+# Failed Harvest
+country_event = {
+	id = rnews.25
+	title = rnews.25.t
+	desc = rnews.25.d
+	picture = GFX_Failed_Harvest
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = SOV
+	}
+	option = {
+		name = rnews.25.b
+		news_event = { days = 4 id = rnews.26 }
+	}
+}
+
+# Warsaw food harvest
+news_event = {
+	id = rnews.26
+	title = rnews.26.t
+	desc = rnews.26.d
+	picture = GFX_Failed_Harvest
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = SOV
+}
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.26.a
+
+	}
+}
+
+# Russia moves troops into warsaw
+news_event = {
+	id = rnews.27
+	title = rnews.27.t
+	desc = rnews.27.d
+	picture = GFX_Soviet_Troops_Poland
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	date >1972.2.21
+}
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.27.a
+
+	}
+}
+
+# Salvador Allende Elected President
+news_event = {
+	id = rnews.28
+	title = rnews.28.t
+	desc = rnews.28.d
+	picture = GFX_Allende_Inag
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	date >1970.10.24
+}
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.28.a
+
+	}
+}
+
+# End Game Bad
+news_event = {
+	id = rnews.50
+	title = rnews.50.t
+	desc = rnews.50.d
+	picture = GFX_Gener_Nat_Guard
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	date >1970.10.24
+}
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.50.a
+		sound_effect = End_Game_Music_bad
+	}
+}
+
+# End Game Good
+news_event = {
+	id = rnews.51
+	title = rnews.51.t
+	desc = rnews.51.d
+	picture = GFX_Zionism
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = rnews.51.a
+		sound_effect = end_game_good
+	}
+}
+
+# Right Wing Death Squads Fail
+country_event = {
+	id = rnews.54
+	title = rnews.54.t
+	desc = rnews.54.d
+	picture = GFX_Paris_Peace_Accord
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = USA
+	}
+	option = {
+		name = rnews.54.b
+	news_event = { days = 1 id = rnews.55 }
+	}
+}
+
+# Right Wing Death Squads Fail
+news_event = {
+	id = rnews.55
+	title = rnews.55.t
+	desc = rnews.55.d
+	picture = GFX_Contras_Dead
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = USA
+	}
+	option = {
+		name = rnews.55.a
+	}
+}
+
+# Honduras Fall
+news_event = {
+	id = rnews.56
+	title = rnews.56.t
+	desc = rnews.56.d
+	picture = GFX_Contras_Dead
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = rnews.56.a
+	}
+}
+
+# Anti-Communist Groups
+news_event = {
+	id = rnews.57
+	title = rnews.57.t
+	desc = rnews.57.d
+	picture = GFX_Contras
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = rnews.57.a
+	}
+}
+
+# Right Wing Death Squads
+country_event = {
+	id = rnews.53
+	title = rnews.53.t
+	desc = rnews.53.d
+	picture = GFX_Gener_Eastern_Revolt
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	tag = VEN
+	}
+	option = {
+		name = rnews.53.b
+		start_civil_war = { ideology = fascism size = 0.5 }
+	}
+}
+
+
+# WAR - revolting state
+news_event = {
+	id = rnews.5
+	title = rnews.5.t
+	desc = rnews.5.d
+	picture = GFX_news_event_soviet_soldiers_ruins
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rnews.5.a
+
+	}
+}

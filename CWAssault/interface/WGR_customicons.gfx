@@ -1,0 +1,43 @@
+spriteTypes = { 
+##Icon For: 319644
+ SpriteType = { 
+ name = "GFX_prussianheritage" 
+ texturefile = "gfx/interface/goals/GFX_prussianheritage.tga" 
+ }##Icon For: 319625
+ SpriteType = { 
+ name = "GFX_airsuperiority" 
+ texturefile = "gfx/interface/goals/GFX_airsuperiority.tga" 
+ }##Icon For: 319619
+ SpriteType = { 
+ name = "GFX_strengthentieswithnato" 
+ texturefile = "gfx/interface/goals/GFX_strengthentieswithnato.tga" 
+ }##Icon For: 319698
+ SpriteType = { 
+ name = "GFX_reclaimwhatsours" 
+ texturefile = "gfx/interface/goals/GFX_reclaimwhatsours.tga" 
+ }##Icon For: 319695
+ SpriteType = { 
+ name = "GFX_demandreturnofprussia" 
+ texturefile = "gfx/interface/goals/GFX_demandreturnofprussia.tga" 
+ }##Icon For: 319697
+ SpriteType = { 
+ name = "GFX_einvolkeinreicheinfuhrer" 
+ texturefile = "gfx/interface/goals/GFX_einvolkeinreicheinfuhrer.tga" 
+ }##Icon For: 319683
+ SpriteType = { 
+ name = "GFX_derfuhrer" 
+ texturefile = "gfx/interface/goals/GFX_derfuhrer.tga" 
+ }##Icon For: 319666
+ SpriteType = { 
+ name = "GFX_fascistrallies" 
+ texturefile = "gfx/interface/goals/GFX_fascistrallies.tga" 
+ }##Icon For: 640668
+ SpriteType = { 
+ name = "GFX_reformthedeutschesheer" 
+ texturefile = "gfx/interface/goals/GFX_reformthedeutschesheer.tga" 
+ }##Icon For: 735872
+ SpriteType = { 
+ name = "GFX_hmeuWIcs" 
+ texturefile = "gfx/interface/goals/GFX_hmeuWIcs.tga" 
+ } 
+ }

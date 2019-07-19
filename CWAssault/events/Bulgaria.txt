@@ -1,0 +1,464 @@
+﻿###########################
+# Bulgaria Events
+###########################
+
+add_namespace = bulgaria
+
+# Road towards coup
+country_event = {
+	id = bulgaria.1
+	title = bulgaria.1.t
+	desc = bulgaria.1.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = communism
+	tag = BUL
+	Nationalism > 0.1
+	}
+
+	option = {
+	name = bulgaria.1.a
+
+	}
+}
+
+# Secure Followers
+country_event = {
+	id = bulgaria.2
+	title = bulgaria.2.t
+	desc = bulgaria.2.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+	Nationalism > 0.15
+	has_government = Nationalism
+	tag = BUL
+	}
+
+	option = {
+		name = bulgaria.2.a
+	}
+}
+
+# Disagreements between Generals
+country_event = {
+	id = bulgaria.3
+	title = bulgaria.3.t
+	desc = bulgaria.3.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	Nationalism > 0.25
+	has_government = communism
+	tag = BUL
+	}
+
+	option = {
+		name = bulgaria.3.a
+		add_popularity= { 
+		ideology = Nationalism 
+			popularity = -0.03 
+		}
+	}
+}
+
+# Compromise Talks
+country_event = {
+	id = bulgaria.4
+	title = bulgaria.4.t
+	desc = bulgaria.4.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = Nationalism
+	tag = BUL
+	}
+
+	option = {
+		name = bulgaria.4.a
+	}
+}
+
+# Generals Revolt
+country_event = {
+	id = bulgaria.5
+	title = bulgaria.5.t
+	desc = bulgaria.5.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = Nationalism
+	tag = BUL
+	}
+
+	option = {
+		name = bulgaria.5.a
+		 random_list = {
+                4 = { country_event = { id = bulgaria.6 days = 1 }
+                }
+                6 = { country_event = { id = bulgaria.7 days = 1 } 
+                }
+            }
+	}
+}
+
+# Antanas Removed
+country_event = {
+	id = bulgaria.6
+	title = bulgaria.6.t
+	desc = bulgaria.6.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = Nationalism
+	tag = BUL
+	}
+
+	option = {
+		name = bulgaria.6.a
+	create_country_leader = {
+	name = "Vasil Ivanov Kotsev"
+	desc = ""
+	picture = "gfx/leaders/BUL/Vasil Ivanov Kotsev.dds"
+	expire = "1965.1.1"
+	ideology = Military
+	traits = {
+		#
+	}
+		}
+		set_global_flag = antanas_removed
+	}
+}
+
+# Antanas Assassinated
+country_event = {
+	id = bulgaria.7
+	title = bulgaria.7.t
+	desc = bulgaria.7.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = Nationalism
+	tag = BUL
+	}
+
+	option = {
+	name = bulgaria.7.a
+	news_event = { days = 1 id = news.381 }
+	kill_country_leader = yes
+	create_country_leader = {
+	name = "Boyan Velinov"
+	desc = ""
+	picture = "gfx/leaders/BUL/Boyan Velinov.dds"
+	expire = "1965.1.1"
+	ideology = Military
+	traits = {
+		genial_anti_revolutionary
+	}
+		}
+		set_global_flag = antanas_assassinated
+	}
+}
+
+# Internal Elections
+country_event = {
+	id = bulgaria.8
+	title = bulgaria.8.t
+	desc = bulgaria.8.d
+	picture = GFX_Iranian_Revolution
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_global_flag = antanas_assassinated
+	has_government = Nationalism
+	tag = BUL
+	}
+
+option = {
+	name = bulgaria.8.a
+	            random_list = {
+                2 = { country_event = { id = bulgaria.9 days = 1 }
+				    modifier = {
+                        add = 2
+                        has_global_flag = election_rumors
+                    }
+                }
+                2 = { country_event = { id = bulgaria.10 days = 1 } 
+                }
+                2 = { country_event = { id = bulgaria.11 days = 1 }
+					 modifier = {
+                        add = 10
+                        has_global_flag = kotsev_support
+                    }
+                }
+                2 = { country_event = { id = bulgaria.12 days = 1 }
+                }
+            }
+	}
+}
+
+# Galya Wins Elections (Evil!)
+country_event = {
+	id = bulgaria.9
+	title = bulgaria.9.t
+	desc = bulgaria.9.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = Nationalism
+	tag = BUL
+	}
+
+	option = {
+	name = bulgaria.9.a
+	create_country_leader = {
+	name = "Galya Gugucheva"
+	desc = "POLITICS_HAILE_SELASSIE_DESC"
+	picture = "gfx/leaders/BUL/Galya Gugucheva.dds"
+	expire = "1965.1.1"
+	ideology = Military
+	traits = {
+		Corrupt
+			}
+		}	
+		set_global_flag = galya_win
+	}
+}
+
+# Nikolov Wins Elections (The One You Want!)
+country_event = {
+	id = bulgaria.10
+	title = bulgaria.10.t
+	desc = bulgaria.10.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = Nationalism
+	tag = BUL
+	}
+
+	option = {
+	name = bulgaria.10.a
+	create_country_leader = {
+	name = "Vladimir Todorov Nikolov"
+	desc = ""
+	picture = "gfx/leaders/BUL/Vladimir Todorov Nikolov.dds"
+	expire = "1965.1.1"
+	ideology = Military
+	traits = {
+		#
+	}
+		}
+		set_global_flag = Nikolov_win
+	}
+}
+
+# Kotsev Wins Elections (Soviet Intervention Imminent!)
+country_event = {
+	id = bulgaria.11
+	title = bulgaria.11.t
+	desc = bulgaria.11.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = Nationalism
+	tag = BUL
+	}
+
+	option = {
+	name = bulgaria.11.a
+	create_country_leader = {
+	name = "Vasil Ivanov Kotsev"
+	desc = ""
+	picture = "gfx/leaders/BUL/Vasil Ivanov Kotsev.dds"
+	expire = "1965.1.1"
+	ideology = Military
+	traits = {
+		#
+	}
+		}
+		set_global_flag = kotsev_win
+		hidden_effect = {
+	
+		}
+	}
+}
+
+# Elections Delayed
+country_event = {
+	id = bulgaria.12
+	title = bulgaria.12.t
+	desc = bulgaria.12.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = Nationalism
+	tag = BUL
+	}
+
+	option = {
+	name = bulgaria.12.a
+	}
+}
+
+# Election Rigging Rumors
+country_event = {
+	id = bulgaria.13
+	title = bulgaria.13.t
+	desc = bulgaria.13.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = Nationalism
+	tag = BUL
+	}
+
+	option = {
+	name = bulgaria.13.a
+	set_global_flag = election_rumors
+	}
+}
+
+# Generals Support Kotsev
+country_event = {
+	id = bulgaria.14
+	title = bulgaria.14.t
+	desc = bulgaria.14.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = Nationalism
+	tag = BUL
+	}
+
+	option = {
+	name = bulgaria.14.a
+	set_global_flag = kotsev_support
+	}
+}
+
+# Bulgarian State Recognized (By U.N.)
+country_event = {
+	id = bulgaria.15
+	title = bulgaria.15.t
+	desc = bulgaria.15.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = Nationalism
+	tag = BUL
+	has_global_flag = kotsev_win
+	}
+
+	option = {
+	name = bulgaria.15.a
+	set_global_flag = bulgaria_recognized
+	SOV ={
+	add_opinion_modifier = { target = BUL modifier = anti_communist_in_power }
+	add_opinion_modifier = { target = BUL modifier = communism_ended_bulgaria }
+		}
+	}
+}
+
+# Communists Couped
+country_event = {
+	id = bulgaria.16
+	title = bulgaria.16.t
+	desc = bulgaria.16.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = communism
+	tag = BUL
+	has_global_flag = generals_disagree
+	}
+
+	option = {
+	name = bulgaria.16.a
+	news_event = { days = 1 id = news.417 }
+	SOV = {
+	end_puppet= BUL
+	remove_from_faction= BUL
+	}
+	set_politics = {	
+	ruling_party = Nationalism
+	last_election = "1971.6.18"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    neutrality = 14
+    democratic = 15
+    Monarchism = 4
+    communism = 12
+    Nationalism = 55
+}
+	}
+}
+
+# Soviets Declare War
+country_event = {
+	id = bulgaria.17
+	title = bulgaria.17.t
+	desc = bulgaria.17.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	has_government = Nationalism
+	tag = BUL
+	has_global_flag = bulgaria_not_recognized
+	NOT = {
+	has_global_flag = bulgaria_recognized
+		}
+	}
+
+	option = {
+	name = bulgaria.17.a
+	SOV = {
+		declare_war_on= { 
+		target = BUL 
+		type = puppet_wargoal_focus 
+			}
+
+		}
+	}
+}

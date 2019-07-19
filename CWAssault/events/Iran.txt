@@ -1,0 +1,153 @@
+﻿###########################
+# Iranian Events
+###########################
+
+add_namespace = iran
+
+# Islamist Supporters
+country_event = {
+	id = iran.1
+	title = iran.1.t
+	desc = iran.1.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = no
+	trigger = {
+	has_government = Monarchism
+	tag = PER
+	date >1977.8.7
+	}
+	fire_only_once = yes
+
+	option = {
+		name = iran.1.a
+		add_popularity = { ideology = Radical_Islam popularity = 0.02 }
+		add_popularity = { ideology = Islamism popularity = 0.03 }
+	}
+}
+
+# Islamist Protests
+country_event = {
+	id = iran.2
+	title = iran.2.t
+	desc = iran.2.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = no
+	trigger = {
+	has_government = Monarchism
+	tag = PER
+	date >1977.10.1
+	}
+	fire_only_once = yes
+
+	option = {
+		name = iran.2.a
+		add_popularity = { ideology = Islamism popularity = 0.01 }
+		add_popularity = { ideology = Radical_Islam popularity = 0.03 }
+	}
+	
+	option = {
+		name = iran.2.b
+		add_popularity = { ideology = Islamism popularity = 0.02 }
+		add_popularity = { ideology = Radical_Islam popularity = 0.01 }
+	}
+}
+
+# Reza Abdicates
+country_event = {
+	id = iran.3
+	title = iran.3.t
+	desc = iran.3.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = no
+	trigger = {
+	has_government = Monarchism
+	tag = PER
+	date >1979.2.1
+	}
+	fire_only_once = yes
+
+	option = {
+		name = iran.1.a
+		set_politics = { ruling_party = Islamism elections_allowed = no
+}
+
+set_popularities = {
+    Islamism = 70
+    Radical_Islam = 15
+    Monarchism = 8
+    Liberalism = 1
+    fascism = 1
+    communism = 5
+}
+		news_event = { days = 1 id = news.373 }
+		set_global_flag = iran_revoultion
+		}
+}
+
+# Iraq Offers Ceasefire
+country_event = {
+	id = iran.4
+	title = iran.4.t
+	desc = iran.4.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = yes
+	trigger = {
+	tag = PER
+	}
+	fire_only_once = yes
+
+	option = {
+		name = iran.4.a
+		IRQ = { country_event = iraq.5 }
+		}
+	option = {
+		name = iran.4.b
+		IRQ = { country_event = iraq.6 }
+		}
+}
+
+# Students Occupy American Embassy
+country_event = {
+	id = iran.5
+	title = iran.5.t
+	desc = iran.5.d
+	picture = GFX_Iran_Embassy_Siege_Alt
+
+	is_triggered_only = no
+	trigger = {
+	has_global_flag = iran_revoultion
+	tag = PER
+	date >1979.10.24
+	}
+	fire_only_once = yes
+
+	option = {
+		name = iran.5.a
+		news_event = { days = 1 id = news.415 }
+		USA = {
+		country_event = { days = 1 id = usa.8 }
+		}
+	}
+}
+
+# United States Issues Threats
+country_event = {
+	id = iran.6
+	title = iran.6.t
+	desc = iran.6.d
+	picture = GFX_Iran_Embassy_Siege_Alt
+
+	is_triggered_only = yes
+	trigger = {
+	tag = PER
+	}
+	fire_only_once = yes
+
+	option = {
+		name = iran.6.a
+	}
+}

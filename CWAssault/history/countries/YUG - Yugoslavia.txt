@@ -1,0 +1,259 @@
+﻿capital = 107
+
+oob = "YUG_1974"
+
+set_research_slots = 3
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	support_weapons2 = 1
+	basic_medium_tank = 1 # PLACEHOLDER
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+	}
+}
+
+1939.1.1 = {
+
+	add_ideas = {
+		limited_conscription
+	}
+
+	set_technology = {
+		fighter1 = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
+		CAS1 = 1
+		naval_bomber1 = 1
+		interwar_artillery = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			basic_destroyer = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_light_battery = 1
+		}
+	}
+}
+
+set_convoys = 220
+
+1960.1.1 = {
+	set_politics = {		
+		ruling_party = communism
+		last_election = "1955.12.1"
+		election_frequency = 36
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        democratic = 5
+        Socialism = 10
+        Nationalism = 5
+        Liberalism = 5
+        Radical_Islam = 5
+        communism = 70
+    }
+
+}
+set_stability = 0.6
+
+create_country_leader = {
+	name = "Slobodan Milošević"
+	desc = "POLITICS_JOSIP_BROZ_TITO_DESC"
+	picture = "gfx/leaders/YUG/slobodan-milosevic.tga"
+	expire = "1965.1.1"
+	ideology = Socialist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Josip Broz Tito"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/YUG/Josip Tito.dds"
+	expire = "1980.5.4"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Zorko Čanadi"
+	portrait_path = "gfx/leaders/YUG/Generals/Zorko Čanadi.dds"
+	traits = { trickster  }
+	skill = 3
+
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Stevan Mirković"
+	portrait_path = "gfx/leaders/YUG/Generals/Stevan Mirković.dds"
+	traits = { urban_assault_specialist }
+	skill = 3
+	
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Nikola Ljubičić"
+	portrait_path = "gfx/leaders/YUG/Generals/Nikola Ljubičić.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Stane Potočar"
+	portrait_path = "gfx/leaders/YUG/Generals/Stane Potočar.dds"
+	traits = { thorough_planner }
+	skill = 3	
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Blagoje Adžić"
+	portrait_path = "gfx/leaders/YUG/Generals/Blagoje Adžić.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Franjo Tudman"
+	portrait_path = "gfx/leaders/YUG/Generals/franjo tuđman.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Milhailo Duknic"
+	portrait_path = "gfx/leaders/YUG/Generals/Milhailo Duknic.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Vladimir Vojvodić"
+	portrait_path = "gfx/leaders/YUG/Generals/Vladimir Vojvodić.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Konrad Kolšek"
+	portrait_path = "gfx/leaders/YUG/Generals/Konrad Kolšek.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Marijan Polić"
+	portrait_path = GFX_Portrait_yugoslavia_marijan_polic
+	traits = {  }
+	skill = 2
+}
+
+
+1980.5.5 = {
+
+create_country_leader = {
+	name = "Borisav Jovic"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/SOV/borisav.dds"
+	expire = "1991.6.15"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+}

@@ -1,0 +1,168 @@
+﻿capital = 844 #South Korea - Seoul or Busan
+
+oob = ""
+
+# Starting tech
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	support_weapons2 = 1
+	basic_medium_tank = 1 # PLACEHOLDER
+	strategic_bomber1 = 1
+	CAS1 = 1
+}
+
+add_ideas = {
+Dysfunctional_Government
+Stalling_Economy
+}
+set_convoys = 5
+
+1970.1.1 = {
+set_politics = {
+	ruling_party = democratic
+	last_election = "1968.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 38
+    Liberalism = 32
+    Nationalism = 10
+    neutrality = 18
+    communism = 2
+}
+
+create_country_leader = {
+	name = "Park Chung-Hee"
+	desc = ""
+	picture = "gfx/leaders/Asia/61895-004-5ED5937B.dds"
+	expire = "1976.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+}
+
+1976.1.20 = {
+
+	set_politics = {		
+		ruling_party = democratic
+		last_election = "1974.11.3"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+    democratic = 38
+    Liberalism = 32
+    Nationalism = 3
+    neutrality = 25
+    communism = 2
+    }
+	
+	create_country_leader = {
+	name = "Choi Kyu-ha"
+	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+	picture = "gfx/leaders/KOR/-Choi_Kyu_Ha south korea copy.dds"
+	expire = "1981.1.20"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+}
+
+1981.1.20 = {
+	
+	create_country_leader = {
+	name = "Chun Doo-hwan"
+	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+	picture = "gfx/leaders/KOR/chun-doo-hwan-1.tga"
+	expire = "1989.1.20"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+}
+
+create_field_marshal = {
+	name = "Park Chung-Hee"
+	portrait_path = "gfx/leaders/Asia/61895-004-5ED5937B.dds"
+	traits = { old_guard politically_connected }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kim Tae-young"
+	portrait_path = "gfx/leaders/KOR/Kim Tae-young.dds"
+	traits = { armor_officer war_hero inflexible_strategist }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kim Jong-hyun"
+	portrait_path = "gfx/leaders/KOR/Kim Jong-hyun.dds"
+	traits = { armor_officer  }
+	skill = 1
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Kim Jae-gyu"
+	portrait_path = "gfx/leaders/KOR/Kim Jae-gyu.dds"
+	traits = {  armor_officer harsh_leader politically_connected }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Jeong Seung-hwa"
+	portrait_path = "gfx/leaders/KOR/Jeong Seung-hwa.dds"
+	traits = { brilliant_strategist infantry_officer career_officer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Jang Tae-wan"
+	portrait_path = "gfx/leaders/KOR/Jang Tae-wan.dds"
+	traits = {  armor_officer career_officer war_hero }
+	skill = 3
+	
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}

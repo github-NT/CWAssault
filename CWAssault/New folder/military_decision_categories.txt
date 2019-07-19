@@ -1,0 +1,36 @@
+################
+##### VIN ######
+################
+
+military_appeasement = {
+	icon = generic_form_nation
+	
+	picture = 
+	
+	allowed = {
+		has_government = Anarchy
+	}
+	
+	available = {
+		has_government = Anarchy
+	}
+	
+	
+}
+
+chl_military_appeasement = {
+	icon = generic_form_nation
+	
+	picture = 
+	
+	allowed = {
+		has_government = Anarchy
+	}
+	
+	available = {
+		has_government = Anarchy
+	}
+	
+	
+}
+

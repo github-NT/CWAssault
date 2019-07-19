@@ -1,0 +1,440 @@
+﻿###########################
+# Politician Events
+###########################
+
+add_namespace = politician
+
+#Yuri Andropov Win Election
+country_event = {
+	id = politician.1
+	title = politician.1.t
+	desc = politician.1.d
+	picture = GFX_report_event_political_gathering
+	immediate = { set_global_flag = yuri_elected }
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Yuri Andropov"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/yuri andropov.dds"
+			expire = "1985.1.20"
+			ideology = leninism
+			traits = {
+				Moderate
+			}
+		}
+	}
+	
+}
+
+#Arvīds Pelše Win Election
+country_event = {
+	id = politician.2
+	title = politician.2.t
+	desc = politician.2.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Arvīds Pelše"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/Arvids_Pelse.dds"
+			expire = "1983.5.29"
+			ideology = leninism
+			traits = {
+				Conservative
+			}
+		}
+	}
+	
+}
+
+#Nikolai Podgorny Win Election
+country_event = {
+	id = politician.3
+	title = politician.3.t
+	desc = politician.3.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Nikolai Podgorny"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/nikolay-podgorny.dds"
+			expire = "1985.1.20"
+			ideology = leninism
+			traits = {
+				Reactionary
+			}
+		}
+	}
+	
+}
+
+#Dmitry Ustinov Win Election
+country_event = {
+	id = politician.4
+	title = politician.4.t
+	desc = politician.4.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Dmitry Ustinov"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/ustinov-1.dds"
+			expire = "1985.1.20"
+			ideology = leninism
+			traits = {
+				Conservative
+			}
+		}
+	}
+	
+}
+###############						 		###############
+############### AFTER YURI ANDROPOV EVENTS  ###############
+###############                     		###############
+#Andrei Gromyko Win Election
+country_event = {
+	id = politician.5
+	title = politician.5.t
+	desc = politician.5.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Andrei Gromyko"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/andrey-gromyko.dds"
+			expire = "1985.1.20"
+			ideology = leninism
+			traits = {
+				Moderate
+			}
+		}
+	}
+	
+}
+
+#Konstantin Chernenko Win Election
+country_event = {
+	id = politician.6
+	title = politician.6.t
+	desc = politician.6.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Konstantin Chernenko"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/Konstantin Chernenko.dds"
+			expire = "1985.1.20"
+			ideology = leninism
+			traits = {
+				Reactionary
+			}
+		}
+	}
+	
+}
+
+#Andrei Kirilenko Win Election
+country_event = {
+	id = politician.7
+	title = politician.7.t
+	desc = politician.7.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Andrei Kirilenko"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/Andrei_Kirilenko.dds"
+			expire = "1985.1.20"
+			ideology = leninism
+			traits = {
+				Conservative
+			}
+		}
+	}
+	
+}
+
+#Grigory Romanov Win Election
+country_event = {
+	id = politician.8
+	title = politician.8.t
+	desc = politician.8.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Grigory Romanov"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/grigory.dds"
+			expire = "1985.1.20"
+			ideology = leninism
+			traits = {
+				Stalinist
+			}
+		}
+	}
+	
+}
+
+#Mikhail Gorbachev Win Election
+country_event = {
+	id = politician.9
+	title = politician.9.t
+	desc = politician.9.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Mikhail Gorbachev"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/Gorbachev.dds"
+			expire = "1985.1.20"
+			ideology = leninism
+			traits = {
+				Reformist
+			}
+		}
+	}
+	
+}
+
+#Viktor Grishin Win Election
+country_event = {
+	id = politician.10
+	title = politician.10.t
+	desc = politician.10.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Viktor Grishin"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/viktor-grishin.dds"
+			expire = "1985.1.20"
+			ideology = leninism
+			traits = {
+				Conservative
+			}
+		}
+	}
+	
+}
+
+#Boris Yeltsin Win Election
+country_event = {
+	id = politician.11
+	title = politician.11.t
+	desc = politician.11.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Boris Yeltsin"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/Boris Yeltsin.dds"
+			expire = "1985.1.20"
+			ideology = oligarchism
+			traits = {
+			
+			}
+		}
+		set_politics = {	
+	ruling_party = communism
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    neutrality = 58
+    communism = 27
+    Nationalism = 8
+    democratic = 7
+}
+	}
+	
+}
+
+#Nikolai Ryzhkov Win Election
+country_event = {
+	id = politician.12
+	title = politician.12.t
+	desc = politician.12.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Nikolai Ryzhkov"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/Nikolai Ryzhkov.dds"
+			expire = "1985.1.20"
+			ideology = marxism
+			traits = {
+				
+			}
+		}
+		add_popularity = { ideology = communism popularity = 0.1 }
+	}
+	
+}
+
+#Vladimir Zhirinovsky
+country_event = {
+	id = politician.13
+	title = politician.13.t
+	desc = politician.13.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Vladimir Zhirinovsky"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/Vladimir-Zhirinovsky.dds"
+			expire = "1985.1.20"
+			ideology = Ultra-Nationalist
+			traits = {
+				
+			}
+		}
+		set_politics = { ruling_party = Nationalism elections_allowed = yes }
+		add_popularity = { ideology = Nationalism popularity = 0.1 }
+	}
+	
+}
+
+#Aman Tuleyev Win Election #IF THIS HAPPENS UNINSTALL THE MOD
+country_event = {
+	id = politician.14
+	title = politician.14.t
+	desc = politician.14.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Aman Tuleyev"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/Aman Tuleyev.dds"
+			expire = "1985.1.20"
+			ideology = oligarchism
+			traits = {
+				
+			}
+		}
+		set_politics = { ruling_party = neutrality elections_allowed = yes }
+		add_popularity = { ideology = neutrality popularity = 0.1 }
+	}
+	
+}
+
+#Gennady Zyuganov Win Election
+country_event = {
+	id = politician.15
+	title = politician.15.t
+	desc = politician.15.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Gennady Zyuganov"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/gennady zyuganov.dds"
+			expire = "1985.1.20"
+			ideology = leninism
+			traits = {
+				
+			}
+		}
+		set_politics = { ruling_party = communism elections_allowed = no }
+		add_popularity = { ideology = communism popularity = 0.1 }
+	}
+	
+}
+
+#Vladimir Putin Win Election
+country_event = {
+	id = politician.16
+	title = politician.16.t
+	desc = politician.16.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Vladimir Putin"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/Vladimir Putin.dds"
+			expire = "1985.1.20"
+			ideology = oligarchism
+			traits = {
+				
+			}
+		}
+		set_politics = { ruling_party = neutrality elections_allowed = yes }
+		add_popularity = { ideology = neutrality popularity = 0.1 }
+	}
+	
+}
+
+#Grigory Yavlinsky Win Election
+country_event = {
+	id = politician.17
+	title = politician.17.t
+	desc = politician.17.d
+	picture = GFX_report_event_political_gathering
+	
+	is_triggered_only = yes
+	option = {
+		name = politician.1
+		create_country_leader = {
+			name = "Grigory Yavlinsky"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SOV/Grigory Yavlinsky.dds"
+			expire = "1985.1.20"
+			ideology = Socialist
+			traits = {
+				
+			}
+		}
+		set_politics = { ruling_party = Socialism elections_allowed = yes }
+		add_popularity = { ideology = Socialism popularity = 0.1 }
+	}
+	
+}

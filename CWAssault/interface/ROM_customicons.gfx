@@ -1,0 +1,31 @@
+spriteTypes = { 
+##Icon For: 631650
+ SpriteType = { 
+ name = "GFX_reformthepatrioticguard" 
+ texturefile = "gfx/interface/goals/GFX_reformthepatrioticguard.tga" 
+ }##Icon For: 631651
+ SpriteType = { 
+ name = "GFX_fighterdevelopmentii" 
+ texturefile = "gfx/interface/goals/GFX_fighterdevelopmentii.tga" 
+ }##Icon For: 630550
+ SpriteType = { 
+ name = "GFX_attackaircraftdevelopment" 
+ texturefile = "gfx/interface/goals/GFX_attackaircraftdevelopment.tga" 
+ }##Icon For: 630512
+ SpriteType = { 
+ name = "GFX_embracetheoldguard" 
+ texturefile = "gfx/interface/goals/GFX_embracetheoldguard.tga" 
+ }##Icon For: 630548
+ SpriteType = { 
+ name = "GFX_fighterdivisions" 
+ texturefile = "gfx/interface/goals/GFX_fighterdivisions.tga" 
+ }##Icon For: 643895
+ SpriteType = { 
+ name = "GFX_promotetheorganizaiapionierilor" 
+ texturefile = "gfx/interface/goals/GFX_promotetheorganizaiapionierilor.tga" 
+ }##Icon For: 715087
+ SpriteType = { 
+ name = "GFX_muncapatriotica" 
+ texturefile = "gfx/interface/goals/GFX_muncapatriotica.tga" 
+ } 
+ }

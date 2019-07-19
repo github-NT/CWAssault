@@ -1,0 +1,1511 @@
+#vietnam
+USA_support_VIN = {
+	enable = {
+		tag = USA
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = VIN
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "VIN"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "VIN"
+		value = 500
+	}
+
+}
+PRC_support_NVM = {
+	enable = {
+		tag = PRC
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = NVM
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NVM"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NVM"
+		value = 900
+	}
+}
+
+SOV_support_NVM = {
+	enable = {
+		tag = SOV
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = NVM
+		date < 1973.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NVM"
+		value = 500
+	}
+}
+#sudan
+sov_support_sud = {
+	enable = {
+		tag = SOV
+		has_war = no
+		date > 1973.1.1
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SUD
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SUD"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SUD"
+		value = 500
+	}
+
+}
+
+#columbia revolt
+usa_support_col = {
+	enable = {
+		tag = USA
+		has_war = no
+		NOT = { has_war_with = COL }
+		date < 1973.1.1
+	}
+	abort = {
+		OR = {
+			has_war = yes
+			has_war_with = COL
+			date < 1976.1.1
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "COL"
+		value = 300
+	}
+
+}
+#damanskiy never forget
+SOV_anti_USA = {
+	enable = {
+		tag = SOV
+		country_exists = USA
+	}
+	abort = {
+		NOT = {
+			country_exists = USA
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"			
+		value = 40
+	}		
+}
+USA_anti_SOV = {
+	enable = {
+		tag = USA
+		country_exists = SOV
+	}
+	abort = {
+		NOT = {
+			country_exists = SOV
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "USA"			
+		value = 40
+	}		
+}
+PRC_anti_SOV = {
+	enable = {
+		tag = PRC
+		country_exists = SOV
+	}
+	abort = {
+		NOT = {
+			country_exists = SOV
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"			
+		value = 50
+	}		
+}
+SOV_anti_PRC = {
+	enable = {
+		tag = SOV
+		country_exists = PRC
+	}
+	abort = {
+		NOT = {
+			country_exists = PRC
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "PRC"			
+		value = 50
+	}		
+}
+
+CUB_anti_USA = {
+	enable = {
+		tag = CUB
+		country_exists = USA
+	}
+	abort = {
+		NOT = {
+			country_exists = USA
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "USA"			
+		value = 50
+	}		
+}
+
+CUB_support_ANG = {
+	enable = {
+		tag = CUB
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = ANG
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ANG"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ANG"
+		value = 500
+	}
+
+}
+
+CUB_support_ZIM = {
+	enable = {
+		tag = CUB
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = ZIM
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ZIM"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ZIM"
+		value = 500
+	}
+
+}
+
+CUB_support_NVM = {
+	enable = {
+		tag = CUB
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = NVM
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NVM"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NVM"
+		value = 500
+	}
+
+}
+
+#yugoslavia
+tito_hate_sov = {
+	enable = {
+		tag = YUG
+		country_exists = SOV
+	}
+	abort = {
+		NOT = {
+			country_exists = SOV
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"			
+		value = 10
+	}		
+}
+tito_hate_prc = {
+	enable = {
+		tag = YUG
+		country_exists = PRC
+	}
+	abort = {
+		NOT = {
+			country_exists = PRC
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "PRC"			
+		value = 10
+	}		
+}
+
+#only one true korea
+korea_hate_DPR = {
+	enable = {
+		tag = KOR
+	}
+	abort = {
+		NOT = {
+			country_exists = DPR
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "DPR"			
+		value = 75
+	}	
+	ai_strategy = {
+		type = conquer
+		id = "DPR"			
+		value = 20
+	}			
+}
+kim_hate_korea = {
+	enable = {
+		tag = DPR
+	}
+	abort = {
+		NOT = {
+			country_exists = KOR
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "KOR"			
+		value = 75
+	}	
+	ai_strategy = {
+		type = conquer
+		id = "KOR"			
+		value = 20
+	}		
+}
+
+#indo-pakistan 
+india_hate_pak = {
+	enable = {
+		tag = RAJ
+		country_exists = PAK
+	}
+	abort = {
+		NOT = {
+			country_exists = PAK
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "PAK"			
+		value = 40
+	}		
+}
+pakistan_hate_raj = {
+	enable = {
+		tag = PAK
+		country_exists = RAJ
+	}
+	abort = {
+		NOT = {
+			country_exists = RAJ
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "RAJ"			
+		value = 40
+	}
+}
+#african 
+EGY_hate_ISR = {
+	enable = {
+		tag = EGY
+		country_exists = ISR
+	}
+	abort = {
+		NOT = {
+			country_exists = ISR
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "ISR"			
+		value = 80
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ISR"			
+		value = 50
+	}		
+}
+
+SYR_hate_ISR = {
+	enable = {
+		tag = SYR
+		country_exists = ISR
+	}
+	abort = {
+		NOT = {
+			country_exists = ISR
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "ISR"			
+		value = 80
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ISR"			
+		value = 50
+	}		
+}
+
+ngr_hate_nga = {
+	enable = {
+		tag = NGR
+		country_exists = NGA
+	}
+	abort = {
+		NOT = {
+			country_exists = NGA
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "NGA"			
+		value = 100
+	}	
+	ai_strategy = {
+		type = conquer
+		id = "NGA"			
+		value = 100
+	}				
+}
+bol_hate_par = {
+	enable = {
+		tag = BOL
+		country_exists = PAR
+	}
+	abort = {
+		NOT = {
+			country_exists = PAR
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "PAR"			
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "PAR"			
+		value = 100
+	}	
+}
+
+pak_love_usa = {
+	enable = {
+		tag = PAK
+		country_exists = USA
+	}
+	abort = {
+		NOT = {
+			country_exists = USA
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "USA"			
+		value = 10
+	}		
+}
+
+jap_love_usa = {
+	enable = {
+		tag = JAP
+		country_exists = USA
+	}
+	abort = {
+		NOT = {
+			country_exists = USA
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "USA"			
+		value = 10
+	}		
+}
+
+kor_love_usa = {
+	enable = {
+		tag = KOR
+		country_exists = USA
+	}
+	abort = {
+		NOT = {
+			country_exists = USA
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "USA"			
+		value = 10
+	}		
+}
+
+sau_love_usa = {
+	enable = {
+		tag = SAU
+		country_exists = USA
+	}
+	abort = {
+		NOT = {
+			country_exists = USA
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "USA"			
+		value = 10
+	}		
+}
+
+USA_support_NGA = {
+	enable = {
+		tag = USA
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = NGA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NGA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NGA"
+		value = 500
+	}
+
+}
+
+ENG_support_NGA = {
+	enable = {
+		tag = ENG
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = NGA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NGA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NGA"
+		value = 500
+	}
+
+}
+
+SOV_support_NGA = {
+	enable = {
+		tag = SOV
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = NGA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NGA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NGA"
+		value = 500
+	}
+
+}
+
+BUL_support_NGA = {
+	enable = {
+		tag = BUL
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = NGA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NGA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NGA"
+		value = 500
+	}
+
+}
+
+ETH_support_NGA = {
+	enable = {
+		tag = ETH
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = NGA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NGA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NGA"
+		value = 500
+	}
+
+}
+
+SOM_support_NGA = {
+	enable = {
+		tag = SOM
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = NGA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NGA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NGA"
+		value = 500
+	}
+
+}
+
+ALG_support_NGA = {
+	enable = {
+		tag = ALG
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = NGA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NGA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NGA"
+		value = 500
+	}
+
+}
+
+SAU_support_NGA = {
+	enable = {
+		tag = SAU
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = NGA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NGA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NGA"
+		value = 500
+	}
+
+}
+
+SYR_support_NGA = {
+	enable = {
+		tag = SYR
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = NGA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NGA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NGA"
+		value = 500
+	}
+
+}
+
+FRA_support_BIA = {
+	enable = {
+		tag = FRA
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = BIA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "BIA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BIA"
+		value = 500
+	}
+
+}
+
+ISR_support_BIA = {
+	enable = {
+		tag = ISR
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = BIA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "BIA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BIA"
+		value = 500
+	}
+
+}
+
+POR_support_BIA = {
+	enable = {
+		tag = BIA
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = BIA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "BIA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BIA"
+		value = 500
+	}
+
+}
+
+SAF_support_BIA = {
+	enable = {
+		tag = SAF
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = BIA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "BIA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BIA"
+		value = 500
+	}
+
+}
+
+ROD_support_BIA = {
+	enable = {
+		tag = ROD
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = BIA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "BIA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BIA"
+		value = 500
+	}
+
+}
+
+ITA_support_BIA = {
+	enable = {
+		tag = ITA
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = BIA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "BIA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BIA"
+		value = 500
+	}
+
+}
+
+VAT_support_BIA = {
+	enable = {
+		tag = VAT
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = BIA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "BIA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BIA"
+		value = 500
+	}
+
+}
+
+PRC_support_BIA = {
+	enable = {
+		tag = PRC
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = BIA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "BIA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BIA"
+		value = 500
+	}
+
+}
+
+YUG_support_BIA = {
+	enable = {
+		tag = YUG
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = BIA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "BIA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BIA"
+		value = 500
+	}
+
+}
+
+CAN_support_BIA = {
+	enable = {
+		tag = CAN
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = BIA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "BIA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BIA"
+		value = 500
+	}
+
+}
+
+GAB_support_BIA = {
+	enable = {
+		tag = GAB
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = BIA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "BIA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BIA"
+		value = 500
+	}
+
+}
+
+WGR_support_BIA = {
+	enable = {
+		tag = WGR
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = BIA
+			date < 1971.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "BIA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BIA"
+		value = 500
+	}
+
+}
+
+PRC_support_ZIM = {
+	enable = {
+		tag = PRC
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = ZIM
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ZIM"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ZIM"
+		value = 500
+	}
+
+}
+
+ISR_support_ROD = {
+	enable = {
+		tag = ISR
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = ROD
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ROD"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ROD"
+		value = 500
+	}
+
+}
+
+MZB_support_ZIM = {
+	enable = {
+		tag = MZB
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = ZIM
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ZIM"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ZIM"
+		value = 500
+	}
+
+}
+
+ZAM_support_ZIM = {
+	enable = {
+		tag = ZAM
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = ZIM
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ZIM"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ZIM"
+		value = 500
+	}
+
+}
+
+SOV_support_DRA = {
+	enable = {
+		tag = SOV
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = DRA
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "DRA"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "DRA"
+		value = 800
+	}
+
+}
+
+USA_support_IRQ = {
+	enable = {
+		tag = USA
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = IRQ
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "IRQ"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "IRQ"
+		value = 800
+	}
+
+}
+
+SOV_support_IRQ = {
+	enable = {
+		tag = SOV
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = IRQ
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "IRQ"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "IRQ"
+		value = 800
+	}
+
+}
+
+FRA_support_IRQ = {
+	enable = {
+		tag = FRA
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = IRQ
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "IRQ"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "IRQ"
+		value = 800
+	}
+
+}
+
+ENG_support_IRQ = {
+	enable = {
+		tag = ENG
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = IRQ
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "IRQ"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "IRQ"
+		value = 800
+	}
+
+}
+
+WGR_support_IRQ = {
+	enable = {
+		tag = WGR
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = IRQ
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "IRQ"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "IRQ"
+		value = 800
+	}
+
+}
+
+SAU_support_IRQ = {
+	enable = {
+		tag = SAU
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = IRQ
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "IRQ"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "IRQ"
+		value = 800
+	}
+
+}
+
+LBA_support_PER = {
+	enable = {
+		tag = LBA
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = PER
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "PER"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PER"
+		value = 800
+	}
+
+}
+
+ISR_support_PER = {
+	enable = {
+		tag = ISR
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = PER
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "PER"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PER"
+		value = 800
+	}
+
+}
+
+DPR_support_PER = {
+	enable = {
+		tag = DPR
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = PER
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "PER"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PER"
+		value = 800
+	}
+
+}
+
+USA_support_ISR = {
+	enable = {
+		tag = USA
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = ISR
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ISR"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ISR"
+		value = 800
+	}
+
+}
+
+ENG_support_ISR = {
+	enable = {
+		tag = ENG
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = ISR
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ISR"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ISR"
+		value = 800
+	}
+
+}
+
+WGR_support_ISR = {
+	enable = {
+		tag = WGR
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = ISR
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ISR"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ISR"
+		value = 800
+	}
+
+}
+
+FRA_support_ISR = {
+	enable = {
+		tag = FRA
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = ISR
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ISR"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ISR"
+		value = 800
+	}
+
+}
+
+ITA_support_ISR = {
+	enable = {
+		tag = ITA
+		has_war = no
+	}
+	abort = {
+			has_war = yes
+			has_war_with = ISR
+			date < 1970.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ISR"
+		value = 600
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ISR"
+		value = 800
+	}
+
+}

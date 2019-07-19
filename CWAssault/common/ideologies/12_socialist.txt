@@ -1,0 +1,38 @@
+ideologies = {	
+	Socialism = {
+	
+		types = {
+		
+			Socialist  = {
+			}
+			Democratic_Socialist  = {
+			}
+		}
+
+		
+		color = { 120  81  176 }
+		
+		
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.1
+				
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+
+		modifiers = {
+			puppet_cost_factor = -0.3
+
+		}
+		
+		ai_democratic = yes # uses the democratic AI behaviour
+
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes 
+
+	}
+
+}

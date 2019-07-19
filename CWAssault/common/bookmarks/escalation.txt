@@ -1,0 +1,112 @@
+bookmarks = {
+	bookmark = {
+		name = "ESCALATION_NAME"
+		desc = "ESCALATION_DESC"
+		date = 1970.1.1.12
+		picture = "GFX_select_date_1970"
+		default_country = "USA"
+		default = yes
+		
+		"USA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"CHL"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = Socialism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"SYR"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = Nationalism
+			
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"ISR"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = Socialism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"NVM"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = communism
+			
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"VIN"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = Nationalism
+			
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+			Incompetent_Military
+			Dysfunctional_Government
+			Stalling_Economy
+			}
+			focuses = {
+			SOV_adifferentfutureforrussia
+			SOV_enforcingdtente
+			SOV_perestroika
+			}	
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+		"POL"={
+			minor = yes
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

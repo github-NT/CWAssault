@@ -1,0 +1,35 @@
+﻿###########################
+# Belgium Events
+###########################
+
+add_namespace = belgium
+
+# Leon Degrelle Returns
+country_event = {
+	id = belgium.1
+	title = belgium.1.t
+	desc = belgium.1.d
+	picture = GFX_Iranian_Revolution
+
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+	has_government = fascism
+	tag = BEL
+	}
+
+	option = {
+		name = belgium.1.a
+		news_event = { days = 1 id = news.381 }
+	create_country_leader = {
+	name = "Léon Degrelle"
+	desc = "POLITICS_HAILE_SELASSIE_DESC"
+	picture = "gfx/leaders/BEL/Leon Degrelle.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		#
+	}
+	}
+	}
+}

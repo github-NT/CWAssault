@@ -1,0 +1,140 @@
+﻿###########################
+# Iraqi Events
+###########################
+
+add_namespace = iraq
+
+# Invasion of Iran
+country_event = {
+	id = iraq.1
+	title = iraq.1.t
+	desc = iraq.1.d
+	picture = 
+
+	is_triggered_only = no
+	trigger = {
+	has_government = Nationalism
+	tag = IRQ
+	date >1980.9.22
+	has_global_flag = saddam_hussein
+	}
+	fire_only_once = yes
+
+	option = {
+		name = iraq.1.a
+		news_event = { days = 1 id = news.343 }
+		declare_war_on = { target = PER type = annex_everything }
+		}
+}
+
+# Invasion of Kuwait #DEATH
+country_event = {
+	id = iraq.2
+	title = iraq.2.t
+	desc = iraq.2.d
+	picture = 
+
+	is_triggered_only = no
+	trigger = {
+	has_government = Nationalism
+	tag = IRQ
+	date >1990.2.18
+	}
+	fire_only_once = yes
+
+	option = {
+		name = iraq.2.a
+		declare_war_on = { target = KUW type = annex_everything }
+	}
+}
+
+# Saddam Hussein Takes Power
+country_event = {
+	id = iraq.3
+	title = iraq.3.t
+	desc = iraq.3.d
+	picture = 
+
+	is_triggered_only = no
+	trigger = {
+	has_government = Nationalism
+	tag = IRQ
+	date >1979.7.7
+	has_country_leader = { ruling_only = yes name = "Ahmad Hassan al-Bakr" }
+	}
+	fire_only_once = yes
+
+	option = {
+		name = iraq.3.a
+		create_country_leader = {
+			name = "Saddam Hussein"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/IRQ/200px-Saddam_Hussein_1979.dds"
+			expire = "2003.1.20"
+			ideology = Nationalist
+			traits = {
+				
+			}
+		}
+		set_global_flag = saddam_hussein
+	}
+}
+
+# Offer Ceasefire to Iran
+country_event = {
+	id = iraq.4
+	title = iraq.4.t
+	desc = iraq.4.d
+	picture = 
+
+	is_triggered_only = no
+	trigger = {
+	has_government = Nationalism
+	tag = IRQ
+	date >1988.7.1
+	}
+	fire_only_once = yes
+
+	option = {
+		name = iraq.4.a
+		PER = { country_event = iran.4 }
+	}
+}
+
+# Iran Agrees
+country_event = {
+	id = iraq.5
+	title = iraq.5.t
+	desc = iraq.5.d
+	picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	tag = IRQ
+	}
+
+	option = {
+		name = iraq.4.a
+		white_peace = PER
+		news_event = { days = 1 id = news.416 }
+	}
+}
+
+# Iran Disagrees
+country_event = {
+	id = iraq.6
+	title = iraq.6.t
+	desc = iraq.6.d
+	picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	tag = IRQ
+	}
+
+	option = {
+		name = iraq.6.a
+	}
+}

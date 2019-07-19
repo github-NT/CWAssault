@@ -1,0 +1,131 @@
+﻿capital = 307
+
+oob = "VEN_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+set_country_flag = monroe_doctrine
+
+1939.1.1 = {
+	
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_refining2 = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_convoys = 10
+1970.1.1 = {
+set_politics = {	
+	ruling_party = Christianity
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    Christianity = 29
+    Socialism = 28
+    Liberalism = 22
+    democratic = 21
+}
+
+create_country_leader = {
+	name = "Rafael Caldera"
+	desc = "POLITICS_ELEAZAR_LOPEZ_CONTRERAS_DESC"
+	picture = "gfx/leaders/VEN/rafael-caldera.dds"
+	expire = "1965.1.1"
+	ideology = Catholicism
+	traits = {
+		#
+	}
+}
+}
+
+1973.1.1 = {
+set_politics = {	
+	ruling_party = Socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    Socialism = 48
+    Christianity = 36
+    Liberalism = 11
+    democratic = 21
+    communism = 5
+}
+
+create_country_leader = {
+	name = "Carlos Andres Perez"
+	desc = "POLITICS_ELEAZAR_LOPEZ_CONTRERAS_DESC"
+	picture = "gfx/leaders/VEN/carlos-andres-perez.dds"
+	expire = "1979.1.1"
+	ideology = Socialist
+	traits = {
+		#
+	}
+}
+}
+
+1984.1.1 = {
+	set_politics = {		
+		ruling_party = Socialism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+}
+
+    set_popularities = {
+        Socialism = 56
+        Christianity = 34
+        communism = 5
+        democratic = 3
+        Liberalism = 2
+    }
+	
+	create_country_leader = {
+	name = "Jaime Lusinchi"
+	desc = "POLITICS_ELEAZAR_LOPEZ_CONTRERAS_DESC"
+	picture = "gfx/leaders/VEN/jaime lusinchi.dds"
+	expire = "1989.1.1"
+	ideology = Socialist
+	traits = {
+		#
+	}
+}
+}

@@ -1,0 +1,268 @@
+﻿division_template = {
+	name = "pluk civilní obrany"					#Civil Defense Regiment
+	division_names_group = CZE_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "tanková divize"					#tank division
+	division_names_group = CZE_TAD_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		light_tank_destroyer_brigade = { x = 1 y = 0 }
+		light_sp_anti_air_brigade = { x = 1 y = 1 }
+		light_sp_anti_air_brigade = { x = 1 y = 2 }
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		maintenance = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "kanónová dělostřelecká brigáda"					#Cannon Artillery Brigade
+	division_names_group = CZE_CAN_01
+
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "automobilní brigáda"					#Car/Motorized Brigade
+	division_names_group = CZE_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+	support = {
+		logistics = { x = 0 y = 0 }
+		maintenance = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "motostřelecká divize"					#Motorized Division
+	division_names_group = CZE_MSD_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		light_sp_anti_air_brigade = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+	}
+	support = {
+		anti_tank = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+
+units = {
+####################################
+#######Západní vojenský okruh#######
+####################################
+######Western military circuit######
+####################################
+	
+	division= {	
+		name = "71. kanónová dělostřelecká brigáda Žamberk"
+		location = 11556
+		division_template = "kanónová dělostřelecká brigáda"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "1. pluk civilní obrany Kutná Hora"
+		location = 9414
+		division_template = "pluk civilní obrany"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "4. pluk civilní obrany Varnsdorf"
+		location = 9569
+		division_template = "pluk civilní obrany"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "7. pluk civilní obrany Bučovice"
+		location = 9429
+		division_template = "pluk civilní obrany"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "1. automobilní brigáda Olomouc"
+		location = 9429
+		division_template = "automobilní brigáda"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "3. automobilní brigáda Hlučín"
+		location = 494
+		division_template = "automobilní brigáda"
+		start_experience_factor = 0.1
+	}
+	
+	################################	
+	###########1. armáda ###########
+	################################
+
+	division= {	
+		name = "322. kanónová dělostřelecká brigáda"
+		location = 9421
+		division_template = "kanónová dělostřelecká brigáda"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "1. tanková divize Slaný"
+		location = 6440
+		division_template = "tanková divize"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "19. motostřelecká divize Plzeň"
+		location = 424
+		division_template = "motostřelecká divize"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "20. motostřelecká divize Karlovy Vary"
+		location = 3585
+		division_template = "motostřelecká divize"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "2. motostřelecká divize Sušice"
+		location = 6592
+		division_template = "motostřelecká divize"
+		start_experience_factor = 0.1
+	}
+	
+	################################	
+	###########4. armáda ###########
+	################################
+	
+	division= {	
+		name = "331. těžká dělostřelecká brigáda"
+		location = 421
+		division_template = "kanónová dělostřelecká brigáda"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "3. motostřelecká divize Kroměříž"
+		location = 11511
+		division_template = "motostřelecká divize"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "15. motostřelecká divize České Budějovice"
+		location = 11525
+		division_template = "motostřelecká divize"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "4. tanková divize Havlíčkův Brod"
+		location = 11556
+		division_template = "motostřelecká divize"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "9. tanková divize Tábor"
+		location = 9421
+		division_template = "motostřelecká divize"
+		start_experience_factor = 0.1
+	}
+	#############################################	
+	###########Východní vojenský okruh###########
+	#############################################
+
+	division= {	
+		name = "13. tanková divize Topolčany "
+		location = 541
+		division_template = "tanková divize"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "14. tanková divize Prešov "
+		location = 3550
+		division_template = "tanková divize"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "5. pluk civilní obrany Žilina"
+		location = 11539
+		division_template = "pluk civilní obrany"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "6. pluk civilní obrany Malacky"
+		location = 9539
+		division_template = "pluk civilní obrany"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "4. automobilní brigáda"
+		location = 541
+		division_template = "automobilní brigáda"
+		start_experience_factor = 0.1
+	}
+	
+}

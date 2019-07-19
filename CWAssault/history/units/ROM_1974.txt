@@ -1,0 +1,311 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Diviziune Mecanizata"
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		medium_sp_artillery_brigade = { x = 2 y = 2 }
+		medium_sp_anti_air_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		anti_tank_brigade = { x = 3 y = 2 }
+	}
+	support = {		
+		engineer = { x = 0 y = 0 } 	
+		artillery = { x = 0 y = 1 } 
+		recon = { x = 0 y = 2 } 		
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Divizia De Pusca Motorizata"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {		
+		engineer = { x = 0 y = 0 } 	
+		artillery = { x = 0 y = 1 } 
+		recon = { x = 0 y = 2 } 		
+		anti_tank = { x = 0 y = 3 } 
+	}
+		priority = 2
+}
+
+division_template = {
+	name = "Diviziune De Tancuri" 
+	
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }	
+		medium_armor = { x = 0 y = 3 }	
+		medium_armor = { x = 0 y = 4 }	
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }	
+		medium_armor = { x = 1 y = 3 }		
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+		motorized = { x = 2 y = 2 }				
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 	
+	}
+}
+
+division_template = {
+	name = "Brigada De Tancuri" 
+	
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }		
+		motorized = { x = 1 y = 0 }					
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 	
+	}
+}
+
+division_template = {
+	name = "Brigada De Munte" 
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {		
+		engineer = { x = 0 y = 0 } 	
+		artillery = { x = 0 y = 1 } 
+		recon = { x = 0 y = 2 } 		
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Brigada Marina"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }	
+		marine = { x = 0 y = 2 }	
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }		
+		amphibious_armor = { x = 2 y = 0 }				
+		amphibious_armor = { x = 2 y = 1 }				
+		amphibious_armor = { x = 2 y = 2 }				
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 }  	
+		anti_tank = { x = 0 y = 3 } 
+	}
+
+}
+
+division_template = {
+	name = "Brigada de Artilerie"
+
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		light_tank_destroyer_brigade = { x = 1 y = 0 }
+		light_tank_destroyer_brigade = { x = 1 y = 1 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		anti_air = { x = 0 y = 2 } 
+	}
+}
+
+division_template = {
+	name = "Brigada Aeriana" 
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 
+	}
+}
+
+units = {
+	division= {	
+		name = "1st Divizia De Pusca Motorizata"
+		location = 3676
+		division_template = "Divizia De Pusca Motorizata"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "2nd Divizia De Pusca Motorizata"
+		location = 3639
+		division_template = "Divizia De Pusca Motorizata"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "9th Divizia De Pusca Motorizata"
+		location = 3709
+		division_template = "Divizia De Pusca Motorizata"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "10th Divizia De Pusca Motorizata"
+		location = 11676
+		division_template = "Divizia De Pusca Motorizata"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "11th Divizia De Pusca Motorizata"
+		location = 9701
+		division_template = "Divizia De Pusca Motorizata"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "18th Divizia De Pusca Motorizata"
+		location = 11657
+		division_template = "Divizia De Pusca Motorizata"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "67th Divizia De Pusca Motorizata"
+		location = 9606
+		division_template = "Divizia De Pusca Motorizata"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "81st Divizia De Pusca Motorizata"
+		location = 646
+		division_template = "Diviziune Mecanizata"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "1st Brigada Aeriana"
+		location = 9617
+		division_template = "Brigada Aeriana"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "2nd Brigada Aeriana"
+		location = 9617
+		division_template = "Brigada Aeriana"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "3rd Brigada Aeriana"
+		location = 9617
+		division_template = "Brigada Aeriana"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "1st Brigada De Munte"
+		location = 6682
+		division_template = "Brigada De Munte"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "2nd Brigada De Munte"
+		location = 3694
+		division_template = "Brigada De Munte"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "61st Brigada De Munte"
+		location = 3649
+		division_template = "Brigada De Munte"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "1st Diviziune De Tancuri"
+		location = 6706
+		division_template = "Diviziune De Tancuri"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "2nd Diviziune De Tancuri"
+		location = 3630
+		division_template = "Diviziune De Tancuri"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "4th Diviziune De Tancuri"
+		location = 646
+		division_template = "Diviziune De Tancuri"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "5th Diviziune De Tancuri"
+		location = 3649
+		division_template = "Diviziune De Tancuri"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "3rd Diviziune Mecanizata"
+		location = 9617
+		division_template = "Diviziune Mecanizata"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "1st Diviziune Mecanizata"
+		location = 11622
+		division_template = "Diviziune Mecanizata"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "2nd Diviziune Mecanizata"
+		location = 6711
+		division_template = "Diviziune Mecanizata"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "61st Diviziune Mecanizata"
+		location = 6652
+		division_template = "Diviziune Mecanizata"
+		start_experience_factor = 0.7
+	}
+}

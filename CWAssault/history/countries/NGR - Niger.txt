@@ -1,0 +1,71 @@
+﻿capital = 781
+
+oob = "Africa_Minor"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
+
+set_convoys = 0
+
+1939.1.1 = {
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+
+set_politics = {	
+	ruling_party = Nationalism
+	last_election = "1966.1.1"
+	election_frequency = 84
+	elections_allowed = yes
+}
+
+set_popularities = {
+    Liberalism = 20
+    Radical_Islam = 10
+    communism = 20
+    Nationalism = 50
+}
+
+
+create_country_leader = {
+	name = "Hamani Diori"
+	desc = "POLITICS_DESC"
+	picture = "gfx/leaders/NIG/hamani_diori.dds"
+	expire = "1974.1.1"
+	ideology = Nationalist
+	traits = {
+	}
+}

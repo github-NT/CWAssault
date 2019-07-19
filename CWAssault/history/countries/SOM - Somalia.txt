@@ -1,0 +1,37 @@
+﻿capital = 559
+
+oob = "Africa_Minor"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
+
+set_convoys = 20
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1969.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10
+    Socialism = 10
+    communism = 70
+    neutrality = 5
+    Nationalism = 5
+}
+
+create_country_leader = {
+	name = "Siad Barre"
+	desc = "POLITICS_DESC"
+	picture = "gfx/leaders/SOM/Siad_Barre.dds"
+	expire = "1989.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}

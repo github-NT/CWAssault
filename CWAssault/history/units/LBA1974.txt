@@ -1,0 +1,327 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Firqat Musha"					# Represents Infanterie Welles 1-4
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Firqat Almashat Alaly" 	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 	
+		artillery = { x = 0 y = 1 } 
+		anti_air = { x = 0 y = 2 } 		
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Qasam Alkhizanat" 	
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      
+	}
+}
+
+division_template = {
+	name = "Liwa' Almashat Alalii" 	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }   
+	}
+}
+
+division_template = {
+	name = "Alharas Aljumhuriu" 	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		light_sp_anti_air_brigade = { x = 4 y = 0 }
+		medium_sp_artillery_brigade = { x = 4 y = 1 }
+
+	}
+	support = {
+		recon = { x = 0 y = 0 }  
+		engineer = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }		
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Liwa' Dabbabat" 	
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 	
+		artillery = { x = 0 y = 1 } 
+		recon = { x = 0 y = 2 } 		
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+
+division_template = {
+	name = "Liwa' Almidfaeia"
+
+
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		light_tank_destroyer_brigade = { x = 1 y = 0 }
+		light_tank_destroyer_brigade = { x = 1 y = 1 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		anti_air = { x = 0 y = 2 } 
+	}
+}
+
+units = {
+	division = {
+		name = "Firqat Musha. 31"
+		location = 7063
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Musha. 32"
+		location = 10049
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Musha. 33"
+		location = 12025
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Musha. 35"
+		location = 1174
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Musha. 36"
+		location = 1130
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Musha. 37"
+		location = 11954
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Musha. 34"
+		location = 10117
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Qasam Alkhizanat. 11"
+		location = 12088
+		division_template = "Qasam Alkhizanat"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Qasam Alkhizanat. 4"
+		location = 4120
+		division_template = "Qasam Alkhizanat"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Qasam Alkhizanat. 17"
+		location = 1186
+		division_template = "Qasam Alkhizanat"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Musha. 14"
+		location = 4200
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Musha. 55"
+		location = 10785
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Musha. 91"
+		location = 12022
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Firqat Musha. 165"
+		location = 1994
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Firqat Musha. 19"
+		location = 4191
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Liwa' Almashat Alalii. 21"
+		location = 4191
+		division_template = "Liwa' Almashat Alalii"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Liwa' Almashat Alalii. 8"
+		location = 1994
+		division_template = "Liwa' Almashat Alalii"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Liwa' Almashat Alalii. 1"
+		location = 12022
+		division_template = "Liwa' Almashat Alalii"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Alharas Aljumhuriu. 55"
+		location = 12039
+		division_template = "Alharas Aljumhuriu"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}	
+	division = {
+		name = "Alharas Aljumhuriu. 91"
+		location = 10067
+		division_template = "Alharas Aljumhuriu"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Liwa' Almidfaeia. 21"
+		location = 7154
+		division_template = "Liwa' Almidfaeia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		name = "Liwa' Almidfaeia. 8"
+		location = 10037
+		division_template = "Liwa' Almidfaeia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Liwa' Almidfaeia. 1"
+		location = 11940
+		division_template = "Liwa' Almidfaeia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Liwa' Almidfaeia. 55"
+		location = 4051
+		division_template = "Liwa' Almidfaeia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}	
+	division = {
+		name = "Liwa' Almidfaeia. 91"
+		location = 1041
+		division_template = "Liwa' Almidfaeia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+
+}

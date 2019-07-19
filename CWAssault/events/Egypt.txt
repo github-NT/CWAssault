@@ -1,0 +1,81 @@
+﻿###########################
+# Egyptian Events
+###########################
+
+add_namespace = egypt
+
+# Government Coup
+country_event = {
+	id = egypt.1
+	title = egypt.1.t
+	desc = egypt.1.d
+	picture = GFX_Corrective_Movement
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = egypt.1.a
+		
+	}
+}
+
+# Syria Prepares for War
+country_event = {
+	id = egypt.2
+	title = egypt.2.t
+	desc = egypt.2.d
+	picture = GFX_Yom_Kippur_Preparations
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = EGY
+	}
+	
+	option = {
+		name = egypt.2.a
+		SYR = {
+		country_event = { id = syria.3 days = 1 }
+		}
+	}
+	option = {
+		name = egypt.2.b
+		SYR = {
+		country_event = { id = syria.4 days = 1 }
+		}
+	}
+}
+
+# Nasser Dies
+country_event = {
+	id = egypt.3
+	title = egypt.3.t
+	desc = egypt.3.d
+	picture = GFX_Yom_Kippur_Preparations
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = EGY
+		has_country_leader = { ruling_only = yes name = "Gamal Abdel Nasser" }
+		date >1970.9.18
+	}
+	
+	option = {
+		name = egypt.3.a
+		news_event = { id = syria.3 days = 1 }
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Anwar Sadat"
+			desc = ""
+			picture = "gfx/leaders/EGY/Anwar_Sadat.dds"
+			expire = "1985.1.20"
+			ideology = Nationalist
+			traits = {
+				
+			}
+		}
+		news_event = { id = news.411 days = 1 }
+	}
+}

@@ -1,0 +1,66 @@
+﻿###########################
+# Spanish Events
+###########################
+
+add_namespace = spain
+
+# Francisco Franco Passes
+country_event = {
+	id = spain.1
+	title = spain.1.t
+	desc = spain.1.d
+	picture = GFX_Franco_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = SPR
+		has_government = fascism
+		date >1975.11.20
+	}
+
+	option = {
+		name = spain.1.a
+		news_event = { days = 1 id = news.375 }
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Carlos Arias Navarro"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = "gfx/leaders/SPR/carlos arias navarro.dds"
+			expire = "1985.1.20"
+			ideology = falangism
+			traits = {
+				
+			}
+		}
+	}
+}
+
+# Democratic Elections
+country_event = {
+	id = spain.2
+	title = spain.2.t
+	desc = spain.2.d
+	picture = GFX_Franco_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = SPR
+		has_government = fascism
+		date >1976.6.3
+	}
+
+	option = {
+		name = spain.2.a
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		add_popularity = { ideology = communism popularity = 0.09 }
+		add_popularity = { ideology = Socialism popularity = 0.2 }
+		add_popularity = { ideology = democratic popularity = 0.2 }
+		add_popularity = { ideology = Nationalism popularity = 0.03 }
+		add_popularity = { ideology = Liberalism popularity = 0.01 }
+		add_popularity = { ideology = fascism popularity = -0.06 }
+	}
+}

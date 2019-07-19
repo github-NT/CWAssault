@@ -1,0 +1,196 @@
+﻿###########################
+# Lebenese Events
+###########################
+
+add_namespace = lebenon
+
+# Religious Tensions
+country_event = {
+	id = lebenon.1
+	title = lebenon.1.t
+	desc = lebenon.1.d
+	picture = GFX_Junta_Trial
+
+	is_triggered_only = no
+	fire_only_once = no
+	trigger = {
+	has_government = Christianity
+	tag = LEB
+	date >1974.2.1
+	}
+
+	option = {
+		name = lebenon.1.a
+		add_popularity = { ideology = Islamism popularity = 0.02 }
+		add_popularity = { ideology = Christianity popularity = 0.01 }
+		}
+}
+
+# PLO and Christians engage
+country_event = {
+	id = lebenon.2
+	title = lebenon.2.t
+	desc = lebenon.2.d
+	picture = GFX_Coronation
+
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+	has_government = Christianity
+	tag = LEB
+	date >1974.6.1
+	}
+
+	option = {
+		name = lebenon.2.a
+		add_popularity = { ideology = Islamism popularity = 0.03 }
+		add_popularity = { ideology = Christianity popularity = 0.02 }
+		add_manpower = -24
+	}
+}
+
+# Government and Army split (Civil War officially starts)
+country_event = {
+	id = lebenon.3
+	title = lebenon.3.t
+	desc = lebenon.3.d
+	picture = GFX_Coronation
+
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+	has_government = Christianity
+	tag = LEB
+	date >1975.4.3
+	}
+
+	option = {
+		name = lebenon.3.a
+		news_event = { days = 1 id = news.412 }
+		add_popularity = { ideology = Islamism popularity = 0.5 }
+		add_popularity = { ideology = Christianity popularity = 0.5 }
+		add_manpower = -1250
+		release = PLO
+		release = LAF
+		release = AFL
+		release = ALF
+		change_tag_from = PLO
+		PLO = { change_tag_from = LEB }
+		PLO = {
+		declare_war_on = {
+		target = LAF
+		type = civil_war
+				}		
+		declare_war_on = {
+		target = AFL
+		type = civil_war
+				}
+			}
+		}
+		###
+		option = {
+		name = lebenon.3.b
+		news_event = { days = 1 id = news.412 }
+		add_popularity = { ideology = Islamism popularity = 0.5 }
+		add_popularity = { ideology = Christianity popularity = 0.5 }
+		add_manpower = -1250
+		release = PLO
+		release = LAF
+		release = AFL
+		release = ALF
+		change_tag_from = LEB
+		LAF = { change_tag_from = LEB }
+		PLO = {
+		declare_war_on = {
+		target = LAF
+		type = civil_war
+				}		
+		declare_war_on = {
+		target = AFL
+		type = civil_war
+				}
+			}
+		}
+		###
+		option = {
+		name = lebenon.3.c
+		news_event = { days = 1 id = news.412 }
+		add_popularity = { ideology = Islamism popularity = 0.5 }
+		add_popularity = { ideology = Christianity popularity = 0.5 }
+		add_manpower = -1250
+		release = PLO
+		release = LAF
+		release = AFL
+		release = ALF
+		change_tag_from = LEB
+		ALF = { change_tag_from = LEB }
+		PLO = {
+		declare_war_on = {
+		target = LAF
+		type = civil_war
+				}		
+		declare_war_on = {
+		target = AFL
+		type = civil_war
+				}
+		}
+		}
+	}
+}
+
+# Demand Ceasefire
+country_event = {
+	id = lebenon.4
+	title = lebenon.4.t
+	desc = lebenon.4.d
+	picture = GFX_Junta_Trial
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	tag = ALF
+	}
+
+	option = {
+		name = lebenon.4.a
+
+		}
+}
+
+# Offer Balbeek Valley to Syria
+country_event = {
+	id = lebenon.5
+	title = lebenon.5.t
+	desc = lebenon.5.d
+	picture = GFX_Junta_Trial
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	tag = ALF
+	}
+
+	option = {
+		name = lebenon.5.a
+
+		}
+}
+
+# Hezbollah Appears
+country_event = {
+	id = lebenon.6
+	title = lebenon.6.t
+	desc = lebenon.6.d
+	picture = GFX_Junta_Trial
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+
+	}
+
+	option = {
+		name = lebenon.6.a
+
+		}
+}

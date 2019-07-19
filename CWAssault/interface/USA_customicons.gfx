@@ -1,0 +1,7 @@
+spriteTypes = { 
+##Icon For: 986481
+ SpriteType = { 
+ name = "GFX_honortheconfederacy" 
+ texturefile = "gfx/interface/goals/GFX_honortheconfederacy.tga" 
+ } 
+ }

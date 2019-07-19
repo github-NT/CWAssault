@@ -1,0 +1,27 @@
+
+state={
+	id=802
+	name="STATE_802"
+	manpower =145076
+	
+	
+	state_category = town
+
+	history={
+		owner = LEB
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+		}
+		add_core_of = LEB
+		add_core_of = AFL
+		
+		1975.1.1 = {
+		owner = AFL
+		}
+	}
+
+	provinces={
+		13233
+	}
+}

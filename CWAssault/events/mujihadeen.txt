@@ -1,0 +1,11 @@
+﻿###########################
+# Test Events
+###########################
+
+add_namespace = test
+
+# Soviets leave Afghanistan
+
+
+
+

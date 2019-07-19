@@ -1,0 +1,34 @@
+
+state={
+	id=826
+	name="STATE_826"
+	manpower =257354
+	
+	
+	state_category = rural
+
+	history={
+		owner = AFG
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			4893 1 
+		}
+		add_core_of = AFG
+		add_core_of = DRA
+		add_core_of = JMI
+		
+		1979.1.1 = {
+		owner = DRA
+		}
+		
+		1982.1.1 = {
+		owner = JMI
+		}
+	}
+
+	provinces={
+		12871 4893 2062 13300
+	}
+}

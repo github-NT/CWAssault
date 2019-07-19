@@ -1,0 +1,22 @@
+﻿###########################
+# watergate Events
+###########################
+
+add_namespace = watergate
+
+# Watergate
+news_event = {
+	id = watergate.1
+	title = watergate.1.t
+	desc = watergate.1.d
+	picture = GFX_Water_Gate
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = watergate.1.a
+
+	}
+}

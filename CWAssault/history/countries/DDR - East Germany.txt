@@ -1,0 +1,300 @@
+﻿capital = 796
+
+oob = "DDR_1974"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	fuel_refining = 1
+	transport = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	mechanised_infantry = 1
+	light_mechanised_infantry = 1
+}
+
+
+	add_ideas = {
+		COMECON
+		stasi
+		limited_conscription
+		partial_economic_mobilisation
+	}
+
+
+set_research_slots = 4
+set_convoys = 50
+set_stability = 0.75
+
+1939.1.1 = {
+
+	#BUILDINGS
+	
+
+	set_technology = {
+		improved_light_tank = 1 
+		basic_medium_tank = 1 
+		CAS2 = 1
+		heavy_fighter1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		paratroopers = 1
+		basic_heavy_cruiser = 1
+		improved_heavy_cruiser = 1
+		basic_battleship = 1
+		improved_battleship = 1
+
+	}
+}
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1971.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+
+set_popularities = {
+    Christianity = 10
+    Liberalism = 10
+    Socialism = 5
+    democratic = 5
+    communism = 70
+}
+
+
+add_ideas = {
+}
+
+create_country_leader = {
+	name = "Herry Tisch"
+	desc = ""
+	picture = "gfx/leaders/DDR/Portrait_Europe_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = Socialist
+	traits = {
+		political_dancer		
+	}
+}
+
+create_country_leader = {
+	name = "Walter Ulbricht"
+	desc = "POLITICS_WILHELM_PIECK_DESC"	 
+	picture = gfx/leaders/DDR/Ulbricht.dds
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Theodor Hoffmann"
+	desc = ""	 
+	picture = "gfx/leaders/DDR/Theodor Hoffmann.dds"
+	expire = "1965.1.1"
+	ideology = Military
+	traits = {
+		
+	}
+}
+
+1971.1.10 = {
+
+create_country_leader = {
+	name = "Erich Honecker"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/DDR/Erich Honecker.dds"
+	expire = "1991.12.25"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+}
+
+create_corps_commander = {
+	name = "Wolfgang Hecker"
+	portrait_path = "gfx/leaders/DDR/wolfgang hecker.dds"
+	traits = { infantry_officer }
+	skill = 1
+	
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Rolf Berger"
+	portrait_path = "gfx/leaders/DDR/rolf berger.dds"
+	traits = { career_officer cavalry_officer }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Klaus Dieter Baumgarten"
+	portrait_path = "gfx/leaders/DDR/klaus dieter baumgarten.dds"
+	traits = {  }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Horst Stechbarth"
+	portrait_path = "gfx/leaders/DDR/horst stechbarth.dds"
+	traits = {armor_officer trait_reckless  }
+	skill = 1 
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Heinz Keßler"
+	portrait_path = "gfx/leaders/DDR/Heinz_Keßler.tga"
+	traits = { cavalry_officer }
+	skill = 2
+
+
+	
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Fritz Streletz"
+	portrait_path = "gfx/leaders/DDR/Fritz_Streletz.dds"
+	traits = { career_officer old_guard trait_cautious politically_connected }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Joachim Goldbach"
+	portrait_path = "gfx/leaders/DDR/Joachim Goldbach.dds"
+	traits = {  }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Horst Brünner"
+	portrait_path = "gfx/leaders/DDR/Horst Brünner.dds"
+	traits = {  }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Wolfgang Reinhold"
+	portrait_path = "gfx/leaders/DDR/Wolfgang Reinhold.dds"
+	traits = {  }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Sigfrid Riedel"
+	portrait_path = "gfx/leaders/DDR/Sigfrid Riedel.dds"
+	traits = {  }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Theodor Hoffmann"
+	portrait_path = "gfx/leaders/DDR/Theodor Hoffmann.dds"
+	traits = {  }
+	skill = 3 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

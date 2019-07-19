@@ -1,0 +1,20 @@
+################
+##### NUKES ######
+################
+
+nuclear_program = {
+	icon = generic_form_nation
+	
+	picture = GFX_ICBM_Rocket
+	
+	allowed = {
+		has_tech = atomic_research
+	}
+	
+	available = {
+		has_tech = atomic_research
+	}
+	
+	
+}
+

@@ -1,0 +1,209 @@
+﻿capital = 10
+
+oob = ""
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	trench_warfare = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_submarine = 1	
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+	}
+}
+1939.1.1 = {
+
+	add_ideas = {
+		#laws
+		limited_conscription
+		partial_economic_mobilisation
+		COMECON
+		
+	}
+
+	set_technology = {
+		basic_light_tank = 1
+		tactical_bomber1 = 1
+		motorised_infantry = 1
+		support_weapons = 1
+		interwar_artillery = 1
+
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			basic_submarine = 1
+			basic_destroyer = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_ship_hull_light = 1
+			basic_light_battery = 1
+		}
+	}
+}
+
+
+set_convoys = 10
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1935.9.8"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_popularities = {
+    Liberalism = 4
+    neutrality = 5
+    Christianity = 8
+    democratic = 7
+    communism = 76
+}
+
+create_country_leader = {
+	name = "Lech Wałęsa"
+	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+	picture = "gfx/leaders/POL/Lech-Walesa.dds"
+	expire = "1965.1.1"
+	ideology = Catholicism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Piotr Jaroszewicz"
+	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
+	picture = "gfx/leaders/cold_majors/Jaroszewicz.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Sulisław Nowicki"
+	portrait_path = "gfx/leaders/POL/genericpolgen.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Walenty Michalski"
+	portrait_path = "gfx/leaders/POL/genericpolgen2.dds"
+	traits = {  thorough_planner }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Frydryk Jasiński"
+	portrait_path = "gfx/leaders/POL/genericpolgen7.dds"
+	traits = {  offensive_doctrine }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dobrogost Kaczmarek"
+	portrait_path = "gfx/leaders/POL/genericpolgen6.dds"
+	traits = {  offensive_doctrine }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Józef Zawadzki"
+	portrait_path = "gfx/leaders/POL/genericpolgen3.dds"
+	traits = {  armor_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Karol Ostrowski"
+	portrait_path = "gfx/leaders/POL/genericpolgen5.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Albin Grabowski"
+	portrait_path = "gfx/leaders/POL/genericpolgen4.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+
+create_equipment_variant = {
+	name = "PZL P.24"
+	type = fighter_equipment_0
+	upgrades = {
+		plane_gun_upgrade = 3
+		plane_range_upgrade = 0  
+		plane_engine_upgrade = 1
+		plane_reliability_upgrade = 3
+	}
+}
+
+1980.1.1 = {
+create_country_leader = {
+	name = "Wojciech Jaruzelski"
+	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
+	picture = "gfx/leaders/POL/Wojciech Jaruzelski.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+}

@@ -1,0 +1,194 @@
+﻿capital = 446
+
+oob = "EGY_1970"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_medium_tank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_destroyer = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	motorised_infantry = 1
+	basic_battlecruiser = 1
+	basic_light_cruiser = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	mechanised_infantry = 1
+}
+
+add_ideas = {
+Incompetent_Military
+limited_conscription
+partial_economic_mobilisation
+far_member
+}
+
+set_convoys = 20
+
+1939.1.1 = {
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+
+set_politics = {	
+	ruling_party = Nationalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 25
+    Socialism = 5
+    Nationalism = 70
+}
+
+create_country_leader = {
+	name = "Hosni Mubarak"
+	desc = ""
+	picture = "gfx/leaders/EGY/Hosni Mubarak.dds"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gamal Abdel Nasser"
+	desc = ""
+	picture = "gfx/leaders/EGY/Gamal Abdel Nasser.dds"
+	ideology = Nationalist
+	traits = {
+		#
+	}
+}
+
+1974.1.1 = {
+create_country_leader = {
+	name = "Anwar Sadat"
+	desc = ""
+	picture = "gfx/leaders/EGY/Anwar_Sadat.dds"
+	ideology = Nationalist
+	traits = {
+		#
+	}
+}
+}
+
+1980.1.1 = {
+oob = "EGY_1974"
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1967.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    neutrality = 69
+    democratic = 3
+    Radical_Islam = 3
+    Nationalism = 25
+}
+}
+
+create_corps_commander = {
+	name = "Abdel Hakim Amer"
+		portrait_path = "gfx/leaders/EGY/Abdel_Hakim_Amer.dds"
+	traits = { trait_cautious politically_connected }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Abdul Munim Riad"
+		portrait_path = "gfx/leaders/EGY/Abdul_Munim_Riad.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Ahmed Ismail_Ali"
+		portrait_path = "gfx/leaders/EGY/Field_Marshal_Ahmed_Ismail_Ali.dds"
+	traits = { trait_cautious politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Manaf Tlass"
+		portrait_path = "gfx/leaders/EGY/manaf-tlass.dds"
+	traits = {   }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Saad el-Shazly"
+		portrait_path = "gfx/leaders/EGY/Saad_el-Shazly.dds"
+	traits = {   }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}

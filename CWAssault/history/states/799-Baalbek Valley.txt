@@ -1,0 +1,34 @@
+
+state={
+	id=799
+	name="STATE_799"
+	manpower =545076
+	
+	
+	state_category = town
+	
+	resources={
+		aluminium=7 # was: 10
+	}
+
+	history={
+		owner = LEB
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			air_base = 2
+		}
+		add_core_of = HEZ
+		add_core_of = LEB
+		add_core_of = LAF
+		add_core_of = SYR
+		
+		1975.1.1 = {
+		owner = LAF
+		}
+	}
+
+	provinces={
+		792 13235 1108
+	}
+}

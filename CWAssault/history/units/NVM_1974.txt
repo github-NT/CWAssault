@@ -1,0 +1,142 @@
+﻿division_template = {
+	name = "Lữ đoàn bộ binh" #game may not recognize vietnamese characters
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "đoàn lữ đoàn nhẹ"	
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+}
+
+division_template = {
+	name = "Lữ đoàn"		
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+        medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+	}
+
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+
+}
+
+units = {
+
+	division= {	
+		name = "Lữ đoàn bộ binh 87c"
+		location = 1185
+		division_template = "Lữ đoàn bộ binh"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "Lữ đoàn bộ binh 22c"
+		location = 1157
+		division_template = "Lữ đoàn bộ binh"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "Lữ đoàn bộ binh 56c"
+		location = 1302
+		division_template = "Lữ đoàn bộ binh"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "Lữ đoàn bộ binh 71c"
+		location = 12297
+		division_template = "Lữ đoàn bộ binh"
+		start_experience_factor = 0.7
+	}
+	division= {	 
+		name = "Lữ đoàn bộ binh 31c"
+		location = 12008
+		division_template = "Lữ đoàn bộ binh"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "Lữ đoàn bộ binh 25c"
+		location = 4075
+		division_template = "Lữ đoàn bộ binh"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "Lữ đoàn bộ binh 185c"
+		location = 1073
+		division_template = "Lữ đoàn bộ binh"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "Lữ đoàn bộ binh 55c"
+		location = 1073
+		division_template = "Lữ đoàn bộ binh"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "Lữ đoàn bộ binh 205c"
+		location = 7015
+		division_template = "Lữ đoàn bộ binh"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "Lữ đoàn bộ binh 122c"
+		location = 7015
+		division_template = "Lữ đoàn bộ binh"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "Lữ đoàn 12c"
+		location = 7015
+		division_template = "Lữ đoàn"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "Lữ đoàn 33c"
+		location = 4119
+		division_template = "Lữ đoàn"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "Lữ đoàn 9c"
+		location = 4119
+		division_template = "Lữ đoàn"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "Lữ đoàn 205c"
+		location = 4119
+		division_template = "Lữ đoàn"
+		start_experience_factor = 0.7
+	}

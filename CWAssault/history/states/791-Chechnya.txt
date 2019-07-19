@@ -1,0 +1,31 @@
+
+state={
+	id=791
+	name="STATE_791"
+	manpower =2435818
+	
+	
+	state_category = town
+	
+	resources={
+		aluminium=7 # was: 10
+	}
+
+	history={
+		owner = SOV
+		victory_points = {
+			3672 5 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			air_base = 2
+		}
+		add_core_of = SOV
+		add_core_of = CHE
+	}
+
+	provinces={
+		3667 1455 666 670 3672
+	}
+}

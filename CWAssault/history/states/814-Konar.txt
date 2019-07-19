@@ -1,0 +1,27 @@
+
+state={
+	id=814
+	name="STATE_814"
+	manpower =11076
+	
+	
+	state_category = rural
+
+	history={
+		owner = AFG
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = AFG
+		add_core_of = DRA
+		add_core_of = AMF
+		
+		1980.1.1 = {
+		owner = AMF
+		}
+	}
+
+	provinces={
+		13307
+	}
+}

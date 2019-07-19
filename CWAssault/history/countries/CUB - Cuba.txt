@@ -1,0 +1,93 @@
+﻿capital = 315
+
+oob = "CUB_1970"
+
+# Starting tech
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	support_weapons2 = 1
+	basic_medium_tank = 1 # PLACEHOLDER
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+}
+set_war_support = 0.7
+set_convoys = 220
+add_ideas = {
+limited_conscription
+partial_economic_mobilisation
+}
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1956.1.10"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    communism = 80
+    Socialism = 8
+    Maoism = 12
+}
+
+create_country_leader = {
+	name = "José Agripino Barnet"
+	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
+	picture = "GFX_portrait_cuba_jose_barnet"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {		
+		ruling_party = communism
+		last_election = "1936.1.10"
+		election_frequency = 48  
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        communism = 80
+        Socialism = 8
+        Maoism = 12
+    }
+
+	create_country_leader = {
+		name = "Fidel Castro"
+		desc = "POLITICS_FEDERICO_LAREDO_BRU_DESC"
+		picture = "gfx/leaders/cold_majors/castro.dds"
+		expire = "1965.1.1"
+		ideology = leninism
+		traits = {
+			#
+		}
+	}
+}

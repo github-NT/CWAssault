@@ -1,0 +1,354 @@
+﻿capital = 291
+
+oob = "IRQ_1980"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_destroyer = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	motorised_infantry = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	basic_medium_tank = 1
+	fuel_silos = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	mechanised_infantry = 1
+	light_mechanised_infantry = 1
+	motorized_rocket_unit = 1
+}
+
+add_ideas = {
+		Incompetent_Military
+		limited_conscription
+		partial_economic_mobilisation
+}
+
+set_convoys = 100
+
+1939.1.1 = {
+	
+	set_technology = {
+		early_fighter = 1
+		CAS1 = 1
+		tech_support = 1
+		tech_recon = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+	}
+}
+
+set_politics = {	
+	ruling_party = Nationalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 7
+    Islamism = 13
+    communism = 0
+    Radical_Islam = 0
+    Nationalism = 80
+}
+
+create_country_leader = {
+	name = "Ghazi I"
+	desc = "POLITICS_GHAZI_I_DESC"
+	picture = "GFX_portrait_iraq_ghazi"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rashid Ali al-Gaylani"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_fascism1.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mohammad Baqir al Hakim"
+	desc = ""
+	picture = "gfx/leaders/IRQ/Mohammad Baqir al Hakim.dds"
+	expire = "1965.1.1"
+	ideology = Islamic_Fundimentalist
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	create_country_leader = {
+		name = "Ahmad Hassan al-Bakr"
+		desc = "POLITICS_FAISAL_II_DESC"
+		picture = "gfx/leaders/IRQ/Ahmad_Hassan_el_Bakr iraq.dds"
+		expire = "1965.1.1"
+		ideology = Nationalist
+		traits = {
+			#
+		}
+	}
+}
+####
+create_corps_commander = {
+	name = "Salah Aboud Mahmoud"
+		portrait_path = "gfx/leaders/IRQ/Generals/Salah Aboud Mahmoud.dds"
+	traits = {  }
+	skill = 1
+
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Kuzma Galitsky"
+		portrait_path = "gfx/leaders/IRQ/Lieutenant_General_Sabir_Al-Dori.dds"
+	traits = {  }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Taha Yassin Ramadan"
+		portrait_path = "gfx/leaders/IRQ/Generals/Taha Yassin Ramadan.dds"
+	traits = {  }
+	skill = 2
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Iyad Khalil Zaki"
+		portrait_path = "gfx/leaders/IRQ/200px-Iyad_Khalil_Zaki.dds"
+	traits = {  }
+	skill = 3
+
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Uday Hussein"
+		portrait_path = "gfx/leaders/IRQ/Generals/Uday Hussein.dds"
+	traits = {  }
+	skill = 1
+
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Abid Hamid Mahmud"
+		portrait_path = "gfx/leaders/IRQ/Generals/Abid Hamid Mahmud.dds"
+	traits = {  }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Adnan Khairallah"
+		portrait_path = "gfx/leaders/IRQ/Generals/Adnan Khairallah.dds"
+	traits = {  }
+	skill = 3
+
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Ali Hassan al-Majid"
+		portrait_path = "gfx/leaders/IRQ/Generals/Ali Hassan al-Majid.dds"
+	traits = {  }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Maher Abd al-Rashid"
+		portrait_path = "gfx/leaders/IRQ/Generals/Maher Abd al-Rashid.dds"
+	traits = {  }
+	skill = 3
+
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Qusay Hussein"
+		portrait_path = "gfx/leaders/IRQ/Generals/Qusay Hussein.dds"
+	traits = { infantry_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Saddam Hussein"
+		portrait_path = "gfx/leaders/IRQ/Generals/Saddam Hussein.dds"
+	traits = { career_officer }
+	skill = 4
+
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Saddam Kamel"
+		portrait_path = "gfx/leaders/IRQ/Generals/Saddam Kamel.dds"
+	traits = {  }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+####
+
+create_corps_commander = {
+	name = "Iyad Khalil Zaki"
+		portrait_path = "gfx/leaders/IRQ/200px-Iyad_Khalil_Zaki.dds"
+	traits = { career_officer }
+	skill = 3
+
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Kuzma Galitsky"
+		portrait_path = "gfx/leaders/IRQ/Lieutenant_General_Sabir_Al-Dori.dds"
+	traits = { infantry_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Alwan Hassoun Alwan al-Abousi"
+		portrait_path = "gfx/leaders/IRQ/Major_General_Alwan_Hassoun_Alwan_al-Abousi.dds"
+	traits = { winter_specialist infantry_officer brilliant_strategist }
+	skill = 2
+
+	
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+1979.1.1 = {
+
+	set_politics = {		
+		ruling_party = Nationalism
+		last_election = "1936.11.3"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        democratic = 0
+        fascism = 0
+        Nationalism = 100
+    }
+	
+	create_country_leader = {
+	name = "Saddam Hussein"
+	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+	picture = "gfx/leaders/IRQ/200px-Saddam_Hussein_1979.dds"
+	expire = "1989.1.20"
+	ideology = Nationalist
+	traits = {
+		
+	}
+}
+}
+1980.1.1 = {
+declare_war_on = { target = PER type = annex_everything }
+create_field_marshal = {
+	name = "Saddam Hussein"
+		portrait_path = "gfx/leaders/IRQ/200px-Saddam_Hussein_1979.dds"
+	traits = { career_officer }
+	skill = 3
+
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+}

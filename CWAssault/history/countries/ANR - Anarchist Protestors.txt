@@ -1,0 +1,64 @@
+﻿capital = 9
+
+oob = "ANR_1974"
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	support_weapons2 = 1
+	basic_medium_tank = 1 # PLACEHOLDER
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+}
+
+set_research_slots = 3
+
+1970.1.1 = {
+set_politics = {	
+	ruling_party = Anarchy
+	last_election = "1935.5.19"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+    Anarchy = 100
+}
+create_country_leader = {
+	name = "Anarchist Protestors"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = ""
+	expire = "1975.1.1"
+	ideology = Anarchist
+	traits = {
+		#
+	}
+}
+}
+
+
+
+
+
+

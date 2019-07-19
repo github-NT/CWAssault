@@ -1,0 +1,245 @@
+﻿capital = 48
+
+oob = "BUL_1974"
+
+add_ideas = {
+	limited_conscription
+	COMECON
+	partial_economic_mobilisation
+}
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	support_weapons2 = 1
+	basic_medium_tank = 1 # PLACEHOLDER
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	fuel_silos = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+1939.1.1 = {
+	
+	set_technology = {
+		fighter1 = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
+		gwtank = 1
+		basic_light_tank = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		tech_recon = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		#Air
+		force_rotation = 1
+		fighter_baiting = 1
+				
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_refining = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_convoys = 5
+
+1968.1.1 = {
+	set_politics = {	
+	ruling_party = communism
+	last_election = "1938.3.27"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 13
+    fascism = 0
+    neutrality = 0
+    Monarchism = 5
+    Socialism = 12
+    communism = 70
+}
+}
+
+create_country_leader = {
+	name = "Todor Zhivkov"
+	desc = "POLITICS_GEORGI_DIMITROV_DESC"
+	picture = "gfx/leaders/BUL/Todor Zhivkov.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Zhelyu Zhelev"
+	desc = "POLITICS_ZIVCO_TOPALOVIC_DESC"
+	picture = "gfx/leaders/BUL/Zhelyu Zhelev.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Atanas Semerdzhiev"
+	desc = "POLITICS_HRISTO_LUKOV_DESC"
+	picture = "gfx/leaders/BUL/Atanas Semerdzhiev.dds"
+	expire = "1965.1.1"
+	ideology = Military
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Andrei Bogdan"
+	portrait_path = "gfx/leaders/BUL/genericbulgen2.dds"
+	traits = { armor_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Delyan Tsvetan"
+	portrait_path = "gfx/leaders/BUL/genericbulgen3.dds"
+	traits = { armor_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Vasil Tenev Boydev"
+	portrait_path = "gfx/leaders/BUL/genericbulgen4.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Atanas Semerdzhiev"
+	portrait_path = "gfx/leaders/BUL/Atanas Semerdzhiev.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Boyan Velinov"
+	portrait_path = "gfx/leaders/BUL/Boyan Velinov.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Vasil Ivanov Kotsev"
+	portrait_path = "gfx/leaders/BUL/Vasil Ivanov Kotsev.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Vladimir Todorov Nikolov"
+	portrait_path = "gfx/leaders/BUL/Vladimir Todorov Nikolov.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Elian Borislav"
+	portrait_path = "gfx/leaders/BUL/genericbulgen.dds"
+	traits = { defensive_doctrine }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Dobri Dzhurov"
+	portrait_path = "gfx/leaders/BUL/Dobri Dzhurov.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Theodosii Valko"
+	portrait_path "gfx/leaders/BUL/genericbulgen5.dds"
+	traits = { superior_tactician }
+	skill = 3
+}

@@ -1,0 +1,218 @@
+﻿capital = 554
+
+oob = "SYR_1974"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	basic_medium_tank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_destroyer = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	motorised_infantry = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	fuel_silos = 1
+	fuel_refining = 1
+	support_weapons = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+set_convoys = 5
+
+add_ideas = {
+Incompetent_Military
+limited_conscription
+partial_economic_mobilisation
+far_member
+}
+
+
+set_politics = {	
+	ruling_party = Nationalism
+	last_election = "1968.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    Nationalism = 69
+    communism = 10
+    Socialism = 6
+    Islamism = 10
+    Radical_Islam = 5
+}
+
+1968.1.1 = {
+
+create_country_leader = {
+	name = "Nureddin al-Atassi"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/SYR/Nureddin al-Atassi.dds"
+	expire = "1970.12.25"
+	ideology = Nationalist
+	traits = {
+		
+	}
+}
+}
+
+1974.1.1 = {
+set_global_flag = yom_kippur_over
+create_country_leader = {
+	name = "Hafez al-Assad"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/SYR/Hafez al-Assad.tga"
+	expire = "2001.12.25"
+	ideology = Nationalist
+	traits = {
+		
+	}
+}
+}
+
+create_country_leader = {
+	name = "Salah Jadid"
+	desc = ""
+	picture = "gfx/leaders/SYR/220px-General_Salah_Jadid.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rifaat al-Assad"
+	desc = ""
+	picture = "gfx/leaders/SYR/Rifaat al-Assad.dds"
+	ideology = Islamic_Fundimentalist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Abd al-Fattah Abu Ghudda"
+	desc = ""
+	picture = "gfx/leaders/SYR/Abd al-Fattah Abu Ghudda.dds"
+	ideology = Shia-Islam
+	traits = {
+		#
+	}
+}
+
+#create_country_leader = {
+#	name = "Hanna Nashuf"
+#	desc = ""
+#	picture = "gfx/leaders/SYR/Hanna Nashuf.dds"
+#	ideology = fascism_ideology
+#	traits = {
+#		#
+#	}
+#}
+
+create_country_leader = {
+	name = "Riad al-Turk"
+	desc = ""
+	picture = "gfx/leaders/SYR/Riad al-Turk.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Ali Haidar"
+	portrait_path = "gfx/leaders/SYR/220px-General_Ali_Haidar.dds"
+	traits = { armor_officer politically_connected }
+	skill = 4
+
+	
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Salah Jadid"
+		portrait_path = "gfx/leaders/SYR/220px-General_Salah_Jadid.dds"
+	traits = { trait_cautious career_officer }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Luai al-Atassi"
+		portrait_path = "gfx/leaders/SYR/220px-Luai_al-Atassi.dds"
+	traits = { infantry_officer trait_reckless }
+	skill = 3
+	
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Hafez al-Assad"
+	id = 408
+		portrait_path = "gfx/leaders/SYR/hafez al assad.dds"
+	traits = { armor_officer harsh_leader politically_connected }
+	skill = 5
+
+
+	
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+1988.1.1 = {
+create_corps_commander = {
+	name = "Bashar al-Assad"
+	portrait_path = "gfx/leaders/SYR/bashar.dds"
+	traits = { infantry_officer trait_reckless }
+	skill = 3
+	
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_field_marshal = {
+	name = "Bassel al-Assad"
+	id = 408
+		portrait_path = "gfx/leaders/SYR/bassel al assad.dds"
+	traits = { armor_officer harsh_leader politically_connected }
+	skill = 5
+
+
+	
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 5
+}
+}

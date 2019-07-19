@@ -1,0 +1,162 @@
+﻿###########################
+# Army Loyalty Events
+###########################
+
+add_namespace = loyal
+
+# Abysmal Soldier Support
+country_event = {
+	id = loyal.1
+	title = loyal.1.t
+	desc = loyal.1.d
+	picture = 
+
+	is_triggered_only = no
+	trigger = {
+	tag = CHL
+	check_variable = {
+    CHL_army_loyalty < 20
+		}
+	}
+
+	option = {
+		name = loyal.1.a
+		add_ideas= soldier_mutinies
+	}
+}
+
+# Minor Soldier Support
+country_event = {
+	id = loyal.2
+	title = loyal.2.t
+	desc = loyal.2.d
+	picture = 
+
+	is_triggered_only = no
+	trigger = {
+	tag = CHL
+	check_variable = {
+    CHL_army_loyalty < 40
+		}
+	}
+
+	option = {
+		name = loyal.2.a
+		add_ideas= unhappy_soldiers
+		
+		}
+}
+
+# Soldiers Protest
+country_event = {
+	id = loyal.3
+	title = loyal.3.t
+	desc = loyal.3.d
+	picture = 
+
+	trigger = {
+	tag = CHL
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = loyal.3.a
+		add_to_variable  = { var = CHL_army_loyalty value = 4}
+	}
+		
+	option = {
+		name = loyal.3.b
+		subtract_from_variable  = { var = CHL_army_loyalty value = 7}
+	}
+}
+
+# Generals Challenge Leader
+country_event = {
+	id = loyal.4
+	title = loyal.4.t
+	desc = loyal.4.d
+	picture = 
+
+	is_triggered_only = no
+	trigger = {
+	tag = CHL
+	surrender_progress > 0.2
+	}
+
+	option = {
+		name = loyal.4.a
+		subtract_from_variable  = { var = CHL_general_loyalty value = 8}
+	}
+	
+	option = {
+		name = loyal.4.b
+		subtract_from_variable  = { var = CHL_general_loyalty value = 6}
+		
+		random_list = {
+                6 = { country_event = { id = loyal.4 days = 30 }
+                }
+                1 = { country_event = { id = loyal.5 days = 30 } 
+                }
+                3 = { country_event = { id = loyal.3 days = 30 } 
+                }
+          }
+	}
+}
+
+# Generals Protest
+country_event = {
+	id = loyal.5
+	title = loyal.5.t
+	desc = loyal.5.d
+	picture = 
+
+	is_triggered_only = no
+	trigger = {
+	tag = CHL
+	surrender_progress > 0.2
+	has_war = yes
+	}
+
+	option = {
+		name = loyal.5.a
+		subtract_from_variable  = { var = CHL_general_loyalty value = 4}
+	}
+	
+}
+
+# Generals Coup Leader 
+country_event = {
+	id = loyal.6
+	title = loyal.6.t
+	desc = loyal.6.d
+	picture = 
+
+	is_triggered_only = no
+	trigger = {
+	tag = CHL
+	NOT = {
+	has_government = Nationalism
+	}
+	OR = {
+	surrender_progress > 0.6
+	
+	check_variable = {
+    CHL_general_loyalty < 25
+			}		
+		}
+	}
+
+	option = {
+		name = loyal.5.a
+		set_politics= {
+			ruling_party = Nationalism 
+			elections_allowed = no 
+		}
+		add_stability = -0.05	
+		add_popularity= { 
+		ideology = Nationalism 
+		popularity = 0.20 
+		}
+	}
+	
+}

@@ -1,0 +1,219 @@
+﻿capital = 671
+
+oob = "NVM_1970"
+
+set_research_slots = 3
+
+# Starting tech
+# clone of France
+set_technology = {
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_medium_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+}
+1973.1.1 = {
+white_peace = VIN
+}
+	add_ideas = {
+		#laws
+		war_economy
+		extensive_conscription
+	}
+
+1974.1.1 = {
+oob = "NVM_1974"
+white_peace = VIN
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 0
+    communism = 100
+    neutrality = 0
+}
+
+create_country_leader = {
+	name = "Ton Duc Thang" 
+	desc = ""
+	picture = "gfx/leaders/NVM/Ton Duc Thang.dds"
+	expire = "1980.3.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+
+1981.1.1 = {
+create_country_leader = {
+	name = "Truong Chinh" 
+	desc = ""
+	picture = "gfx/leaders/NVM/truong_chinh_2_AHAS.dds"
+	expire = "1980.3.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+}
+1970.1.1 = {
+declare_war_on = {
+		target = VIN
+		type = civil_war
+	}
+}
+
+create_corps_commander = {
+	name = "Le Duc Anh"
+	portrait_path = "gfx/leaders/NVM/Generals/Le Duc Anh.dds"
+	traits = {  }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dai tuong Hoang Van Thai"
+	portrait_path = "gfx/leaders/NVM/Generals/Dai_tuong_Hoang_Van_Thai.dds"
+	traits = {  }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Le Duc Tho"
+	portrait_path = "gfx/leaders/NVM/Generals/Le Duc Tho.dds"
+	traits = {  }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Le Trong Tan"
+	portrait_path = "gfx/leaders/NVM/Generals/Le Trong Tan.dds"
+	traits = {  }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Nguyen Thi Dinh"
+	portrait_path = "gfx/leaders/NVM/Generals/Nguyen Thi Dinh.dds"
+	traits = {  }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Nguyen Van Linh"
+	portrait_path = "gfx/leaders/NVM/Generals/Nguyen Van Linh.dds"
+	traits = {  }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Nguyen_Huu_An"
+	portrait_path = "gfx/leaders/NVM/Generals/Nguyen_Huu_An.dds"
+	traits = {  }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Pham Van Dong"
+	portrait_path = "gfx/leaders/NVM/Generals/Pham Van Dong.dds"
+	traits = {  }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Tran Van Tra"
+	portrait_path = "gfx/leaders/NVM/Generals/Tran Van Tra.dds"
+	traits = {  }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Vo Nguyen Giap"
+	portrait_path = "gfx/leaders/NVM/Generals/Vo Nguyen Giap.dds"
+	traits = {  }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}

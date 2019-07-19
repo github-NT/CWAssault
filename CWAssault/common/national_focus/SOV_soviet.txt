@@ -1,0 +1,2737 @@
+focus_tree = { 
+id = soviet
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = SOV 
+} 
+} 
+#Focus for Afghan Diplomatic Missions
+focus = { 
+id = SOV_afghandiplomaticmissions
+icon = GFX_goal_generic_intelligence_exchange
+x = 26
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_supportassad focus = SOV_wooiran } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+AFG = {
+add_timed_idea= { 
+idea = Socialist_Influence 
+days = 250 
+ }
+}
+ } 
+
+ } 
+
+#Focus for Prepare for Revlot
+focus = { 
+id = SOV_prepareforrevlot
+icon = GFX_goal_generic_attack_allies
+x = 48
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_oustingthekgb } 
+
+ } 
+
+#Focus for Smolenskaya Voyennaya Akademiya
+focus = { 
+id = SOV_smolenskayavoyennayaakademiya
+icon = GFX_focus_generic_soviet_politics
+x = 90
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_ANjqbyfZ focus = SOV_lessonsfromdamansky focus = SOV_rapidmodernizationofthesovietarmy } 
+
+ } 
+
+#Focus for Rebuilding the Nation
+focus = { 
+id = SOV_rebuildingthenation
+icon = GFX_goal_generic_construct_civ_factory
+x = 52
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_nationalizedyouth focus = SOV_expandourinfluence focus = SOV_endtheunion } 
+
+ } 
+
+#Focus for Rapid Modernization of The Soviet Army
+focus = { 
+id = SOV_rapidmodernizationofthesovietarmy
+icon = GFX_goal_generic_air_doctrine
+x = 92
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_extensivewargames } 
+
+ } 
+
+#Focus for Extensive War Games
+focus = { 
+id = SOV_extensivewargames
+icon = GFX_goal_generic_army_doctrines
+x = 92
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_wargames } 
+
+ } 
+
+#Focus for The Damansky Incident
+focus = { 
+id = SOV_thedamanskyincident
+icon = GFX_thedamanskyincident
+x = 34
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_nuclearexchangeprogram focus = SOV_approachthejapanese } 
+
+ } 
+
+#Focus for Lessons from Damansky
+focus = { 
+id = SOV_lessonsfromdamansky
+icon = GFX_focus_prc_infiltration
+x = 90
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_militarydoctrineresearch } 
+
+ } 
+
+#Focus for Chinese Containment Policy
+focus = { 
+id = SOV_chinesecontainmentpolicy
+icon = GFX_chinesecontainmentpolicy
+x = 36
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_asianendeavors } 
+mutually_exclusive = { focus = SOV_sovietkoreanmutualfriendshipagreement } 
+
+ } 
+
+#Focus for Soviet-Korean Mutual Friendship Agreement
+focus = { 
+id = SOV_sovietkoreanmutualfriendshipagreement
+icon = GFX_sovietkoreanmutualfriendshipagreement
+x = 32
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_asianendeavors } 
+mutually_exclusive = { focus = SOV_chinesecontainmentpolicy } 
+
+ } 
+
+#Focus for Lenin's Nightmare
+focus = { 
+id = SOV_leninsnightmare
+icon = GFX_goal_generic_forceful_treaty
+x = 49
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_prepareforrevlot } 
+prerequisite = { focus = SOV_ourowninitiative } 
+completion_reward = { 
+
+ } 
+
+ } 
+
+#Focus for Soviet Colonialism
+focus = { 
+id = SOV_sovietcolonialism
+icon = GFX_focus_ger_great_red_menace
+x = 62
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_bamproject } 
+
+ } 
+
+#Focus for Improved Tank Computing Designs
+focus = { 
+id = SOV_improvedtankcomputingdesigns
+icon = GFX_goal_generic_army_tanks
+x = 89
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_xXlabCgj } 
+
+ } 
+
+#Focus for War Games
+focus = { 
+id = SOV_wargames
+icon = GFX_focus_generic_license_production
+x = 92
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_sovetskiyevooruzhunnyyesily } 
+
+ } 
+
+#Focus for Military Doctrine Research
+focus = { 
+id = SOV_militarydoctrineresearch
+icon = GFX_goal_generic_allies_build_infantry
+x = 90
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_sovetskiyevooruzhunnyyesily } 
+
+ } 
+
+#Focus for Mechanization Effort
+focus = { 
+id = SOV_ANjqbyfZ
+icon = GFX_goal_generic_build_tank
+x = 88
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_infantryfightvehicleresearch } 
+prerequisite = { focus = SOV_improvedtankcomputingdesigns } 
+
+ } 
+
+#Focus for Infantry Fight Vehicle Research
+focus = { 
+id = SOV_infantryfightvehicleresearch
+icon = GFX_goal_generic_army_motorized
+x = 87
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_xXlabCgj } 
+
+ } 
+
+#Focus for Sovetskiye Vooruzhunnyye Sily
+focus = { 
+id = SOV_sovetskiyevooruzhunnyyesily
+icon = GFX_goal_unknown
+x = 90
+y = 0
+cost = 10
+available_if_capitulated = yes 
+
+ } 
+
+#Focus for Combined Arms Offensives
+focus = { 
+id = SOV_xXlabCgj
+icon = GFX_goal_generic_army_tanks
+x = 88
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_sovetskiyevooruzhunnyyesily } 
+
+ } 
+
+#Focus for The New Russian Frontier
+focus = { 
+id = SOV_thenewrussianfrontier
+icon = GFX_thenewrussianfrontier
+x = 44
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_astepawayfromsocialism } 
+
+ } 
+
+#Focus for Storm 334
+focus = { 
+id = SOV_storm334
+icon = GFX_focus_generic_strike_at_democracy3
+x = 1
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_wheatharvestprogram } 
+available = { 
+WGR = {
+   has_government = Socialism
+}
+ENG = {
+   has_government = Socialism
+}
+CUB = {
+   has_government = communism
+   has_manpower> 600000
+}
+NIC = {
+   has_government = communism
+   has_manpower> 600000
+}
+COL = {
+   has_government = communism
+}
+HON = {
+   has_government = communism
+}
+MEX = {
+     OR = {
+ has_government = Anarchy
+ has_government = communism
+ }
+}
+ } 
+completion_reward = { 
+create_wargoal = { type = annex_everything target = USA }
+news_event = { days = 1 id = news.365 }
+ } 
+
+ } 
+
+#Focus for Eliminate The Last of Khrushchev's Reforms
+focus = { 
+id = SOV_eliminatethelastofkhrushchevsreforms
+icon = GFX_focus_generic_join_comintern
+x = 34
+y = 0
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = SOV_adifferentfutureforrussia } 
+completion_reward = { 
+add_political_power= 250
+remove_ideas= De-Stalinization
+ } 
+
+ } 
+
+#Focus for War Games Initiative
+focus = { 
+id = SOV_wargamesinitiative
+icon = GFX_goal_generic_army_tanks
+x = 7
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_expandinglendleases focus = SOV_increasedmilitaryexpendatures } 
+
+ } 
+
+#Focus for Eastern Air Defenses
+focus = { 
+id = SOV_easternairdefenses
+icon = GFX_goal_generic_build_airforce
+x = 75
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_earlyflightsimulators } 
+
+ } 
+
+#Focus for Expanding the People's Freedom
+focus = { 
+id = SOV_expandingthepeoplesfreedom
+icon = GFX_goal_generic_national_unity
+x = 45
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_liberalization } 
+
+ } 
+
+#Focus for Protecting our Allies
+focus = { 
+id = SOV_protectingourallies
+icon = GFX_goal_generic_small_arms
+x = 4
+y = 0
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+ 
+EST = {
+army_experience = 5
+send_equipment = { target = EST type = infantry_equipment amount = 500 }
+}
+LAT = {
+army_experience = 5
+send_equipment = { target = LAT type = infantry_equipment amount = 500 }
+}
+LIT = {
+army_experience = 5
+send_equipment = { target = LIT type = infantry_equipment amount = 500 }
+}
+BLR = {
+army_experience = 5
+send_equipment = { target = BLR type = infantry_equipment amount = 500 }
+}
+POL = {
+army_experience = 5
+send_equipment = { target = POL type = infantry_equipment amount = 500 }
+}
+UKR = {
+army_experience = 5
+send_equipment = { target = UKR type = infantry_equipment amount = 500 }
+}
+MOL = {
+army_experience = 5
+send_equipment = { target = MOL type = infantry_equipment amount = 500 }
+}
+ROM = {
+army_experience = 5
+send_equipment = { target = ROM type = infantry_equipment amount = 500 }
+}
+BUL = {
+army_experience = 5
+send_equipment = { target = BUL type = infantry_equipment amount = 500 }
+}
+CZE = {
+army_experience = 5
+send_equipment = { target = CZE type = infantry_equipment amount = 500 }
+}
+HUN = {
+army_experience = 5
+send_equipment = { target = HUN type = infantry_equipment amount = 500 }
+}
+DDR = {
+army_experience = 5
+send_equipment = { target = DDR type = infantry_equipment amount = 500 }
+}
+GEO = {
+army_experience = 5
+send_equipment = { target = GEO type = infantry_equipment amount = 500 }
+}
+ARM = {
+army_experience = 5
+send_equipment = { target = ARM type = infantry_equipment amount = 500 }
+}
+AZR = {
+army_experience = 5
+send_equipment = { target = AZR type = infantry_equipment amount = 500 }
+}
+TRK = {
+army_experience = 5
+send_equipment = { target = TRK type = infantry_equipment amount = 500 }
+}
+KAZ = {
+army_experience = 5
+send_equipment = { target = KAZ type = infantry_equipment amount = 500 }
+}
+UZB = {
+army_experience = 5
+send_equipment = { target = UZB type = infantry_equipment amount = 500 }
+}
+TJK = {
+army_experience = 5
+send_equipment = { target = TJK type = infantry_equipment amount = 500 }
+}
+KYZ = {
+army_experience = 5
+send_equipment = { target = KYZ type = infantry_equipment amount = 500 }
+}
+ 
+ } 
+
+ } 
+
+#Focus for Civilian Economic Expansion
+focus = { 
+id = SOV_civilianeconomicexpansion
+icon = GFX_goal_generic_construct_civ_factory
+x = 57
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_asianmodernizationprojects } 
+
+ } 
+
+#Focus for Capitalist Competition
+focus = { 
+id = SOV_capitalistcompetition
+icon = GFX_goal_generic_construct_infrastructure
+x = 58
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_civilianeconomicexpansion } 
+
+ } 
+
+#Focus for Arms Manufacturing Deals
+focus = { 
+id = SOV_armsmanufacturingdeals
+icon = GFX_goal_generic_construct_mil_factory
+x = 56
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_civilianeconomicexpansion } 
+
+ } 
+
+#Focus for Expand the KGB
+focus = { 
+id = SOV_expandthekgb
+icon = GFX_expandthekgb
+x = 18
+y = 0
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+add_political_power= 120
+ } 
+
+ } 
+
+#Focus for Wheat Harvest Program
+focus = { 
+id = SOV_wheatharvestprogram
+icon = GFX_wheatharvestprogram
+x = 1
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_easternresourceexcavation } 
+
+ } 
+
+#Focus for SSR Modernization Project
+focus = { 
+id = SOV_ssrmodernizationproject
+icon = GFX_focus_generic_rubber
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_protectingourallies } 
+completion_reward = { 
+EST = { country_event = ssr.3 }
+  LAT = { country_event = ssr.3 }
+  LIT = { country_event = ssr.3 }
+  BLR = { country_event = ssr.3 }
+  UKR = { country_event = ssr.3 }
+  MOL = { country_event = ssr.3 }
+  ROM = { country_event = ssr.3 }
+  BUL = { country_event = ssr.3 }
+  GEO = { country_event = ssr.3 }
+  ARM = { country_event = ssr.3 }
+  AZR = { country_event = ssr.3 }
+  KAZ = { country_event = ssr.3 }
+  TMS = { country_event = ssr.3 }
+  UZB = { country_event = ssr.3 }
+  TAJ = { country_event = ssr.3 }
+  KYR = { country_event = ssr.3 }
+ } 
+
+ } 
+
+#Focus for Reaffirming Brezhnev's Doctrine
+focus = { 
+id = SOV_reaffirmingbrezhnevsdoctrine
+icon = GFX_focus_generic_soviet_politics
+x = 32
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_eliminatethelastofkhrushchevsreforms } 
+mutually_exclusive = { focus = SOV_enforcingdtente } 
+
+ } 
+
+#Focus for Rooting out the Last Dissenters
+focus = { 
+id = SOV_rootingoutthelastdissenters
+icon = GFX_goal_generic_war_with_comintern
+x = 31
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_reaffirmingbrezhnevsdoctrine } 
+
+ } 
+
+#Focus for Infiltrate Western Europe
+focus = { 
+id = SOV_infiltratewesterneurope
+icon = GFX_goal_support_communism
+x = 13
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_expandthekgb } 
+
+ } 
+
+#Focus for Infiltrate Latin America
+focus = { 
+id = SOV_infiltratelatinamerica
+icon = GFX_goal_support_communism
+x = 18
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_expandthekgb } 
+
+ } 
+
+#Focus for Enforcing Détente
+focus = { 
+id = SOV_enforcingdtente
+icon = GFX_focus_chi_mission_to_the_us
+x = 36
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_eliminatethelastofkhrushchevsreforms } 
+mutually_exclusive = { focus = SOV_reaffirmingbrezhnevsdoctrine } 
+
+ } 
+
+#Focus for Continue American Infiltration
+focus = { 
+id = SOV_continueamericaninfiltration
+icon = GFX_goal_support_communism
+x = 23
+y = 2
+cost = 15
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_expandthekgb } 
+
+ } 
+
+#Focus for Exerting the Politburo's Power
+focus = { 
+id = SOV_exertingthepolitburospower
+icon = GFX_exertingthepolitburospower
+x = 33
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_reaffirmingbrezhnevsdoctrine } 
+
+ } 
+
+#Focus for Open Dialogues with The United States
+focus = { 
+id = SOV_opendialogueswiththeunitedstates
+icon = GFX_focus_chi_mission_to_the_us
+x = 37
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_enforcingdtente focus = SOV_liberalization } 
+mutually_exclusive = { focus = SOV_reopennegotiationswithchina } 
+
+ } 
+
+#Focus for Liberalization
+focus = { 
+id = SOV_liberalization
+icon = GFX_goal_support_democracy
+x = 44
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_adifferentfutureforrussia } 
+
+ } 
+
+#Focus for Foreign Intervention Committee
+focus = { 
+id = SOV_foreigninterventioncommittee
+icon = GFX_goal_generic_occupy_states_ongoing_war
+x = 34
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_returntoformality focus = SOV_thepeoplescomfortnotthemilitary } 
+
+ } 
+
+#Focus for Asian Endeavors
+focus = { 
+id = SOV_asianendeavors
+icon = GFX_focus_prc_agrarian_socialism
+x = 34
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_foreigninterventioncommittee } 
+
+ } 
+
+#Focus for Middle Eastern Endeavors
+focus = { 
+id = SOV_middleeasternendeavors
+icon = GFX_focus_generic_soviet_politics
+x = 26
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_foreigninterventioncommittee } 
+
+ } 
+
+#Focus for African Endeavors
+focus = { 
+id = SOV_africanendeavors
+icon = GFX_focus_generic_soviet_politics
+x = 42
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_foreigninterventioncommittee } 
+
+ } 
+
+#Focus for Government Shuffle
+focus = { 
+id = SOV_governmentshuffle
+icon = GFX_goal_generic_propaganda
+x = 43
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_liberalization } 
+
+ } 
+
+#Focus for Reopen Negotiations with China
+focus = { 
+id = SOV_reopennegotiationswithchina
+icon = GFX_reopennegotiationswithchina
+x = 35
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_enforcingdtente } 
+mutually_exclusive = { focus = SOV_opendialogueswiththeunitedstates } 
+
+ } 
+
+#Focus for A Different Future for Russia
+focus = { 
+id = SOV_adifferentfutureforrussia
+icon = GFX_goal_generic_war_with_comintern
+x = 49
+y = 0
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = SOV_eliminatethelastofkhrushchevsreforms } 
+completion_reward = { 
+ 
+add_political_power= 150
+ 
+ } 
+
+ } 
+
+#Focus for White Russia
+focus = { 
+id = SOV_whiterussia
+icon = GFX_whiterussia
+x = 49
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_adifferentfutureforrussia } 
+completion_reward = { 
+add_timed_idea= { 
+idea = White_Russia
+days = 750 
+}
+ } 
+
+ } 
+
+#Focus for Ousting the KGB
+focus = { 
+id = SOV_oustingthekgb
+icon = GFX_goal_continuous_suppression
+x = 49
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_whiterussia } 
+
+ } 
+
+#Focus for Return to Formality
+focus = { 
+id = SOV_returntoformality
+icon = GFX_focus_chi_mission_to_the_soviet_union
+x = 32
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_exertingthepolitburospower } 
+prerequisite = { focus = SOV_rootingoutthelastdissenters } 
+prerequisite = { focus = SOV_ } 
+
+ } 
+
+#Focus for The Brezhnev Question
+focus = { 
+id = SOV_thebrezhnevquestion
+icon = GFX_goal_unknown
+x = 52
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_whiterussia focus = SOV_reorganizethelasttsarists } 
+available = { 
+has_country_leader = { ruling_only = yes name = "Leonid Brezhnev" }
+ } 
+completion_reward = { 
+6 = { country_event = { id = soviet.73 days = 1 }
+                }
+                4 = { country_event = { id = soviet.72 days = 1 } 
+                }
+ } 
+
+ } 
+
+#Focus for Perestroika
+focus = { 
+id = SOV_perestroika
+icon = GFX_goal_support_democracy
+x = 38
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_glasnost } 
+
+ } 
+
+#Focus for A Step Away from Socialism
+focus = { 
+id = SOV_astepawayfromsocialism
+icon = GFX_goal_support_communism
+x = 44
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_governmentshuffle } 
+prerequisite = { focus = SOV_expandingthepeoplesfreedom } 
+
+ } 
+
+#Focus for Reorganize the Last Tsarists
+focus = { 
+id = SOV_reorganizethelasttsarists
+icon = GFX_reorganizethelasttsarists
+x = 54
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_adifferentfutureforrussia } 
+completion_reward = { 
+add_timed_idea= { 
+idea = Tsar_Nicohlas
+days = 650 
+}
+ } 
+
+ } 
+
+#Focus for Glasnost
+focus = { 
+id = SOV_glasnost
+icon = GFX_goal_support_democracy
+x = 37
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_forwardthehelsinkiaccords } 
+
+ } 
+
+#Focus for Asian Modernization Projects
+focus = { 
+id = SOV_asianmodernizationprojects
+icon = GFX_goal_generic_soviet_construction
+x = 61
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_coalliquidization } 
+
+ } 
+
+#Focus for Ural Coal Mines
+focus = { 
+id = SOV_uralcoalmines
+icon = GFX_goal_generic_construction2
+x = 59
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_uralresourceexcavation } 
+completion_reward = { 
+add_resource= { 
+type = oil 
+amount = 8 
+state = 581 
+}
+ } 
+
+ } 
+
+#Focus for Soviet Universities
+focus = { 
+id = SOV_sovietuniversities
+icon = GFX_focus_generic_socialist_science
+x = 61
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_increasednuclearspending } 
+prerequisite = { focus = SOV_federalizedschooling } 
+completion_reward = { 
+add_ideas= University_Stalingrad
+add_research_slot= 1
+ } 
+
+ } 
+
+#Focus for A Higher Standard of Living
+focus = { 
+id = SOV_ahigherstandardofliving
+icon = GFX_goal_generic_national_unity
+x = 61
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_sovietuniversities } 
+
+ } 
+
+#Focus for Reorganize the Egyptian Military
+focus = { 
+id = SOV_reorganizetheegyptianmilitary
+icon = GFX_reorganizetheegyptianmilitary
+x = 29
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_supportassad } 
+completion_reward = { 
+EGY = {
+add_ideas= Soviet_Advisors
+add_ideas= Small_Arms
+}
+ } 
+
+ } 
+
+#Focus for Soviet's in Yemen
+focus = { 
+id = SOV_sovietsinyemen
+icon = GFX_sovietsinyemen
+x = 27
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_supportassad } 
+
+ } 
+
+#Focus for Tenth Five Year Plan
+focus = { 
+id = SOV_tenthfiveyearplan
+icon = GFX_goal_generic_soviet_construction
+x = 61
+y = 1
+cost = 10
+available_if_capitulated = yes 
+
+ } 
+
+#Focus for Aiding African Militias
+focus = { 
+id = SOV_aidingafricanmilitias
+icon = GFX_aidingafricanmilitias
+x = 40
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_africanendeavors } 
+mutually_exclusive = { focus = SOV_africanpacification } 
+
+ } 
+
+#Focus for Woo Iran
+focus = { 
+id = SOV_wooiran
+icon = GFX_wooiran
+x = 24
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_middleeasternendeavors } 
+mutually_exclusive = { focus = SOV_supportassad } 
+completion_reward = { 
+PER = {
+add_timed_idea= { 
+idea = Marxist_Rhetoric 
+days = 250 
+ }
+}
+ } 
+
+ } 
+
+#Focus for Support Assad
+focus = { 
+id = SOV_supportassad
+icon = GFX_supportassad
+x = 28
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_middleeasternendeavors } 
+mutually_exclusive = { focus = SOV_wooiran } 
+completion_reward = { 
+give_guarantee= SYR
+SOV = {
+							add_opinion_modifier = {
+									target = SYR
+									modifier = large_increase
+								}
+						}
+SYR = {
+							add_opinion_modifier = {
+									target = SOV
+									modifier = large_increase
+								}
+						}
+ } 
+
+ } 
+
+#Focus for Increased Nuclear Spending
+focus = { 
+id = SOV_increasednuclearspending
+icon = GFX_focus_wonderweapons
+x = 60
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_icbmdevelopment } 
+
+ } 
+
+#Focus for African Pacification
+focus = { 
+id = SOV_africanpacification
+icon = GFX_focus_chi_mission_to_the_soviet_union
+x = 44
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_africanendeavors } 
+mutually_exclusive = { focus = SOV_aidingafricanmilitias } 
+
+ } 
+
+#Focus for Destroyer Program
+focus = { 
+id = SOV_destroyerprogram
+icon = GFX_goal_generic_navy_battleship
+x = 73
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_voyennomorskoyflot } 
+
+ } 
+
+#Focus for Western Drydock Construction
+focus = { 
+id = SOV_westerndrydockconstruction
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 69
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_voyennomorskoyflot } 
+completion_reward = { 
+if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+ } 
+
+ } 
+
+#Focus for BAM Project
+focus = { 
+id = SOV_bamproject
+icon = GFX_bamproject
+x = 61
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_tenthfiveyearplan } 
+
+ } 
+
+#Focus for Civilian Economic Expansion II
+focus = { 
+id = SOV_civilianeconomicexpansionii
+icon = GFX_goal_generic_construct_civ_factory
+x = 65
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_asianmodernizationprojects } 
+
+ } 
+
+#Focus for Moscow Railways
+focus = { 
+id = SOV_moscowrailways
+icon = GFX_goal_generic_construct_infrastructure
+x = 64
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_civilianeconomicexpansionii } 
+completion_reward = { 
+random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+ } 
+
+ } 
+
+#Focus for Federalized Schooling
+focus = { 
+id = SOV_federalizedschooling
+icon = GFX_focus_generic_soviet_politics
+x = 62
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_statesponsoredentertainment } 
+
+ } 
+
+#Focus for ICBM Development
+focus = { 
+id = SOV_icbmdevelopment
+icon = GFX_focus_rocketry
+x = 60
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_asianmodernizationprojects } 
+
+ } 
+
+#Focus for Ural Resource Excavation
+focus = { 
+id = SOV_uralresourceexcavation
+icon = GFX_goal_generic_construction2
+x = 60
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_bamproject } 
+
+ } 
+
+#Focus for State Sponsored Entertainment
+focus = { 
+id = SOV_statesponsoredentertainment
+icon = GFX_goal_generic_national_unity
+x = 62
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_asianmodernizationprojects } 
+
+ } 
+
+#Focus for Western Infrastructure Initiative
+focus = { 
+id = SOV_westerninfrastructureinitiative
+icon = GFX_goal_generic_construct_infrastructure
+x = 66
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_civilianeconomicexpansionii } 
+completion_reward = { 
+random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+ } 
+
+ } 
+
+#Focus for Naval Carrier Research
+focus = { 
+id = SOV_navalcarrierresearch
+icon = GFX_goal_generic_navy_carrier
+x = 70
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_voyennomorskoyflot } 
+
+ } 
+
+#Focus for Morskaya Pekhota
+focus = { 
+id = SOV_morskayapekhota
+icon = GFX_goal_generic_amphibious_assault
+x = 67
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_voyennomorskoyflot } 
+
+ } 
+
+#Focus for Voyenno Morskoy Flot
+focus = { 
+id = SOV_voyennomorskoyflot
+icon = GFX_goal_generic_navy_battleship
+x = 70
+y = 0
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+navy_experience= 15
+ } 
+
+ } 
+
+#Focus for NATO Containment Policies
+focus = { 
+id = SOV_natocontainmentpolicies
+icon = GFX_natocontainmentpolicies
+x = 23
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_wooiran } 
+
+ } 
+
+#Focus for Expanded Air Defenses
+focus = { 
+id = SOV_expandedairdefenses
+icon = GFX_goal_generic_build_airforce
+x = 75
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_easternairdefenses } 
+
+ } 
+
+#Focus for Air Doctrine Funding
+focus = { 
+id = SOV_PTWnkZFd
+icon = GFX_goal_generic_air_bomber
+x = 81
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_earlyflightsimulators } 
+
+ } 
+
+#Focus for Air Doctrine Funding II
+focus = { 
+id = SOV_airdoctrinefundingii
+icon = GFX_goal_generic_air_bomber
+x = 81
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_PTWnkZFd } 
+
+ } 
+
+#Focus for Expand the VDV
+focus = { 
+id = SOV_expandthevdv
+icon = GFX_focus_generic_paratrooper
+x = 84
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_voyennovozdushnyesily } 
+
+ } 
+
+#Focus for Spetsnaz Detachments
+focus = { 
+id = SOV_spetsnazdetachments
+icon = GFX_focus_YUG_ikarus
+x = 84
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_expandthevdv } 
+
+ } 
+
+#Focus for Stalingradskaya Letnaya Akademiya
+focus = { 
+id = SOV_stalingradskayaletnayaakademiya
+icon = GFX_goal_generic_air_fighter2
+x = 78
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_expandedairdefenses focus = SOV_OxiXoVbM focus = SOV_fighterdevelopment focus = SOV_airdoctrinefundingii } 
+
+ } 
+
+#Focus for Multi-Role Bombers
+focus = { 
+id = SOV_multirolebombers
+icon = GFX_goal_generic_air_bomber
+x = 79
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_voyennovozdushnyesily } 
+
+ } 
+
+#Focus for Early Flight Simulators
+focus = { 
+id = SOV_earlyflightsimulators
+icon = GFX_goal_generic_air_fighter2
+x = 78
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_multirolebombers focus = SOV_multirolefighterjets } 
+
+ } 
+
+#Focus for Voyenno-Vozdushnye Sily
+focus = { 
+id = SOV_voyennovozdushnyesily
+icon = GFX_goal_generic_air_fighter2
+x = 81
+y = 0
+cost = 10
+available_if_capitulated = yes 
+
+ } 
+
+#Focus for Multi-Role Fighter Jets
+focus = { 
+id = SOV_multirolefighterjets
+icon = GFX_goal_generic_air_fighter2
+x = 77
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_voyennovozdushnyesily } 
+
+ } 
+
+#Focus for Leningradskaya Morskaya Akademiya
+focus = { 
+id = SOV_leningradskayamorskayaakademiya
+icon = GFX_goal_generic_major_alliance
+x = 70
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_smallandflexible focus = SOV_strengthinnumbers } 
+
+ } 
+
+#Focus for Submarine Development
+focus = { 
+id = SOV_xyatnZsP
+icon = GFX_goal_generic_navy_submarine
+x = 69
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_pacificnavalsupremacy focus = SOV_europeannavalsupremacy } 
+
+ } 
+
+#Focus for Eastern Resource Excavation
+focus = { 
+id = SOV_easternresourceexcavation
+icon = GFX_goal_generic_production
+x = 1
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_sinosovietdefenses focus = SOV_ssrmodernizationproject } 
+completion_reward = { 
+EST = { country_event = ssr.4 }
+  LAT = { country_event = ssr.4 }
+  LIT = { country_event = ssr.4 }
+  BLR = { country_event = ssr.4 }
+  UKR = { country_event = ssr.4 }
+  MOL = { country_event = ssr.4 }
+  ROM = { country_event = ssr.4 }
+  BUL = { country_event = ssr.4 }
+  HUN = { country_event = ssr.4 }
+  CZE = { country_event = ssr.4 }
+  POL = { country_event = ssr.4 }
+  DDR = { country_event = ssr.4 }
+  GEO = { country_event = ssr.4 }
+  ARM = { country_event = ssr.4 }
+  AZR = { country_event = ssr.4 }
+  KAZ = { country_event = ssr.4 }
+  TMS = { country_event = ssr.4 }
+  UZB = { country_event = ssr.4 }
+  TAJ = { country_event = ssr.4 }
+  KYR = { country_event = ssr.4 }
+ } 
+
+ } 
+
+#Focus for Eastern Drydock Construction
+focus = { 
+id = SOV_easterndrydockconstruction
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 71
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_voyennomorskoyflot } 
+completion_reward = { 
+if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+ } 
+
+ } 
+
+#Focus for Pacific Naval Supremacy
+focus = { 
+id = SOV_pacificnavalsupremacy
+icon = GFX_goal_generic_navy_cruiser
+x = 71
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_morskayapekhota } 
+prerequisite = { focus = SOV_destroyerprogram } 
+prerequisite = { focus = SOV_navalcarrierresearch } 
+prerequisite = { focus = SOV_ } 
+mutually_exclusive = { focus = SOV_europeannavalsupremacy } 
+
+ } 
+
+#Focus for Strength in Numbers
+focus = { 
+id = SOV_strengthinnumbers
+icon = GFX_goal_generic_navy_battleship
+x = 71
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_xyatnZsP focus = SOV_frigatedevelopment } 
+
+ } 
+
+#Focus for European Naval Supremacy
+focus = { 
+id = SOV_europeannavalsupremacy
+icon = GFX_goal_generic_navy_cruiser
+x = 69
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_destroyerprogram focus = SOV_ } 
+mutually_exclusive = { focus = SOV_pacificnavalsupremacy } 
+
+ } 
+
+#Focus for Frigate Development
+focus = { 
+id = SOV_frigatedevelopment
+icon = GFX_goal_generic_navy_doctrines_tactics
+x = 71
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_europeannavalsupremacy focus = SOV_pacificnavalsupremacy } 
+
+ } 
+
+#Focus for Small and Flexible
+focus = { 
+id = SOV_smallandflexible
+icon = GFX_goal_generic_navy_anti_submarine
+x = 69
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_xyatnZsP focus = SOV_frigatedevelopment } 
+
+ } 
+
+#Focus for Federalizing The Soviet Armed Forces
+focus = { 
+id = SOV_federalizingthesovietarmedforces
+icon = GFX_focus_generic_join_comintern
+x = 4
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_protectingourallies } 
+
+ } 
+
+#Focus for Advise Eastern Bloc Armies
+focus = { 
+id = SOV_adviseeasternblocarmies
+icon = GFX_goal_molotov_ribbentrop_pact
+x = 3
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_protectingourallies } 
+completion_reward = { 
+ 
+ROM = { country_event = ssr.1 }
+  BUL = { country_event = ssr.1 }
+  HUN = { country_event = ssr.1 }
+  CZE = { country_event = ssr.1 }
+  POL = { country_event = ssr.1 }
+  DDR = { country_event = ssr.1 }
+ 
+ } 
+
+ } 
+
+#Focus for Sino-Soviet Defenses
+focus = { 
+id = SOV_sinosovietdefenses
+icon = GFX_focus_ger_great_red_menace
+x = 2
+y = 2
+cost = 13
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_adviseeasternblocarmies } 
+
+ } 
+
+#Focus for Political Detention Centers
+focus = { 
+id = SOV_politicaldetentioncenters
+icon = GFX_goal_generic_war_with_comintern
+x = 52
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_rebuildingthenation } 
+
+ } 
+
+#Focus for Eastern German Defenses
+focus = { 
+id = SOV_easterngermandefenses
+icon = GFX_goal_generic_soviet_construction
+x = 5
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_protectingourallies } 
+completion_reward = { 
+ 
+60 = {
+add_building_construction = {
+type = bunker
+province = 9497
+level = 2
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+province = 482
+level = 2
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+province = 3500
+level = 2
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+province = 3561
+level = 2
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+province = 425
+level = 2
+instant_build = yes
+}
+}
+64 = {
+add_building_construction = {
+type = bunker
+province = 6487
+level = 2
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+province = 3522
+level = 2
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+province = 11359
+level = 2
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+province = 11219
+level = 2
+instant_build = yes
+}
+}
+61 = {
+add_building_construction = {
+type = bunker
+province = 9294
+level = 2
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+province = 11305
+level = 2
+instant_build = yes
+}
+}
+65 = {
+add_building_construction = {
+type = bunker
+province = 9441
+level = 2
+instant_build = yes
+}
+}
+ 
+ } 
+
+ } 
+
+#Focus for Our Own Initiative
+focus = { 
+id = SOV_ourowninitiative
+icon = GFX_goal_anti_comintern_pact
+x = 50
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_oustingthekgb } 
+
+ } 
+
+#Focus for The People's Comfort not The Military
+focus = { 
+id = SOV_thepeoplescomfortnotthemilitary
+icon = GFX_focus_generic_the_giant_wakes
+x = 36
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_reopennegotiationswithchina } 
+prerequisite = { focus = SOV_opendialogueswiththeunitedstates } 
+
+ } 
+
+#Focus for Increased Military Expendatures
+focus = { 
+id = SOV_increasedmilitaryexpendatures
+icon = GFX_focus_generic_license_production
+x = 8
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_protectingourallies } 
+
+ } 
+
+#Focus for Expanding Lend-Leases
+focus = { 
+id = SOV_expandinglendleases
+icon = GFX_goal_generic_army_artillery2
+x = 6
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_easterngermandefenses } 
+completion_reward = { 
+EST = { country_event = ssr.5 }
+  LAT = { country_event = ssr.5 }
+  LIT = { country_event = ssr.5 }
+  BLR = { country_event = ssr.5 }
+  UKR = { country_event = ssr.5 }
+  MOL = { country_event = ssr.5 }
+  ROM = { country_event = ssr.5 }
+  BUL = { country_event = ssr.5 }
+  HUN = { country_event = ssr.5 }
+  CZE = { country_event = ssr.5 }
+  POL = { country_event = ssr.5 }
+  DDR = { country_event = ssr.5 }
+  GEO = { country_event = ssr.5 }
+  ARM = { country_event = ssr.5 }
+  AZR = { country_event = ssr.5 }
+  KAZ = { country_event = ssr.5 }
+  TMS = { country_event = ssr.5 }
+  UZB = { country_event = ssr.5 }
+  TAJ = { country_event = ssr.5 }
+  KYR = { country_event = ssr.5 }
+ } 
+
+ } 
+
+#Focus for Eastern Bloc Military Academies
+focus = { 
+id = SOV_easternblocmilitaryacademies
+icon = GFX_focus_generic_socialist_science
+x = 4
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_ssrmodernizationproject focus = SOV_sinosovietdefenses focus = SOV_federalizingthesovietarmedforces focus = SOV_expandinglendleases focus = SOV_increasedmilitaryexpendatures } 
+
+ } 
+
+#Focus for Armed Confrontation Preparation
+focus = { 
+id = SOV_armedconfrontationpreparation
+icon = GFX_armedconfrontationpreparation
+x = 54
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_reorganizethelasttsarists } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Diplomatic Mission to India
+focus = { 
+id = SOV_diplomaticmissiontoindia
+icon = GFX_goal_generic_intelligence_exchange
+x = 37
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_chinesecontainmentpolicy } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+RAJ = {
+add_timed_idea= { 
+idea = Marxist_Rhetoric 
+days = 350 
+}
+}
+ } 
+
+ } 
+
+#Focus for Export Soviet Workers
+focus = { 
+id = SOV_exportsovietworkers
+icon = GFX_focus_YUG_pan_slavic_congress
+x = 31
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_sovietkoreanmutualfriendshipagreement } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Internal Security Measures
+focus = { 
+id = SOV_internalsecuritymeasures
+icon = GFX_goal_generic_major_alliance
+x = 16
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_expandthekgb } 
+mutually_exclusive = { focus = SOV_reintegrationintothemilitary } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_ideas= stronger_security
+ } 
+
+ } 
+
+#Focus for Cautious Preparation
+focus = { 
+id = SOV_cautiouspreparation
+icon = GFX_focus_generic_military_mission
+x = 17
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_infiltratelatinamerica } 
+mutually_exclusive = { focus = SOV_overtmilitarypresence } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Overt Military Presence
+focus = { 
+id = SOV_overtmilitarypresence
+icon = GFX_focus_generic_little_entente
+x = 19
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_infiltratelatinamerica } 
+mutually_exclusive = { focus = SOV_cautiouspreparation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Exporting the Revolution
+focus = { 
+id = SOV_exportingtherevolution
+icon = GFX_focus_generic_diplomatic_treaty
+x = 12
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_infiltratewesterneurope } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Nationalized Youth
+focus = { 
+id = SOV_nationalizedyouth
+icon = GFX_focus_chi_army_reform
+x = 50
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_thebrezhnevquestion } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for State Secrets
+focus = { 
+id = SOV_statesecrets
+icon = GFX_focus_generic_self_management
+x = 55
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_reorganizethelasttsarists } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Back The Korean People's Army
+focus = { 
+id = SOV_backthekoreanpeoplesarmy
+icon = GFX_backthekoreanpeoplesarmy
+x = 33
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_sovietkoreanmutualfriendshipagreement } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reintegration Into the Military
+focus = { 
+id = SOV_reintegrationintothemilitary
+icon = GFX_focus_generic_military_mission
+x = 20
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_expandthekgb } 
+mutually_exclusive = { focus = SOV_internalsecuritymeasures } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_ideas= kgb_military_integration
+ } 
+
+ } 
+
+#Focus for Closer Bond with Vietnam
+focus = { 
+id = SOV_closerbondwithvietnam
+icon = GFX_goal_molotov_ribbentrop_pact
+x = 35
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_chinesecontainmentpolicy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Nuclear Exchange Program
+focus = { 
+id = SOV_nuclearexchangeprogram
+icon = GFX_focus_wonderweapons
+x = 32
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_backthekoreanpeoplesarmy focus = SOV_exportsovietworkers } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Tsarist legacy
+focus = { 
+id = SOV_tsaristlegacy
+icon = GFX_goal_tfv_strengthen_commonwealth_ties
+x = 55
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_statesecrets } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_timed_idea= { 
+idea = Tsar_Nicohlas
+days = 750 
+}
+ } 
+
+ } 
+
+#Focus for Approach the Japanese
+focus = { 
+id = SOV_approachthejapanese
+icon = GFX_approachthejapanese
+x = 36
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_closerbondwithvietnam } 
+prerequisite = { focus = SOV_diplomaticmissiontoindia } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Expand our Influence
+focus = { 
+id = SOV_expandourinfluence
+icon = GFX_goal_generic_national_unity
+x = 52
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_thebrezhnevquestion } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Loyalty, Nation, Duty
+focus = { 
+id = SOV_loyaltynationduty
+icon = GFX_focus_generic_military_mission
+x = 48
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_prepareforrevlot } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Advise Nicaragua's Military
+focus = { 
+id = SOV_advisenicaraguasmilitary
+icon = GFX_advisenicaraguasmilitary
+x = 18
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_infiltratelatinamerica } 
+ai_will_do = { 
+ factor = 1
+ } 
+available = { 
+NIC = {
+has_government= communism
+}
+ } 
+completion_reward = { 
+add_ideas= Soviet_Advisors
+NIC = {
+							add_opinion_modifier = {
+									target = SOV
+									modifier = large_increase
+								}
+						}
+SOV = {
+							add_opinion_modifier = {
+									target = NIC
+									modifier = large_increase
+								}
+						}
+ } 
+
+ } 
+
+#Focus for Forward the Helsinki Accords
+focus = { 
+id = SOV_forwardthehelsinkiaccords
+icon = GFX_goal_tripartite_pact
+x = 38
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_opendialogueswiththeunitedstates } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for End the Union
+focus = { 
+id = SOV_endtheunion
+icon = GFX_endtheunion
+x = 54
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_armedconfrontationpreparation } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+country_event= {
+days = 1 
+id = soviet.92 
+}
+
+		RUS = {
+		add_state_core = 224
+		add_state_core = 222
+		add_state_core = 223
+		add_state_core = 205
+		add_state_core = 219
+		add_state_core = 788
+		
+add_state_core = 209
+add_state_core = 208
+add_state_core = 195
+add_state_core = 263
+add_state_core = 246
+add_state_core = 260
+add_state_core = 258
+add_state_core = 257
+add_state_core = 254
+add_state_core = 245
+add_state_core = 217
+add_state_core = 265
+add_state_core = 401
+add_state_core = 239
+add_state_core = 652
+add_state_core = 401
+add_state_core = 146
+add_state_core = 216
+		}
+ } 
+
+ } 
+
+#Focus for Coal Liquidization
+focus = { 
+id = SOV_coalliquidization
+icon = GFX_goal_generic_oil_refinery
+x = 61
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_uralresourceexcavation focus = SOV_sovietcolonialism } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_resource= { 
+type = oil 
+amount = 8 
+state = 581 
+}
+ } 
+
+ } 
+
+#Focus for Fighter Development
+focus = { 
+id = SOV_fighterdevelopment
+icon = GFX_goal_generic_air_fighter2
+x = 79
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_earlyflightsimulators } 
+mutually_exclusive = { focus = SOV_OxiXoVbM } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for COMECON Advancement
+focus = { 
+id = SOV_comeconadvancement
+icon = GFX_comeconadvancement
+x = 29
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_rootingoutthelastdissenters } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Support Gaddafi
+focus = { 
+id = SOV_supportgaddafi
+icon = GFX_goal_unknown
+x = 25
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_wooiran } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Arctic Expedition
+focus = { 
+id = SOV_arcticexpedition
+icon = GFX_focus_ger_great_red_menace
+x = 63
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_sovietcolonialism } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Diplomatic Mission to Chile
+focus = { 
+id = SOV_diplomaticmissiontochile
+icon = GFX_goal_generic_intelligence_exchange
+x = 17
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_cautiouspreparation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Demoralization
+focus = { 
+id = SOV_demoralization
+icon = GFX_focus_CZE_german_puppet
+x = 23
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_continueamericaninfiltration } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+
+ } 
+
+ } 
+
+#Focus for Destabilization
+focus = { 
+id = SOV_destabilization
+icon = GFX_focus_generic_strike_at_democracy2
+x = 23
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_demoralization } 
+mutually_exclusive = { focus = SOV_destabilization } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Crisis
+focus = { 
+id = SOV_crisis
+icon = GFX_focus_generic_strike_at_democracy2
+x = 23
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_destabilization } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Nordic Diplomatic Missions
+focus = { 
+id = SOV_nordicdiplomaticmissions
+icon = GFX_goal_generic_intelligence_exchange
+x = 14
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_infiltratewesterneurope } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Advise Cuba's Military
+focus = { 
+id = SOV_advisecubasmilitary
+icon = GFX_advisecubasmilitary
+x = 19
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_overtmilitarypresence } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+CUB = {
+add_ideas= Soviet_Advisors
+}
+ } 
+
+ } 
+
+#Focus for CAS Development
+focus = { 
+id = SOV_OxiXoVbM
+icon = GFX_goal_generic_secret_weapon
+x = 77
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_earlyflightsimulators } 
+mutually_exclusive = { focus = SOV_fighterdevelopment } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Spike African Racial Tensions
+focus = { 
+id = SOV_spikeafricanracialtensions
+icon = GFX_goal_unknown
+x = 43
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_africanpacification } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Envoys to Cambodia
+focus = { 
+id = SOV_envoystocambodia
+icon = GFX_goal_unknown
+x = 35
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_closerbondwithvietnam } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Support Ethiopia
+focus = { 
+id = SOV_supportethiopia
+icon = GFX_supportethiopia
+x = 39
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_aidingafricanmilitias } 
+mutually_exclusive = { focus = SOV_aidzimbabweanstruggle } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Aid Zimbabwean Struggle
+focus = { 
+id = SOV_aidzimbabweanstruggle
+icon = GFX_aidzimbabweanstruggle
+x = 41
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_aidingafricanmilitias } 
+mutually_exclusive = { focus = SOV_supportethiopia } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for COMECON Invitation
+focus = { 
+id = SOV_comeconinvitation
+icon = GFX_comeconinvitation
+x = 40
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_supportethiopia focus = SOV_aidzimbabweanstruggle } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Congolese Cells
+focus = { 
+id = SOV_congolesecells
+icon = GFX_goal_unknown
+x = 45
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_africanpacification } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Lebanese Vacations
+focus = { 
+id = SOV_lebanesevacations
+icon = GFX_lebanesevacations
+x = 26
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_supportgaddafi } 
+prerequisite = { focus = SOV_sovietsinyemen } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Expand Novosti's Funding
+focus = { 
+id = SOV_expandnovostisfunding
+icon = GFX_expandnovostisfunding
+x = 16
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_internalsecuritymeasures } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

@@ -1,0 +1,237 @@
+﻿capital = 439
+
+oob = "RAJ_1974"
+
+
+set_stability = 0.6
+set_war_support = 0.1
+# Starting tech
+set_technology = {
+	unifornm_equip1 = 1
+	basic_medium_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	mechanised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
+	superior_firepower = 1
+	base_strike = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	motorised_infantry = 1
+	support_weapons2 = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	mechanised_infantry = 1
+	light_mechanised_infantry = 1
+}
+
+set_convoys = 20
+
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 17
+    fascism = 2
+    communism = 1
+    neutrality = 80
+}
+
+create_country_leader = {
+	name = "Varahagiri Venkata Giri"
+	desc = "POLITICS_LORD_LINLITHGOW_DESC"
+	picture = "gfx/leaders/RAJ/Varahagiri Venkata Giri india.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
+# REVISIT Unclear if appropriate for this ideology
+create_country_leader = {
+	name = "V. D. Savarkar"
+	desc = "POLITICS_VD_SAVARKAR_DESC"
+	picture = "GFX_RAJ_veer_savarkar"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "P. Krishna Pillai"
+	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
+	picture = "GFX_RAJ_krishna_pillai"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Chintaman Dwarakanath Deshmukh"
+	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
+	picture = "GFX_RAJ_pattabhi_sitaramayya"
+	expire = "1965.1.1"
+	ideology = Liberal
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Jack Farj Rafael Jacob"
+	portrait_path = "gfx/leaders/RAJ/Generals/Jack Farj Rafael Jacob.dds"
+	traits = { armor_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Inderjit Singh Gill"
+	portrait_path = "gfx/leaders/RAJ/Generals/Inderjit Singh Gill.dds"
+	traits = { hill_fighter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Jagjit Singh Aurora"
+	portrait_path = "gfx/leaders/RAJ/Generals/Jagjit Singh Aurora.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Khem Karan Singh"
+	portrait_path = "gfx/leaders/RAJ/Generals/Khem Karan Singh.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Kunhiraman Palat Candeth"
+	portrait_path = "gfx/leaders/RAJ/Generals/Kunhiraman Palat Candeth.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Om Prakash Malhotra"
+	portrait_path = "gfx/leaders/RAJ/Generals/Om Prakash Malhotra.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Sagat Singh"
+	portrait_path = "gfx/leaders/RAJ/Generals/Sagat Singh.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Sam Manekshaw"
+	portrait_path = "gfx/leaders/RAJ/Generals/Sam Manekshaw.dds"
+	traits = { hill_fighter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Tapishwar Narain Raina"
+	portrait_path = "gfx/leaders/RAJ/Generals/Tapishwar Narain Raina.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Gopal Gurunath Bewoor"
+	portrait_path = "gfx/leaders/RAJ/Generals/Gopal Gurunath Bewoor.dds"
+	traits = { desert_fox }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Herbert Fitzherbert"
+	gfx = "GFX_RAJ_herbert_fitzherbert"
+	traits = { old_guard_navy }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}

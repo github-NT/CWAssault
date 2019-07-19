@@ -1,0 +1,121 @@
+military_appeasement = {
+
+	appeasement_test = {
+
+		available = {
+			original_tag = CZE
+		}
+		
+		cost = 50
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			original_tag = CZE
+		}
+		fire_only_once = no
+		complete_effect = {
+		}
+	}
+
+}
+
+chl_military_appeasement = {
+
+	limit_military_spending_chl = {
+
+		available = {
+			TAG = CHL
+		}
+		
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			TAG = CHL
+		}
+		
+		days_remove = 30
+		fire_only_once = no
+		complete_effect = {
+		
+		subtract_from_variable = { var = CHL_army_loyalty value = 10}
+		subtract_from_variable = { var = CHL_general_loyalty value = 10}
+		}
+	}
+	
+	host_military_parade_chl = {
+
+		available = {
+			TAG = CHL
+		}
+		
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			TAG = CHL
+		}
+		
+		days_remove = 30
+		fire_only_once = no
+		complete_effect = {
+		
+		add_to_variable  = { var = CHL_army_loyalty value = 3}
+		add_to_variable  = { var = CHL_general_loyalty value = 2}
+		}
+	}
+	
+	purge_current_officers_chl = {
+
+		available = {
+			TAG = CHL
+		}
+		
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			TAG = CHL
+		}
+		
+		days_remove = 30
+		fire_only_once = no
+		complete_effect = {
+		
+		subtract_from_variable  = { var = CHL_army_loyalty value = 10}
+		subtract_from_variable   = { var = CHL_general_loyalty value = 25}
+		}
+	}
+	
+	recruit_new_officers_chl = {
+
+		available = {
+			TAG = CHL
+		}
+		
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			TAG = CHL
+		}
+		
+		days_remove = 30
+		fire_only_once = no
+		complete_effect = {
+		
+		add_to_variable   = { var = CHL_general_loyalty value = 45}
+		}
+	}
+
+}

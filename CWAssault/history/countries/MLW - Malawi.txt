@@ -1,0 +1,47 @@
+﻿capital = 770
+
+oob = "Africa_Minor"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 0
+
+1939.1.1 = {
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+	}
+}
+
+
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1964.1.1"
+	election_frequency = 84
+	elections_allowed = yes
+}
+
+set_popularities = {
+    neutrality = 20
+    fascism = 0
+    communism = 20
+    democratic = 60
+}
+
+
+create_country_leader = {
+	name = "Hastings Banda"
+	desc = "POLITICS_DESC"
+	picture = "gfx/leaders/MWI/Hastings Banda.dds"
+	expire = "1991.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}

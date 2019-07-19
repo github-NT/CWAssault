@@ -1,0 +1,227 @@
+﻿capital = 47
+
+oob = "NATO_minors"
+
+set_research_slots = 3
+
+add_ideas = {
+	limited_conscription
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_recon = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+		pre_dreadnoughts = 1
+		mtg_transport = 1
+	}
+}
+
+set_convoys = 10
+
+1939.1.1 = {
+	
+	set_technology = {
+		tech_support = 1		
+		tech_engineers = 1
+		early_fighter = 1
+		early_bomber = 1
+		CAS1 = 1
+		naval_bomber1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			basic_destroyer = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_light_battery = 1
+			basic_depth_charges = 1
+		}
+	}
+}
+
+
+set_politics = {	
+	ruling_party = fascism
+	last_election = "1946.6.9"
+	election_frequency = 12
+	elections_allowed = no # none after offset 1
+}
+
+set_popularities = {
+    Monarchism = 11
+    democratic = 10
+    neutrality = 12
+    communism = 2
+    fascism = 65
+}
+set_stability = 0.75
+
+create_country_leader = {
+	name = "Georgios Zoitakis"
+	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
+	picture = "gfx/leaders/GRE/Georgios Zoitakis.dds"
+	expire = "1974.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+1973.1.1 = {
+create_country_leader = {
+	name = "Georgios Papadopoulos"
+	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
+	picture = "gfx/leaders/GRE/Georgios Papadopoulos.dds"
+	expire = "1974.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+}
+
+create_country_leader = {
+	name = "Michail Stasinopoulos"
+	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
+	picture = "gfx/leaders/GRE/Michail_Stasinopoulos.dds"
+	expire = "1985.6.19"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Markos Drakos"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = { hill_fighter }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+
+1976.1.1 = {
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1935.6.9"
+	election_frequency = 12
+	elections_allowed = yes # none after offset 1
+}
+
+set_popularities = {
+    democratic = 75
+    neutrality = 12
+    communism = 4
+    fascism = 3
+    Nationalism = 3
+    Liberalism = 3
+}
+create_country_leader = {
+	name = "Konstantinos Tsatsos"
+	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
+	picture = "gfx/leaders/GRE/konstantinos tsatsos.dds"
+	expire = "1980.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+}
+
+create_country_leader = {
+	name = "Constantine II"
+	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
+	picture = "gfx/leaders/GRE/constantine ii.dds"
+	expire = "1980.1.1"
+	ideology = monarchist
+	traits = {
+		#
+	}
+}
+
+#create_country_leader = {
+#	name = "Anne Marie"
+#	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
+#	picture = "gfx/leaders/GRE/.dds"
+#	expire = "1980.1.1"
+#	ideology = monarchist
+#	traits = {
+#		#
+#	}
+#}
+#Available if Constantine is killed
+
+1980.1.1 = {
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1935.6.9"
+	election_frequency = 12
+	elections_allowed = yes # none after offset 1
+}
+
+set_popularities = {
+    democratic = 75
+    neutrality = 12
+    communism = 4
+    fascism = 3
+    Nationalism = 3
+    Liberalism = 3
+}
+create_country_leader = {
+	name = "Konstantinos Karamanlis"
+	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
+	picture = "gfx/leaders/GRE/Karamanlis.dds"
+	expire = "1985.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+}
+}

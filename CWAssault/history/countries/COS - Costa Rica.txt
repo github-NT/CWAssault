@@ -1,0 +1,153 @@
+﻿capital = 316
+
+oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+set_country_flag = monroe_doctrine
+set_war_support = 0.1
+set_convoys = 10
+
+1939.1.1 = {
+	
+	set_technology = {
+		infantry_weapons1 = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+1970.1.1 = {
+set_politics = {	
+	ruling_party = Market_Liberal
+	last_election = "1932.2.14"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    Market_Liberal = 67
+    Socialism = 17
+    Nationalism = 3
+    democratic = 7
+    communism = 6
+}
+
+create_country_leader = {
+	name = "Jose Joaquin Trejos"
+	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
+	picture = "gfx/leaders/COS/jose joaquin trejos.dds"
+	expire = "1965.1.1"
+	ideology = Libertarian
+	traits = {
+		#
+	}
+}
+}
+
+1974.1.1 = {
+	set_politics = {		
+		ruling_party = Liberalism
+		last_election = "1936.2.9"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        Liberalism = 44
+        Market_Liberal = 41
+        Socialism = 5
+        Nationalism = 5
+        communism = 5
+    }
+
+	create_country_leader = {
+		name = "Jose Figueres Ferrer"
+		desc = "POLITICS_LEON_CORTES_CASTRO_DESC"
+		picture = "gfx/leaders/COS/jose figueres ferrer.dds"
+		expire = "1974.6.1"
+		ideology = Liberal
+		traits = {
+			#
+		}
+	}
+}
+
+1982.1.1 = {
+	set_politics = {		
+		ruling_party = Liberalism
+		last_election = "1936.2.9"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        Liberalism = 44
+        Market_Liberal = 41
+        Socialism = 5
+        Nationalism = 5
+        communism = 5
+    }
+
+	create_country_leader = {
+		name = "Luis Monge Alvarez"
+		desc = "POLITICS_LEON_CORTES_CASTRO_DESC"
+		picture = "gfx/leaders/COS/Luis_Alberto_Monge.dds"
+		expire = "1986.6.1"
+		ideology = Liberal
+		traits = {
+			#
+		}
+	}
+}
+
+1986.1.1 = {
+	set_politics = {		
+		ruling_party = Liberalism
+		last_election = "1936.2.9"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        Liberalism = 44
+        Market_Liberal = 41
+        Socialism = 5
+        Nationalism = 5
+        communism = 5
+    }
+
+	create_country_leader = {
+		name = "Oscar Arias Sanchez"
+		desc = "POLITICS_LEON_CORTES_CASTRO_DESC"
+		picture = "gfx/leaders/COS/Óscar Arias Sánchez.dds"
+		expire = "1974.6.1"
+		ideology = Liberal
+		traits = {
+			#
+		}
+	}
+}

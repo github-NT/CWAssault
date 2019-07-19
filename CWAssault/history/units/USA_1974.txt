@@ -1,0 +1,846 @@
+﻿division_template = {
+	name = "Motorized Infantry Division"		
+									
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }	
+		medium_sp_anti_air_brigade = { x = 3 y = 0 }
+		medium_sp_artillery_brigade = { x = 3 y = 1 }
+		medium_sp_artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 } 
+	}
+}
+
+division_template = {
+	name = "Mechanized Infantry Division"		
+									
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		light_mechanized = { x = 2 y = 0 }
+		light_mechanized = { x = 2 y = 1 }
+		light_mechanized = { x = 2 y = 2 }
+		medium_sp_artillery_brigade = { x = 3 y = 0 }
+		medium_sp_anti_air_brigade = { x = 4 y = 0 }
+		medium_sp_anti_air_brigade = { x = 4 y = 1 }
+		light_armor = { x = 5 y = 0 }
+		light_armor = { x = 5 y = 1 }
+		light_armor = { x = 5 y = 2 }	
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 } 
+	}
+}
+
+division_template = {
+	name = "Armor Brigade" 				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }	
+		medium_armor = { x = 0 y = 2 }	
+		medium_armor = { x = 0 y = 3 }	
+		mechanized = { x = 1 y = 0 }		
+		mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 2 y = 0 }
+		light_mechanized = { x = 2 y = 1 }		
+	}
+	support = {
+		anti_tank = { x = 0 y = 0 } 			
+		artillery = { x = 0 y = 1 } 
+		anti_air = { x = 0 y = 2 } 	
+	}
+}
+
+division_template = {
+	name = "Armor Division" 				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }	
+		medium_armor = { x = 0 y = 2 }	
+		medium_armor = { x = 0 y = 3 }	
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }		
+		mechanized = { x = 2 y = 0 }		
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }			
+		artillery_brigade = { x = 3 y = 0 }		
+		medium_sp_anti_air_brigade = { x = 3 y = 1 }
+		medium_sp_artillery_brigade = { x = 3 y = 2 }			
+	}
+	support = {
+		recon = { x = 0 y = 0 } 			
+		artillery = { x = 0 y = 1 } 
+		anti_air = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }		
+	}
+}
+
+division_template = {
+	name = "Paratrooper Division" 				
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }	
+		paratrooper = { x = 0 y = 2 }	
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }		
+		paratrooper = { x = 2 y = 0 }		
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }						
+	}
+	support = {
+		recon = { x = 0 y = 0 } 			
+		artillery = { x = 0 y = 1 } 
+		anti_air = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }		
+	}
+}
+
+division_template = {
+	name = "Paratrooper Brigade" 				
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }	
+		paratrooper = { x = 0 y = 2 }						
+	}
+	support = {
+		recon = { x = 0 y = 0 } 			
+		anti_tank = { x = 0 y = 1 }		
+	}
+}
+
+division_template = {
+	name = "National Guard"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }	
+		motorized = { x = 1 y = 0 }	
+		motorized = { x = 1 y = 1 }	
+		motorized = { x = 1 y = 2 }	
+	}
+	support = {		
+		engineer = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 } 		
+	}
+}
+division_template = {
+	name = "USMC Division" 		# 1st, 2nd Marine Brigades, precursors to 1st, 2nd USMC Divisions
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 0 y = 4 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 }   
+	}
+	priority = 2
+}
+###### OOB ######
+units = {
+	### MAIN Forces ###
+	division = {			
+		name = "1st Infantry Division"
+		location = 6984
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+
+	}	
+	
+	division = {			
+		name = "2nd Infantry Division"
+		location = 7083
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+
+	}	
+	
+	division = {			
+		name = "3rd Infantry Division"
+		location = 6984
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+
+	}
+	
+	division = {			
+		name = "86th Infantry Division"
+		location = 9779
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+
+	}	
+	
+	division = {			
+		name = "51st Infantry Division"
+		location = 9808
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+
+	}	
+	
+	division = {			
+		name = "91st Infantry Division"
+		location = 6769
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+
+	}
+	
+		division = {			
+		name = "25th Infantry Division"
+		location = 6710
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+
+	}	
+	
+	division = {			
+		name = "26th Infantry Division"
+		location = 6737
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+
+	}	
+	
+	division = {			
+		name = "22nd Infantry Division"
+		location = 1770
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+
+	}
+	
+	division = {			
+		name = "1st Armor Brigade"
+		location = 10676
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+
+	}
+	
+	division = {			
+		name = "2nd Armor Brigade"
+		location = 3715
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+
+	}
+	
+	division = {			
+		name = "52nd Armor Brigade"
+		location = 6984
+		division_template = "Armor Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+
+	}
+	
+	division = {			
+		name = "11th Armor Brigade"
+		location = 9673
+		division_template = "Armor Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+
+	}
+	
+	division = {			
+		name = "1st USMC Division"
+		location = 6984
+		division_template = "USMC Division"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.9
+
+	}
+	
+	division = {			
+		name = "2d USMC Division"
+		location = 6984
+		division_template = "USMC Division"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.9
+
+	}
+	
+	division = {			
+		name = "1st National Guard"
+		location = 12782
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "2nd National Guard"
+		location = 10337
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "3rd National Guard"
+		location = 3677
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "4th National Guard"
+		location = 4736
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "67th National Guard"
+		location = 1621
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "45th National Guard"
+		location = 6713
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "99th National Guard"
+		location = 6696
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "225th National Guard"
+		location = 9822
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "278th Infantry Division"
+		location = 7125
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "91st Infantry Division"
+		location = 7125
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "88th Infantry Division"
+		location = 7204
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "72nd Infantry Division"
+		location = 7204
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "85th Infantry Division"
+		location = 7836
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "121st Infantry Division"
+		location = 3834
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "76th Infantry Division"
+		location = 9697
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "4th Infantry Division"
+		location = 4347
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "19th Infantry Division"
+		location = 1815
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "312nd Infantry Division"
+		location = 3613
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "42nd Infantry Division"
+		location = 1875
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "28th Infantry Division"
+		location = 1866
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "25th Infantry Division"
+		location = 10595
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {			
+		name = "228th Infantry Division"
+		location = 4871
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+
+	division = {			
+		name = "214th Infantry Division"
+		location = 3513
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "77th Infantry Division"
+		location = 12573
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "72nd Infantry Division"
+		location = 6855
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "71st Infantry Division"
+		location = 1436
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "28th Infantry Division"
+		location = 3897
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "93rd Infantry Division"
+		location = 3957
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "85th Infantry Division"
+		location = 10343
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "27th Infantry Division"
+		location = 7045
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "40th Infantry Division"
+		location = 10468
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "45th Infantry Division"
+		location = 10465
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "32nd Infantry Division"
+		location = 9949
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "4th Infantry Division"
+		location = 12384
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	############
+	division = {			
+		name = "228th Mechanized Infantry Division"
+		location = 12489
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+
+	division = {			
+		name = "214th Mechanized Infantry Division"
+		location = 1556
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "77th Mechanized Infantry Division"
+		location = 860
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "72nd Mechanized Infantry Division"
+		location = 8070
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "71st Mechanized Infantry Division"
+		location = 7821
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "28th Mechanized Infantry Division"
+		location = 8110
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "93rd Mechanized Infantry Division"
+		location = 7552
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "85th Armored Division"
+		location = 10370
+		division_template = "Armor Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "27th Armored Division"
+		location = 4740
+		division_template = "Armor Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "40th Armored Division"
+		location = 9814
+		division_template = "Armor Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "45th Armored Division"
+		location = 11763
+		division_template = "Armor Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "32nd Armored Division"
+		location = 12735
+		division_template = "Armor Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {			
+		name = "4th Armored Division"
+		location = 7202
+		division_template = "Armor Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+}				
+
+### Air Wings ###
+air_wings = {
+	361 = {															
+		fighter_equipment_1 = { owner = "USA" amount = 192 }				
+		tac_bomber_equipment_1 =  { owner = "USA" amount = 55 }			
+		CAS_equipment_1 =  { owner = "USA" amount = 32 }
+		nav_bomber_equipment_1 = { owner = "USA" amount = 96 }		
+	}
+	
+	369 = {															
+		fighter_equipment_1 = { owner = "USA" amount = 96 }				
+		tac_bomber_equipment_1 =  { owner = "USA" amount = 55 }
+		CAS_equipment_1 =  { owner = "USA" amount = 63 }		
+	}
+	
+	378 = {															
+		fighter_equipment_1 = { owner = "USA" amount = 225 }
+		tac_bomber_equipment_1 =  { owner = "USA" amount = 89 }		
+		strat_bomber_equipment_1 = { owner = "USA" amount = 96 }
+		nav_bomber_equipment_1 = { owner = "USA" amount = 196 }
+	}
+	
+	371 = {															
+		fighter_equipment_1 = { owner = "USA" amount = 25 }							
+		nav_bomber_equipment_1 = { owner = "USA" amount = 43 }
+	}
+	
+	357 = {															
+		fighter_equipment_1 = { owner = "USA" amount = 165 }							
+		nav_bomber_equipment_1 = { owner = "USA" amount = 43 }
+		strat_bomber_equipment_1 = { owner = "USA" amount = 96 }
+		tac_bomber_equipment_1 =  { owner = "USA" amount = 155 }
+	}
+	
+	375 = {															
+		fighter_equipment_1 = { owner = "USA" amount = 165 }							
+	}
+	
+	395 = {															
+		fighter_equipment_0 = { owner = "USA" amount = 65 }							
+	}
+	
+	386 = {															
+		fighter_equipment_1 = { owner = "USA" amount = 165 }							
+		strat_bomber_equipment_1 =  { owner = "USA" amount = 87 }
+	}
+	
+	463 = {															
+		fighter_equipment_1 = { owner = "USA" amount = 178 }							
+		strat_bomber_equipment_1 =  { owner = "USA" amount = 100 }
+	}
+}
+##################
+
+### Starting Production ###
+instant_effect = {
+add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 7000
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = support_equipment_1
+                amount = 2500
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = food_equipment_1
+                amount = 2500
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = unifornm_equipment_0
+                amount = 2500
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = mechanized_equipment_1
+                amount = 300
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = light_tank_equipment_1
+                amount = 100
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = gw_tank_equipment
+                amount = 200
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = motorized_equipment_1
+                amount = 400
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = fighter_equipment_0 
+                amount = 150
+                producer = USA
+	}
+add_equipment_to_stockpile = {
+                type = tac_bomber_equipment_0
+                amount = 50
+                producer = USA
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=844
+	name="STATE_844"
+	manpower = 2163142
+	
+	state_category = large_city
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		add_core_of = KOR
+		add_core_of = DPR
+		victory_points = {
+			7125 20 
+		}
+	}
+
+	provinces={
+		7125
+	}
+}

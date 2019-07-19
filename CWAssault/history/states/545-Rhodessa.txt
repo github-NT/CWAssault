@@ -1,0 +1,33 @@
+state={
+	id=545
+	
+	state_category = metropolis
+	
+	name="STATE_545"
+	resources={
+		steel= 11
+		chromium=35 # was: 64.000
+		tungsten=8 # was: 16.000
+		aluminium=4
+	}
+
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 7
+			arms_factory = 7
+		}
+		victory_points = {
+			10929 1 
+		}
+		add_core_of = ZIM
+		add_core_of = ROD
+	}
+
+	provinces={
+		2216 7842 10929
+	}
+	manpower=1171336
+	buildings_max_level_factor=1.000
+}

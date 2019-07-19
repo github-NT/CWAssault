@@ -1,0 +1,26 @@
+
+state={
+	id=839
+	name="STATE_839" #West Bank
+	manpower = 933142
+	resources={
+
+	}
+	
+	state_category = town
+
+	history={
+		owner = ISR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+	}
+
+	provinces={
+		7107
+	}
+}

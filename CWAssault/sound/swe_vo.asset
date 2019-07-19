@@ -1,0 +1,350 @@
+
+category = 
+{
+ name = "Voices"
+ soundeffects = {
+	SWE_infantry_idle
+	SWE_infantry_neutral_combat
+	SWE_infantry_positive_combat
+	SWE_infantry_retreat
+	SWE_infantry_move_out
+ }
+  compressor = 
+ {
+	enabled = yes
+	pregain = 0.0
+	postgain = 2.0
+	ratio = 10.0
+	threshold = -10.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+
+########## SWE
+
+soundeffect = 
+{
+    name = "SWE_infantry_idle"
+    sounds = {
+		sound = sw_Idle_001
+        sound = sw_Idle_002
+        sound = sw_Idle_003
+        sound = sw_Idle_004
+		sound = sw_Idle_005
+		sound = sw_Idle_006
+		sound = sw_Idle_007
+        sound = sw_Idle_008
+		sound = sw_Idle_009
+		sound = sw_Idle_010
+		sound = sw_Idle_011
+		sound = sw_Idle_012
+		sound = sw_Idle_013
+		sound = sw_Idle_014
+        sound = sw_Idle_015
+		sound = sw_Idle_016
+		sound = sw_Idle_017
+		sound = sw_Idle_018
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "SWE_infantry_neutral_combat"
+    sounds = {
+        sound = sw_Neutral_001
+		sound = sw_Neutral_002
+        sound = sw_Neutral_003
+        sound = sw_Neutral_004
+		sound = sw_Neutral_005
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "SWE_infantry_positive_combat"
+    sounds = {
+        sound = sw_Positive_001
+        sound = sw_Positive_002
+        sound = sw_Positive_003
+        sound = sw_Positive_007
+        sound = sw_Positive_008
+        sound = sw_Positive_012
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "SWE_infantry_retreat"
+    sounds = {
+        sound = sw_Retreat_001
+        sound = sw_Retreat_002
+        sound = sw_Retreat_003
+        sound = sw_Retreat_004
+        sound = sw_Retreat_005
+        sound = sw_Retreat_006
+        sound = sw_Retreat_007
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "SWE_infantry_move_out"
+    sounds = {
+        sound = sw_Idle_004
+		sound = sw_Neutral_002
+		sound = sw_Positive_002
+		sound = sw_Positive_001
+		sound = sw_Positive_003
+		sound = sw_Positive_008
+		sound = sw_Positive_009
+		sound = sw_Positive_010
+		sound = sw_Positive_011
+		sound = sw_Positive_012
+		
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+############## AUDIO ASSETS
+
+################# ITA
+sound = 
+{
+	name = "sw_Idle_001"
+	file = "swe/sw_Idle_001.mp3"
+}
+sound = 
+{
+	name = "sw_Idle_002"
+	file = "swe/sw_Idle_002.mp3"
+}
+sound = 
+{
+	name = "sw_Idle_003"
+	file = "swe/sw_Idle_003.mp3"
+}
+
+sound = 
+{
+	name = "sw_Idle_004"
+	file = "swe/sw_Idle_004.mp3"
+}
+sound = 
+{
+	name = "sw_Idle_005"
+	file = "swe/sw_Idle_005.mp3"
+}
+
+sound = 
+{
+	name = "sw_Idle_006"
+	file = "swe/sw_Idle_006.mp3"
+}
+
+sound = 
+{
+	name = "sw_Idle_007"
+	file = "swe/sw_Idle_007.mp3"
+}
+
+sound = 
+{
+	name = "sw_Idle_008"
+	file = "swe/sw_Idle_008.mp3"
+}
+
+sound = 
+{
+	name = "sw_Idle_009"
+	file = "swe/sw_Idle_009.mp3"
+}
+
+sound = 
+{
+	name = "sw_Idle_010"
+	file = "swe/sw_Idle_010.mp3"
+}
+###
+sound = 
+{
+	name = "sw_Idle_011"
+	file = "swe/sw_Idle_003.mp3"
+}
+
+sound = 
+{
+	name = "sw_Idle_012"
+	file = "swe/sw_Idle_004.mp3"
+}
+sound = 
+{
+	name = "sw_Idle_013"
+	file = "swe/sw_Idle_005.mp3"
+}
+
+sound = 
+{
+	name = "sw_Idle_014"
+	file = "swe/sw_Idle_006.mp3"
+}
+
+sound = 
+{
+	name = "sw_Idle_015"
+	file = "swe/sw_Idle_007.mp3"
+}
+
+sound = 
+{
+	name = "sw_Idle_016"
+	file = "swe/sw_Idle_008.mp3"
+}
+
+sound = 
+{
+	name = "sw_Idle_017"
+	file = "swe/sw_Idle_009.mp3"
+}
+
+sound = 
+{
+	name = "sw_Idle_018"
+	file = "swe/sw_Idle_010.mp3"
+}
+###
+
+sound = 
+{
+	name = "sw_Neutral_001"
+	file = "swe/sw_Neutral_001.mp3"
+}
+sound = 
+{
+	name = "sw_Neutral_002"
+	file = "swe/sw_Neutral_002.mp3"
+}
+sound = 
+{
+	name = "sw_Neutral_003"
+	file = "swe/sw_Neutral_003.mp3"
+}
+sound = 
+{
+	name = "sw_Neutral_004"
+	file = "swe/sw_Neutral_004.mp3"
+}
+sound = 
+{
+	name = "sw_Neutral_005"
+	file = "swe/sw_Neutral_005.mp3"
+}
+
+
+sound = 
+{
+	name = "sw_Positive_001"
+	file = "swe/sw_Positive_001.mp3"
+}
+sound = 
+{
+	name = "sw_Positive_002"
+	file = "swe/sw_Positive_002.mp3"
+}
+sound = 
+{
+	name = "sw_Positive_003"
+	file = "swe/sw_Positive_003.mp3"
+}
+sound = 
+{
+	name = "sw_Positive_007"
+	file = "swe/sw_Positive_007.mp3"
+}
+sound = 
+{
+	name = "sw_Positive_008"
+	file = "swe/sw_Positive_008.mp3"
+}
+
+sound = 
+{
+	name = "sw_Positive_009"
+	file = "swe/sw_Positive_009.mp3"
+}
+
+sound = 
+{
+	name = "sw_Positive_010"
+	file = "swe/sw_Positive_010.mp3"
+}
+
+sound = 
+{
+	name = "sw_Positive_011"
+	file = "swe/sw_Positive_011.mp3"
+}
+
+sound = 
+{
+	name = "sw_Positive_012"
+	file = "swe/sw_Positive_012.mp3"
+}
+
+sound = 
+{
+	name = "sw_Retreat_001"
+	file = "swe/sw_Retreat_001.mp3"
+}
+sound = 
+{
+	name = "sw_Retreat_002"
+	file = "swe/sw_Retreat_002.mp3"
+}
+
+
+sound = 
+{
+	name = "sw_Retreat_003"
+	file = "swe/sw_Retreat_003.mp3"
+}
+sound = 
+{
+	name = "sw_Retreat_004"
+	file = "swe/sw_Retreat_004.mp3"
+}
+sound = 
+{
+	name = "sw_Retreat_005"
+	file = "swe/sw_Retreat_005.mp3"
+}
+sound = 
+{
+	name = "sw_Retreat_006"
+	file = "swe/sw_Retreat_006.mp3"
+}
+sound = 
+{
+	name = "sw_Retreat_007"
+	file = "swe/sw_Retreat_007.mp3"
+}

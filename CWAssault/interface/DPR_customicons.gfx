@@ -1,0 +1,43 @@
+spriteTypes = { 
+##Icon For: 331931
+ SpriteType = { 
+ name = "GFX_5thcongressoftheworkerspartyofkorea" 
+ texturefile = "gfx/interface/goals/GFX_5thcongressoftheworkerspartyofkorea.tga" 
+ }##Icon For: 331910
+ SpriteType = { 
+ name = "GFX_reorganizethekoreanpeoplesairforce" 
+ texturefile = "gfx/interface/goals/GFX_reorganizethekoreanpeoplesairforce.tga" 
+ }##Icon For: 331905
+ SpriteType = { 
+ name = "GFX_pacificnavaldominance" 
+ texturefile = "gfx/interface/goals/GFX_pacificnavaldominance.tga" 
+ }##Icon For: 331895
+ SpriteType = { 
+ name = "GFX_specialoperationforces" 
+ texturefile = "gfx/interface/goals/GFX_specialoperationforces.tga" 
+ }##Icon For: 331891
+ SpriteType = { 
+ name = "GFX_fiveyearplan" 
+ texturefile = "gfx/interface/goals/GFX_fiveyearplan.tga" 
+ }##Icon For: 335684
+ SpriteType = { 
+ name = "GFX_reopennegotiationswiththesouth" 
+ texturefile = "gfx/interface/goals/GFX_reopennegotiationswiththesouth.tga" 
+ }##Icon For: 335685
+ SpriteType = { 
+ name = "GFX_appealtothechinese" 
+ texturefile = "gfx/interface/goals/GFX_appealtothechinese.tga" 
+ }##Icon For: 351849
+ SpriteType = { 
+ name = "GFX_studychinesedoctrine" 
+ texturefile = "gfx/interface/goals/GFX_studychinesedoctrine.tga" 
+ }##Icon For: 351841
+ SpriteType = { 
+ name = "GFX_officerrecruitmentcampaign" 
+ texturefile = "gfx/interface/goals/GFX_officerrecruitmentcampaign.tga" 
+ }##Icon For: 351982
+ SpriteType = { 
+ name = "GFX_asianinfiltrationoperations" 
+ texturefile = "gfx/interface/goals/GFX_asianinfiltrationoperations.tga" 
+ } 
+ }

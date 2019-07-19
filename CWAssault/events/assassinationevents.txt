@@ -1,0 +1,51 @@
+﻿###########################
+# Assassination Events
+###########################
+
+add_namespace = assassinate
+
+# Possibility of Assassinating Kim il Sung
+country_event = {
+	id = assassinate.1
+	title = assassinate.1.t
+	desc = assassinate.1.d
+	picture = GFX_Assassinate_Kim_Il_Sung
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+	option = {
+		name = assassinate.1.a
+		DPR = { country_event = northkorea.1 }
+	}
+	option = {
+		name = assassinate.1.b
+
+	}
+}
+
+# Land Green Berets
+country_event = {
+	id = assassinate.2
+	title = assassinate.2.t
+	desc = assassinate.2.d
+	picture = GFX_Assassinate_Kim_Il_Sung
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+	option = {
+		name = assassinate.2.a
+		DPR = { country_event = northkorea.2 }
+	}
+	option = {
+		name = assassinate.2.b
+
+	}
+}

@@ -1,0 +1,37 @@
+spriteTypes = { 
+ SpriteType = { 
+ name = "GFX_Supreme_Soviet_Menu" 
+ texturefile = "gfx/interface/supreme soviet menu.dds" 
+ }
+ 
+ SpriteType = { 
+ name = "GFX_Supreme_Soviet_KGB_Icon" 
+ texturefile = "gfx/interface/KGB.dds" 
+ } 
+ 
+ SpriteType = { 
+ name = "GFX_Load_Button" 
+ texturefile = "gfx/interface/Load.dds" 
+ }
+ 
+ SpriteType = { 
+ name = "GFX_KGB_Agents" 
+ texturefile = "gfx/interface/KGB_menu.dds" 
+ }
+ 
+  SpriteType = { 
+ name = "GFX_Bezmenov" 
+ texturefile = "gfx/interface/bezmenov button.dds" 
+ }
+ 
+  SpriteType = { 
+ name = "GFX_Levytisky" 
+ texturefile = "gfx/interface/nikita levytisky button.dds" 
+ }
+ 
+  SpriteType = { 
+ name = "GFX_Profkofieva" 
+ texturefile = "gfx/interface/irina button.dds" 
+ }
+ 
+}

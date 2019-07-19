@@ -1,0 +1,474 @@
+﻿capital = 804
+
+oob = "SVT_1980"
+set_stability = 0.8
+set_war_support = 0.7
+
+set_research_slots = 5
+set_stability = 0.5
+set_war_support = 0.8
+# Starting tech
+set_technology = {
+	unifornm_equip1 = 1
+	basic_medium_tank = 1
+	infantry_weapons = 1
+	rocket_artillery = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	transport = 1
+	fleet_in_being = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	basic_light_art = 1 
+	basic_light_spaa = 1 
+	basic_light_td = 1 
+	basic_light_tank = 1 
+	basic_heavy_tank = 1  
+	basic_medium_tank = 1 
+	basic_medium_td = 1
+	basic_medium_art = 1
+	basic_medium_spaa= 1
+	btr_infantry = 1
+	motorized_rocket_unit = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+	}
+}
+
+1939.1.1 = {
+
+	set_technology = {
+		CAS1 = 1
+		basic_heavy_tank = 1 
+		basic_medium_tank = 1 
+		tactical_bomber1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		support_weapons = 1
+		paratroopers = 1
+
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			basic_submarine = 1
+			basic_destroyer = 1
+			basic_heavy_cruiser = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			improved_ship_hull_light = 1
+			improved_ship_hull_submarine = 1
+			basic_ship_hull_cruiser = 1
+		}
+	}
+}
+
+set_autonomy = {
+target = DRA
+autonomous_state = autonomy_socialist_republik
+}
+
+set_convoys = 50
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1968.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    communism = 100
+}
+
+add_ideas = {
+		limited_conscription
+		partial_economic_mobilisation
+}
+
+#create_country_leader = {  #ONLY AVAILABLE THROUGH EVENT #SERIOUSLY WHO THE FUCK IS THIS GUY?
+#	name = "Nikita Levytsky"
+#	desc = "POLITICS_JOSEPH_STALIN_DESC"
+#	picture = "Portrait_Soviet_Joseph_Stalin.dds"
+#	expire = "2001.3.1"
+#	ideology = stalinism
+#	traits = {
+#		
+#	}
+#}
+
+create_country_leader = {
+	name = "Yuri Tukharinov"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/SVT/Yuri Tukharinov.dds"
+	expire = "1982.11.10"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Boris Gromov"
+	portrait_path = "gfx/leaders/SOV/Boris Gromov.dds"
+	traits = { winter_specialist armor_officer media_personality war_hero }
+	skill = 5
+
+	
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Boris Snetkov"
+	portrait_path = "gfx/leaders/SOV/Boris Snetkov.dds"
+	traits = {  armor_officer trait_cautious brilliant_strategist }
+	skill = 4
+	
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Dmitri Ustinov"
+	portrait_path = "gfx/leaders/SOV/Dmitri Ustinov copy.dds"
+	traits = { armor_officer politically_connected }
+	skill = 4
+
+	
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dmitry Yazov"
+		portrait_path = "gfx/leaders/SOV/dmitry-yazov.dds"
+	traits = { trait_cautious career_officer }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ivan Bagramyan"
+		portrait_path = "gfx/leaders/SOV/Ivan Bagramyan.dds"
+	traits = { infantry_officer trait_reckless }
+	skill = 3
+	
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ivan Nikolayevich Banov"
+		portrait_path = "gfx/leaders/SOV/ivan nikolayevich banov.dds"
+	traits = { armor_officer harsh_leader politically_connected }
+	skill = 5
+
+
+	
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Ivan Savin"
+		portrait_path = "gfx/leaders/SOV/Ivan_Savin.dds"
+	traits = { cavalry_officer politically_connected career_officer }
+	skill = 3
+
+
+	
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Pavel Grachev"
+		portrait_path = "gfx/leaders/SOV/Pavel_Grachev.dds"
+	traits = { old_guard politically_connected inflexible_strategist }
+	skill = 1
+
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sergei Shtemenko"
+	portrait_path = "gfx/leaders/SOV/sergei shtemenko.dds"
+	traits = { offensive_doctrine brilliant_strategist career_officer infantry_officer trait_reckless }
+	skill = 4
+
+	
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Sergei Sokolov"
+		portrait_path = "gfx/leaders/SOV/sergei sokolov.dds"
+	traits = { old_guard politically_connected inflexible_strategist }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Valetin Varennikov"
+		portrait_path = "gfx/leaders/SOV/Valetin Varennikov.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vasily Ivanovich Andrianov"
+		portrait_path = "gfx/leaders/SOV/Vasily Andrianov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Matvei Zakharov"
+		portrait_path = "gfx/leaders/SOV/Generals/Matvei Zakharov.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Viktor Kulikov"
+		portrait_path = "gfx/leaders/SOV/Generals/Viktor Kulikov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Nikolai Ogarkov"
+		portrait_path = "gfx/leaders/SOV/Generals/Nikolai Ogarkov.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Sergey Akhromeyev"
+		portrait_path = "gfx/leaders/SOV/Generals/Sergey Akhromeyev.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Mikhail Moiseev"
+		portrait_path = "gfx/leaders/SOV/Generals/Mikhail Moiseev.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vladimir Lobov"
+		portrait_path = "gfx/leaders/SOV/Generals/Vladimir Lobov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Viktor Dubynin"
+		portrait_path = "gfx/leaders/SOV/Generals/Viktor Petrovich Dubynin.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mikhail Kolesnikov"
+		portrait_path = "gfx/leaders/SOV/Generals/Mikhail Kolesnikov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Anatoly Kvashnin"
+		portrait_path = "gfx/leaders/SOV/Generals/Anatoly Kvashnin.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Yuri Baluyevsky"
+		portrait_path = "gfx/leaders/SOV/Valetin Varennikov.dds"
+	traits = { armor_officer }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nikolai Makarov"
+		portrait_path = "gfx/leaders/SOV/Vasily_Ivanovich_Andrianov.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vladimir Zhirinovsky"
+		portrait_path = "gfx/leaders/SOV/Vladimir-Zhirinovsky.dds"
+	traits = { cavalry_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

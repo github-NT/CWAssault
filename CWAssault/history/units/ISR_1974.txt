@@ -1,0 +1,378 @@
+﻿
+
+division_template = {
+	name = "Israeli Defense Force"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 	
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Israeli Light Infantry"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 	
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Israeli Tank Brigade"		
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }		
+		light_armor = { x = 2 y = 1 }		
+		light_armor = { x = 2 y = 2 }
+		light_armor = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 } 
+	}
+}
+
+division_template = {
+	name = "Israeli Tank Division"		
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+	    medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		anti_tank_brigade = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		anti_tank_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }		
+		artillery_brigade = { x = 3 y = 1 }		
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 } 
+	}
+}
+
+division_template = {
+	name = "Motorized Infantry Division"		
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		light_sp_artillery_brigade = { x = 1 y = 3 }
+		light_mechanized = { x = 2 y = 0 }
+		light_mechanized = { x = 2 y = 1 }
+		anti_tank_brigade = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }		
+		artillery_brigade = { x = 3 y = 1 }		
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 } 
+	}
+}
+
+division_template = {
+	name = "Mechanized Infantry Division"		
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	    mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+		light_sp_anti_air_brigade = { x = 1 y = 3 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		light_sp_artillery_brigade = { x = 3 y = 0 }		
+		light_sp_artillery_brigade = { x = 3 y = 1 }		
+		light_sp_artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+		anti_tank = { x = 0 y = 4 } 
+	}
+}
+
+units = {
+	######## LAND OOB ########
+	division = {
+		name = "1st IDF Infantry Division"
+		location = 1086 
+		division_template = "Israeli Defense Force"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = "2nd IDF Infantry Division"
+		location = 1086
+		division_template = "Israeli Defense Force"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3rd IDF Infantry Division"
+		location = 13411 
+		division_template = "Israeli Defense Force"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4th IDF Infantry Division"
+		location = 7107
+		division_template = "Israeli Defense Force"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "5th IDF Infantry Division"
+		location = 1086
+		division_template = "Israeli Defense Force"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = "6th IDF Infantry Division"
+		location = 7176
+		division_template = "Israeli Defense Force"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7th IDF Infantry Division"
+		location = 1015
+		division_template = "Israeli Defense Force"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "8th IDF Infantry Division"
+		location = 1155 
+		division_template = "Israeli Defense Force"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "17th IDF Tank Brigade"
+		location = 1155 
+		division_template = "Israeli Tank Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		name = "14th IDF Tank Brigade"
+		location = 9947 
+		division_template = "Israeli Tank Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "15th IDF Tank Brigade"
+		location = 4088
+		division_template = "Israeli Tank Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "16th IDF Tank Brigade"
+		location = 1065
+		division_template = "Israeli Tank Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "17th IDF Tank Division"
+		location = 9947 
+		division_template = "Israeli Tank Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		name = "14th IDF Tank Division"
+		location = 13411 
+		division_template = "Israeli Tank Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "15th IDF Mechanized Infantry Division"
+		location = 11970
+		division_template = "Mechanized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "16th IDF Motorized Infantry Division"
+		location = 9947 
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "16th IDF Motorized Infantry Division"
+		location = 13411 
+		division_template = "Motorized Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+}
+
+
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ISR"
+		}
+		requested_factories = 3
+		progress = 0.4
+		efficiency = 70
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "ISR"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_mechanized_equipment_1
+			creator = "ISR"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 70
+	}
+	add_equipment_production = {
+		equipment = {
+			type = unifornm_equipment_0
+			creator = "ISR"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 70
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "ISR"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 70
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ISR"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 70
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_equipment_1
+			creator = "ISR"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 70
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = gw_tank_equipment
+			creator = "ISR"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 70
+	}
+}
+
+### Air Wings
+air_wings = {
+	454 = {															
+		fighter_equipment_1 = { owner = "USA" amount = 225 }				
+		tac_bomber_equipment_1 =  { owner = "USA" amount = 216 }			
+		nav_bomber_equipment_1 = { owner = "USA" amount = 96 }
+	}
+}
+#################################

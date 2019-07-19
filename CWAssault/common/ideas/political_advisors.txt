@@ -1,0 +1,143 @@
+ideas = {
+	political_advisor = {
+		generic_Radical_Islamic_Preacher = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = Radical_Islamic_Preacher limit = 1 }
+				}
+			}
+			traits = { Radical_Islamic_Preacher }
+			on_add = {
+				country_event = 
+			}
+			do_effect = {
+				NOT = {
+					has_government = Radical_Islam
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	political_advisor = {
+		generic_Liberal_Reformer = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = Liberal_Reformer limit = 1 }
+				}
+			}
+			traits = { Liberal_Reformer }
+			on_add = {
+			}
+			do_effect = {
+				NOT = {
+					has_government = Liberalism
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	political_advisor = {
+		generic_Nationalist_Demagogue = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = Nationalist_Demagogue limit = 1 }
+				}
+			}
+			traits = { Nationalist_Demagogue }
+			on_add = {
+			}
+			do_effect = {
+				NOT = {
+					has_government = Nationalism
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	political_advisor = {
+		generic_Monarchist_Pretender = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = Monarchist_Pretender limit = 1 }
+				}
+			}
+			traits = { Monarchist_Pretender }
+			on_add = {
+			}
+			do_effect = {
+				NOT = {
+					has_government = Monarchism
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	political_advisor = {
+		generic_Socialist_Crusader = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = Socialist_Crusader limit = 1 }
+				}
+			}
+			traits = { Socialist_Crusader }
+			on_add = {
+			}
+			do_effect = {
+				NOT = {
+					has_government = Socialism
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	political_advisor = {
+		generic_Christian_Tradtionalist = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = Christian_Tradtionalist limit = 1 }
+				}
+			}
+			traits = { Christian_Tradtionalist }
+			on_add = {
+			}
+			do_effect = {
+				NOT = {
+					has_government = Christianity
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	political_advisor = {
+		generic_Free_Market_Defender = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = Free_Market_Defender limit = 1 }
+				}
+			}
+			traits = { Free_Market_Defender }
+			on_add = {
+			}
+			do_effect = {
+				NOT = {
+					has_government = Market_Liberal
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

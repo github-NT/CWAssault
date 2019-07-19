@@ -1,0 +1,875 @@
+﻿###########################
+# ssr Events
+###########################
+
+add_namespace = ssr
+
+# Russian Advisors
+country_event = {
+	id = ssr.1
+	title = ssr.1.t
+	desc = ssr.1.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+
+	option = {
+		name = ssr.1.a
+		add_ideas = Soviet_Advisors
+		}
+}
+
+# Infrastructure Project
+country_event = {
+	id = ssr.2
+	title = ssr.2.t
+	desc = ssr.2.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+
+	option = {
+		name = ssr.2.a
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+}
+
+# Expanded Lend Leases
+country_event = {
+	id = ssr.3
+	title = ssr.3.t
+	desc = ssr.3.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+
+	option = {
+		name = ssr.3.a
+					add_political_power = 50
+					SOV = {
+							army_experience = 5
+						}
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 3600
+							producer = SOV
+						}
+						add_equipment_to_stockpile = {
+							type = medium_tank_equipment
+							amount = 700
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = motorized_equipment_1
+							amount = 1800
+							producer = SOV
+						}
+				} 
+		
+}
+
+# Eastern Resource Excavation
+country_event = {
+	id = ssr.4
+	title = ssr.4.t
+	desc = ssr.4.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+
+	option = {
+		name = ssr.4.a
+					random_owned_state = {
+							limit = {
+									is_core_of = ROOT
+									is_in_home_area = yes
+								}
+							add_resource = {
+									type = steel
+									amount = 6
+								}
+							add_resource = {
+									type = tungsten
+									amount = 6
+								}
+						}
+		}
+}
+
+# Eastern Resource Excavation
+country_event = {
+	id = ssr.5
+	title = ssr.5.t
+	desc = ssr.5.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+
+	option = {
+		name = ssr.5.a
+		add_research_slot = 2
+		add_ideas = Soviet_Academies
+		}
+}
+
+# New Wheat Program
+country_event = {
+	id = ssr.6
+	title = ssr.6.t
+	desc = ssr.6.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+
+	option = {
+		name = ssr.6.a
+		add_ideas = Wheat_Program
+		hidden_effect = {
+		country_event = { days = 200 id = rnews.16 }
+		}
+		}
+}
+
+# Wheat Harvest Failure
+country_event = {
+	id = ssr.7
+	title = ssr.7.t
+	desc = ssr.7.d
+	picture = GFX_Failed_Harvest
+
+	is_triggered_only = yes
+
+	option = {
+		name = ssr.6.a
+		remove_ideas = Wheat_Program
+		add_ideas = Wheat_Failure
+		add_ideas = Shattered_Economy
+		news_event = { days = 1 id = news.364 }
+		}
+}
+
+# Communist Uprising
+country_event = {
+	id = ssr.8
+	title = ssr.8.t
+	desc = ssr.8.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+
+	option = {
+		name = ssr.8.a
+		start_civil_war = { ideology = communism size = 0.6 }
+		}
+}
+
+# Saudi Join Warsaw Pact
+country_event = {
+	id = ssr.9
+	title = ssr.9.t
+	desc = ssr.9.d
+	picture = GFX_Andropov_Funeral
+
+	is_triggered_only = yes
+
+	option = {
+		name = ssr.9.a
+		  SOV = { country_event = soviet.74 }
+		}
+}
+
+# Lithuania Declares Independence
+country_event = {
+	id = ssr.17
+	title = ssr.17.t
+	desc = ssr.17.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+		OR = {
+		date > 1990.3.1
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.17.a
+		end_puppet= LIT
+		remove_from_faction= LIT
+		release = LIT
+		news_event = { id = news.394 }
+		  LIT = {
+		  set_cosmetic_tag = LIT_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = neutrality
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        neutrality = 50
+        democratic = 23
+        Liberalism = 18
+        communism = 9
+    }
+		  }
+		}
+}
+
+# Latvia Declares Independence
+country_event = {
+	id = ssr.18
+	title = ssr.18.t
+	desc = ssr.18.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+		OR = {
+		date > 1990.4.24
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.18.a
+		end_puppet= LAT
+		remove_from_faction= LAT
+		release = LAT
+		news_event = { id = news.395 }
+		  LAT = {
+		  set_cosmetic_tag = LAT_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = democratic
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        democratic = 50
+        neutrality = 23
+        Liberalism = 18
+        communism = 9
+    }
+		  }
+		}
+}
+
+# Estonia Declares Independence
+country_event = {
+	id = ssr.19
+	title = ssr.19.t
+	desc = ssr.19.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+		OR = {
+		date > 1990.8.1
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.19.a
+		end_puppet= EST
+		remove_from_faction= EST
+		release = EST
+		news_event = { id = news.396 }
+		  EST = {
+		  set_cosmetic_tag = EST_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = neutrality
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        neutrality = 50
+        democratic = 23
+        Liberalism = 18
+        communism = 9
+    }
+		  }
+		}
+}
+
+# Belarus Declares Independence
+country_event = {
+	id = ssr.20
+	title = ssr.20.t
+	desc = ssr.20.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+		OR = {
+		date > 1991.8.15
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.20.a
+		end_puppet= BLR
+		remove_from_faction= BLR
+		release = BLR
+		news_event = { id = news.397 }
+		  BLR = {
+		  set_cosmetic_tag = BLR_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = neutrality
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        neutrality = 50
+        democratic = 23
+        Liberalism = 18
+        communism = 9
+    }
+		  }
+		}
+}
+
+# Ukraine Declares Independence
+country_event = {
+	id = ssr.21
+	title = ssr.21.t
+	desc = ssr.21.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+		OR = {
+		date > 1991.8.11
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.21.a
+		end_puppet= UKR
+		remove_from_faction= UKR
+		release = UKR
+		news_event = { id = news.398 }
+		  UKR = {
+		  set_cosmetic_tag = UKR_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = neutrality
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        neutrality = 60
+        democratic = 23
+        Liberalism = 18
+        communism = 9
+    }
+		  }
+		}
+}
+
+# Moldova Declares Independence
+country_event = {
+	id = ssr.22
+	title = ssr.22.t
+	desc = ssr.22.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+				OR = {
+		date > 1991.8.17
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.22.a
+		end_puppet= MOL
+		remove_from_faction= MOL
+		release = MOL
+		news_event = { id = news.399 }
+		  MOL = {
+		  set_cosmetic_tag = MOL_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = neutrality
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        neutrality = 60
+        democratic = 23
+        Liberalism = 18
+        communism = 9
+    }
+		  }
+		}
+}
+
+# Georgia Declares Independence
+country_event = {
+	id = ssr.23
+	title = ssr.23.t
+	desc = ssr.23.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+				OR = {
+		date > 1990.10.18
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.23.a
+		end_puppet= GEO
+		remove_from_faction= GEO
+		release = GEO
+		news_event = { id = news.400 }
+		  GEO = {
+		  set_cosmetic_tag = GEO_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = democratic
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        democratic = 60
+        neutrality = 23
+        Liberalism = 18
+        communism = 9
+    }
+		  }
+		}
+}
+
+# Armenia Declares Independence
+country_event = {
+	id = ssr.24
+	title = ssr.24.t
+	desc = ssr.24.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+				OR = {
+		date > 1991.9.11
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.24.a
+		end_puppet= ARM
+		remove_from_faction= ARM
+		release = ARM
+		news_event = { id = news.401 }
+		  ARM = {
+		  set_cosmetic_tag = ARM_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = Liberalism
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        Liberalism = 60
+        neutrality = 23
+        democratic = 18
+        communism = 9
+    }
+		  }
+		}
+}
+
+# Azerbaijan Declares Independence
+country_event = {
+	id = ssr.25
+	title = ssr.25.t
+	desc = ssr.25.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+				OR = {
+		date > 1991.1.25
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.25.a
+		end_puppet= AZR
+		remove_from_faction= AZR
+		release = AZR
+		news_event = { id = news.402 }
+		  AZR = {
+		  set_cosmetic_tag = AZR_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = neutrality
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        neutrality = 60
+        democratic = 23
+        Liberalism = 18
+        communism = 9
+    }
+		  }
+		}
+}
+
+# Kazakhstan Declares Independence
+country_event = {
+	id = ssr.26
+	title = ssr.26.t
+	desc = ssr.26.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+				OR = {
+		date > 1991.12.1
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.26.a
+		end_puppet= KAZ
+		remove_from_faction= KAZ
+		release = KAZ
+		news_event = { id = news.403 }
+		  KAZ = {
+		  set_cosmetic_tag = KAZ_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = neutrality
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        neutrality = 60
+        democratic = 23
+        Liberalism = 18
+        communism = 9
+    }
+		  }
+		}
+}
+
+# Uzbekistan Declares Independence
+country_event = {
+	id = ssr.27
+	title = ssr.27.t
+	desc = ssr.27.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+				OR = {
+		date > 1991.12.1
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.27.a
+		end_puppet= UZB
+		remove_from_faction= UZB
+		release = UZB
+		news_event = { id = news.404 }
+		  UZB = {
+		  set_cosmetic_tag = UZB_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = neutrality
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        neutrality = 75
+        democratic = 10
+        Liberalism = 5
+        communism = 10
+    }
+		  }
+		}
+}
+
+# Turkmenistan Declares Independence
+country_event = {
+	id = ssr.28
+	title = ssr.28.t
+	desc = ssr.28.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		date > 1991.10.17
+		has_government = communism
+				OR = {
+		date > 1991.10.17
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.28.a
+		end_puppet= TMS
+		remove_from_faction= TMS
+		release = TMS
+		news_event = { id = news.405 }
+		  TMS = {
+		  set_cosmetic_tag = TMS_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = neutrality
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        neutrality = 75
+        democratic = 10
+        Liberalism = 5
+        communism = 10
+    }
+		  }
+		}
+}
+
+# Tajikistan Declares Independence
+country_event = {
+	id = ssr.29
+	title = ssr.29.t
+	desc = ssr.29.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+				OR = {
+		date > 1991.7.29
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.29.a
+		end_puppet= TAJ
+		remove_from_faction= TAJ
+		release = TAJ
+		news_event = { id = news.406 }
+		  TAJ = {
+		  set_cosmetic_tag = TAJ_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = neutrality
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        neutrality = 75
+        democratic = 10
+        Liberalism = 5
+        communism = 10
+    }
+		  }
+		}
+}
+
+# Kyrgyzstan Declares Independence
+country_event = {
+	id = ssr.30
+	title = ssr.30.t
+	desc = ssr.30.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		has_government = communism
+		OR = {
+		date > 1991.7.29
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.30.a
+		end_puppet= KYR
+		remove_from_faction= KYR
+		release = KYR
+		news_event = { id = news.407 }
+		  KYR = {
+		  set_cosmetic_tag = KYR_INDEPENDENT
+		  		set_politics = {		
+		ruling_party = neutrality
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        neutrality = 75
+        democratic = 10
+        Liberalism = 5
+        communism = 10
+    }
+		  }
+		}
+}
+
+# Chechnya Declares Independence
+country_event = {
+	id = ssr.31
+	title = ssr.31.t
+	desc = ssr.31.d
+	picture = GFX_Andropov_Funeral
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SOV
+		date > 1991.10.23
+		has_government = communism
+				OR = {
+		has_global_flag = soviet_civil_war
+		}
+	}
+
+	option = {
+		name = ssr.31.a
+		news_event = { id = news.408 }
+		release= CHE
+		  CHE = {
+		  		set_politics = {		
+		ruling_party = Islamism
+		last_election = "1980.11.8"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        Islamism = 75
+        Radical_Islam = 10
+        democratic = 5
+        communism = 10
+    }
+		  }
+		}
+}

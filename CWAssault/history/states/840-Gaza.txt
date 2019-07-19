@@ -1,0 +1,23 @@
+
+state={
+	id=840
+	name="STATE_840" #Gaza
+	manpower = 1933142
+	
+	state_category = city
+
+	history={
+		owner = ISR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+	}
+
+	provinces={
+		4088
+	}
+}

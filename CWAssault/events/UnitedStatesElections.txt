@@ -1,0 +1,569 @@
+﻿###########################
+# American Events
+###########################
+
+add_namespace = electoral
+
+# Election of 1972
+country_event = {
+    id = electoral.1
+    title = electoral.1.t
+    desc = electoral.1.d
+    picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+    is_triggered_only = no
+	trigger = {
+		tag = USA
+		date > 1972.10.26
+		has_government = democratic
+		has_global_flag = vietnam_war
+	}
+
+    option = {
+        name = electoral.1.a
+            random_list = {
+                6 = { country_event = { id = amerpolitician.1 days = 1 }
+                    modifier = {
+                        add = 100
+                        is_historical_focus_on = yes
+                    }
+					 modifier = {
+                        factor = 2
+						democratic > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						democratic > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						democratic > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						democratic > 0.80
+                    }
+                }
+                4 = { country_event = { id = amerpolitician.2 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					modifier = {
+                        factor = 2
+						Liberalism > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						Liberalism > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						Liberalism > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						Liberalism > 0.80
+                    }
+                }
+                2 = { country_event = { id = amerpolitician.3 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					
+					modifier = {
+                        factor = 2
+						neutrality > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						neutrality > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						neutrality > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						neutrality > 0.80
+                    }
+                }
+                1 = { country_event = { id = amerpolitician.4 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					modifier = {
+                        factor = 2
+						Socialism > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						Socialism > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						Socialism > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						Socialism > 0.80
+                    }
+                }
+				1 = { country_event = { id = amerpolitician.5 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					
+					 modifier = {
+                        factor = 2
+						communism > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						communism > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						communism > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						communism > 0.80
+                    }
+                }
+            }
+
+    }
+}
+
+# Election of 1976
+country_event = {
+    id = electoral.2
+    title = electoral.2.t
+    desc = electoral.2.d
+    picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+    is_triggered_only = no
+	trigger = {
+		tag = USA
+		date > 1976.10.26
+		has_government = democratic
+		has_global_flag = water_gate
+	}
+
+    option = {
+        name = electoral.1.a
+            random_list = {
+                6 = { country_event = { id = amerpolitician.7 days = 1 }
+                    modifier = {
+                        add = 100
+                        is_historical_focus_on = yes
+                    }
+					
+					modifier = {
+                        factor = 2
+						Liberalism > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						Liberalism > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						Liberalism > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						Liberalism > 0.80
+                    }
+                }
+                4 = { country_event = { id = amerpolitician.8 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					
+					modifier = {
+                        factor = 2
+						democratic > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						democratic > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						democratic > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						democratic > 0.80
+                    }
+                }
+                1 = { country_event = { id = amerpolitician.9 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					
+					modifier = {
+                        factor = 2
+						Market_Liberal > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						Market_Liberal > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						Market_Liberal > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						Market_Liberal > 0.80
+                    }
+                }
+                1 = { country_event = { id = amerpolitician.10 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					modifier = {
+                        factor = 2
+						neutrality > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						neutrality > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						neutrality > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						neutrality > 0.80
+                    }
+                }
+				1 = { country_event = { id = amerpolitician.5 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					modifier = {
+                        factor = 2
+						communism > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						communism > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						communism > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						communism > 0.80
+                    }
+                }
+            }
+		set_global_flag = election_1976
+
+    }
+}
+
+# Election of 1980
+country_event = {
+    id = electoral.3
+    title = electoral.3.t
+    desc = electoral.3.d
+    picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+    is_triggered_only = no
+	trigger = {
+		tag = USA
+		date > 1980.10.26
+		has_government = democratic
+		has_global_flag = election_1976
+	}
+
+    option = {
+        name = electoral.1.a
+            random_list = {
+                6 = { country_event = { id = amerpolitician.12 days = 1 }
+                    modifier = {
+                        add = 100
+                        is_historical_focus_on = yes
+                    }
+					modifier = {
+                        factor = 2
+						democratic > 0.20
+                    }
+					modifier = {
+                        factor = 4
+						democratic > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						democratic > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						democratic > 0.80
+                    }
+                }
+                4 = { country_event = { id = amerpolitician.13 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					modifier = {
+                        factor = 2
+						Liberalism > 0.20
+                    }
+					modifier = {
+                        factor = 4
+						Liberalism > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						Liberalism > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						Liberalism > 0.80
+                    }
+                }
+                1 = { country_event = { id = amerpolitician.14 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					modifier = {
+                        factor = 2
+						neutrality > 0.20
+                    }
+					modifier = {
+                        factor = 4
+						neutrality > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						neutrality > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						neutrality > 0.80
+                    }
+                }
+                1 = { country_event = { id = amerpolitician.15 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					modifier = {
+                        factor = 2
+						Market_Liberal > 0.20
+                    }
+					modifier = {
+                        factor = 4
+						Market_Liberal > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						Market_Liberal > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						Market_Liberal > 0.80
+                    }
+                }
+				1 = { country_event = { id = amerpolitician.16 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					 modifier = {
+                        factor = 2
+						Socialism > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						Socialism > 0.40
+                    }
+					modifier = {
+                        factor = 6
+						Socialism > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						Socialism > 0.80
+                    }
+                }
+				1 = { country_event = { id = amerpolitician.5 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					 modifier = {
+                        factor = 2
+						communism > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						communism > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						communism > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						communism > 0.80
+                    }
+                }
+            }
+		set_global_flag = election_1980
+    }
+}
+
+# Election of 1984
+country_event = {
+    id = electoral.4
+    title = electoral.4.t
+    desc = electoral.4.d
+    picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+    is_triggered_only = no
+	trigger = {
+		tag = USA
+		date > 1984.10.26
+		has_government = democratic
+		has_global_flag = election_1980
+	}
+
+    option = {
+        name = electoral.1.a
+            random_list = {
+                7 = { country_event = { id = amerpolitician.12 days = 1 }
+                    modifier = {
+                        add = 100
+                        is_historical_focus_on = yes
+                    }
+					modifier = {
+                        factor = 2
+						democratic > 0.20
+                    }
+					modifier = {
+                        factor = 4
+						democratic > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						democratic > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						democratic > 0.80
+                    }
+                }
+                3 = { country_event = { id = amerpolitician.17 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					modifier = {
+                        factor = 2
+						Liberalism > 0.20
+                    }
+					modifier = {
+                        factor = 4
+						Liberalism > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						Liberalism > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						Liberalism > 0.80
+                    }
+                }
+                1 = { country_event = { id = amerpolitician.18 days = 1 } 
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					modifier = {
+                        factor = 2
+						Market_Liberal > 0.20
+                    }
+					modifier = {
+                        factor = 4
+						Market_Liberal > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						Market_Liberal > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						Market_Liberal > 0.80
+                    }
+                }
+                1 = { country_event = { id = amerpolitician.19 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					modifier = {
+                        factor = 2
+						neutrality > 0.20
+                    }
+					modifier = {
+                        factor = 4
+						neutrality > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						neutrality > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						neutrality > 0.80
+                    }
+                }
+				1 = { country_event = { id = amerpolitician.5 days = 1 }
+                    modifier = {
+                        factor = 0
+                        is_historical_focus_on = yes
+                    }
+					 modifier = {
+                        factor = 2
+						communism > 0.20
+                    }
+					 modifier = {
+                        factor = 4
+						communism > 0.40
+                    }
+					 modifier = {
+                        factor = 6
+						communism > 0.60
+                    }
+					modifier = {
+                        factor = 9
+						communism > 0.80
+                    }
+                }
+            }
+		set_global_flag = election_1984
+    }
+}

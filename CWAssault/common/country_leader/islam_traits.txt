@@ -1,0 +1,102 @@
+leader_traits = {
+	Radical_Islamic_Preacher = {
+		random = no
+		# Boosts Radical_Islam
+		sprite = 13
+		Radical_Islam_drift = 0.1
+	}
+	Liberal_Reformer = {
+		random = no
+		# Boosts Liberalism
+		sprite = 13
+		Liberalism_drift = 0.1
+	}
+	Nationalist_Demagogue = {
+		random = no
+		# Boosts Nationalism
+		sprite = 13
+		Nationalism_drift = 0.1
+	}
+	Monarchist_Pretender = {
+		random = no
+		# Boosts Monarchism
+		sprite = 13
+		Monarchism_drift = 0.1
+	}
+	Socialist_Crusader = {
+		random = no
+		# Boosts Socialism
+		sprite = 13
+		Socialism_drift = 0.1
+	}
+	Christian_Tradtionalist = {
+		random = no
+		# Boosts Christianity
+		sprite = 13
+		Christianity_drift = 0.1
+	}
+	Free_Market_Defender = {
+		random = no
+		# Boosts Market_Liberal
+		sprite = 13
+		Market_Liberal_drift = 0.1
+	}
+	Ideological_Subverter = {
+		random = no
+		# Boosts Market_Liberal
+		sprite = 13
+		communism_drift = 0.1
+		foreign_subversive_activites = -0.50
+	}
+	Satanic_Nationalist = {
+		random = no
+		# Boosts Market_Liberal
+		sprite = 13
+	}
+	Moderate = {
+		random = no
+		# Boosts Market_Liberal
+		sprite = 13
+	}
+	Stalinist = {
+		random = no
+		# Boosts Market_Liberal
+		sprite = 13
+	}
+	Conservative = {
+		random = no
+		# Boosts Market_Liberal
+		sprite = 13
+	}
+	Reformist = {
+		random = no
+		# Boosts Market_Liberal
+		sprite = 13
+	}
+	Reactionary = {
+		random = no
+		# Boosts Market_Liberal
+		sprite = 13
+	}
+	Staunch_Brezhnevite = {
+		random = no
+		# Boosts Market_Liberal
+		sprite = 13
+	}
+	Poor_Health = {
+		random = no
+		# AHHHHHHHHHHH
+		sprite = 13
+		political_power_gain = -0.8
+		justify_war_goal_time = 0.35
+	}
+	
+	Corrupt = {
+		random = no
+		# AHHHHHHHHHHH
+		sprite = 13
+		political_power_gain = -0.8
+		justify_war_goal_time = 0.45
+		stability_factor = -0.25	
+	}
+}

@@ -1,0 +1,223 @@
+﻿###########################
+# French Events
+###########################
+
+add_namespace = frapol
+
+# Valéry Giscard d'Estaing wins
+country_event = {
+	id = frapol.1
+	title = frapol.1.t
+	desc = frapol.1.d
+	picture = GFX_Norway_Camp
+
+	is_triggered_only = yes
+	trigger = {
+	tag = FRA
+	}
+	fire_only_once = yes
+
+	option = {
+		name = frapol.1.a
+	create_country_leader = {
+	name = "Valery Giscard d’Estaing"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "gfx/leaders/FRA/Valery_Giscard_d’Estaing.dds"
+	expire = "1980.1.1"
+	ideology = conservatism
+	traits = {
+		#
+			}
+		}
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1974.5.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 52
+    Socialism = 42
+    Liberalism = 3
+    Nationalism = 1
+    Market_Liberal = 2
+}
+	}
+}
+
+# François Mitterrand wins
+country_event = {
+	id = frapol.2
+	title = frapol.2.t
+	desc = frapol.2.d
+	picture = GFX_Norway_Camp
+
+	is_triggered_only = yes
+	trigger = {
+	tag = FRA
+	}
+	fire_only_once = yes
+
+	option = {
+		name = frapol.3.a
+	create_country_leader = {
+	name = "François Mitterrand"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "gfx/leaders/FRA/Francois-Mitterrand.dds"
+	expire = "1980.1.1"
+	ideology = Socialist
+	traits = {
+		#
+			}
+		}
+		
+	set_politics = {	
+	ruling_party = Socialism
+	last_election = "1974.5.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+	set_popularities = {
+    democratic = 42
+    Socialism = 52
+    Liberalism = 3
+    Nationalism = 1
+    Market_Liberal = 2
+}
+	}
+}
+
+# Jean Royer Wins 
+country_event = {
+	id = frapol.3
+	title = frapol.3.t
+	desc = frapol.3.d
+	picture = GFX_Norway_Camp
+
+	is_triggered_only = yes
+	trigger = {
+	tag = FRA
+	}
+	fire_only_once = yes
+
+	option = {
+		name = frapol.3.a
+	create_country_leader = {
+	name = "Jean Royer"
+	desc = ""
+	picture = "gfx/leaders/FRA/Jean Royer.dds"
+	expire = "1980.1.1"
+	ideology = centrism
+	traits = {
+		#
+			}
+		}
+		
+	set_politics = {	
+	ruling_party = neutrality
+	last_election = "1974.5.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+	set_popularities = {
+    neutrality = 52
+    democratic = 32
+    Socialism = 12
+    Liberalism = 2
+    Nationalism = 1
+    Market_Liberal = 1
+}
+	}
+}
+
+# Arlette Laguiller wins   
+country_event = {
+	id = frapol.4
+	title = frapol.4.t
+	desc = frapol.4.d
+	picture = GFX_Norway_Camp
+
+	is_triggered_only = yes
+	trigger = {
+	tag = FRA
+	}
+	fire_only_once = yes
+
+	option = {
+		name = damansky.4.a
+	create_country_leader = {
+	name = "Arlette Laguiller"
+	desc = ""
+	picture = "gfx/leaders/FRA/Arlette Laguiller.dds"
+	expire = "1980.1.1"
+	ideology = trotskyism
+	traits = {
+		#
+			}
+		}
+		
+	set_politics = {	
+	ruling_party = communism
+	last_election = "1974.5.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+	set_popularities = {
+    communism = 52
+    democratic = 32
+    Socialism = 12
+    Liberalism = 2
+    Nationalism = 1
+    Market_Liberal = 1
+}
+	}
+}
+
+# Bertrand Renouvin wins 
+country_event = {
+	id = frapol.5
+	title = frapol.5.t
+	desc = frapol.5.d
+	picture = GFX_Norway_Camp
+
+	is_triggered_only = yes
+	trigger = {
+	tag = FRA
+	}
+	fire_only_once = yes
+
+	option = {
+		name = frapol.5.a
+	create_country_leader = {
+	name = "Bertrand Renouvin"
+	desc = ""
+	picture = "gfx/leaders/FRA/Bertrand Renouvin.dds"
+	expire = "1980.1.1"
+	ideology = Monarchist
+	traits = {
+		#
+			}
+		}
+		
+	set_politics = {	
+	ruling_party = Monarchism
+	last_election = "1974.5.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+	set_popularities = {
+    Monarchism = 52
+    democratic = 32
+    Socialism = 12
+    Liberalism = 2
+    Nationalism = 1
+    Market_Liberal = 1
+}
+
+	}
+}

@@ -1,0 +1,42 @@
+
+state={
+	id=829
+	name="STATE_829"
+	resources={
+		steel=16
+	}
+
+	history={
+		owner = ROD
+		add_core_of = ROD
+		add_core_of = ZIM
+		add_core_of = ZAP
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		
+		1970.1.1 = {
+		owner = ZIM
+		}
+		
+		victory_points = {
+			13320 5 
+		}
+		victory_points = {
+			13370 2 
+		}
+		victory_points = {
+			13319 10 
+		}
+
+	}
+
+	provinces={
+		13319 13321 13322 13327 13328 13329 13320 13331 13330 13369 13370
+	}
+	manpower=1687032
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,100 @@
+﻿###########################
+# East German Events
+###########################
+
+add_namespace = ddr
+
+# Ulbricht Resigns
+country_event = {
+	id = ddr.1
+	title = ddr.1.t
+	desc = ddr.1.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	tag = DDR
+	has_government = communism
+	date >1970.4.23
+	has_country_leader = { ruling_only = yes name = "Walter Ulbricht" }
+	}	
+	
+	option = {
+		name = ddr.1.a
+		create_country_leader = {
+		name = "Erich Honecker"
+		desc = ""
+		picture = "gfx/leaders/DDR/Erich Honecker.dds"
+		expire = "1965.1.1"
+		ideology = leninism
+		traits = {
+			#
+			}
+		}	
+	}
+}
+
+# Ulbricht Dies
+country_event = {
+	id = ddr.1
+	title = ddr.1.t
+	desc = ddr.1.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ddr.1.a
+		
+	}
+}
+
+# West Opens Unification Talks
+country_event = {
+	id = ddr.1
+	title = ddr.1.t
+	desc = ddr.1.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ddr.1.a
+		
+	}
+}
+
+# Communists win In West Germany
+country_event = {
+	id = ddr.1
+	title = ddr.1.t
+	desc = ddr.1.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ddr.1.a
+		
+	}
+}
+
+# NSDAP Back in Power West Germany
+country_event = {
+	id = ddr.1
+	title = ddr.1.t
+	desc = ddr.1.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ddr.1.a
+		
+	}
+}

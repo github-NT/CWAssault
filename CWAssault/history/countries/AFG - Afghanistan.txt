@@ -1,0 +1,121 @@
+﻿capital = 803
+
+oob = "AFG_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	basic_light_tank = 1
+}
+
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	set_technology = {
+		early_fighter = 1
+		CAS1 = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+	}
+}
+
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    neutrality = 65
+    democratic = 10
+    communism = 10
+    Radical_Islam = 15
+}
+
+# Mohammad Hashim Khan (Prime Minister) other potential candidate
+create_country_leader = {
+	name = "Mohammed Daoud Khan"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/AFG/mohammeddaud khan.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mohammed Zahir Shah"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/AFG/Mohammed Zahir Shah.dds"
+	expire = "1965.1.1"
+	ideology = Monarchist
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Bashshar Fakhry Asfour"
+	portrait_path = "gfx/leaders/AFG/generic afghan general.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Mubin Salih Bata"
+	portrait_path = "gfx/leaders/AFG/generic afghan general 3.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Sakhr Na'il Baz"
+	
+	portrait_path = "gfx/leaders/AFG/generic afghan general 2.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Ghulam Haidar Rasuli"
+	
+	portrait_path = "gfx/leaders/AFG/Ghulam Haidar Rasuli.dds"
+	traits = { desert_fox }
+	skill = 2
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}

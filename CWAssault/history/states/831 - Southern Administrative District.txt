@@ -1,0 +1,43 @@
+
+state={
+	id=831
+	name="STATE_831"
+	resources={
+		steel=16
+	}
+
+	history={
+		owner = ROD
+		add_core_of = ROD
+		add_core_of = ZIM
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		
+		1970.1.1 = {
+				ZIM = {
+				set_province_controller = 13335
+			}
+		}
+		
+		victory_points = {
+			13407 3 
+		}	
+		victory_points = {
+			13337 1 
+		}
+		victory_points = {
+			13333 1 
+		}
+
+	}
+
+	provinces={
+		13334 13341 13337 13335 13338 13407 13342 13357 13405 13333
+	}
+	manpower=687032
+	buildings_max_level_factor=1.000
+	state_category=city
+}

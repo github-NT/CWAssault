@@ -1,0 +1,23 @@
+scripted_gui = {	
+	
+	kgb_decisions_menu = {
+		context_type = player
+		
+		window_name = "kgb_container"
+		
+		visible = {
+            TAG = BHU
+			}
+	}	
+
+	kgb_agent_selection_menu = {
+		context_type = player
+		
+		window_name = "kgb_agent_menu"
+		
+		visible = {
+            TAG = BHU
+			}
+		}	
+		
+}

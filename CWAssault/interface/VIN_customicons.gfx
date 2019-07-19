@@ -1,0 +1,7 @@
+spriteTypes = { 
+##Icon For: 697850
+ SpriteType = { 
+ name = "GFX_crackdownoncommunists" 
+ texturefile = "gfx/interface/goals/GFX_crackdownoncommunists.tga" 
+ } 
+ }

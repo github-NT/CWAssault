@@ -1,0 +1,103 @@
+﻿capital = 617
+
+oob = "SIK_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	
+}
+add_ideas = {
+United_China
+Unity_Under_Mao
+}
+1939.1.1 = {
+
+	
+	oob = "SIK_1939"
+	set_technology = {
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+create_country_leader = {
+	name = "long shujin"
+	desc = "POLITICS_SHENG_SHICAI_DESC"
+	picture = "gfx/leaders/SIK/long shujin.dds"
+	expire = "1965.1.1"
+	ideology = Maoist
+	traits = {
+		#
+	}
+}
+
+1968.1.1 = {
+set_politics = {	
+	ruling_party = Maoism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 0
+    fascism = 0
+    Maoism = 100
+}
+}
+
+create_corps_commander = {
+	name = "Chiang Yu-fen"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+1974.1.1 = {
+	set_politics = {		
+		ruling_party = Maoism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+}
+
+    set_popularities = {
+        democratic = 0
+        fascism = 0
+        Maoism = 100
+    }
+	
+	create_country_leader = {
+	name = "Saifuddin Azizi"
+	desc = "POLITICS_SHENG_SHICAI_DESC"
+	picture = "gfx/leaders/SIK/Saifuddin_Azizi Xinjiang.dds"
+	expire = "1965.1.1"
+	ideology = Maoist
+	traits = {
+		#
+	}
+}
+}
