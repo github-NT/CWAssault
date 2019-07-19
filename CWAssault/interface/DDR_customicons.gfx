@@ -1,12 +1,12 @@
 spriteTypes = { 
 ##Icon For: 640527
  SpriteType = { 
- name = "GFX_MWxHvdBg" 
- texturefile = "gfx/interface/goals/GFX_MWxHvdBg.tga" 
+ name = "GFX_mcduJwUh" 
+ texturefile = "gfx/interface/goals/GFX_mcduJwUh.tga" 
  }##Icon For: 640528
  SpriteType = { 
- name = "GFX_KMgnuGlH" 
- texturefile = "gfx/interface/goals/GFX_KMgnuGlH.tga" 
+ name = "GFX_FZlVnQuC" 
+ texturefile = "gfx/interface/goals/GFX_FZlVnQuC.tga" 
  }##Icon For: 640521
  SpriteType = { 
  name = "GFX_reformthewaffenss" 
@@ -37,12 +37,12 @@ spriteTypes = {
  texturefile = "gfx/interface/goals/GFX_reversedenazification.tga" 
  }##Icon For: 640584
  SpriteType = { 
- name = "GFX_xYoEpWQg" 
- texturefile = "gfx/interface/goals/GFX_xYoEpWQg.tga" 
+ name = "GFX_YLACDEnu" 
+ texturefile = "gfx/interface/goals/GFX_YLACDEnu.tga" 
  }##Icon For: 640483
  SpriteType = { 
- name = "GFX_dknxbPcg" 
- texturefile = "gfx/interface/goals/GFX_dknxbPcg.tga" 
+ name = "GFX_AkQqlOzF" 
+ texturefile = "gfx/interface/goals/GFX_AkQqlOzF.tga" 
  }##Icon For: 640482
  SpriteType = { 
  name = "GFX_nationalevolksarmee" 

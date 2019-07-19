@@ -37,7 +37,7 @@ spriteTypes = {
  texturefile = "gfx/interface/goals/GFX_reformthedeutschesheer.tga" 
  }##Icon For: 735872
  SpriteType = { 
- name = "GFX_hmeuWIcs" 
- texturefile = "gfx/interface/goals/GFX_hmeuWIcs.tga" 
+ name = "GFX_MTmuXnyI" 
+ texturefile = "gfx/interface/goals/GFX_MTmuXnyI.tga" 
  } 
  }

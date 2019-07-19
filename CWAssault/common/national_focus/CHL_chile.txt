@@ -1,0 +1,137 @@
+focus_tree = { 
+id = chile
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = CHL 
+} 
+} 
+#Focus for Side with The Military
+focus = { 
+id = CHL_bWRDpsTy
+icon = GFX_focus_generic_military_mission
+x = 14
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Purge Military Dissidents
+focus = { 
+id = CHL_purgemilitarydissidents
+icon = GFX_focus_CZE_german_puppet
+x = 18
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Recruit New Officers
+focus = { 
+id = CHL_recruitnewofficers
+icon = GFX_focus_generic_military_mission
+x = 19
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reform the Military
+focus = { 
+id = CHL_reformthemilitary
+icon = GFX_goal_unknown
+x = 17
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for National Railways
+focus = { 
+id = CHL_nationalrailways
+icon = GFX_goal_generic_construct_infrastructure
+x = 7
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Civilian Industrializaiton
+focus = { 
+id = CHL_civilianindustrializaiton
+icon = GFX_goal_generic_construct_civ_factory
+x = 5
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Diplomatic Missions
+focus = { 
+id = CHL_diplomaticmissions
+icon = GFX_goal_generic_intelligence_exchange
+x = 22
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Natural Resource Excavation
+focus = { 
+id = CHL_naturalresourceexcavation
+icon = GFX_goal_generic_construction2
+x = 3
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Coal Liquidization
+focus = { 
+id = CHL_nLjUlwcq
+icon = GFX_goal_generic_oil_refinery
+x = 2
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

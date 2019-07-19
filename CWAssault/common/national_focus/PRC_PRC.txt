@@ -1,0 +1,347 @@
+focus_tree = { 
+id = PRC
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = PRC 
+} 
+} 
+#Focus for 10th National Congress
+focus = { 
+id = PRC_10thnationalcongress
+icon = GFX_focus_prc_agrarian_socialism
+x = 9
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Nuclear Program Expansion
+focus = { 
+id = PRC_nuclearprogramexpansion
+icon = GFX_focus_wonderweapons
+x = 4
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Special Operations Training
+focus = { 
+id = PRC_specialoperationstraining
+icon = GFX_focus_YUG_ikarus
+x = 39
+y = 4
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reach out To the United States
+focus = { 
+id = PRC_reachouttotheunitedstates
+icon = GFX_focus_chi_mission_to_the_us
+x = 14
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for People's Liberation Army
+focus = { 
+id = PRC_peoplesliberationarmy
+icon = GFX_goal_unknown
+x = 36
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for People's Liberation Navy
+focus = { 
+id = PRC_peoplesliberationnavy
+icon = GFX_goal_unknown
+x = 30
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for People's Liberation Air Force
+focus = { 
+id = PRC_peoplesliberationairforce
+icon = GFX_goal_unknown
+x = 41
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Dry Dock Expansion
+focus = { 
+id = PRC_drydockexpansion
+icon = GFX_goal_generic_build_navy
+x = 27
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Small Arms Development
+focus = { 
+id = PRC_smallarmsdevelopment
+icon = GFX_goal_unknown
+x = 36
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Mass Firearms Production
+focus = { 
+id = PRC_massfirearmsproduction
+icon = GFX_goal_unknown
+x = 35
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Motorization Effort
+focus = { 
+id = PRC_motorizationeffort
+icon = GFX_goal_unknown
+x = 37
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Propaganda Recruits
+focus = { 
+id = PRC_propagandarecruits
+icon = GFX_goal_unknown
+x = 35
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Southern Airfield Expansion
+focus = { 
+id = PRC_southernairfieldexpansion
+icon = GFX_goal_unknown
+x = 40
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reach out To Vietnam
+focus = { 
+id = PRC_reachouttovietnam
+icon = GFX_goal_unknown
+x = 4
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for CAS Development
+focus = { 
+id = PRC_casdevelopment
+icon = GFX_goal_unknown
+x = 41
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Fighter Development
+focus = { 
+id = PRC_fighterdevelopment
+icon = GFX_goal_unknown
+x = 43
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Strategic Bomber
+focus = { 
+id = PRC_strategicbomber
+icon = GFX_goal_unknown
+x = 42
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for National Subsidies
+focus = { 
+id = PRC_nationalsubsidies
+icon = GFX_goal_unknown
+x = 53
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Destroyer Develpoment
+focus = { 
+id = PRC_destroyerdevelpoment
+icon = GFX_goal_unknown
+x = 31
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Maritime Fighter Squadrons
+focus = { 
+id = PRC_maritimefightersquadrons
+icon = GFX_goal_generic_navy_carrier
+x = 28
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for South China Sea Dominance
+focus = { 
+id = PRC_southchinaseadominance
+icon = GFX_goal_unknown
+x = 30
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Helicopter Development
+focus = { 
+id = PRC_helicopterdevelopment
+icon = GFX_goal_unknown
+x = 40
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Submarine Development
+focus = { 
+id = PRC_submarinedevelopment
+icon = GFX_goal_generic_navy_anti_submarine
+x = 29
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Frigate Expansion
+focus = { 
+id = PRC_frigateexpansion
+icon = GFX_focus_generic_cruiser2
+x = 30
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

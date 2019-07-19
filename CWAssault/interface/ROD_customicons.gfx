@@ -9,16 +9,16 @@ spriteTypes = {
  texturefile = "gfx/interface/goals/GFX_precisionbombers.tga" 
  }##Icon For: 816547
  SpriteType = { 
- name = "GFX_jpeDYIwa" 
- texturefile = "gfx/interface/goals/GFX_jpeDYIwa.tga" 
+ name = "GFX_NhtFvPgB" 
+ texturefile = "gfx/interface/goals/GFX_NhtFvPgB.tga" 
  }##Icon For: 816549
  SpriteType = { 
- name = "GFX_bpXwIrtA" 
- texturefile = "gfx/interface/goals/GFX_bpXwIrtA.tga" 
+ name = "GFX_ncXCOSez" 
+ texturefile = "gfx/interface/goals/GFX_ncXCOSez.tga" 
  }##Icon For: 816552
  SpriteType = { 
- name = "GFX_AZQuIPln" 
- texturefile = "gfx/interface/goals/GFX_AZQuIPln.tga" 
+ name = "GFX_JivRbWIZ" 
+ texturefile = "gfx/interface/goals/GFX_JivRbWIZ.tga" 
  }##Icon For: 841101
  SpriteType = { 
  name = "GFX_diplomaticmissiontoportugal" 
@@ -33,8 +33,8 @@ spriteTypes = {
  texturefile = "gfx/interface/goals/GFX_appealtotheun.tga" 
  }##Icon For: 789485
  SpriteType = { 
- name = "GFX_rxIpSQvG" 
- texturefile = "gfx/interface/goals/GFX_rxIpSQvG.tga" 
+ name = "GFX_oSFVhnXj" 
+ texturefile = "gfx/interface/goals/GFX_oSFVhnXj.tga" 
  }##Icon For: 816246
  SpriteType = { 
  name = "GFX_purchasesurplusaircraft" 

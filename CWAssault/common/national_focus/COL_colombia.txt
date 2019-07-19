@@ -1,0 +1,55 @@
+focus_tree = { 
+id = colombia
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = COL 
+} 
+} 
+#Focus for Side with The Military
+focus = { 
+id = COL_sidewiththemilitary
+icon = GFX_focus_generic_military_mission
+x = 13
+y = 0
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = COL_limitmilitaryspending } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Deal with The Cartels
+focus = { 
+id = COL_dealwiththecartels
+icon = GFX_goal_generic_forceful_treaty
+x = 12
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Limit Military Spending
+focus = { 
+id = COL_limitmilitaryspending
+icon = GFX_focus_renounce_the_treaty_of_trianon
+x = 16
+y = 0
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = COL_sidewiththemilitary } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

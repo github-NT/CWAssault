@@ -1,0 +1,95 @@
+focus_tree = { 
+id = south_vietnam
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = VIN 
+} 
+} 
+#Focus for Army of the Republic of Vietnam
+focus = { 
+id = VIN_armyoftherepublicofvietnam
+icon = GFX_goal_unknown
+x = 20
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Crack-Down on Communists
+focus = { 
+id = VIN_crackdownoncommunists
+icon = GFX_crackdownoncommunists
+x = 31
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Jungle Warfare Theory
+focus = { 
+id = VIN_junglewarfaretheory
+icon = GFX_goal_generic_allies_build_infantry
+x = 17
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Request American Aid
+focus = { 
+id = VIN_requestamericanaid
+icon = GFX_focus_chi_mission_to_the_us
+x = 4
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Study American Tanks
+focus = { 
+id = VIN_studyamericantanks
+icon = GFX_goal_continuous_armor_production
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Study British Tanks
+focus = { 
+id = VIN_studybritishtanks
+icon = GFX_goal_generic_army_tanks
+x = 3
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

@@ -1,0 +1,25 @@
+focus_tree = { 
+id = democratic_afghanistan
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = DRA 
+} 
+} 
+#Focus for Oust the Soviets
+focus = { 
+id = DRA_oustthesoviets
+icon = GFX_goal_unknown
+x = 15
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

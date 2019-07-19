@@ -1,0 +1,284 @@
+focus_tree = { 
+id = supreme_soviet
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = SCC 
+} 
+} 
+#Focus for Revenge for Grozny
+focus = { 
+id = SCC_revengeforgrozny
+icon = GFX_revengeforgrozny
+x = 33
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Coercing the Baltics
+focus = { 
+id = SCC_coercingthebaltics
+icon = GFX_goal_generic_occupy_states_ongoing_war
+x = 23
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Proclaim Victory over Yeltsin
+focus = { 
+id = SCC_proclaimvictoryoveryeltsin
+icon = GFX_proclaimvictoryoveryeltsin
+x = 12
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Rebuilding the Nation
+focus = { 
+id = SCC_oMtPJrhH
+icon = GFX_goal_generic_construction2
+x = 8
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Coercing the Caucuses
+focus = { 
+id = SCC_coercingthecaucuses
+icon = GFX_goal_generic_occupy_states_ongoing_war
+x = 23
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SCC_coercingthebaltics } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for 29th Congress of the Soviet Union
+focus = { 
+id = SCC_29thcongressofthesovietunion
+icon = GFX_goal_support_communism
+x = 28
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Twelfth Five Year Plan
+focus = { 
+id = SCC_twelfthfiveyearplan
+icon = GFX_goal_generic_production2
+x = 9
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Rapid Rearmament
+focus = { 
+id = SCC_rapidrearmament
+icon = GFX_focus_generic_tank_production
+x = 16
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reform the Soviet Air-force
+focus = { 
+id = SCC_reformthesovietairforce
+icon = GFX_goal_generic_air_fighter2
+x = 18
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Extensive Recruitment Campaign
+focus = { 
+id = SCC_extensiverecruitmentcampaign
+icon = GFX_focus_generic_military_academy
+x = 3
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reform The Soviet Navy
+focus = { 
+id = SCC_reformthesovietnavy
+icon = GFX_goal_generic_build_navy
+x = 13
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SCC_rapidrearmament } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Dry Dock Expansion II
+focus = { 
+id = SCC_drydockexpansionii
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 9
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SCC_SzEUcFAj } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Purge Defeatists
+focus = { 
+id = SCC_purgedefeatists
+icon = GFX_goal_generic_attack_allies
+x = 12
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SCC_proclaimvictoryoveryeltsin } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Socialism in One Country
+focus = { 
+id = SCC_socialisminonecountry
+icon = GFX_goal_support_communism
+x = 26
+y = 1
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = SCC_reformtheforeigninterventioncommittee } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reform the Foreign Intervention Committee
+focus = { 
+id = SCC_reformtheforeigninterventioncommittee
+icon = GFX_goal_generic_occupy_states_ongoing_war
+x = 24
+y = 1
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = SCC_socialisminonecountry } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Dry Dock Expansion
+focus = { 
+id = SCC_SzEUcFAj
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 10
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SCC_reformthesovietnavy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Destroyer Development
+focus = { 
+id = SCC_juVxeZIv
+icon = GFX_focus_generic_destroyer
+x = 13
+y = 4
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Cruiser Development
+focus = { 
+id = SCC_pCAILNWG
+icon = GFX_focus_generic_cruiser2
+x = 13
+y = 5
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Recover Naval Documents
+focus = { 
+id = SCC_recovernavaldocuments
+icon = GFX_goal_generic_build_navy
+x = 11
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

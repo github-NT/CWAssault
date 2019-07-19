@@ -50,7 +50,7 @@ x = 90
 y = 5
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_ANjqbyfZ focus = SOV_lessonsfromdamansky focus = SOV_rapidmodernizationofthesovietarmy } 
+prerequisite = { focus = SOV_MVpSCXOn focus = SOV_lessonsfromdamansky focus = SOV_rapidmodernizationofthesovietarmy } 
 
  } 
 
@@ -151,7 +151,7 @@ available_if_capitulated = yes
 prerequisite = { focus = SOV_prepareforrevlot } 
 prerequisite = { focus = SOV_ourowninitiative } 
 completion_reward = { 
-
+SOV_civilwarwaring
  } 
 
  } 
@@ -176,7 +176,7 @@ x = 89
 y = 2
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_xXlabCgj } 
+prerequisite = { focus = SOV_nOfexkmD } 
 
  } 
 
@@ -206,7 +206,7 @@ prerequisite = { focus = SOV_sovetskiyevooruzhunnyyesily }
 
 #Focus for Mechanization Effort
 focus = { 
-id = SOV_ANjqbyfZ
+id = SOV_MVpSCXOn
 icon = GFX_goal_generic_build_tank
 x = 88
 y = 3
@@ -225,7 +225,7 @@ x = 87
 y = 2
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_xXlabCgj } 
+prerequisite = { focus = SOV_nOfexkmD } 
 
  } 
 
@@ -242,7 +242,7 @@ available_if_capitulated = yes
 
 #Focus for Combined Arms Offensives
 focus = { 
-id = SOV_xXlabCgj
+id = SOV_nOfexkmD
 icon = GFX_goal_generic_army_tanks
 x = 88
 y = 1
@@ -1454,7 +1454,7 @@ prerequisite = { focus = SOV_easternairdefenses }
 
 #Focus for Air Doctrine Funding
 focus = { 
-id = SOV_PTWnkZFd
+id = SOV_MaKOJmur
 icon = GFX_goal_generic_air_bomber
 x = 81
 y = 3
@@ -1472,7 +1472,7 @@ x = 81
 y = 4
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_PTWnkZFd } 
+prerequisite = { focus = SOV_MaKOJmur } 
 
  } 
 
@@ -1508,7 +1508,7 @@ x = 78
 y = 6
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_expandedairdefenses focus = SOV_OxiXoVbM focus = SOV_fighterdevelopment focus = SOV_airdoctrinefundingii } 
+prerequisite = { focus = SOV_expandedairdefenses focus = SOV_czngmLDO focus = SOV_hudqeSGr focus = SOV_airdoctrinefundingii } 
 
  } 
 
@@ -1573,7 +1573,7 @@ prerequisite = { focus = SOV_smallandflexible focus = SOV_strengthinnumbers }
 
 #Focus for Submarine Development
 focus = { 
-id = SOV_xyatnZsP
+id = SOV_FihJBzHO
 icon = GFX_goal_generic_navy_submarine
 x = 69
 y = 4
@@ -1755,7 +1755,7 @@ x = 71
 y = 5
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_xyatnZsP focus = SOV_frigatedevelopment } 
+prerequisite = { focus = SOV_FihJBzHO focus = SOV_frigatedevelopment } 
 
  } 
 
@@ -1792,7 +1792,7 @@ x = 69
 y = 5
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_xyatnZsP focus = SOV_frigatedevelopment } 
+prerequisite = { focus = SOV_FihJBzHO focus = SOV_frigatedevelopment } 
 
  } 
 
@@ -2436,14 +2436,14 @@ state = 581
 
 #Focus for Fighter Development
 focus = { 
-id = SOV_fighterdevelopment
+id = SOV_hudqeSGr
 icon = GFX_goal_generic_air_fighter2
 x = 79
 y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_earlyflightsimulators } 
-mutually_exclusive = { focus = SOV_OxiXoVbM } 
+mutually_exclusive = { focus = SOV_czngmLDO } 
 ai_will_do = { 
  factor = 1
  } 
@@ -2523,7 +2523,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-
+SOV_demoralization
  } 
 
  } 
@@ -2596,14 +2596,14 @@ add_ideas= Soviet_Advisors
 
 #Focus for CAS Development
 focus = { 
-id = SOV_OxiXoVbM
+id = SOV_czngmLDO
 icon = GFX_goal_generic_secret_weapon
 x = 77
 y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_earlyflightsimulators } 
-mutually_exclusive = { focus = SOV_fighterdevelopment } 
+mutually_exclusive = { focus = SOV_hudqeSGr } 
 ai_will_do = { 
  factor = 1
  } 

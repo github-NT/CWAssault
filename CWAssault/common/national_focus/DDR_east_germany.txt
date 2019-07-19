@@ -1,0 +1,2530 @@
+focus_tree = { 
+id = east_germany
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = DDR 
+} 
+} 
+#Focus for Flexible Navy
+focus = { 
+id = DDR_flexiblenavy
+icon = GFX_focus_generic_destroyer
+x = 52
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_volksmarineexpansion } 
+mutually_exclusive = { focus = DDR_largestnavy } 
+completion_reward = { 
+add_tech_bonus = {
+name = sub_op_bonus
+bonus = 0.5
+uses = 2
+technology = convoy_interdiction_ti
+technology = unrestricted_submarine_warfare
+technology = wolfpacks
+technology = advanced_submarine_warfare
+technology = combined_operations_raiding
+}
+ } 
+
+ } 
+
+#Focus for Largest Navy
+focus = { 
+id = DDR_largestnavy
+icon = GFX_goal_generic_navy_doctrines_tactics
+x = 56
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_volksmarineexpansion } 
+mutually_exclusive = { focus = DDR_flexiblenavy } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = fleet_in_being_bonus
+bonus = 0.5
+uses = 2
+category = fleet_in_being_tree
+}
+
+ } 
+
+ } 
+
+#Focus for People's Submarines
+focus = { 
+id = DDR_peoplessubmarines
+icon = GFX_goal_generic_navy_submarine
+x = 52
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_flexiblenavy focus = DDR_largestnavy } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = ss_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+technology = early_submarine
+technology = basic_submarine
+technology = improved_submarine
+technology = advanced_submarine
+}
+
+ } 
+
+ } 
+
+#Focus for People's Cruisers
+focus = { 
+id = DDR_peoplescruisers
+icon = GFX_focus_generic_cruiser2
+x = 54
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_largestnavy focus = DDR_flexiblenavy } 
+completion_reward = { 
+add_tech_bonus = {
+name = cr_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+technology = improved_light_cruiser
+technology = advanced_light_cruiser
+
+
+}
+ } 
+
+ } 
+
+#Focus for People's Destroyers
+focus = { 
+id = DDR_peoplesdestroyers
+icon = GFX_goal_generic_wolf_pack
+x = 51
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_peoplessubmarines } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = dd_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+technology = early_destroyer
+technology = basic_destroyer
+technology = improved_destroyer
+technology = advanced_destroyer
+}
+
+ } 
+
+ } 
+
+#Focus for Naval Supremacy
+focus = { 
+id = DDR_navalsupremacy
+icon = GFX_goal_generic_navy_battleship
+x = 56
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_peoplescruisers } 
+completion_reward = { 
+
+navy_experience = 25
+add_tech_bonus = {
+name = capital_ships_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+technology = battle_cruiser_2
+technology = early_carrier
+technology = basic_carrier
+technology = improved_carrier
+technology = advanced_carrier
+}
+
+ } 
+
+ } 
+
+#Focus for Focused Research
+focus = { 
+id = DDR_focusedresearch
+icon = GFX_goal_generic_army_doctrines
+x = 43
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_ddrspecialforces } 
+mutually_exclusive = { focus = DDR_variedforces } 
+completion_reward = { 
+
+    army_experience = 50
+
+ } 
+
+ } 
+
+#Focus for Marine Service
+focus = { 
+id = DDR_marineservice
+icon = GFX_goal_generic_build_navy
+x = 45
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_focusedresearch } 
+mutually_exclusive = { focus = DDR_paratroopers } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = marine_tech_bonus
+bonus = 0.5
+uses = 3
+category = marine_tech
+}
+
+ } 
+
+ } 
+
+#Focus for Paratroopers
+focus = { 
+id = DDR_paratroopers
+icon = GFX_goal_generic_air_bomber
+x = 43
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_focusedresearch } 
+mutually_exclusive = { focus = DDR_marineservice } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = para_tech_bonus
+bonus = 0.5
+uses = 3
+category = para_tech
+}
+
+ } 
+
+ } 
+
+#Focus for Helicopter Development
+focus = { 
+id = DDR_irgfDsxj
+icon = GFX_goal_unknown
+x = 48
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_casfocus } 
+prerequisite = { focus = DDR_navalbomberprogram } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Maritime Patrol Squadrons
+focus = { 
+id = DDR_hQPiMsgK
+icon = GFX_focus_generic_destroyer
+x = 53
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_peoplessubmarines focus = DDR_peoplescruisers } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Continue the Focus
+focus = { 
+id = DDR_continuethefocus
+icon = GFX_goal_generic_defence
+x = 44
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_variedforces } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = special_forces_bonus
+bonus = 0.5
+uses = 1
+technology = paratroopers
+technology = paratroopers2
+technology = marines
+technology = marines2
+technology = tech_mountaineers
+technology = tech_mountaineers2
+}
+
+ } 
+
+ } 
+
+#Focus for German Officer Program
+focus = { 
+id = DDR_germanofficerprogram
+icon = GFX_goal_unknown
+x = 37
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_mechanisationeffort } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Luftstreitkräfte der Nationalen Volksarmee
+focus = { 
+id = DDR_luftstreitkrftedernationalenvolksarmee
+icon = GFX_goal_generic_build_airforce
+x = 48
+y = 0
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+
+air_experience = 25
+
+if = {
+limit = {
+capital_scope = {
+NOT = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+}
+}
+random_owned_state = {
+limit = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+add_building_construction = {
+type = air_base
+level = 2
+instant_build = yes
+}
+ROOT = { set_country_flag = aviation_effort_AB }
+}
+}
+if = {
+limit = {
+capital_scope = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+}
+capital_scope = {
+add_building_construction = {
+type = air_base
+level = 2
+instant_build = yes
+}
+ROOT = { set_country_flag = aviation_effort_AB }
+}
+}
+add_tech_bonus = {
+name = air_doc_bonus
+bonus = 0.5
+uses = 1
+category = air_doctrine
+}
+
+ } 
+
+ } 
+
+#Focus for Fighter Focus
+focus = { 
+id = DDR_fighterfocus
+icon = GFX_goal_generic_air_fighter2
+x = 47
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_luftstreitkrftedernationalenvolksarmee } 
+mutually_exclusive = { focus = DDR_bomberfocus } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = fighter_bonus
+bonus = 0.5
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+}
+
+ } 
+
+ } 
+
+#Focus for Bomber Focus
+focus = { 
+id = DDR_bomberfocus
+icon = GFX_goal_generic_air_bomber
+x = 49
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_luftstreitkrftedernationalenvolksarmee } 
+mutually_exclusive = { focus = DDR_fighterfocus } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = bomber_bonus
+bonus = 0.5
+uses = 2
+technology = strategic_bomber1
+technology = strategic_bomber2
+technology = strategic_bomber3
+category = tactical_bomber
+}
+
+ } 
+
+ } 
+
+#Focus for Expand the Air Force
+focus = { 
+id = DDR_expandtheairforce
+icon = GFX_goal_generic_air_doctrine
+x = 48
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_bomberfocus focus = DDR_fighterfocus } 
+completion_reward = { 
+
+air_experience = 25
+if = {
+limit = {
+capital_scope = {
+NOT = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+}
+}
+random_owned_state = {
+limit = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+add_building_construction = {
+type = air_base
+level = 2
+instant_build = yes
+}
+ROOT = { set_country_flag = aviation_effort_2_AB }
+}
+}
+if = {
+limit = {
+capital_scope = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+}
+capital_scope = {
+add_building_construction = {
+type = air_base
+level = 2
+instant_build = yes
+}
+ROOT = { set_country_flag = aviation_effort_2_AB }
+}
+}
+add_tech_bonus = {
+name =  air_doc_bonus
+bonus = 0.5
+uses = 1
+category = air_doctrine
+}
+
+ } 
+
+ } 
+
+#Focus for CAS Focus
+focus = { 
+id = DDR_casfocus
+icon = GFX_goal_generic_CAS
+x = 47
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_expandtheairforce } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = CAS_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+category = cas_bomber
+}
+
+ } 
+
+ } 
+
+#Focus for Ballistic Missile Program
+focus = { 
+id = DDR_ballisticmissileprogram
+icon = GFX_focus_rocketry
+x = 21
+y = 11
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+add_tech_bonus = {
+name = jet_rocket_bonus
+ahead_reduction = 0.5
+uses = 2
+category = rocketry
+category = jet_technology
+}
+ } 
+
+ } 
+
+#Focus for Naval Bomber Program
+focus = { 
+id = DDR_navalbomberprogram
+icon = GFX_goal_generic_air_naval_bomber
+x = 49
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_expandtheairforce } 
+prerequisite = { focus = DDR_flexiblenavy } 
+prerequisite = { focus = DDR_ } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = nav_bomber_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+category = naval_bomber
+}
+
+ } 
+
+ } 
+
+#Focus for Volksmarine Expansion
+focus = { 
+id = DDR_volksmarineexpansion
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 54
+y = 0
+cost = 10
+available_if_capitulated = yes 
+available = { 
+any_state = {
+is_coastal = yes
+is_controlled_by = ROOT
+}
+ } 
+completion_reward = { 
+navy_experience = 25
+if = {
+limit = {
+NOT = {
+any_owned_state = {
+dockyard > 0
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+}
+any_owned_state = {
+is_coastal = yes
+}
+}
+random_owned_state = {
+limit = {
+is_coastal = yes
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+type = dockyard
+level = 3
+instant_build = yes
+}
+}
+set_country_flag = naval_effort_built
+}
+if = {
+limit = {
+NOT = { has_country_flag = naval_effort_built }
+any_owned_state = {
+dockyard > 0
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+}
+random_owned_state = {
+limit = {
+dockyard > 0
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+type = dockyard
+level = 3
+instant_build = yes
+}
+}
+set_country_flag = naval_effort_built
+}
+if = {
+limit = {
+NOT = { has_country_flag = naval_effort_built }
+NOT = {
+any_owned_state = {
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+}
+}
+random_state = {
+limit = {
+controller = { tag = ROOT }
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+type = dockyard
+level = 3
+instant_build = yes
+}
+}
+}
+ } 
+
+ } 
+
+#Focus for Varied Forces
+focus = { 
+id = DDR_variedforces
+icon = GFX_goal_generic_defence
+x = 45
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_ddrspecialforces } 
+mutually_exclusive = { focus = DDR_focusedresearch } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = special_forces_bonus
+bonus = 0.5
+uses = 1
+technology = paratroopers
+technology = paratroopers2
+technology = marines
+technology = marines2
+technology = tech_mountaineers
+technology = tech_mountaineers2
+}
+
+ } 
+
+ } 
+
+#Focus for Artillery Production
+focus = { 
+id = DDR_artilleryproduction
+icon = GFX_goal_generic_army_artillery2
+x = 41
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_pushforguns } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = artillery_bonus
+bonus = 0.5
+uses = 1
+category = artillery
+}
+
+ } 
+
+ } 
+
+#Focus for Soviet Strategies
+focus = { 
+id = DDR_sovietstrategies
+icon = GFX_goal_generic_army_doctrines
+x = 43
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_wardoctrines } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = land_doctrine_bonus
+bonus = 0.5
+uses = 1
+category = land_doctrine
+}
+
+ } 
+
+ } 
+
+#Focus for Support Focus
+focus = { 
+id = DDR_supportfocus
+icon = GFX_goal_generic_small_arms
+x = 45
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_wardoctrines } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = support_tech_bonus
+bonus = 0.5
+uses = 1
+category = support_tech
+}
+
+ } 
+
+ } 
+
+#Focus for DDR Special Forces
+focus = { 
+id = DDR_ddrspecialforces
+icon = GFX_goal_generic_defence
+x = 44
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_supportfocus } 
+prerequisite = { focus = DDR_sovietstrategies } 
+prerequisite = { focus = DDR_ } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = special_forces_bonus
+bonus = 0.5
+uses = 1
+technology = paratroopers
+technology = paratroopers2
+technology = marines
+technology = marines2
+technology = tech_mountaineers
+technology = tech_mountaineers2
+}
+
+ } 
+
+ } 
+
+#Focus for Infantry Company Benefits
+focus = { 
+id = DDR_infantrycompanybenefits
+icon = GFX_goal_generic_military_sphere
+x = 39
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_pushforguns } 
+prerequisite = { focus = DDR_mechanisationeffort } 
+completion_reward = { 
+add_tech_bonus = {
+name = infantry_bonus
+bonus = 0.5
+uses = 1
+category = infantry_weapons
+}
+ } 
+
+ } 
+
+#Focus for Mechanisation Effort
+focus = { 
+id = DDR_mechanisationeffort
+icon = GFX_goal_generic_army_motorized
+x = 38
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_weaponsofwar } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = motorized_bonus
+ahead_reduction = 0.5
+uses = 1
+category = motorized_equipment
+}
+
+ } 
+
+ } 
+
+#Focus for Berlin Motors
+focus = { 
+id = DDR_berlinmotors
+icon = GFX_goal_generic_army_motorized
+x = 39
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_weaponsofwar } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = motorized_bonus
+bonus = 0.75
+technology = motorised_infantry
+}
+
+ } 
+
+ } 
+
+#Focus for Berlin Spring
+focus = { 
+id = DDR_berlinspring
+icon = GFX_goal_generic_demand_territory
+x = 31
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_decentralisetheparty } 
+completion_reward = { 
+
+    DDR = {
+        country_event = { days = 1 id = ddr.34 } 
+    }
+
+ } 
+
+ } 
+
+#Focus for Expand the Army
+focus = { 
+id = DDR_expandthearmy
+icon = GFX_goal_generic_allies_build_infantry
+x = 41
+y = 0
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+army_experience = 20
+ } 
+
+ } 
+
+#Focus for Weapons of War
+focus = { 
+id = DDR_weaponsofwar
+icon = GFX_goal_generic_allies_build_infantry
+x = 39
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_expandthearmy } 
+completion_reward = { 
+
+    add_political_power = -50
+army_experience = 15
+
+ } 
+
+ } 
+
+#Focus for War Doctrines
+focus = { 
+id = DDR_wardoctrines
+icon = GFX_goal_anschluss
+x = 44
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_expandthearmy } 
+completion_reward = { 
+add_political_power = 50
+army_experience = -15
+ } 
+
+ } 
+
+#Focus for Push for Guns
+focus = { 
+id = DDR_pushforguns
+icon = GFX_goal_generic_military_sphere
+x = 40
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_weaponsofwar } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = infantry_weapons_bonus
+bonus = 0.5
+uses = 1
+category = infantry_weapons
+}
+
+ } 
+
+ } 
+
+#Focus for Decentralise the Party
+focus = { 
+id = DDR_decentralisetheparty
+icon = GFX_focus_generic_soviet_politics
+x = 31
+y = 9
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_rewritethecurriculum } 
+prerequisite = { focus = DDR_FZlVnQuC } 
+prerequisite = { focus = DDR_mcduJwUh } 
+prerequisite = { focus = DDR_strengthenthenationaldemocrats } 
+prerequisite = { focus = DDR_weakenthepropagandamachine } 
+prerequisite = { focus = DDR_ } 
+completion_reward = { 
+
+    add_popularity = {
+    ideology = democratic
+    popularity = 0.13
+    }
+add_popularity = {
+    ideology = communism
+    popularity = -0.05
+    }
+add_political_power = -80
+
+ } 
+
+ } 
+
+#Focus for Limit Military Spending
+focus = { 
+id = DDR_mcduJwUh
+icon = GFX_mcduJwUh
+x = 32
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_amendtheconstitution } 
+completion_reward = { 
+add_political_power = -50
+remove_ideas = Warsaw_Pact_Military_Restrictions
+ } 
+
+ } 
+
+#Focus for Liberalization
+focus = { 
+id = DDR_FZlVnQuC
+icon = GFX_FZlVnQuC
+x = 33
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_amendtheconstitution } 
+completion_reward = { 
+every_country = {
+limit = { has_government = democratic }
+add_opinion_modifier = { target = DDR modifier = secret_meetings }
+}
+ } 
+
+ } 
+
+#Focus for Rewrite the Curriculum
+focus = { 
+id = DDR_rewritethecurriculum
+icon = GFX_goal_generic_forceful_treaty
+x = 29
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_amendtheconstitution } 
+completion_reward = { 
+
+    add_political_power = -25
+add_ideas = ddr_idea_revised_curriculum
+
+ } 
+
+ } 
+
+#Focus for Reform the Waffen SS
+focus = { 
+id = DDR_reformthewaffenss
+icon = GFX_reformthewaffenss
+x = 15
+y = 16
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_couppreparations } 
+completion_reward = { 
+set_rule = { can_create_factions = yes }
+ } 
+
+ } 
+
+#Focus for Weaken the Propaganda Machine
+focus = { 
+id = DDR_weakenthepropagandamachine
+icon = GFX_goal_anti_comintern_pact
+x = 31
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_amendtheconstitution } 
+completion_reward = { 
+
+    add_timed_idea = { idea = ddr_idea_weakened_propaganda_machine days = 70 }
+
+ } 
+
+ } 
+
+#Focus for Strengthen the National Democrats
+focus = { 
+id = DDR_strengthenthenationaldemocrats
+icon = GFX_focus_generic_strike_at_democracy2
+x = 30
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_amendtheconstitution } 
+completion_reward = { 
+
+    add_popularity = {
+    ideology = democratic
+    popularity = 0.05
+    }
+add_popularity = {
+    ideology = fascism
+    popularity = 0.03
+    }
+
+ } 
+
+ } 
+
+#Focus for Military Buildup
+focus = { 
+id = DDR_cKuDZEJv
+icon = GFX_goal_generic_construct_mil_factory
+x = 13
+y = 17
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_couppreparations } 
+completion_reward = { 
+add_timed_idea = { idea = ddr_idea_nazi_industry days = 100 }
+ } 
+
+ } 
+
+#Focus for Assassinate the Leadership
+focus = { 
+id = DDR_assassinatetheleadership
+icon = GFX_focus_generic_soviet_politics
+x = 17
+y = 14
+cost = 3
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_oustthestasi } 
+completion_reward = { 
+
+    add_political_power = -350
+kill_country_leader = yes
+DDR = {
+        country_event = { days = 1 id = ddr.20 } 
+    }
+add_ideas = ddr_country_in_chaos
+
+ } 
+
+ } 
+
+#Focus for Coup Preparations
+focus = { 
+id = DDR_couppreparations
+icon = GFX_couppreparations
+x = 15
+y = 15
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_assassinatetheleadership } 
+prerequisite = { focus = DDR_weakenthepoliceforce } 
+prerequisite = { focus = DDR_inciteultranationalism } 
+prerequisite = { focus = DDR_expandmilitaryinfluence } 
+prerequisite = { focus = DDR_destabilisetheparty } 
+bypass = { 
+has_government = fascism
+ } 
+completion_reward = { 
+DDR = {
+        country_event = { days = 1 id = ddr.21 } 
+    }
+ } 
+
+ } 
+
+#Focus for Prepare for Invasion
+focus = { 
+id = DDR_dkFGAIlQ
+icon = GFX_goal_generic_propaganda
+x = 17
+y = 17
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_couppreparations } 
+completion_reward = { 
+DDR = {
+        country_event = { days = 1 id = hitler.1 } 
+    }
+ } 
+
+ } 
+
+#Focus for Weaken the Police Force
+focus = { 
+id = DDR_weakenthepoliceforce
+icon = GFX_goal_anschluss
+x = 13
+y = 14
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_oustthestasi } 
+completion_reward = { 
+
+    add_political_power = -100
+add_timed_idea = { idea = ddr_idea_weakened_police_force days = 90 }
+
+
+ } 
+
+ } 
+
+#Focus for Inner German Border
+focus = { 
+id = DDR_innergermanborder
+icon = GFX_goal_generic_fortify_city
+x = 17
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_destroycapitalistelements } 
+completion_reward = { 
+
+    61 = {
+add_building_construction = {
+type = bunker
+level = 3
+province = 11305
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 3
+province = 9294
+instant_build = yes
+}
+            }
+64 = {
+add_building_construction = {
+type = bunker
+level = 3
+province = 9238
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 3
+province = 3522
+instant_build = yes
+}
+            }
+65 = {
+add_building_construction = {
+type = bunker
+level = 3
+province = 9441
+instant_build = yes
+}
+            }
+60 = {
+add_building_construction = {
+type = bunker
+level = 3
+province = 11468
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 3
+province = 3561
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 3
+province = 3500
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 3
+province = 482
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 3
+province = 9497
+instant_build = yes
+}
+            }
+
+ } 
+
+ } 
+
+#Focus for Oust The Stasi
+focus = { 
+id = DDR_oustthestasi
+icon = GFX_goal_continuous_suppression
+x = 15
+y = 12
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_limitartisticfreedoms } 
+prerequisite = { focus = DDR_innergermanborder } 
+completion_reward = { 
+add_political_power = 1000
+ } 
+
+ } 
+
+#Focus for Destabilise the Party
+focus = { 
+id = DDR_destabilisetheparty
+icon = GFX_goal_generic_political_pressure
+x = 15
+y = 13
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_oustthestasi } 
+completion_reward = { 
+
+    add_political_power = -200
+add_popularity = {
+    ideology = communism
+    popularity = -0.05
+    }
+
+ } 
+
+ } 
+
+#Focus for Expand Military Influence
+focus = { 
+id = DDR_expandmilitaryinfluence
+icon = GFX_expandmilitaryinfluence
+x = 18
+y = 13
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_oustthestasi } 
+completion_reward = { 
+add_political_power = -200
+army_experience = 30
+ } 
+
+ } 
+
+#Focus for Incite Ultranationalism
+focus = { 
+id = DDR_inciteultranationalism
+icon = GFX_inciteultranationalism
+x = 12
+y = 13
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_oustthestasi } 
+completion_reward = { 
+add_political_power = -150
+add_popularity = {
+    ideology = fascism
+    popularity = 0.05
+    }
+add_popularity = {
+    ideology = neutrality
+    popularity = 0.05
+    }
+add_stability = 0.1
+ } 
+
+ } 
+
+#Focus for Reform the VolksArmee
+focus = { 
+id = DDR_reformthevolksarmee
+icon = GFX_reformthevolksarmee
+x = 15
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_legacyofprussia focus = DDR_removereferencestocamps } 
+prerequisite = { focus = DDR_reversedenazification } 
+completion_reward = { 
+remove_ideas = Warsaw_Pact_Military_Restrictions
+ } 
+
+ } 
+
+#Focus for Destroy Capitalist Elements
+focus = { 
+id = DDR_destroycapitalistelements
+icon = GFX_focus_generic_strike_at_democracy3
+x = 15
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_reformthevolksarmee } 
+completion_reward = { 
+
+    add_political_power = -100
+add_popularity = {
+    ideology = democratic
+    popularity = -0.2
+    }
+
+ } 
+
+ } 
+
+#Focus for Limit Artistic Freedoms
+focus = { 
+id = DDR_limitartisticfreedoms
+icon = GFX_goal_generic_forceful_treaty
+x = 13
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_destroycapitalistelements } 
+completion_reward = { 
+remove_ideas = ddr_idea_mass_emigration
+64 = {
+add_building_construction = {
+type = bunker
+level = 3
+province = 9428
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 3
+province = 3499
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 3
+province = 375
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 3
+province = 11444
+instant_build = yes
+}
+            }
+744 = {
+add_building_construction = {
+type = bunker
+level = 3
+province = 11505
+instant_build = yes
+}
+            }
+ } 
+
+ } 
+
+#Focus for Remove References to Camps
+focus = { 
+id = DDR_removereferencestocamps
+icon = GFX_goal_generic_fortify_city
+x = 13
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_appeasethemilitary } 
+completion_reward = { 
+
+    add_popularity = {
+    ideology = fascism
+    popularity = 0.04
+    }
+add_political_power = -30
+add_ideas = idea_revised_history_books
+
+ } 
+
+ } 
+
+#Focus for Legacy of Prussia
+focus = { 
+id = DDR_legacyofprussia
+icon = GFX_legacyofprussia
+x = 17
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_appeasethemilitary } 
+completion_reward = { 
+add_ideas = idea_legacy_of_prussia
+add_political_power = -30
+ } 
+
+ } 
+
+#Focus for Reverse Denazification
+focus = { 
+id = DDR_reversedenazification
+icon = GFX_reversedenazification
+x = 15
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_appeasethemilitary } 
+completion_reward = { 
+add_popularity = {
+    ideology = fascism
+    popularity = 0.04
+    }
+add_political_power = -30
+ } 
+
+ } 
+
+#Focus for Permit Female Recruitment
+focus = { 
+id = DDR_YLACDEnu
+icon = GFX_YLACDEnu
+x = 23
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_nationalevolksarmee } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Socialist Heaven
+focus = { 
+id = DDR_socialistheaven
+icon = GFX_focus_ger_great_red_menace
+x = 23
+y = 11
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+add_political_power = 100
+ } 
+
+ } 
+
+#Focus for Inner German Border
+focus = { 
+id = DDR_SznmVwTh
+icon = GFX_goal_generic_fortify_city
+x = 25
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_nationalevolksarmee } 
+prerequisite = { focus = DDR_crackdownondemocrats } 
+prerequisite = { focus = DDR_crackdownonfascists } 
+prerequisite = { focus = DDR_extendstasifunding } 
+prerequisite = { focus = DDR_promotetheyoungpioneers } 
+prerequisite = { focus = DDR_antiwestpropaganda } 
+prerequisite = { focus = DDR_ } 
+completion_reward = { 
+
+    61 = {
+add_building_construction = {
+type = bunker
+level = 2
+province = 11305
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 2
+province = 9294
+instant_build = yes
+}
+            }
+64 = {
+add_building_construction = {
+type = bunker
+level = 2
+province = 9238
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 2
+province = 3522
+instant_build = yes
+}
+            }
+65 = {
+add_building_construction = {
+type = bunker
+level = 2
+province = 9441
+instant_build = yes
+}
+            }
+60 = {
+add_building_construction = {
+type = bunker
+level = 2
+province = 11468
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 2
+province = 3561
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 2
+province = 3500
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 2
+province = 482
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 2
+province = 9497
+instant_build = yes
+}
+            }
+
+ } 
+
+ } 
+
+#Focus for National Defense Industry
+focus = { 
+id = DDR_AkQqlOzF
+icon = GFX_AkQqlOzF
+x = 21
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_nationalevolksarmee } 
+prerequisite = { focus = DDR_crackdownondemocrats } 
+prerequisite = { focus = DDR_crackdownonfascists } 
+prerequisite = { focus = DDR_extendstasifunding } 
+prerequisite = { focus = DDR_promotetheyoungpioneers } 
+prerequisite = { focus = DDR_antiwestpropaganda } 
+completion_reward = { 
+remove_ideas = ddr_idea_mass_emigration
+64 = {
+add_building_construction = {
+type = bunker
+level = 3
+province = 9428
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 3
+province = 3499
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 3
+province = 375
+instant_build = yes
+}
+add_building_construction = {
+type = bunker
+level = 3
+province = 11444
+instant_build = yes
+}
+            }
+744 = {
+add_building_construction = {
+type = bunker
+level = 3
+province = 11505
+instant_build = yes
+}
+            }
+ } 
+
+ } 
+
+#Focus for Nationale Volksarmee
+focus = { 
+id = DDR_nationalevolksarmee
+icon = GFX_nationalevolksarmee
+x = 23
+y = 8
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_standwithcommunism } 
+completion_reward = { 
+army_experience = 25
+remove_ideas = Warsaw_Pact_Military_Restrictions
+ } 
+
+ } 
+
+#Focus for Crackdown on Democrats
+focus = { 
+id = DDR_crackdownondemocrats
+icon = GFX_goal_anschluss
+x = 25
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_standwithcommunism } 
+completion_reward = { 
+
+    add_popularity = {
+    ideology = democratic
+    popularity = -0.15
+    }
+add_political_power = 50
+
+ } 
+
+ } 
+
+#Focus for Crackdown on Fascists
+focus = { 
+id = DDR_crackdownonfascists
+icon = GFX_focus_generic_anti_fascist_diplomacy
+x = 21
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_standwithcommunism } 
+completion_reward = { 
+
+    add_popularity = {
+    ideology = fascism
+    popularity = -0.1
+    }
+add_political_power = 50
+
+ } 
+
+ } 
+
+#Focus for Extend Stasi Funding
+focus = { 
+id = DDR_extendstasifunding
+icon = GFX_extendstasifunding
+x = 26
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_standwithcommunism } 
+completion_reward = { 
+add_ideas = idea_stasi
+ } 
+
+ } 
+
+#Focus for Promote the Young Pioneers
+focus = { 
+id = DDR_promotetheyoungpioneers
+icon = GFX_promotetheyoungpioneers
+x = 20
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_standwithcommunism } 
+completion_reward = { 
+add_ideas = idea_young_pioneers
+ } 
+
+ } 
+
+#Focus for Anti-West Propaganda
+focus = { 
+id = DDR_antiwestpropaganda
+icon = GFX_focus_generic_strike_at_democracy3
+x = 23
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_standwithcommunism } 
+completion_reward = { 
+
+    add_political_power = 100
+every_country = {
+limit = { has_government = democratic }
+add_opinion_modifier = { target = DDR modifier = anti_west_propaganda }
+}
+
+ } 
+
+ } 
+
+#Focus for Appease the Military
+focus = { 
+id = DDR_appeasethemilitary
+icon = GFX_goal_support_fascism
+x = 15
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_eighthpartycongress } 
+mutually_exclusive = { focus = DDR_eighthpartycongress } 
+mutually_exclusive = { focus = DDR_eighthpartycongress } 
+mutually_exclusive = { focus = DDR_ } 
+completion_reward = { 
+army_experience = 10
+add_popularity = {
+    ideology = fascism
+    popularity = 0.01
+    }
+ } 
+
+ } 
+
+#Focus for Amend the Constitution
+focus = { 
+id = DDR_amendtheconstitution
+icon = GFX_focus_hol_the_foundations_of_defense
+x = 31
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_eighthpartycongress } 
+mutually_exclusive = { focus = DDR_eighthpartycongress } 
+mutually_exclusive = { focus = DDR_eighthpartycongress } 
+mutually_exclusive = { focus = DDR_ } 
+completion_reward = { 
+add_popularity = {
+    ideology = democratic
+    popularity = 0.05
+    }
+add_political_power = -30
+ } 
+
+ } 
+
+#Focus for Stand with Communism
+focus = { 
+id = DDR_standwithcommunism
+icon = GFX_standwithcommunism
+x = 23
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_eighthpartycongress } 
+completion_reward = { 
+SOV = {
+    add_opinion_modifier = { target = DDR modifier = toe_the_line }
+}
+SOV = {
+        country_event = { days = 3 id = ddr.4 } 
+    }
+ } 
+
+ } 
+
+#Focus for Eighth Party Congress
+focus = { 
+id = DDR_eighthpartycongress
+icon = GFX_eighthpartycongress
+x = 23
+y = 2
+cost = 4
+available_if_capitulated = yes 
+mutually_exclusive = { focus = DDR_amendtheconstitution } 
+completion_reward = { 
+retire_country_leader = yes
+create_country_leader = {
+name = "Walter Ulbricht"
+desc = "pol_desc_ulbcricht"
+picture = "Portrait_EastGermany_Walter_Ulbricht.dds"
+ideology = stalinism
+}
+ } 
+
+ } 
+
+#Focus for Investigate Industrial Corruption
+focus = { 
+id = DDR_investigateindustrialcorruption
+icon = GFX_goal_generic_production2
+x = 4
+y = 11
+cost = 
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_appeasethepeople focus = DDR_continuemilitaryindustrialisation } 
+completion_reward = { 
+remove_ideas = ddr_idea_industrial_corruption
+ } 
+
+ } 
+
+#Focus for Coastal Protection
+focus = { 
+id = DDR_coastalprotection
+icon = GFX_focus_generic_coastal_fort
+x = 2
+y = 13
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_northernexpansion } 
+completion_reward = { 
+
+    61 = {
+add_building_construction = {
+type = naval_base
+level = 2
+province = 11305
+instant_build = yes
+}
+            }
+62 = {
+add_building_construction = {
+type = naval_base
+level = 2
+province = 3340
+instant_build = yes
+}
+            }
+62 = {
+add_building_construction = {
+type = naval_base
+level = 2
+province = 9388
+instant_build = yes
+}
+            }
+
+ } 
+
+ } 
+
+#Focus for Northern Airports
+focus = { 
+id = DDR_northernairports
+icon = GFX_goal_generic_build_airforce
+x = 0
+y = 13
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_northernexpansion } 
+completion_reward = { 
+
+    61 = {
+    add_building_construction = {
+    type = air_base
+    level = 3
+    instant_build = yes
+    }
+}
+
+ } 
+
+ } 
+
+#Focus for Berlin Roads
+focus = { 
+id = DDR_berlinroads
+icon = GFX_goal_generic_construct_military
+x = 9
+y = 12
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_developeastberlin } 
+completion_reward = { 
+
+    744 = {
+    add_building_construction = {
+    type = infrastructure
+    level = 3
+    instant_build = yes
+    }
+}
+
+ } 
+
+ } 
+
+#Focus for Northern Expansion
+focus = { 
+id = DDR_northernexpansion
+icon = GFX_goal_generic_construction2
+x = 1
+y = 12
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_regionalinfrastructure } 
+completion_reward = { 
+
+    61 = {
+    add_extra_state_shared_building_slots = 3
+}
+62 = {
+    add_extra_state_shared_building_slots = 3
+}
+
+ } 
+
+ } 
+
+#Focus for Protect Berlin
+focus = { 
+id = DDR_protectberlin
+icon = GFX_goal_generic_construct_military
+x = 7
+y = 12
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_developeastberlin } 
+completion_reward = { 
+
+    744 = {
+    add_building_construction = {
+    type = radar_station
+    level = 1
+    instant_build = yes
+    }
+}
+
+ } 
+
+ } 
+
+#Focus for Develop East Berlin
+focus = { 
+id = DDR_developeastberlin
+icon = GFX_goal_continuous_non_factory_construct
+x = 8
+y = 11
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_appeasethepeople focus = DDR_continuemilitaryindustrialisation } 
+completion_reward = { 
+
+    744 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+    }
+}
+
+ } 
+
+ } 
+
+#Focus for Regional Infrastructure
+focus = { 
+id = DDR_regionalinfrastructure
+icon = GFX_goal_generic_construct_infrastructure
+x = 1
+y = 11
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_appeasethepeople focus = DDR_continuemilitaryindustrialisation } 
+completion_reward = { 
+
+    64 = {
+    add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+    }
+}
+65 = {
+    add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+    }
+}
+60 = {
+    add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+    }
+}
+62 = {
+    add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+    }
+}
+
+ } 
+
+ } 
+
+#Focus for Appease the People
+focus = { 
+id = DDR_appeasethepeople
+icon = GFX_goal_generic_demand_territory
+x = 7
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_promoteprivateagriculture focus = DDR_secondfiveyearplan } 
+mutually_exclusive = { focus = DDR_continuemilitaryindustrialisation } 
+available = { 
+
+    date > 1960
+
+ } 
+completion_reward = { 
+
+    add_ideas = ddr_idea_new_economic_system
+
+ } 
+
+ } 
+
+#Focus for Continue Military Industrialisation
+focus = { 
+id = DDR_continuemilitaryindustrialisation
+icon = GFX_goal_generic_construct_mil_factory
+x = 1
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_promoteprivateagriculture focus = DDR_secondfiveyearplan } 
+mutually_exclusive = { focus = DDR_appeasethepeople } 
+completion_reward = { 
+
+    random_owned_controlled_state = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = arms_factory
+    level = 1
+    instant_build = yes
+    }
+}
+random_owned_controlled_state = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = arms_factory
+    level = 1
+    instant_build = yes
+    }
+}
+random_owned_controlled_state = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = arms_factory
+    level = 1
+    instant_build = yes
+    }
+}
+random_owned_controlled_state = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = arms_factory
+    level = 1
+    instant_build = yes
+    }
+}
+
+ } 
+
+ } 
+
+#Focus for Automatisierung
+focus = { 
+id = DDR_automatisierung
+icon = GFX_goal_tfv_generic_tech_sharing
+x = 7
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_neuerkurs } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = computing_tech_bonus
+bonus = 0.5
+uses = 1
+category = computing_tech
+}
+
+ } 
+
+ } 
+
+#Focus for Second Five Year Plan
+focus = { 
+id = DDR_secondfiveyearplan
+icon = GFX_goal_generic_soviet_construction
+x = 1
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_automatisierung } 
+prerequisite = { focus = DDR_mechanisierung } 
+prerequisite = { focus = DDR_modernisierung } 
+prerequisite = { focus = DDR_ } 
+mutually_exclusive = { focus = DDR_promoteprivateagriculture } 
+available = { 
+
+    date > 1956.1.1
+
+ } 
+completion_reward = { 
+
+    if = {
+    limit = {
+    has_idea = DDR_idea_first_five_year_plan
+}
+remove_ideas = DDR_idea_first_five_year_plan
+}
+add_timed_idea = { idea = DDR_idea_second_five_year_plan days = 1825 }
+
+ } 
+
+ } 
+
+#Focus for Promote Private Agriculture
+focus = { 
+id = DDR_promoteprivateagriculture
+icon = GFX_focus_generic_diplomatic_treaty
+x = 7
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_automatisierung focus = DDR_ } 
+mutually_exclusive = { focus = DDR_secondfiveyearplan } 
+completion_reward = { 
+
+    add_ideas = ddr_idea_expanded_private_agriculture
+
+ } 
+
+ } 
+
+#Focus for Mechanisierung
+focus = { 
+id = DDR_mechanisierung
+icon = GFX_goal_generic_wolf_pack
+x = 4
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_neuerkurs } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = electronics_bonus
+bonus = 0.5
+uses = 1
+category = electronics
+}
+
+ } 
+
+ } 
+
+#Focus for Modernisierung
+focus = { 
+id = DDR_modernisierung
+icon = GFX_focus_generic_socialist_science
+x = 1
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_neuerkurs } 
+completion_reward = { 
+
+    add_tech_bonus = {
+name = construction_tech_bonus
+bonus = 0.5
+uses = 1
+category = construction_tech
+}
+
+ } 
+
+ } 
+
+#Focus for Central Industry
+focus = { 
+id = DDR_centralindustry
+icon = GFX_goal_generic_construct_civilian
+x = 7
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_UAbXHmFL focus = DDR_ZdtUliRE } 
+completion_reward = { 
+
+    64 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = arms_factory
+    level = 2
+    instant_build = yes
+    }
+}
+
+ } 
+
+ } 
+
+#Focus for Neuer Kurs
+focus = { 
+id = DDR_neuerkurs
+icon = GFX_focus_generic_support_the_left_right
+x = 4
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_centralindustry } 
+prerequisite = { focus = DDR_southernindustry } 
+prerequisite = { focus = DDR_coastalindustry } 
+prerequisite = { focus = DDR_ } 
+completion_reward = { 
+
+    add_stability = 0.1
+add_popularity = {
+    ideology = communism
+    popularity = 0.05
+    }
+64 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+    }
+}
+65 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+    }
+}
+62 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+    }
+}
+hidden_effect = {
+        DDR = {
+            country_event = { days = 30 id = ddr.1 } 
+        }
+    }
+
+
+ } 
+
+ } 
+
+#Focus for Southern Industry
+focus = { 
+id = DDR_southernindustry
+icon = GFX_goal_generic_construct_civilian
+x = 1
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_UAbXHmFL focus = DDR_ZdtUliRE } 
+completion_reward = { 
+
+    60 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = arms_factory
+    level = 1
+    instant_build = yes
+    }
+}
+65 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = arms_factory
+    level = 1
+    instant_build = yes
+    }
+}
+
+ } 
+
+ } 
+
+#Focus for Civilian Industry
+focus = { 
+id = DDR_ZdtUliRE
+icon = GFX_goal_generic_construct_civ_factory
+x = 1
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_firstfiveyearplan } 
+completion_reward = { 
+
+    random_owned_controlled_state = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+    }
+}
+
+ } 
+
+ } 
+
+#Focus for Military Industry
+focus = { 
+id = DDR_UAbXHmFL
+icon = GFX_goal_generic_construct_mil_factory
+x = 7
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_firstfiveyearplan } 
+completion_reward = { 
+
+    random_owned_controlled_state = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = arms_factory
+    level = 2
+    instant_build = yes
+    }
+}
+
+ } 
+
+ } 
+
+#Focus for Coastal Industry
+focus = { 
+id = DDR_coastalindustry
+icon = GFX_goal_generic_construct_civilian
+x = 4
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_UAbXHmFL focus = DDR_ZdtUliRE } 
+completion_reward = { 
+
+    61 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = arms_factory
+    level = 1
+    instant_build = yes
+    }
+}
+62 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = arms_factory
+    level = 1
+    instant_build = yes
+    }
+}
+
+ } 
+
+ } 
+
+#Focus for First Five Year Plan
+focus = { 
+id = DDR_firstfiveyearplan
+icon = GFX_goal_generic_soviet_construction
+x = 4
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_prepareforanotherfiveyearplan } 
+prerequisite = { focus = DDR_volkseigenerbetrieb } 
+completion_reward = { 
+add_timed_idea = { idea = DDR_idea_first_five_year_plan days = 1825 }
+ } 
+
+ } 
+
+#Focus for Prepare for Another Five Year Plan
+focus = { 
+id = DDR_prepareforanotherfiveyearplan
+icon = GFX_goal_generic_soviet_construction
+x = 2
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_continueagrarianreforms } 
+completion_reward = { 
+random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 2
+}
+random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 2
+}
+random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 2
+}
+ } 
+
+ } 
+
+#Focus for Continue Agrarian Reforms
+focus = { 
+id = DDR_continueagrarianreforms
+icon = GFX_focus_generic_diplomatic_treaty
+x = 4
+y = 1
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+
+add_timed_idea = { idea = ddr_idea_agrarian_reform days = 200 }
+
+ } 
+
+ } 
+
+#Focus for Volkseigener Betrieb
+focus = { 
+id = DDR_volkseigenerbetrieb
+icon = GFX_focus_generic_soviet_politics
+x = 6
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_continueagrarianreforms } 
+completion_reward = { 
+add_ideas = idea_peoples_enterprises
+ } 
+
+ } 
+
+#Focus for Kampfgruppen der Arbeiterklasse
+focus = { 
+id = DDR_kampfgruppenderarbeiterklasse
+icon = GFX_kampfgruppenderarbeiterklasse
+x = 23
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DDR_promotetheyoungpioneers } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

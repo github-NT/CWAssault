@@ -27,5 +27,21 @@ spriteTypes = {
  SpriteType = { 
  name = "GFX_muncapatriotica" 
  texturefile = "gfx/interface/goals/GFX_muncapatriotica.tga" 
+ }##Icon For: 1056659
+ SpriteType = { 
+ name = "GFX_reducemilitaryspending" 
+ texturefile = "gfx/interface/goals/GFX_reducemilitaryspending.tga" 
+ }##Icon For: 1056656
+ SpriteType = { 
+ name = "GFX_northkoreanstatevisit" 
+ texturefile = "gfx/interface/goals/GFX_northkoreanstatevisit.tga" 
+ }##Icon For: 1059562
+ SpriteType = { 
+ name = "GFX_palaceoftheparliament" 
+ texturefile = "gfx/interface/goals/GFX_palaceoftheparliament.tga" 
+ }##Icon For: 1059561
+ SpriteType = { 
+ name = "GFX_romanianeconomy" 
+ texturefile = "gfx/interface/goals/GFX_romanianeconomy.tga" 
  } 
  }

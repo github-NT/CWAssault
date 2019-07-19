@@ -1,0 +1,603 @@
+focus_tree = { 
+id = rhodesia
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = ROD 
+} 
+} 
+#Focus for Rhodesian Security Forces
+focus = { 
+id = ROD_rhodesiansecurityforces
+icon = GFX_rhodesiansecurityforces
+x = 4
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for New Rhodesian Frontier
+focus = { 
+id = ROD_newrhodesianfrontier
+icon = GFX_goal_unknown
+x = 35
+y = 7
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Secret South African Summits
+focus = { 
+id = ROD_secretsouthafricansummits
+icon = GFX_goal_tripartite_pact
+x = 24
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Coerce Angola
+focus = { 
+id = ROD_coerceangola
+icon = GFX_goal_unknown
+x = 22
+y = 5
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Precision Bombers
+focus = { 
+id = ROD_precisionbombers
+icon = GFX_precisionbombers
+x = 18
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_purchasesurplusaircraft focus = ROD_developlocalaircraftdesigns } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for National Conscription Law
+focus = { 
+id = ROD_nationalconscriptionlaw
+icon = GFX_goal_unknown
+x = 7
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_expandthepoliceforce } 
+mutually_exclusive = { focus = ROD_approveblackconscription } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Develop Local Aircraft Designs
+focus = { 
+id = ROD_developlocalaircraftdesigns
+icon = GFX_goal_unknown
+x = 17
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_rhodesianairforce } 
+mutually_exclusive = { focus = ROD_purchasesurplusaircraft } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for CAS Development
+focus = { 
+id = ROD_NhtFvPgB
+icon = GFX_NhtFvPgB
+x = 14
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_purchasesurplusaircraft focus = ROD_developlocalaircraftdesigns } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Resource Excavation
+focus = { 
+id = ROD_FIewPXhu
+icon = GFX_goal_generic_construction2
+x = 52
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Modernization Project
+focus = { 
+id = ROD_modernizationproject
+icon = GFX_goal_unknown
+x = 46
+y = 4
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Military Exercises
+focus = { 
+id = ROD_militaryexercises
+icon = GFX_goal_generic_special_forces
+x = 8
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_rhodesiansecurityforces } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Permit Mercenary Recruitment
+focus = { 
+id = ROD_permitmercenaryrecruitment
+icon = GFX_goal_unknown
+x = 8
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_rhodesianofficerprogram } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Fighter Development
+focus = { 
+id = ROD_ncXCOSez
+icon = GFX_ncXCOSez
+x = 16
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_purchasesurplusaircraft focus = ROD_developlocalaircraftdesigns focus = ROD_NhtFvPgB focus = ROD_precisionbombers } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Mechanization Effort
+focus = { 
+id = ROD_XraGRKeW
+icon = GFX_goal_generic_army_doctrines
+x = 3
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_PCJzxEId } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Purchase Surplus Tanks
+focus = { 
+id = ROD_purchasesurplustanks
+icon = GFX_goal_unknown
+x = 2
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_EJYfvwtu focus = ROD_XraGRKeW } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Helicopter Development
+focus = { 
+id = ROD_JivRbWIZ
+icon = GFX_JivRbWIZ
+x = 13
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_airassaultgroups } 
+prerequisite = { focus = ROD_NhtFvPgB } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Salisbury Expansion
+focus = { 
+id = ROD_salisburyexpansion
+icon = GFX_goal_unknown
+x = 44
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Central Rhodesian Rail Network
+focus = { 
+id = ROD_centralrhodesianrailnetwork
+icon = GFX_goal_generic_construct_infrastructure
+x = 53
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Civilian Economic Expansion II
+focus = { 
+id = ROD_FfGaypSP
+icon = GFX_goal_unknown
+x = 44
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Rebuild the Nation
+focus = { 
+id = ROD_rebuildthenation
+icon = GFX_goal_unknown
+x = 33
+y = 7
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Diplomatic Mission to Portugal
+focus = { 
+id = ROD_diplomaticmissiontoportugal
+icon = GFX_diplomaticmissiontoportugal
+x = 29
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Jungle Doctrine
+focus = { 
+id = ROD_jungledoctrine
+icon = GFX_goal_unknown
+x = 10
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_militaryexercises } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Diplomatic Mission to South Africa
+focus = { 
+id = ROD_diplomaticmissiontosouthafrica
+icon = GFX_diplomaticmissiontosouthafrica
+x = 24
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Scouts Training
+focus = { 
+id = ROD_scoutstraining
+icon = GFX_goal_unknown
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_rhodesiansecurityforces } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Expand the Police Force
+focus = { 
+id = ROD_expandthepoliceforce
+icon = GFX_goal_unknown
+x = 6
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_militaryexercises } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Motorization Effort
+focus = { 
+id = ROD_EJYfvwtu
+icon = GFX_goal_generic_army_motorized
+x = 1
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_PCJzxEId } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Small Arms Development
+focus = { 
+id = ROD_nsBTDxUp
+icon = GFX_goal_generic_small_arms
+x = 3
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_rhodesiansecurityforces } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Heavy Ordinance Development
+focus = { 
+id = ROD_PCJzxEId
+icon = GFX_goal_generic_army_artillery2
+x = 2
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_scoutstraining } 
+prerequisite = { focus = ROD_nsBTDxUp } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Central Airfield Expansion
+focus = { 
+id = ROD_centralairfieldexpansion
+icon = GFX_goal_generic_build_airforce
+x = 12
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_rhodesianairforce } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for National Defense Industry
+focus = { 
+id = ROD_pXRYSZhM
+icon = GFX_goal_unknown
+x = 23
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_diplomaticmissiontosouthafrica } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Heavy Industrial Expansion
+focus = { 
+id = ROD_UhfpetzT
+icon = GFX_goal_unknown
+x = 24
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_pXRYSZhM } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Air Assault Groups
+focus = { 
+id = ROD_airassaultgroups
+icon = GFX_goal_unknown
+x = 12
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_centralairfieldexpansion } 
+prerequisite = { focus = ROD_purchasesurplusaircraft } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Special Forces Training
+focus = { 
+id = ROD_specialforcestraining
+icon = GFX_goal_generic_wolf_pack
+x = 11
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_jungledoctrine } 
+prerequisite = { focus = ROD_airassaultgroups } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Appeal to The U.N.
+focus = { 
+id = ROD_appealtotheun
+icon = GFX_appealtotheun
+x = 34
+y = 4
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Rhodesian Air Force
+focus = { 
+id = ROD_rhodesianairforce
+icon = GFX_goal_unknown
+x = 15
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Open the Table for Negotiations
+focus = { 
+id = ROD_openthetablefornegotiations
+icon = GFX_goal_unknown
+x = 34
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Approve Black Conscription
+focus = { 
+id = ROD_approveblackconscription
+icon = GFX_goal_unknown
+x = 5
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_expandthepoliceforce } 
+mutually_exclusive = { focus = ROD_nationalconscriptionlaw } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Civilian Economic Expansion
+focus = { 
+id = ROD_oSFVhnXj
+icon = GFX_oSFVhnXj
+x = 47
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Purchase Surplus Aircraft
+focus = { 
+id = ROD_purchasesurplusaircraft
+icon = GFX_purchasesurplusaircraft
+x = 15
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_rhodesianairforce } 
+mutually_exclusive = { focus = ROD_developlocalaircraftdesigns } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Rhodesian Officer Program
+focus = { 
+id = ROD_rhodesianofficerprogram
+icon = GFX_goal_unknown
+x = 8
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROD_militaryexercises } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

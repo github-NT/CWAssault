@@ -1,0 +1,11 @@
+focus_tree = { 
+id = Libya
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = LBA 
+} 
+} 
+#End of focuses 
+ }

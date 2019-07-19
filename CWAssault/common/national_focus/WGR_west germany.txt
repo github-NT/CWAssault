@@ -369,7 +369,7 @@ x = 44
 y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = WGR_cumvhCpk } 
+prerequisite = { focus = WGR_LrRiQUKv } 
 ai_will_do = { 
  factor = 1
  } 
@@ -508,7 +508,7 @@ y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = WGR_strengthentieswithnato } 
-mutually_exclusive = { focus = WGR_hmeuWIcs } 
+mutually_exclusive = { focus = WGR_MTmuXnyI } 
 ai_will_do = { 
  factor = 1
  } 
@@ -555,7 +555,7 @@ x = 34
 y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = WGR_lApUZMos } 
+prerequisite = { focus = WGR_akEuOwmQ } 
 ai_will_do = { 
  factor = 1
  } 
@@ -596,13 +596,13 @@ category = motorized_equipment
 
 #Focus for Submarine Development
 focus = { 
-id = WGR_hYoNlAIX
+id = WGR_vTdxUGVw
 icon = GFX_goal_generic_navy_submarine
 x = 42
 y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = WGR_DMzthbHd } 
+prerequisite = { focus = WGR_JpEbmcwf } 
 ai_will_do = { 
  factor = 1
  } 
@@ -1064,14 +1064,14 @@ producer = PRC
 
 #Focus for Cruiser Development
 focus = { 
-id = WGR_cumvhCpk
+id = WGR_LrRiQUKv
 icon = GFX_focus_generic_cruiser2
 x = 44
 y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = WGR_bundesmarinefunding } 
-mutually_exclusive = { focus = WGR_DMzthbHd } 
+mutually_exclusive = { focus = WGR_JpEbmcwf } 
 ai_will_do = { 
  factor = 1
  } 
@@ -1253,14 +1253,14 @@ tank_gun_upgrade = 1
 
 #Focus for Destroyer Development
 focus = { 
-id = WGR_DMzthbHd
+id = WGR_JpEbmcwf
 icon = GFX_focus_generic_navy_battleship2
 x = 42
 y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = WGR_bundesmarinefunding } 
-mutually_exclusive = { focus = WGR_cumvhCpk } 
+mutually_exclusive = { focus = WGR_LrRiQUKv } 
 ai_will_do = { 
  factor = 1
  } 
@@ -1308,7 +1308,7 @@ category = tactical_bomber
 
 #Focus for Small Arms Development
 focus = { 
-id = WGR_lApUZMos
+id = WGR_akEuOwmQ
 icon = GFX_goal_generic_small_arms
 x = 34
 y = 2
@@ -1658,7 +1658,7 @@ x = 0
 y = 2
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = WGR_xAwUdaLf } 
+prerequisite = { focus = WGR_FzaonJNe } 
 mutually_exclusive = { focus = WGR_improvedmilitaryindustry } 
 ai_will_do = { 
  factor = 1
@@ -1891,6 +1891,9 @@ y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = WGR_openingstageforpoliticaldiscourse } 
+mutually_exclusive = { focus = WGR_strengthendemocracy } 
+mutually_exclusive = { focus = WGR_lookbacktotheoldways } 
+mutually_exclusive = { focus = WGR_ } 
 ai_will_do = { 
  factor = 1
  } 
@@ -1978,7 +1981,7 @@ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
 
 #Focus for Civilian Industry
 focus = { 
-id = WGR_xAwUdaLf
+id = WGR_FzaonJNe
 icon = GFX_goal_generic_construct_civ_factory
 x = 0
 y = 1
@@ -2239,6 +2242,9 @@ y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = WGR_openingstageforpoliticaldiscourse } 
+mutually_exclusive = { focus = WGR_socialism } 
+mutually_exclusive = { focus = WGR_lookbacktotheoldways } 
+mutually_exclusive = { focus = WGR_ } 
 ai_will_do = { 
  factor = 1
  } 
@@ -3272,7 +3278,7 @@ x = 43
 y = 4
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = WGR_capitalships focus = WGR_hYoNlAIX } 
+prerequisite = { focus = WGR_capitalships focus = WGR_vTdxUGVw } 
 ai_will_do = { 
  factor = 1
  } 
@@ -3445,6 +3451,9 @@ y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = WGR_openingstageforpoliticaldiscourse } 
+mutually_exclusive = { focus = WGR_strengthendemocracy } 
+mutually_exclusive = { focus = WGR_socialism } 
+mutually_exclusive = { focus = WGR_ } 
 ai_will_do = { 
  factor = 1
  } 
@@ -3598,8 +3607,8 @@ ai_will_do = {
 
 #Focus for Limit Military Spending
 focus = { 
-id = WGR_hmeuWIcs
-icon = GFX_hmeuWIcs
+id = WGR_MTmuXnyI
+icon = GFX_MTmuXnyI
 x = 11
 y = 3
 cost = 10

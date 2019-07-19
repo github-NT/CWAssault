@@ -1,0 +1,151 @@
+focus_tree = { 
+id = united_states
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = USA 
+} 
+} 
+#Focus for United States Army
+focus = { 
+id = USA_unitedstatesarmy
+icon = GFX_goal_unknown
+x = 5
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Broaden the American Political Spectrum
+focus = { 
+id = USA_broadentheamericanpoliticalspectrum
+icon = GFX_goal_unknown
+x = 53
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Honor the Confederacy
+focus = { 
+id = USA_honortheconfederacy
+icon = GFX_honortheconfederacy
+x = 41
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Armored Personnel Carriers
+focus = { 
+id = USA_armoredpersonnelcarriers
+icon = GFX_goal_unknown
+x = 8
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Small Arms Development
+focus = { 
+id = USA_vOmDTyxt
+icon = GFX_goal_unknown
+x = 2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Heavy Ordinance Development
+focus = { 
+id = USA_heavyordinancedevelopment
+icon = GFX_goal_unknown
+x = 3
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Mechanization Effort
+focus = { 
+id = USA_mechanizationeffort
+icon = GFX_goal_unknown
+x = 8
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for United States Navy
+focus = { 
+id = USA_unitedstatesnavy
+icon = GFX_goal_unknown
+x = 16
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for United States Air Force
+focus = { 
+id = USA_unitedstatesairforce
+icon = GFX_goal_unknown
+x = 23
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Central Intelligence Agency
+focus = { 
+id = USA_centralintelligenceagency
+icon = GFX_goal_unknown
+x = 40
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

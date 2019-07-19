@@ -1,0 +1,53 @@
+focus_tree = { 
+id = mujahideen
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = TAL 
+} 
+} 
+#Focus for South Asian Infiltration
+focus = { 
+id = TAL_southasianinfiltration
+icon = GFX_goal_unknown
+x = 18
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Salafist Doctrine
+focus = { 
+id = TAL_salafistdoctrine
+icon = GFX_goal_unknown
+x = 20
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Spread Mohammed's Teachings
+focus = { 
+id = TAL_spreadmohammedsteachings
+icon = GFX_goal_unknown
+x = 19
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

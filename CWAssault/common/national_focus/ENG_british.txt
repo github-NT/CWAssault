@@ -1,0 +1,11 @@
+focus_tree = { 
+id = british
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = ENG 
+} 
+} 
+#End of focuses 
+ }

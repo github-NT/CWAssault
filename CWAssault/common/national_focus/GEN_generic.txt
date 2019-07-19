@@ -1,0 +1,3596 @@
+focus_tree = { 
+id = generic
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = GEN 
+} 
+} 
+#Focus for Red Guards
+focus = { 
+id = GEN_redguards
+icon = GFX_redguards
+x = 24
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_politicalcommissars } 
+mutually_exclusive = { focus = GEN_internationalbrigades } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Collectivize The Industry
+focus = { 
+id = GEN_collectivizetheindustry
+icon = GFX_goal_generic_soviet_construction
+x = 23
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_internationalbrigades focus = GEN_redguards } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Political Commissars
+focus = { 
+id = GEN_politicalcommissars
+icon = GFX_goal_generic_forceful_treaty
+x = 23
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_interventionismfocus } 
+available = { 
+
+
+
+ } 
+completion_reward = { 
+
+add_ideas = political_commissars_focus
+add_political_power = 100
+
+ } 
+
+ } 
+
+#Focus for Ideological Fanaticism
+focus = { 
+id = GEN_ideologicalfanaticism
+icon = GFX_goal_generic_demand_territory
+x = 26
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_militarism } 
+completion_reward = { 
+
+add_ideas = ideological_fanaticism_focus
+set_rule = {
+can_create_factions = yes
+}
+hidden_effect = {
+set_rule = {
+can_use_kamikaze_pilots = yes
+}
+}
+custom_effect_tooltip = kamikaze_focus_tooltip
+
+ } 
+
+ } 
+
+#Focus for Technology Sharing
+focus = { 
+id = GEN_technologysharing
+icon = GFX_goal_generic_scientific_exchange
+x = 27
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_nucleareffort focus = GEN_secretweapons } 
+available = { 
+
+has_war = yes
+is_in_faction = yes
+OR = {
+num_of_factories > 50
+any_other_country = {
+is_in_faction_with = ROOT
+num_of_factories > 100
+}
+}
+
+ } 
+completion_reward = { 
+
+if = {
+limit = {
+original_research_slots < 3
+}
+add_research_slot = 1
+}
+if = {
+limit = {
+original_research_slots > 2
+}
+add_tech_bonus = {
+name = electronics_bonus
+bonus = 0.5
+uses = 1
+category = electronics
+}
+add_tech_bonus = {
+name = industrial_bonus
+bonus = 0.5
+uses = 1
+category = industry
+}
+add_tech_bonus = {
+name = infantry_weapons_bonus
+bonus = 0.5
+uses = 1
+category = infantry_weapons
+category = artillery
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Indoctrination
+focus = { 
+id = GEN_indoctrination
+icon = GFX_goal_generic_propaganda
+x = 26
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_nationalismfocus } 
+completion_reward = { 
+
+add_ideas = indoctrination_focus
+add_political_power = 100
+
+ } 
+
+ } 
+
+#Focus for International Brigades
+focus = { 
+id = GEN_internationalbrigades
+icon = GFX_goal_generic_more_territorial_claims
+x = 22
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_politicalcommissars } 
+mutually_exclusive = { focus = GEN_redguards } 
+completion_reward = { 
+set_rule = {
+can_create_factions = yes
+}
+add_ideas = foreign_expeditions_focus
+ } 
+
+ } 
+
+#Focus for Volunteer Corps
+focus = { 
+id = GEN_volunteercorps
+icon = GFX_goal_generic_allies_build_infantry
+x = 28
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_infrastructureeffort } 
+completion_reward = { 
+
+set_rule = {
+can_send_volunteers = yes
+}
+add_ideas = volunteer_corps_focus
+
+ } 
+
+ } 
+
+#Focus for Militarism
+focus = { 
+id = GEN_militarism
+icon = GFX_goal_generic_political_pressure
+x = 26
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_indoctrination } 
+completion_reward = { 
+
+if = {
+limit = {
+has_idea = neutrality_idea
+}
+remove_ideas = neutrality_idea
+}
+add_ideas = militarism_focus
+army_experience = 25
+set_rule = {
+can_send_volunteers = yes
+}
+
+ } 
+
+ } 
+
+#Focus for Interventionism Focus
+focus = { 
+id = GEN_interventionismfocus
+icon = GFX_goal_generic_political_pressure
+x = 24
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_internationalismfocus } 
+completion_reward = { 
+
+if = {
+limit = {
+has_idea = neutrality_idea
+}
+remove_ideas = neutrality_idea
+}
+set_rule = {
+can_send_volunteers = yes
+}
+add_political_power = 150
+
+ } 
+
+ } 
+
+#Focus for Nuclear Effort
+focus = { 
+id = GEN_nucleareffort
+icon = GFX_focus_wonderweapons
+x = 29
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_whywefight focus = GEN_volunteercorps } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = nuclear_bonus
+ahead_reduction = 0.5
+category = nuclear
+}
+
+ } 
+
+ } 
+
+#Focus for Extra Research Slot II
+focus = { 
+id = GEN_extraresearchslotii
+icon = GFX_focus_research2
+x = 25
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_internationalbrigades focus = GEN_redguards focus = GEN_ideologicalfanaticism } 
+available = { 
+num_of_factories > 15
+ } 
+completion_reward = { 
+add_research_slot = 1
+ } 
+
+ } 
+
+#Focus for Secret Weapons
+focus = { 
+id = GEN_secretweapons
+icon = GFX_goal_generic_secret_weapon
+x = 25
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_extraresearchslotii } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = secret_bonus
+bonus = 0.5
+uses = 4
+category = electronics
+category = nuclear
+category = rocketry
+}
+
+ } 
+
+ } 
+
+#Focus for Infrastructure Effort
+focus = { 
+id = GEN_infrastructureeffort
+icon = GFX_goal_generic_construct_infrastructure
+x = 28
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_industrialeffort } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = infrastructure_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = infrastructure
+size < 1
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = infrastructure
+size > 0
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = infrastructure
+size > 0
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_building_construction = {
+type = infrastructure
+level = 1
+instant_build = yes
+}
+}
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = infrastructure
+size > 1
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = infrastructure
+size > 1
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_building_construction = {
+type = infrastructure
+level = 2
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Industrial Effort
+focus = { 
+id = GEN_industrialeffort
+icon = GFX_goal_generic_production
+x = 28
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_neutralityfocus } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = industrial_bonus
+bonus = 0.5
+uses = 1
+category = industry
+}
+
+ } 
+
+ } 
+
+#Focus for Army Exp
+focus = { 
+id = GEN_cOzsUxiH
+icon = GFX_goal_generic_amphibious_assault
+x = 50
+y = 5
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_CBmHAPvO focus = GEN_WjwHdnht } 
+completion_reward = { 
+
+army_experience = 75
+navy_experience = 75
+air_experience = 75
+
+ } 
+
+ } 
+
+#Focus for Japanese Destroyer
+focus = { 
+id = GEN_WjwHdnht
+icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+x = 51
+y = 4
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_chinatype59variant focus = GEN_stvr103tankvariant } 
+mutually_exclusive = { focus = GEN_CBmHAPvO } 
+available = { 
+
+has_tech = early_destroyer
+
+ } 
+completion_reward = { 
+
+JAP = {
+navy_experience = 5
+}
+create_equipment_variant = {
+name = "Ayanami class"
+type = destroyer_1
+upgrades = {
+ship_torpedo_upgrade = 4
+destroyer_engine_upgrade = 4
+ship_ASW_upgrade = 4
+ship_anti_air_upgrade = 4
+}
+}
+
+ } 
+
+ } 
+
+#Focus for SAAB 35 fighter variant
+focus = { 
+id = GEN_CBmHAPvO
+icon = GFX_goal_generic_air_fighter2
+x = 49
+y = 4
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_chinatype59variant focus = GEN_stvr103tankvariant } 
+mutually_exclusive = { focus = GEN_WjwHdnht } 
+available = { 
+
+has_tech = early_fighter
+
+ } 
+completion_reward = { 
+
+SWE = {
+air_experience = 10
+}
+create_equipment_variant = {
+name = "Saab 35S Draken"
+type = fighter_equipment_0
+upgrades = {
+plane_gun_upgrade = 1
+plane_range_upgrade = 1
+plane_engine_upgrade = 3
+plane_reliability_upgrade = 3
+}
+}
+
+ } 
+
+ } 
+
+#Focus for China Type 59 variant
+focus = { 
+id = GEN_chinatype59variant
+icon = GFX_focus_generic_license_production
+x = 51
+y = 3
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_ohMfNjBr focus = GEN_chinatruks } 
+mutually_exclusive = { focus = GEN_stvr103tankvariant } 
+available = { 
+
+has_tech = gwtank
+
+ } 
+completion_reward = { 
+
+PRC = {
+army_experience = 10
+}
+army_experience = 10
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 35
+producer = PRC
+}
+create_equipment_variant = {
+name = "Type 59D"
+type = gw_tank_equipment
+upgrades = {
+tank_reliability_upgrade = 2
+tank_engine_upgrade = 1
+tank_gun_upgrade = 1
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Stvr-103 tank variant
+focus = { 
+id = GEN_stvr103tankvariant
+icon = GFX_goal_generic_army_artillery2
+x = 49
+y = 3
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_chinatruks focus = GEN_ohMfNjBr } 
+mutually_exclusive = { focus = GEN_chinatype59variant } 
+available = { 
+
+has_tech = gwtank
+
+ } 
+completion_reward = { 
+
+SWE = {
+army_experience = 10
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 25
+producer = SWE
+}
+create_equipment_variant = {
+name = "Strv 103S"
+type = gw_tank_equipment
+upgrades = {
+tank_reliability_upgrade = 4
+tank_engine_upgrade = 1
+tank_armor_upgrade = 2
+tank_gun_upgrade = 3
+}
+}
+
+ } 
+
+ } 
+
+#Focus for China Truks
+focus = { 
+id = GEN_chinatruks
+icon = GFX_goal_generic_army_motorized
+x = 49
+y = 2
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_infantryweapon focus = GEN_fvFcKbQt } 
+mutually_exclusive = { focus = GEN_ohMfNjBr } 
+completion_reward = { 
+
+PRC = {
+army_experience = 10
+}
+add_equipment_to_stockpile = {
+type = motorized_equipment_1
+amount = 450
+producer = PRC
+}
+
+ } 
+
+ } 
+
+#Focus for Yugoslavian MiG-21 variant
+focus = { 
+id = GEN_ohMfNjBr
+icon = GFX_goal_generic_build_airforce
+x = 51
+y = 2
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_infantryweapon focus = GEN_fvFcKbQt } 
+mutually_exclusive = { focus = GEN_chinatruks } 
+available = { 
+
+has_tech = fighter1
+
+ } 
+completion_reward = { 
+
+air_experience = 10
+YUG = {
+air_experience = 15
+}
+create_equipment_variant = {
+name = "L-11S"
+type = fighter_equipment_1
+upgrades = {
+plane_gun_upgrade = 2
+plane_range_upgrade = 2
+plane_engine_upgrade = 2
+plane_reliability_upgrade = 4
+}
+}
+
+ } 
+
+ } 
+
+#Focus for China Post WW-2 tanks
+focus = { 
+id = GEN_fvFcKbQt
+icon = GFX_goal_generic_army_tanks
+x = 49
+y = 1
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_XiZbpCVS } 
+mutually_exclusive = { focus = GEN_infantryweapon } 
+completion_reward = { 
+
+PRC = {
+army_experience = 10
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 100
+producer = PRC
+}
+
+ } 
+
+ } 
+
+#Focus for Infantry Weapon
+focus = { 
+id = GEN_infantryweapon
+icon = GFX_goal_generic_military_sphere
+x = 51
+y = 1
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_XiZbpCVS } 
+mutually_exclusive = { focus = GEN_fvFcKbQt } 
+completion_reward = { 
+
+YUG = {
+army_experience = 10
+}
+add_equipment_to_stockpile = {
+type = infantry_equipment_0
+amount = 600
+producer = YUG
+}
+
+ } 
+
+ } 
+
+#Focus for West Germany Leopard variant
+focus = { 
+id = GEN_qKWwtkxl
+icon = GFX_goal_generic_build_tank
+x = 45
+y = 5
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_frecnhdestroyervariant focus = GEN_exKVfbWR } 
+mutually_exclusive = { focus = GEN_frecnhmirage3variant } 
+available = { 
+
+has_tech = basic_medium_tank
+
+ } 
+completion_reward = { 
+
+WGR = {
+army_experience = 25
+}
+add_equipment_to_stockpile = {
+type = medium_tank_equipment_1
+amount = 20
+producer = WGR
+}
+create_equipment_variant = {
+name = "Leopard 1A1-S"
+type = medium_tank_equipment_1
+upgrades = {
+tank_reliability_upgrade = 3
+tank_engine_upgrade = 1
+tank_armor_upgrade = 2
+tank_gun_upgrade = 1
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Frecnh Mirage 3 variant
+focus = { 
+id = GEN_frecnhmirage3variant
+icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+x = 47
+y = 5
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_frecnhdestroyervariant focus = GEN_exKVfbWR } 
+mutually_exclusive = { focus = GEN_qKWwtkxl } 
+available = { 
+
+has_tech = fighter1
+
+ } 
+completion_reward = { 
+
+FRA = {
+air_experience = 15
+}
+create_equipment_variant = {
+name = "Mirage IIIS"
+type = fighter_equipment_1
+upgrades = {
+plane_gun_upgrade = 2
+plane_range_upgrade = 2
+plane_engine_upgrade = 3
+plane_reliability_upgrade = 4
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Frecnh Destroyer variant
+focus = { 
+id = GEN_frecnhdestroyervariant
+icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+x = 47
+y = 4
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_coNXwFWY focus = GEN_frecnhnavy } 
+mutually_exclusive = { focus = GEN_exKVfbWR } 
+available = { 
+
+has_tech = early_destroyer
+
+ } 
+completion_reward = { 
+
+navy_experience = 25
+FRA = {
+navy_experience = 10
+}
+create_equipment_variant = {
+name = "T 53-class M71"
+type = destroyer_1
+upgrades = {
+ship_torpedo_upgrade = 5
+destroyer_engine_upgrade = 5
+ship_ASW_upgrade = 5
+ship_anti_air_upgrade = 5
+}
+}
+
+ } 
+
+ } 
+
+#Focus for EU Bombers
+focus = { 
+id = GEN_exKVfbWR
+icon = GFX_goal_generic_build_airforce
+x = 45
+y = 4
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_frecnhnavy focus = GEN_coNXwFWY } 
+mutually_exclusive = { focus = GEN_frecnhdestroyervariant } 
+available = { 
+
+has_tech = early_bomber
+
+ } 
+completion_reward = { 
+
+FRA = {
+air_experience = 5
+}
+ENG = {
+air_experience = 10
+}
+add_equipment_to_stockpile = {
+type = tac_bomber_equipment_0
+amount = 10
+producer = FRA
+}
+create_equipment_variant = {
+name = "Vautour IIA"
+type = tac_bomber_equipment_0
+upgrades = {
+plane_tac_bomb_upgrade = 2
+plane_range_upgrade = 2
+plane_engine_upgrade = 1
+plane_reliability_upgrade = 4
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Frecnh Navy
+focus = { 
+id = GEN_frecnhnavy
+icon = GFX_goal_generic_navy_cruiser
+x = 47
+y = 3
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_tpziOavl focus = GEN_frecnhamx32variant } 
+mutually_exclusive = { focus = GEN_coNXwFWY } 
+available = { 
+
+has_tech = early_destroyer
+
+ } 
+completion_reward = { 
+
+FRA = {
+air_experience = 5
+navy_experience = 10
+}
+add_equipment_to_stockpile = {
+type = fighter_equipment_0
+amount = 10
+producer = FRA
+}
+create_equipment_variant = {
+name = "T 53-class M69"
+type = destroyer_1
+upgrades = {
+ship_torpedo_upgrade = 3
+destroyer_engine_upgrade = 3
+ship_ASW_upgrade = 3
+ship_anti_air_upgrade = 3
+}
+}
+
+ } 
+
+ } 
+
+#Focus for UK Hunter plane variant
+focus = { 
+id = GEN_coNXwFWY
+icon = GFX_goal_generic_air_bomber
+x = 45
+y = 3
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_tpziOavl focus = GEN_frecnhamx32variant } 
+mutually_exclusive = { focus = GEN_frecnhnavy } 
+available = { 
+
+has_tech = early_fighter
+
+ } 
+completion_reward = { 
+
+ENG = {
+air_experience = 10
+}
+create_equipment_variant = {
+name = "Hawker Hunter 50"
+type = fighter_equipment_0
+upgrades = {
+plane_gun_upgrade = 2
+plane_range_upgrade = 2
+plane_engine_upgrade = 2
+plane_reliability_upgrade = 4
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Frecnh AMX-32 variant
+focus = { 
+id = GEN_frecnhamx32variant
+icon = GFX_goal_generic_cavalry
+x = 47
+y = 2
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_FPSTpZxK focus = GEN_LEStskmh } 
+mutually_exclusive = { focus = GEN_tpziOavl } 
+available = { 
+
+has_tech = gwtank
+
+ } 
+completion_reward = { 
+
+FRA = {
+army_experience = 10
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 25
+producer = FRA
+}
+create_equipment_variant = {
+name = "AMX-32S"
+type = gw_tank_equipment
+upgrades = {
+tank_reliability_upgrade = 3
+tank_engine_upgrade = 1
+tank_gun_upgrade = 2
+}
+}
+
+ } 
+
+ } 
+
+#Focus for UK Tanks
+focus = { 
+id = GEN_LEStskmh
+icon = GFX_goal_generic_army_tanks
+x = 45
+y = 1
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_xAhUvjfR } 
+mutually_exclusive = { focus = GEN_FPSTpZxK } 
+completion_reward = { 
+
+ENG = {
+army_experience = 5
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 60
+producer = ENG
+}
+
+ } 
+
+ } 
+
+#Focus for FN FAL
+focus = { 
+id = GEN_FPSTpZxK
+icon = GFX_goal_generic_military_sphere
+x = 47
+y = 1
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_xAhUvjfR } 
+mutually_exclusive = { focus = GEN_LEStskmh } 
+completion_reward = { 
+
+BEL = {
+army_experience = 5
+}
+WGR = {
+army_experience = 5
+}
+add_equipment_to_stockpile = {
+type = infantry_equipment_0
+amount = 400
+producer = BEL
+}
+add_equipment_to_stockpile = {
+type = infantry_equipment_0
+amount = 200
+producer = WGR
+}
+
+ } 
+
+ } 
+
+#Focus for Army Motorized
+focus = { 
+id = GEN_tpziOavl
+icon = GFX_goal_generic_army_motorized
+x = 45
+y = 2
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_FPSTpZxK focus = GEN_LEStskmh } 
+mutually_exclusive = { focus = GEN_frecnhamx32variant } 
+available = { 
+
+has_tech = gwtank
+
+ } 
+completion_reward = { 
+
+ENG = {
+army_experience = 10
+}
+WGR = {
+army_experience = 5
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 20
+producer = ENG
+}
+add_equipment_to_stockpile = {
+type = motorized_equipment_1
+amount = 150
+producer = WGR
+}
+create_equipment_variant = {
+name = "Centurion Mk 6"
+type = gw_tank_equipment
+upgrades = {
+tank_reliability_upgrade = 2
+tank_engine_upgrade = 1
+tank_armor_upgrade = 1
+tank_gun_upgrade = 2
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Russian MiG-21M variant
+focus = { 
+id = GEN_BrVXyvGw
+icon = GFX_goal_generic_build_tank
+x = 42
+y = 5
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_uDIcHfCy focus = GEN_lXUwMoAj } 
+mutually_exclusive = { focus = GEN_QxMqoTYI } 
+available = { 
+
+has_tech = fighter1
+
+ } 
+completion_reward = { 
+
+SOV = {
+air_experience = 10
+}
+create_equipment_variant = {
+name = "MiG-21MS"
+type = fighter_equipment_1
+upgrades = {
+plane_gun_upgrade = 3
+plane_range_upgrade = 2
+plane_engine_upgrade = 3
+plane_reliability_upgrade = 5
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Polish T-55A Merida
+focus = { 
+id = GEN_QxMqoTYI
+icon = GFX_goal_generic_army_tanks
+x = 40
+y = 5
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_uDIcHfCy focus = GEN_lXUwMoAj } 
+mutually_exclusive = { focus = GEN_BrVXyvGw } 
+completion_reward = { 
+
+POL = {
+army_experience = 15
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 40
+producer = POL
+}
+create_equipment_variant = {
+name = "T-54M2 PL"
+type = gw_tank_equipment
+upgrades = {
+tank_reliability_upgrade = 5
+tank_engine_upgrade = 3
+tank_armor_upgrade = 3
+tank_gun_upgrade = 5
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Russian Weapons
+focus = { 
+id = GEN_lXUwMoAj
+icon = GFX_goal_generic_production2
+x = 42
+y = 4
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_tpJNAjoI focus = GEN_hzRNHuXi } 
+mutually_exclusive = { focus = GEN_uDIcHfCy } 
+completion_reward = { 
+
+SOV = {
+army_experience = 10
+}
+add_equipment_to_stockpile = {
+type = fighter_equipment_1
+amount = 5
+producer = SOV
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 30
+producer = SOV
+}
+add_equipment_to_stockpile = {
+type = medium_tank_equipment_1
+amount = 30
+producer = SOV
+}
+
+ } 
+
+ } 
+
+#Focus for Czech IL-28 variant
+focus = { 
+id = GEN_uDIcHfCy
+icon = GFX_goal_generic_air_bomber
+x = 40
+y = 4
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_tpJNAjoI focus = GEN_hzRNHuXi } 
+mutually_exclusive = { focus = GEN_lXUwMoAj } 
+available = { 
+
+has_tech = early_bomber
+
+ } 
+completion_reward = { 
+
+CZE = {
+air_experience = 10
+}
+add_equipment_to_stockpile = {
+type = tac_bomber_equipment_0
+amount = 15
+producer = CZE
+}
+create_equipment_variant = {
+name = "Avia B-228S"
+type = tac_bomber_equipment_0
+upgrades = {
+plane_tac_bomb_upgrade = 2
+plane_range_upgrade = 1
+plane_engine_upgrade = 1
+plane_reliability_upgrade = 2
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Russian Weapons 2
+focus = { 
+id = GEN_tpJNAjoI
+icon = GFX_focus_generic_license_production
+x = 42
+y = 3
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_czecht54tankvariant focus = GEN_AtwfWCmE } 
+mutually_exclusive = { focus = GEN_hzRNHuXi } 
+completion_reward = { 
+
+army_experience = 10
+SOV = {
+army_experience = 10
+}
+add_equipment_to_stockpile = {
+type = fighter_equipment_1
+amount = 5
+producer = SOV
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 40
+producer = SOV
+}
+add_equipment_to_stockpile = {
+type = medium_tank_equipment_1
+amount = 60
+producer = SOV
+}
+
+ } 
+
+ } 
+
+#Focus for Czech MiG-17 variant
+focus = { 
+id = GEN_hzRNHuXi
+icon = GFX_goal_generic_army_doctrines
+x = 40
+y = 3
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_czecht54tankvariant focus = GEN_AtwfWCmE } 
+mutually_exclusive = { focus = GEN_tpJNAjoI } 
+available = { 
+
+has_tech = early_fighter
+
+ } 
+completion_reward = { 
+
+CZE = {
+air_experience = 10
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 20
+producer = CZE
+}
+add_equipment_to_stockpile = {
+type = motorized_equipment_1
+amount = 40
+producer = CZE
+}
+create_equipment_variant = {
+name = "AVIA A-105S"
+type = fighter_equipment_0
+upgrades = {
+plane_gun_upgrade = 1
+plane_range_upgrade = 1
+plane_engine_upgrade = 1
+plane_reliability_upgrade = 2
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Polish T-54
+focus = { 
+id = GEN_AMChlZdu
+icon = GFX_focus_generic_polish_deal
+x = 40
+y = 1
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_Ipdnaejy } 
+mutually_exclusive = { focus = GEN_DmPVJQba } 
+completion_reward = { 
+
+POL = {
+army_experience = 5
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 50
+producer = POL
+}
+
+ } 
+
+ } 
+
+#Focus for Russian Weapons
+focus = { 
+id = GEN_DmPVJQba
+icon = GFX_focus_generic_soviet_politics
+x = 42
+y = 1
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_Ipdnaejy } 
+mutually_exclusive = { focus = GEN_AMChlZdu } 
+completion_reward = { 
+
+SOV = {
+army_experience = 5
+}
+add_equipment_to_stockpile = {
+type = infantry_equipment_0
+amount = 400
+producer = SOV
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 30
+producer = SOV
+}
+
+ } 
+
+ } 
+
+#Focus for Czech T-54 tank variant
+focus = { 
+id = GEN_czecht54tankvariant
+icon = GFX_goal_generic_army_motorized
+x = 40
+y = 2
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_DmPVJQba focus = GEN_AMChlZdu } 
+mutually_exclusive = { focus = GEN_AtwfWCmE } 
+available = { 
+
+has_tech = gwtank
+
+ } 
+completion_reward = { 
+
+CZE = {
+army_experience = 15
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 40
+producer = CZE
+}
+add_equipment_to_stockpile = {
+type = motorized_equipment_1
+amount = 200
+producer = CZE
+}
+create_equipment_variant = {
+name = "T-54M1 CZE"
+type = gw_tank_equipment
+upgrades = {
+tank_reliability_upgrade = 3
+tank_engine_upgrade = 2
+tank_armor_upgrade = 1
+tank_gun_upgrade = 2
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Russian T-54 tank variant
+focus = { 
+id = GEN_AtwfWCmE
+icon = GFX_goal_generic_army_tanks
+x = 42
+y = 2
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_DmPVJQba focus = GEN_AMChlZdu } 
+mutually_exclusive = { focus = GEN_czecht54tankvariant } 
+available = { 
+
+has_tech = gwtank
+
+ } 
+completion_reward = { 
+
+SOV = {
+army_experience = 10
+}
+add_equipment_to_stockpile = {
+type = tac_bomber_equipment_0
+amount = 5
+producer = SOV
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 40
+producer = SOV
+}
+create_equipment_variant = {
+name = "T-54M1"
+type = gw_tank_equipment
+upgrades = {
+tank_reliability_upgrade = 2
+tank_engine_upgrade = 1
+tank_armor_upgrade = 1
+tank_gun_upgrade = 1
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Phantom
+focus = { 
+id = GEN_TfyZPLIh
+icon = GFX_goal_generic_navy_carrier
+x = 38
+y = 5
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_LNHSDJpk } 
+available = { 
+
+has_tech = early_carrier
+has_tech = cv_CAS1
+
+ } 
+completion_reward = { 
+
+navy_experience = 5
+USA = {
+navy_experience = 10
+air_experience = 10
+}
+create_equipment_variant = {
+name = "M70 Light Class"
+type = carrier_1
+upgrades = {
+ship_deckspace_upgrade = 1
+carrier_armor_upgrade = 1
+ship_engine_upgrade = 1
+ship_reliability_upgrade = 1
+}
+}
+create_equipment_variant = {
+name = "F-4BS Phantom 2"
+type = cv_CAS_equipment_1
+upgrades = {
+plane_cas_upgrade = 2
+plane_range_upgrade = 1
+plane_engine_upgrade = 1
+plane_reliability_upgrade = 3
+}
+}
+
+ } 
+
+ } 
+
+#Focus for US Navy
+focus = { 
+id = GEN_LNHSDJpk
+icon = GFX_focus_generic_coastal_fort
+x = 38
+y = 4
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_sRqMYVlG } 
+available = { 
+
+has_tech = early_destroyer
+
+ } 
+completion_reward = { 
+
+navy_experience = 25
+USA = {
+navy_experience = 10
+}
+create_equipment_variant = {
+name = "Oliver Hazard Perry-class"
+type = destroyer_1
+upgrades = {
+ship_torpedo_upgrade = 4
+destroyer_engine_upgrade = 4
+ship_ASW_upgrade = 4
+ship_anti_air_upgrade = 4
+}
+}
+
+ } 
+
+ } 
+
+#Focus for US transfer
+focus = { 
+id = GEN_sRqMYVlG
+icon = GFX_focus_generic_license_production
+x = 38
+y = 3
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_DguaiKkX } 
+completion_reward = { 
+
+USA = {
+army_experience = 10
+air_experience = 10
+}
+add_equipment_to_stockpile = {
+type = fighter_equipment_1
+amount = 5
+producer = USA
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 40
+producer = USA
+}
+add_equipment_to_stockpile = {
+type = medium_tank_equipment_1
+amount = 60
+producer = USA
+}
+
+ } 
+
+ } 
+
+#Focus for M48A3 tank variant
+focus = { 
+id = GEN_DguaiKkX
+icon = GFX_goal_generic_army_tanks
+x = 38
+y = 2
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_yaCRpdXT } 
+available = { 
+
+has_tech = gwtank
+
+ } 
+completion_reward = { 
+
+USA = {
+army_experience = 10
+}
+add_equipment_to_stockpile = {
+type = tac_bomber_equipment_0
+amount = 5
+producer = USA
+}
+add_equipment_to_stockpile = {
+type = gw_tank_equipment
+amount = 40
+producer = USA
+}
+create_equipment_variant = {
+name = "M48A3"
+type = gw_tank_equipment
+upgrades = {
+tank_reliability_upgrade = 2
+tank_engine_upgrade = 1
+tank_armor_upgrade = 1
+tank_gun_upgrade = 1
+}
+}
+
+ } 
+
+ } 
+
+#Focus for M16 Rifle
+focus = { 
+id = GEN_yaCRpdXT
+icon = GFX_goal_generic_air_production
+x = 38
+y = 1
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_HxMNItha } 
+completion_reward = { 
+
+add_political_power = 50
+USA = {
+army_experience = 5
+}
+add_equipment_to_stockpile = {
+type = infantry_equipment_0
+amount = 600
+producer = USA
+}
+
+ } 
+
+ } 
+
+#Focus for Why We Fight
+focus = { 
+id = GEN_whywefight
+icon = GFX_goal_generic_propaganda
+x = 31
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_constructioneffortiii } 
+available = { 
+
+OR = {
+threat > 0.4
+has_defensive_war = yes
+}
+
+ } 
+completion_reward = { 
+
+add_ideas = why_we_fight_focus
+set_rule = {
+can_create_factions = yes
+}
+
+ } 
+
+ } 
+
+#Focus for Construction Effort III
+focus = { 
+id = GEN_constructioneffortiii
+icon = GFX_goal_generic_construct_civ_factory
+x = 31
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_constructioneffort } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = construction_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size < 2
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = industrial_complex
+size > 1
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size > 1
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 2
+add_building_construction = {
+type = industrial_complex
+level = 2
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Construction Effort
+focus = { 
+id = GEN_constructioneffort
+icon = GFX_goal_generic_construct_civ_factory
+x = 31
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_deterrence } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = construction_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size < 1
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+type = industrial_complex
+level = 1
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Neutrality Focus
+focus = { 
+id = GEN_neutralityfocus
+icon = GFX_goal_generic_neutrality_focus
+x = 28
+y = 5
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_uFUpxgHl } 
+mutually_exclusive = { focus = GEN_deterrence } 
+completion_reward = { 
+
+if = {
+limit = {
+NOT = {
+has_idea = neutrality_idea
+}
+}
+add_ideas = neutrality_idea
+}
+add_political_power = 150
+
+ } 
+
+ } 
+
+#Focus for Deterrence
+focus = { 
+id = GEN_deterrence
+icon = GFX_focus_generic_the_giant_wakes
+x = 31
+y = 5
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_uFUpxgHl } 
+mutually_exclusive = { focus = GEN_neutralityfocus } 
+completion_reward = { 
+
+add_timed_idea = {
+idea = deterrence
+days = 910
+}
+set_rule = {
+can_send_volunteers = yes
+}
+
+ } 
+
+ } 
+
+#Focus for Extra Research Slot
+focus = { 
+id = GEN_uFUpxgHl
+icon = GFX_focus_research2
+x = 31
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_politicalcorrectness } 
+completion_reward = { 
+
+add_research_slot = 1
+
+ } 
+
+ } 
+
+#Focus for Internationalism Focus
+focus = { 
+id = GEN_internationalismfocus
+icon = GFX_goal_support_communism
+x = 24
+y = 4
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_militaryyouth } 
+mutually_exclusive = { focus = GEN_nationalismfocus } 
+completion_reward = { 
+add_timed_idea = {
+idea = internationalism
+days = 750
+}
+ } 
+
+ } 
+
+#Focus for Nationalism Focus
+focus = { 
+id = GEN_nationalismfocus
+icon = GFX_goal_support_fascism
+x = 26
+y = 4
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_militaryyouth } 
+mutually_exclusive = { focus = GEN_internationalismfocus } 
+completion_reward = { 
+add_timed_idea = {
+idea = nationalism
+days = 760
+}
+ } 
+
+ } 
+
+#Focus for Political Correctness
+focus = { 
+id = GEN_politicalcorrectness
+icon = GFX_goal_molotov_ribbentrop_pact
+x = 31
+y = 3
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_armamenteffort focus = GEN_infrastructureeffortii } 
+mutually_exclusive = { focus = GEN_militaryyouth } 
+available = { 
+
+is_subject = no
+num_of_factories > 7
+
+ } 
+completion_reward = { 
+
+add_political_power = 150
+add_timed_idea = {
+idea = idea_political_correctness
+days = 540
+}
+
+ } 
+
+ } 
+
+#Focus for Military Youth
+focus = { 
+id = GEN_militaryyouth
+icon = GFX_goal_generic_more_territorial_claims
+x = 25
+y = 3
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_armamenteffort focus = GEN_infrastructureeffortii } 
+mutually_exclusive = { focus = GEN_politicalcorrectness } 
+available = { 
+
+is_subject = no
+num_of_factories > 7
+
+ } 
+completion_reward = { 
+
+add_timed_idea = {
+idea = military_youth_focus
+days = 600
+}
+
+ } 
+
+ } 
+
+#Focus for Infrastructure Effort II
+focus = { 
+id = GEN_infrastructureeffortii
+icon = GFX_goal_generic_construct_infrastructure
+x = 31
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_libertyethos } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = infrastructure_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = infrastructure
+size < 1
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = infrastructure
+size > 0
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = infrastructure
+size > 0
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_building_construction = {
+type = infrastructure
+level = 1
+instant_build = yes
+}
+}
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = infrastructure
+size > 1
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = infrastructure
+size > 1
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_building_construction = {
+type = infrastructure
+level = 2
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Liberty Ethos
+focus = { 
+id = GEN_libertyethos
+icon = GFX_goal_support_democracy
+x = 31
+y = 1
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_politicaleffort } 
+mutually_exclusive = { focus = GEN_collectivistethos } 
+completion_reward = { 
+add_timed_idea = {
+idea = liberty_ethos_focus
+days = 365
+}
+ } 
+
+ } 
+
+#Focus for Collectivist Ethos
+focus = { 
+id = GEN_collectivistethos
+icon = GFX_goal_generic_national_unity
+x = 25
+y = 1
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_politicaleffort } 
+mutually_exclusive = { focus = GEN_libertyethos } 
+completion_reward = { 
+
+add_timed_idea = {
+idea = collectivist_ethos_focus
+days = 365
+}
+
+ } 
+
+ } 
+
+#Focus for Armament Effort
+focus = { 
+id = GEN_armamenteffort
+icon = GFX_goal_generic_construct_mil_factory
+x = 25
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_collectivistethos } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = production_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = arms_factory
+size < 1
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+type = arms_factory
+level = 1
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Industrialization II
+focus = { 
+id = GEN_industrializationii
+icon = GFX_goal_generic_construct_civ_factory
+x = 21
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_resourceexpansion focus = GEN_uovhxCGF } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = construction_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size < 1
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+type = industrial_complex
+level = 1
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Resource Expansion
+focus = { 
+id = GEN_resourceexpansion
+icon = GFX_goal_generic_construction2
+x = 20
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_industrialization } 
+mutually_exclusive = { focus = GEN_uovhxCGF } 
+completion_reward = { 
+
+random_owned_state = {
+limit = {
+is_core_of = ROOT
+is_in_home_area = yes
+}
+add_resource = {
+type = oil
+amount = 4
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Resource Expansion
+focus = { 
+id = GEN_uovhxCGF
+icon = GFX_goal_generic_construction2
+x = 22
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_industrialization } 
+mutually_exclusive = { focus = GEN_resourceexpansion } 
+completion_reward = { 
+
+random_owned_state = {
+limit = {
+is_core_of = ROOT
+is_in_home_area = yes
+}
+add_resource = {
+type = chromium
+amount = 4
+}
+add_resource = {
+type = tungsten
+amount = 2
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Industrialization
+focus = { 
+id = GEN_industrialization
+icon = GFX_goal_generic_production
+x = 21
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_qzhtxSPy focus = GEN_oCOvEYVh } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = industrial_bonus
+bonus = 0.5
+uses = 1
+category = industry
+}
+
+ } 
+
+ } 
+
+#Focus for Resource Expansion
+focus = { 
+id = GEN_qzhtxSPy
+icon = GFX_goal_generic_construction2
+x = 22
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_OVpEZGcm } 
+mutually_exclusive = { focus = GEN_oCOvEYVh } 
+completion_reward = { 
+
+random_owned_state = {
+limit = {
+is_core_of = ROOT
+is_in_home_area = yes
+}
+add_resource = {
+type = steel
+amount = 6
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Resource Expansion
+focus = { 
+id = GEN_oCOvEYVh
+icon = GFX_goal_generic_construction2
+x = 20
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_OVpEZGcm } 
+mutually_exclusive = { focus = GEN_qzhtxSPy } 
+completion_reward = { 
+
+random_owned_state = {
+limit = {
+is_core_of = ROOT
+is_in_home_area = yes
+}
+add_resource = {
+type = aluminium
+amount = 4
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Industrialization
+focus = { 
+id = GEN_OVpEZGcm
+icon = GFX_goal_generic_construct_civ_factory
+x = 21
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_politicaleffort } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = construction_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size < 1
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+type = industrial_complex
+level = 1
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Flexible Navy
+focus = { 
+id = GEN_ZekAvXms
+icon = GFX_focus_generic_destroyer
+x = 17
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_navaleffortii } 
+mutually_exclusive = { focus = GEN_largenavy } 
+completion_reward = { 
+add_tech_bonus = {
+name = sub_op_bonus
+bonus = 0.5
+uses = 2
+technology = convoy_interdiction_ti
+technology = unrestricted_submarine_warfare
+technology = wolfpacks
+technology = advanced_submarine_warfare
+technology = combined_operations_raiding
+}
+ } 
+
+ } 
+
+#Focus for Large Navy
+focus = { 
+id = GEN_largenavy
+icon = GFX_goal_generic_navy_doctrines_tactics
+x = 15
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_navaleffortii } 
+mutually_exclusive = { focus = GEN_ZekAvXms } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = fleet_in_being_bonus
+bonus = 0.5
+uses = 2
+category = fleet_in_being_tree
+}
+
+ } 
+
+ } 
+
+#Focus for Naval Effort II
+focus = { 
+id = GEN_navaleffortii
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 16
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_cruisereffort focus = GEN_submarineeffort } 
+available = { 
+
+any_state = {
+is_coastal = yes
+is_controlled_by = ROOT
+}
+
+ } 
+completion_reward = { 
+
+navy_experience = 25
+if = {
+limit = {
+NOT = {
+any_owned_state = {
+dockyard > 0
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+}
+any_owned_state = {
+is_coastal = yes
+}
+}
+random_owned_controlled_state = {
+limit = {
+is_coastal = yes
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+type = dockyard
+level = 3
+instant_build = yes
+}
+}
+set_country_flag = naval_effort_built
+}
+if = {
+limit = {
+NOT = {
+has_country_flag = naval_effort_built
+}
+any_owned_state = {
+dockyard > 0
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+}
+random_owned_controlled_state = {
+limit = {
+dockyard > 0
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+type = dockyard
+level = 3
+instant_build = yes
+}
+}
+set_country_flag = naval_effort_built
+}
+if = {
+limit = {
+NOT = {
+has_country_flag = naval_effort_built
+}
+NOT = {
+any_owned_state = {
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+}
+}
+random_state = {
+limit = {
+controller = {
+tag = ROOT
+}
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+type = dockyard
+level = 3
+instant_build = yes
+}
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Submarine Effort
+focus = { 
+id = GEN_submarineeffort
+icon = GFX_goal_generic_navy_anti_submarine
+x = 17
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_destroyereffort focus = GEN_capitalshipeffort } 
+mutually_exclusive = { focus = GEN_cruisereffort } 
+completion_reward = { 
+add_tech_bonus = {
+name = ss_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+technology = early_submarine
+technology = basic_submarine
+technology = improved_submarine
+technology = advanced_submarine
+}
+ } 
+
+ } 
+
+#Focus for Cruiser Effort
+focus = { 
+id = GEN_cruisereffort
+icon = GFX_goal_generic_navy_cruiser
+x = 15
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_destroyereffort focus = GEN_capitalshipeffort } 
+mutually_exclusive = { focus = GEN_submarineeffort } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = cr_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+technology = improved_light_cruiser
+technology = advanced_light_cruiser
+technology = improved_heavy_cruiser
+technology = advanced_heavy_cruiser
+}
+
+ } 
+
+ } 
+
+#Focus for Destroyer Effort
+focus = { 
+id = GEN_destroyereffort
+icon = GFX_goal_generic_wolf_pack
+x = 17
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_navaleffort } 
+mutually_exclusive = { focus = GEN_capitalshipeffort } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = dd_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+technology = early_destroyer
+technology = basic_destroyer
+technology = improved_destroyer
+technology = advanced_destroyer
+}
+
+ } 
+
+ } 
+
+#Focus for Capital Ship Effort
+focus = { 
+id = GEN_capitalshipeffort
+icon = GFX_goal_generic_navy_battleship
+x = 15
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_navaleffort } 
+mutually_exclusive = { focus = GEN_destroyereffort } 
+completion_reward = { 
+
+navy_experience = 25
+add_tech_bonus = {
+name = capital_ships_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+technology = basic_battlecruiser
+technology = basic_battleship
+technology = improved_battleship
+technology = advanced_battleship
+technology = heavy_battleship
+technology = heavy_battleship2
+technology = early_carrier
+technology = basic_carrier
+technology = improved_carrier
+technology = advanced_carrier
+}
+
+ } 
+
+ } 
+
+#Focus for Rocket Effort
+focus = { 
+id = GEN_rocketeffort
+icon = GFX_focus_rocketry
+x = 11
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_fighterfocusii focus = GEN_bomberfocusii } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = jet_rocket_bonus
+ahead_reduction = 0.5
+uses = 2
+category = rocketry
+category = jet_technology
+}
+
+ } 
+
+ } 
+
+#Focus for Bomber Focus II
+focus = { 
+id = GEN_bomberfocusii
+icon = GFX_goal_generic_air_bomber
+x = 12
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_aviationeffortii } 
+mutually_exclusive = { focus = GEN_fighterfocusii } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = bomber_bonus
+bonus = 0.5
+uses = 2
+technology = strategic_bomber1
+technology = strategic_bomber2
+technology = strategic_bomber3
+category = tactical_bomber
+}
+
+ } 
+
+ } 
+
+#Focus for Fighter Focus II
+focus = { 
+id = GEN_fighterfocusii
+icon = GFX_goal_generic_air_fighter2
+x = 10
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_aviationeffortii } 
+mutually_exclusive = { focus = GEN_bomberfocusii } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = fighter_bonus
+bonus = 0.5
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+}
+
+ } 
+
+ } 
+
+#Focus for Aviation Effort II
+focus = { 
+id = GEN_aviationeffortii
+icon = GFX_goal_generic_air_doctrine
+x = 11
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_oAgeNmYx focus = GEN_naveffort } 
+completion_reward = { 
+
+air_experience = 25
+if = {
+limit = {
+capital_scope = {
+OR = {
+NOT = {
+is_controlled_by = ROOT
+}
+NOT = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+}
+}
+}
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+add_building_construction = {
+type = air_base
+level = 2
+instant_build = yes
+}
+ROOT = {
+set_country_flag = aviation_effort_2_AB
+}
+}
+}
+if = {
+limit = {
+capital_scope = {
+is_controlled_by = ROOT
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+}
+capital_scope = {
+add_building_construction = {
+type = air_base
+level = 2
+instant_build = yes
+}
+ROOT = {
+set_country_flag = aviation_effort_2_AB
+}
+}
+}
+add_tech_bonus = {
+name = air_doc_bonus
+bonus = 0.5
+uses = 1
+category = air_doctrine
+}
+
+ } 
+
+ } 
+
+#Focus for NAV Effort
+focus = { 
+id = GEN_naveffort
+icon = GFX_goal_generic_air_naval_bomber
+x = 12
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_zvoZLKNi focus = GEN_caseffort } 
+mutually_exclusive = { focus = GEN_oAgeNmYx } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = nav_bomber_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+category = naval_bomber
+}
+
+ } 
+
+ } 
+
+#Focus for Bomber Focus
+focus = { 
+id = GEN_oAgeNmYx
+icon = GFX_goal_generic_air_bomber
+x = 10
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_caseffort focus = GEN_zvoZLKNi } 
+mutually_exclusive = { focus = GEN_naveffort } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = bomber_bonus
+bonus = 0.5
+uses = 2
+technology = strategic_bomber1
+technology = strategic_bomber2
+technology = strategic_bomber3
+category = tactical_bomber
+}
+
+ } 
+
+ } 
+
+#Focus for CAS Effort
+focus = { 
+id = GEN_caseffort
+icon = GFX_goal_generic_CAS
+x = 12
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_aviationeffort } 
+mutually_exclusive = { focus = GEN_zvoZLKNi } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = CAS_bonus
+bonus = 0.5
+ahead_reduction = 1
+uses = 1
+category = cas_bomber
+}
+
+ } 
+
+ } 
+
+#Focus for Fighter Focus
+focus = { 
+id = GEN_zvoZLKNi
+icon = GFX_goal_generic_air_fighter2
+x = 10
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_aviationeffort } 
+mutually_exclusive = { focus = GEN_caseffort } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = fighter_bonus
+bonus = 0.5
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+}
+
+ } 
+
+ } 
+
+#Focus for Army Effort
+focus = { 
+id = GEN_armyeffort
+icon = GFX_goal_generic_allies_build_infantry
+x = 7
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_WwQbUVex } 
+completion_reward = { 
+
+army_experience = 10
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 0.5
+uses = 1
+category = land_doctrine
+}
+
+ } 
+
+ } 
+
+#Focus for Doctrine Effort II
+focus = { 
+id = GEN_WwQbUVex
+icon = GFX_goal_generic_army_doctrines
+x = 7
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_hVkSAxnb } 
+completion_reward = { 
+
+army_experience = 10
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 0.5
+uses = 1
+category = land_doctrine
+}
+
+ } 
+
+ } 
+
+#Focus for Special Forces
+focus = { 
+id = GEN_hVkSAxnb
+icon = GFX_goal_generic_special_forces
+x = 7
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_tyBMEVse } 
+mutually_exclusive = { focus = GEN_paramilitarism } 
+completion_reward = { 
+
+army_experience = 20
+add_tech_bonus = {
+name = special_forces_bonus
+bonus = 0.5
+uses = 3
+technology = paratroopers
+technology = paratroopers2
+technology = marines
+technology = marines2
+technology = tech_mountaineers
+technology = tech_mountaineers2
+}
+
+ } 
+
+ } 
+
+#Focus for Armament Effort III
+focus = { 
+id = GEN_armamenteffortiii
+icon = GFX_goal_generic_construct_mil_factory
+x = 5
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_armamenteffortii } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = production_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = arms_factory
+size < 1
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+type = arms_factory
+level = 1
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Armament Effort II
+focus = { 
+id = GEN_armamenteffortii
+icon = GFX_goal_generic_construct_mil_factory
+x = 5
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_paramilitarism } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = production_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = arms_factory
+size < 1
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+type = arms_factory
+level = 1
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Paramilitarism
+focus = { 
+id = GEN_paramilitarism
+icon = GFX_goal_generic_military_sphere
+x = 5
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_tyBMEVse } 
+mutually_exclusive = { focus = GEN_hVkSAxnb } 
+completion_reward = { 
+
+army_experience = 10
+add_ideas = paramilitarism_focus
+
+ } 
+
+ } 
+
+#Focus for Mechanization Effort
+focus = { 
+id = GEN_tYNKBqxL
+icon = GFX_goal_generic_build_tank
+x = 3
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_armoreffort focus = GEN_DudGbRFs } 
+mutually_exclusive = { focus = GEN_CfebSuDq } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = motorized_bonus
+ahead_reduction = 0.75
+uses = 1
+category = motorized_equipment
+}
+
+ } 
+
+ } 
+
+#Focus for Equipment Effort III
+focus = { 
+id = GEN_CfebSuDq
+icon = GFX_goal_generic_army_artillery2
+x = 1
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_armoreffort focus = GEN_armoreffort } 
+mutually_exclusive = { focus = GEN_tYNKBqxL } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = infantry_artillery_bonus
+ahead_reduction = 1
+uses = 1
+category = infantry_weapons
+category = artillery
+}
+
+ } 
+
+ } 
+
+#Focus for Equipment Effort II
+focus = { 
+id = GEN_DudGbRFs
+icon = GFX_goal_generic_army_artillery2
+x = 1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_PNfuHrKa focus = GEN_iLAvecfw } 
+mutually_exclusive = { focus = GEN_armoreffort } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 0.5
+uses = 2
+category = infantry_weapons
+category = artillery
+}
+
+ } 
+
+ } 
+
+#Focus for Armor Effort
+focus = { 
+id = GEN_armoreffort
+icon = GFX_goal_generic_army_tanks
+x = 3
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_iLAvecfw focus = GEN_PNfuHrKa } 
+mutually_exclusive = { focus = GEN_DudGbRFs } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = armor_bonus
+bonus = 0.5
+uses = 2
+category = armor
+}
+
+ } 
+
+ } 
+
+#Focus for Motorization Effort
+focus = { 
+id = GEN_PNfuHrKa
+icon = GFX_goal_generic_army_motorized
+x = 3
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_tyBMEVse } 
+mutually_exclusive = { focus = GEN_iLAvecfw } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = motorized_bonus
+bonus = 0.50
+technology = motorised_infantry
+}
+
+ } 
+
+ } 
+
+#Focus for Equipment Effort
+focus = { 
+id = GEN_iLAvecfw
+icon = GFX_goal_generic_small_arms
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GEN_tyBMEVse } 
+mutually_exclusive = { focus = GEN_PNfuHrKa } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = infantry_weapons_bonus
+bonus = 0.5
+uses = 1
+category = infantry_weapons
+category = artillery
+}
+
+ } 
+
+ } 
+
+#Focus for East Block trade
+focus = { 
+id = GEN_Ipdnaejy
+icon = GFX_focus_generic_soviet_politics
+x = 41
+y = 0
+cost = 5
+available_if_capitulated = yes 
+mutually_exclusive = { focus = GEN_HxMNItha } 
+available = { 
+
+is_subject = no
+num_of_factories > 7
+
+ } 
+
+ } 
+
+#Focus for EU trades
+focus = { 
+id = GEN_XiZbpCVS
+icon = GFX_goal_generic_trade
+x = 50
+y = 0
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = GEN_xAhUvjfR } 
+available = { 
+
+is_subject = no
+num_of_factories > 7
+
+ } 
+
+ } 
+
+#Focus for EU trades
+focus = { 
+id = GEN_xAhUvjfR
+icon = GFX_goal_generic_intelligence_exchange
+x = 46
+y = 0
+cost = 5
+available_if_capitulated = yes 
+mutually_exclusive = { focus = GEN_XiZbpCVS } 
+available = { 
+
+is_subject = no
+num_of_factories > 7
+
+ } 
+
+ } 
+
+#Focus for USA trade
+focus = { 
+id = GEN_HxMNItha
+icon = GFX_focus_chi_mission_to_the_us
+x = 38
+y = 0
+cost = 5
+available_if_capitulated = yes 
+mutually_exclusive = { focus = GEN_Ipdnaejy } 
+available = { 
+is_subject = no
+num_of_factories > 7
+ } 
+
+ } 
+
+#Focus for Political Effort
+focus = { 
+id = GEN_politicaleffort
+icon = GFX_goal_generic_demand_territory
+x = 25
+y = 0
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+
+add_political_power = 250
+
+ } 
+
+ } 
+
+#Focus for Naval Effort
+focus = { 
+id = GEN_navaleffort
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 16
+y = 0
+cost = 10
+available_if_capitulated = yes 
+available = { 
+
+num_of_factories > 6
+any_state = {
+is_coastal = yes
+is_controlled_by = ROOT
+}
+
+ } 
+completion_reward = { 
+
+navy_experience = 25
+if = {
+limit = {
+NOT = {
+any_owned_state = {
+dockyard > 0
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+}
+any_owned_state = {
+is_coastal = yes
+}
+}
+random_owned_controlled_state = {
+limit = {
+is_coastal = yes
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+type = dockyard
+level = 3
+instant_build = yes
+}
+}
+set_country_flag = naval_effort_built
+}
+if = {
+limit = {
+NOT = {
+has_country_flag = naval_effort_built
+}
+any_owned_state = {
+dockyard > 0
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+}
+random_owned_controlled_state = {
+limit = {
+dockyard > 0
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+type = dockyard
+level = 3
+instant_build = yes
+}
+}
+set_country_flag = naval_effort_built
+}
+if = {
+limit = {
+NOT = {
+has_country_flag = naval_effort_built
+}
+NOT = {
+any_owned_state = {
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+}
+}
+random_state = {
+limit = {
+controller = {
+tag = ROOT
+}
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+type = dockyard
+level = 3
+instant_build = yes
+}
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Doctrine Effort
+focus = { 
+id = GEN_tyBMEVse
+icon = GFX_goal_generic_army_doctrines
+x = 4
+y = 0
+cost = 10
+available_if_capitulated = yes 
+available = { 
+
+num_of_factories > 4
+
+ } 
+completion_reward = { 
+
+army_experience = 25
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 0.5
+uses = 1
+category = land_doctrine
+}
+
+ } 
+
+ } 
+
+#Focus for Aviation Effort
+focus = { 
+id = GEN_aviationeffort
+icon = GFX_goal_generic_build_airforce
+x = 11
+y = 0
+cost = 10
+available_if_capitulated = yes 
+available = { 
+
+num_of_factories > 6
+
+ } 
+completion_reward = { 
+
+air_experience = 25
+if = {
+limit = {
+capital_scope = {
+NOT = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+}
+}
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+add_building_construction = {
+type = air_base
+level = 2
+instant_build = yes
+}
+ROOT = {
+set_country_flag = aviation_effort_AB
+}
+}
+}
+if = {
+limit = {
+capital_scope = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+}
+capital_scope = {
+add_building_construction = {
+type = air_base
+level = 2
+instant_build = yes
+}
+ROOT = {
+set_country_flag = aviation_effort_AB
+}
+}
+}
+add_tech_bonus = {
+name = air_doc_bonus
+bonus = 0.5
+uses = 1
+category = air_doctrine
+}
+
+ } 
+
+ } 
+
+#End of focuses 
+ }

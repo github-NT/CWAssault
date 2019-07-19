@@ -1,0 +1,1042 @@
+focus_tree = { 
+id = romania
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = ROM 
+} 
+} 
+#Focus for Banat Expansion
+focus = { 
+id = ROM_banatexpansion
+icon = GFX_goal_generic_build_airforce
+x = 22
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_transylvanianairfields } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reform the Patriotic Guard
+focus = { 
+id = ROM_reformthepatrioticguard
+icon = GFX_reformthepatrioticguard
+x = 52
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Fighter Development II
+focus = { 
+id = ROM_fighterdevelopmentii
+icon = GFX_fighterdevelopmentii
+x = 20
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_fighterdivisions } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Soviet Style Army
+focus = { 
+id = ROM_sovietstylearmy
+icon = GFX_goal_support_communism
+x = 14
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_romanianfrontconcept } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Mechanized Advancements
+focus = { 
+id = ROM_mechanizedadvancements
+icon = GFX_goal_generic_army_doctrines
+x = 12
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_romanianmechanizedforces } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Co-Operation With the Soviets
+focus = { 
+id = ROM_cooperationwiththesoviets
+icon = GFX_goal_generic_military_deal
+x = 14
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_sovietmilitarydoctrine } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Romanian Front Concept
+focus = { 
+id = ROM_romanianfrontconcept
+icon = GFX_goal_generic_air_doctrine
+x = 14
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_cooperationwiththesoviets } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Expand Mechanized Forces
+focus = { 
+id = ROM_expandmechanizedforces
+icon = GFX_goal_generic_army_motorized
+x = 12
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_sovietmilitarydoctrine } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Romanian Mechanized Forces
+focus = { 
+id = ROM_romanianmechanizedforces
+icon = GFX_goal_generic_cavalry
+x = 12
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_expandmechanizedforces } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Bomber Divisions
+focus = { 
+id = ROM_bomberdivisions
+icon = GFX_goal_generic_air_bomber
+x = 25
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_acceleratedaviationdevelopment } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Attack Aircraft Development II
+focus = { 
+id = ROM_attackaircraftdevelopmentii
+icon = GFX_goal_generic_secret_weapon
+x = 22
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_attackaircraftdevelopment } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Air Doctrine Research II
+focus = { 
+id = ROM_airdoctrineresearchii
+icon = GFX_focus_YUG_rogozarski
+x = 19
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_airdoctrineresearch } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Strategic Effort
+focus = { 
+id = ROM_strategiceffort
+icon = GFX_goal_generic_occupy_start_war
+x = 24
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_bomberdivisions } 
+mutually_exclusive = { focus = ROM_tacticaleffort } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Tactical Effort
+focus = { 
+id = ROM_tacticaleffort
+icon = GFX_goal_poland_goal
+x = 26
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_bomberdivisions } 
+mutually_exclusive = { focus = ROM_strategiceffort } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Scientific Funding
+focus = { 
+id = ROM_scientificfunding
+icon = GFX_focus_research2
+x = 43
+y = 5
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Military Industrial Complex
+focus = { 
+id = ROM_militaryindustrialcomplex
+icon = GFX_goal_generic_construct_mil_factory
+x = 44
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_palaceoftheparliament } 
+prerequisite = { focus = ROM_missiledefensebatteries } 
+mutually_exclusive = { focus = ROM_industrialdevelopment } 
+mutually_exclusive = { focus = ROM_militarybuildupiii } 
+mutually_exclusive = { focus = ROM_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Military Buildup
+focus = { 
+id = ROM_militarybuildup
+icon = GFX_goal_generic_construct_mil_factory
+x = 46
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_romanianeconomy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Industrial Development
+focus = { 
+id = ROM_industrialdevelopment
+icon = GFX_goal_generic_construct_civ_factory
+x = 42
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_palaceoftheparliament } 
+mutually_exclusive = { focus = ROM_militaryindustrialcomplex } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Collectivization of The Peasents
+focus = { 
+id = ROM_collectivizationofthepeasents
+icon = GFX_goal_generic_national_unity
+x = 41
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_sQnNlVTx } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Expand Heavy Industry
+focus = { 
+id = ROM_expandheavyindustry
+icon = GFX_goal_generic_construct_civ_factory
+x = 40
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_iTtswGVB } 
+prerequisite = { focus = ROM_collectivizationofthepeasents } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Western Infrastructure Program
+focus = { 
+id = ROM_westerninfrastructureprogram
+icon = GFX_goal_generic_construct_infrastructure
+x = 39
+y = 5
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Destroyer Development
+focus = { 
+id = ROM_UYZONbeg
+icon = GFX_focus_generic_destroyer
+x = 33
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Naval Academy
+focus = { 
+id = ROM_navalacademy
+icon = GFX_goal_generic_amphibious_assault
+x = 33
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_developlocalnavalindustry } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Carrier Development Program
+focus = { 
+id = ROM_carrierdevelopmentprogram
+icon = GFX_goal_generic_navy_carrier
+x = 31
+y = 5
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Black Sea Supremacy
+focus = { 
+id = ROM_blackseasupremacy
+icon = GFX_goal_generic_navy_doctrines_tactics
+x = 34
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_UYZONbeg } 
+prerequisite = { focus = ROM_cruiseradvancements } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Civilian Buildup
+focus = { 
+id = ROM_sQnNlVTx
+icon = GFX_goal_generic_construct_civ_factory
+x = 40
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_romanianeconomy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Naval Co-Operation With USSR
+focus = { 
+id = ROM_navalcooperationwithussr
+icon = GFX_focus_generic_soviet_politics
+x = 33
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Submarine Development
+focus = { 
+id = ROM_EanlXDGe
+icon = GFX_goal_generic_navy_submarine
+x = 32
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_navalcooperationwithussr } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Transylvanian Airfields
+focus = { 
+id = ROM_transylvanianairfields
+icon = GFX_goal_generic_build_airforce
+x = 22
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_acceleratedaviationdevelopment } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Develop Local Naval Industry
+focus = { 
+id = ROM_developlocalnavalindustry
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 34
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_navalcooperationwithussr } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Defense Against Naval Invasions
+focus = { 
+id = ROM_defenseagainstnavalinvasions
+icon = GFX_goal_continuous_naval_production
+x = 30
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Air Doctrine Research
+focus = { 
+id = ROM_airdoctrineresearch
+icon = GFX_focus_YUG_rogozarski
+x = 19
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_fighterdevelopmentii focus = ROM_attackaircraftdevelopment } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Expand Mountaineer Forces
+focus = { 
+id = ROM_expandmountaineerforces
+icon = GFX_goal_generic_army_doctrines
+x = 10
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_sovietmilitarydoctrine } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Prepare for Invasion
+focus = { 
+id = ROM_prepareforinvasion
+icon = GFX_goal_generic_position_armies
+x = 10
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_expandmountaineerforces } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Hydrogen Bomb Development
+focus = { 
+id = ROM_hydrogenbombdevelopment
+icon = GFX_focus_wonderweapons
+x = 8
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_armyforanotherwar focus = ROM_specialforces } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Attack Aircraft Development
+focus = { 
+id = ROM_attackaircraftdevelopment
+icon = GFX_attackaircraftdevelopment
+x = 21
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_fighterdevelopmentii focus = ROM_transylvanianairfields } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Soviet Army Ideology
+focus = { 
+id = ROM_sovietarmyideology
+icon = GFX_goal_rhineland
+x = 15
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_exchangepersonnelwithsoviets } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Exchange Personnel With Soviets
+focus = { 
+id = ROM_exchangepersonnelwithsoviets
+icon = GFX_goal_generic_military_deal
+x = 12
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_purgeanticommunistsfromthearmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Soviet Military Doctrine
+focus = { 
+id = ROM_sovietmilitarydoctrine
+icon = GFX_goal_support_communism
+x = 12
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_exchangepersonnelwithsoviets } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Purge Anti-Communists From the Army
+focus = { 
+id = ROM_purgeanticommunistsfromthearmy
+icon = GFX_focus_generic_join_comintern
+x = 12
+y = 0
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = ROM_denysovietcontroloverourarmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Special Forces
+focus = { 
+id = ROM_specialforces
+icon = GFX_goal_generic_special_forces
+x = 5
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_equipmenteffortiii } 
+prerequisite = { focus = ROM_equipmenteffortii } 
+prerequisite = { focus = ROM_doctrineeffortii } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Deny Soviet Control Over Our Army
+focus = { 
+id = ROM_denysovietcontroloverourarmy
+icon = GFX_goal_generic_build_tank
+x = 3
+y = 0
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = ROM_purgeanticommunistsfromthearmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Equipment Effort
+focus = { 
+id = ROM_OPDmyWwA
+icon = GFX_goal_rhineland
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_denysovietcontroloverourarmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Equipment Effort III
+focus = { 
+id = ROM_equipmenteffortiii
+icon = GFX_goal_generic_army_artillery2
+x = 1
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_equipmenteffortii } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Doctrine Effort
+focus = { 
+id = ROM_doctrineeffort
+icon = GFX_focus_generic_provoke_border_clashes
+x = 3
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_embracetheoldguard } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Mechanization Effort II
+focus = { 
+id = ROM_mechanizationeffortii
+icon = GFX_goal_generic_army_motorized
+x = 5
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_xbSEoPHU } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Equipment Effort II
+focus = { 
+id = ROM_equipmenteffortii
+icon = GFX_goal_generic_army_artillery2
+x = 1
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_OPDmyWwA } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Embrace the Old Guard
+focus = { 
+id = ROM_embracetheoldguard
+icon = GFX_embracetheoldguard
+x = 3
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_denysovietcontroloverourarmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Motorization Effort
+focus = { 
+id = ROM_oaklHWXx
+icon = GFX_goal_generic_army_motorized
+x = 5
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_denysovietcontroloverourarmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Mechanization Effort
+focus = { 
+id = ROM_xbSEoPHU
+icon = GFX_goal_generic_cavalry
+x = 5
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_oaklHWXx } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Doctrine Effort II
+focus = { 
+id = ROM_doctrineeffortii
+icon = GFX_goal_generic_axis_build_infantry
+x = 3
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_doctrineeffort } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for True Romanian Mountaineers
+focus = { 
+id = ROM_trueromanianmountaineers
+icon = GFX_goal_generic_amphibious_assault
+x = 10
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_prepareforinvasion } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Army For Another War
+focus = { 
+id = ROM_armyforanotherwar
+icon = GFX_goal_generic_major_war
+x = 12
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_mechanizedadvancements } 
+prerequisite = { focus = ROM_sovietstylearmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Accelerated Aviation Development
+focus = { 
+id = ROM_acceleratedaviationdevelopment
+icon = GFX_goal_continuous_air_production
+x = 22
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Fighter Divisions
+focus = { 
+id = ROM_fighterdivisions
+icon = GFX_fighterdivisions
+x = 20
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_acceleratedaviationdevelopment } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Promote the Organizaţia Pionierilor
+focus = { 
+id = ROM_promotetheorganizaiapionierilor
+icon = GFX_promotetheorganizaiapionierilor
+x = 54
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Munca Patriotica
+focus = { 
+id = ROM_muncapatriotica
+icon = GFX_muncapatriotica
+x = 53
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for 11th Socialist Party Congress
+focus = { 
+id = ROM_11thsocialistpartycongress
+icon = GFX_goal_unknown
+x = 66
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Military Buildup II
+focus = { 
+id = ROM_militarybuildupii
+icon = GFX_goal_generic_construct_mil_factory
+x = 47
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_militarybuildup } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reduce Military Spending
+focus = { 
+id = ROM_reducemilitaryspending
+icon = GFX_reducemilitaryspending
+x = 74
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for North Korean State Visit
+focus = { 
+id = ROM_northkoreanstatevisit
+icon = GFX_northkoreanstatevisit
+x = 61
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Military Buildup III
+focus = { 
+id = ROM_militarybuildupiii
+icon = GFX_goal_generic_construct_mil_factory
+x = 47
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_militarybuildupii } 
+mutually_exclusive = { focus = ROM_militaryindustrialcomplex } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Palace of the Parliament
+focus = { 
+id = ROM_palaceoftheparliament
+icon = GFX_palaceoftheparliament
+x = 43
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_romanianeconomy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Civilian Buildup II
+focus = { 
+id = ROM_iTtswGVB
+icon = GFX_goal_generic_construct_civ_factory
+x = 39
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_sQnNlVTx } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Civilian Buildup III
+focus = { 
+id = ROM_civilianbuildupiii
+icon = GFX_goal_generic_construct_civ_factory
+x = 38
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Steel Mills
+focus = { 
+id = ROM_steelmills
+icon = GFX_focus_generic_steel
+x = 40
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Missile Defense Batteries
+focus = { 
+id = ROM_missiledefensebatteries
+icon = GFX_goal_generic_fortify_city
+x = 45
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_militarybuildup } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Romanian Economy
+focus = { 
+id = ROM_romanianeconomy
+icon = GFX_romanianeconomy
+x = 43
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Cruiser Advancements
+focus = { 
+id = ROM_cruiseradvancements
+icon = GFX_focus_generic_navy_battleship2
+x = 35
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

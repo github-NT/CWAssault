@@ -1,0 +1,413 @@
+focus_tree = { 
+id = north_korea
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = DPR 
+} 
+} 
+#Focus for Korean People's Army
+focus = { 
+id = DPR_koreanpeoplesarmy
+icon = GFX_focus_generic_military_mission
+x = 9
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Southern Border Expansion
+focus = { 
+id = DPR_southernborderexpansion
+icon = GFX_goal_generic_fortify_city
+x = 25
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for 5th Congress of the Workers' Party of Korea
+focus = { 
+id = DPR_5thcongressoftheworkerspartyofkorea
+icon = GFX_5thcongressoftheworkerspartyofkorea
+x = 38
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reorganize the Korean People's Airforce
+focus = { 
+id = DPR_reorganizethekoreanpeoplesairforce
+icon = GFX_reorganizethekoreanpeoplesairforce
+x = 15
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_koreanpeoplesarmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Pacific Naval Dominance
+focus = { 
+id = DPR_pacificnavaldominance
+icon = GFX_pacificnavaldominance
+x = 19
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Special Operation Forces
+focus = { 
+id = DPR_specialoperationforces
+icon = GFX_specialoperationforces
+x = 5
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_koreanpeoplesarmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Five Year Plan
+focus = { 
+id = DPR_fiveyearplan
+icon = GFX_fiveyearplan
+x = 24
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for North Infrastructure Program
+focus = { 
+id = DPR_northinfrastructureprogram
+icon = GFX_goal_generic_construct_infrastructure
+x = 23
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reopen Negotiations with The South
+focus = { 
+id = DPR_reopennegotiationswiththesouth
+icon = GFX_reopennegotiationswiththesouth
+x = 34
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_antisouthernpropaganda } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Soviet Backed Military
+focus = { 
+id = DPR_sovietbackedmilitary
+icon = GFX_focus_chi_mission_to_the_soviet_union
+x = 8
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_landdoctrineresearch } 
+mutually_exclusive = { focus = DPR_studychinesedoctrine } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Appeal to The Chinese
+focus = { 
+id = DPR_appealtothechinese
+icon = GFX_appealtothechinese
+x = 42
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_antisouthernpropaganda } 
+mutually_exclusive = { focus = DPR_closerbondswiththesoviets } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Study Chinese Doctrine
+focus = { 
+id = DPR_studychinesedoctrine
+icon = GFX_studychinesedoctrine
+x = 10
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_landdoctrineresearch } 
+mutually_exclusive = { focus = DPR_sovietbackedmilitary } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Korean Nuclear Program
+focus = { 
+id = DPR_koreannuclearprogram
+icon = GFX_focus_rocketry
+x = 39
+y = 7
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Chinese Labor Program
+focus = { 
+id = DPR_chineselaborprogram
+icon = GFX_focus_generic_treaty
+x = 41
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_appealtothechinese } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Officer Recruitment Campaign
+focus = { 
+id = DPR_officerrecruitmentcampaign
+icon = GFX_officerrecruitmentcampaign
+x = 31
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_prepareforconfrontation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Escalate Military Funding
+focus = { 
+id = DPR_escalatemilitaryfunding
+icon = GFX_goal_generic_construct_mil_factory
+x = 33
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_prepareforconfrontation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Anti Southern Propaganda
+focus = { 
+id = DPR_antisouthernpropaganda
+icon = GFX_goal_generic_propaganda
+x = 38
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_5thcongressoftheworkerspartyofkorea } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Closer Bonds with The Soviets
+focus = { 
+id = DPR_closerbondswiththesoviets
+icon = GFX_focus_chi_mission_to_the_soviet_union
+x = 44
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_antisouthernpropaganda } 
+mutually_exclusive = { focus = DPR_appealtothechinese } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Prepare for Confrontation
+focus = { 
+id = DPR_prepareforconfrontation
+icon = GFX_focus_secret_rearmament
+x = 32
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_reopennegotiationswiththesouth } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Southern Infiltration Preparations
+focus = { 
+id = DPR_southerninfiltrationpreparations
+icon = GFX_focus_prc_infiltration
+x = 3
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_specialoperationforces } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Land Doctrine Research
+focus = { 
+id = DPR_landdoctrineresearch
+icon = GFX_goal_generic_position_armies
+x = 9
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_koreanpeoplesarmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Asian Infiltration Operations
+focus = { 
+id = DPR_asianinfiltrationoperations
+icon = GFX_asianinfiltrationoperations
+x = 38
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_antisouthernpropaganda } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Civilian Factory Conversions
+focus = { 
+id = DPR_civilianfactoryconversions
+icon = GFX_goal_generic_soviet_construction
+x = 33
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_escalatemilitaryfunding } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Extensive Military Training
+focus = { 
+id = DPR_extensivemilitarytraining
+icon = GFX_goal_generic_position_armies
+x = 32
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_prepareforconfrontation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Permit Female Recruitment
+focus = { 
+id = DPR_permitfemalerecruitment
+icon = GFX_focus_generic_military_academy
+x = 31
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_officerrecruitmentcampaign } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Fund Korean Designers
+focus = { 
+id = DPR_fundkoreandesigners
+icon = GFX_goal_generic_air_fighter2
+x = 18
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_reorganizethekoreanpeoplesairforce } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Study Soviet Designs
+focus = { 
+id = DPR_studysovietdesigns
+icon = GFX_goal_generic_air_fighter2
+x = 13
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = DPR_reorganizethekoreanpeoplesairforce } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

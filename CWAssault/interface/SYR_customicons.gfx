@@ -33,8 +33,8 @@ spriteTypes = {
  texturefile = "gfx/interface/goals/GFX_multirolefighters.tga" 
  }##Icon For: 585211
  SpriteType = { 
- name = "GFX_casdevelopment" 
- texturefile = "gfx/interface/goals/GFX_casdevelopment.tga" 
+ name = "GFX_TCgPjaUX" 
+ texturefile = "gfx/interface/goals/GFX_TCgPjaUX.tga" 
  }##Icon For: 585198
  SpriteType = { 
  name = "GFX_newarabfrontier" 
@@ -93,8 +93,8 @@ spriteTypes = {
  texturefile = "gfx/interface/goals/GFX_deposeassad.tga" 
  }##Icon For: 835822
  SpriteType = { 
- name = "GFX_helicopterdevelopment" 
- texturefile = "gfx/interface/goals/GFX_helicopterdevelopment.tga" 
+ name = "GFX_ksVyAvZP" 
+ texturefile = "gfx/interface/goals/GFX_ksVyAvZP.tga" 
  }##Icon For: 843704
  SpriteType = { 
  name = "GFX_reachouttoegypt" 

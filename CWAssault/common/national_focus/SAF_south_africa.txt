@@ -1,0 +1,109 @@
+focus_tree = { 
+id = south_africa
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = SAF 
+} 
+} 
+#Focus for Suid-Afrikaanse Weermag
+focus = { 
+id = SAF_suidafrikaanseweermag
+icon = GFX_goal_unknown
+x = 11
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Support the ZANU
+focus = { 
+id = SAF_supportthezanu
+icon = GFX_supportthezanu
+x = 26
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Support Rhodesia
+focus = { 
+id = SAF_supportrhodesia
+icon = GFX_supportrhodesia
+x = 29
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Armored Personnel Carrier Research
+focus = { 
+id = SAF_armoredpersonnelcarrierresearch
+icon = GFX_goal_unknown
+x = 13
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Small Arms Development
+focus = { 
+id = SAF_gjxUhftm
+icon = GFX_goal_unknown
+x = 9
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Suid-Afrikaanse Lugmag
+focus = { 
+id = SAF_suidafrikaanselugmag
+icon = GFX_goal_unknown
+x = 4
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Suid-Afrikaanse Vloot
+focus = { 
+id = SAF_suidafrikaansevloot
+icon = GFX_goal_unknown
+x = 19
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }
