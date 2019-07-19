@@ -20,8 +20,32 @@
 		anti_tank = { x = 0 y = 3 } 
 	}
 }
+
 division_template = {
-	name = "Armor Division" 				
+	name = "Mechanized Infantry Division" 				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }	
+		medium_armor = { x = 0 y = 2 }	
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }			
+		light_mechanized = { x = 2 y = 0 }
+		light_mechanized = { x = 2 y = 1 }	
+		light_mechanized = { x = 2 y = 2 }	
+		medium_sp_artillery_brigade = { x = 3 y = 0 }
+		medium_sp_artillery_brigade = { x = 3 y = 1 }		
+	}
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+	}
+}
+
+division_template = {
+	name = "Armored Division" 				
 
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
@@ -50,9 +74,10 @@ division_template = {
 	regiments = {
 		marine = { x = 0 y = 0 }
 		marine = { x = 0 y = 1 }	
-		marine = { x = 0 y = 2 }	
-		marine = { x = 0 y = 3 }
-		marine = { x = 0 y = 4 }		
+		marine = { x = 0 y = 2 }		
+		marine = { x = 1 y = 0 }		
+		marine = { x = 1 y = 1 }		
+		marine = { x = 1 y = 2 }		
 		light_armor = { x = 1 y = 0 }				
 	}
 	support = {
@@ -83,7 +108,48 @@ division_template = {
 units = {
 	##### London #####						
 	division= {			
-		name = "3rd Infantry Division"		
+		name = "1st Royal Tank Regiment"		
+		location = 11333
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "2nd Royal Tank Regiment"		
+		location = 11333
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "3rd Royal Tank Regiment"		
+		location = 11333
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "4th Royal Tank Regiment"		
+		location = 11333
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "5th Royal Tank Regiment"		
+		location = 11333
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	##################
+	division= {			
+		name = "1st Motor Infantry Division"		
 		location = 11333
 		division_template = "Motor Infantry Division"
 		start_experience_factor = 0.3
@@ -91,7 +157,7 @@ units = {
 
 	}
 	division= {			
-		name = "4th Infantry Division"		
+		name = "2nd Motor Infantry Division"		
 		location = 11333
 		division_template = "Motor Infantry Division"
 		start_experience_factor = 0.3
@@ -99,7 +165,7 @@ units = {
 
 	}
 	division= {			
-		name = "5th Infantry Division"		
+		name = "3rd Motor Infantry Division"		
 		location = 11333
 		division_template = "Motor Infantry Division"
 		start_experience_factor = 0.3
@@ -107,7 +173,7 @@ units = {
 
 	}
 	division= {			
-		name = "6th Infantry Division"		
+		name = "4th Motor Infantry Division"		
 		location = 11333
 		division_template = "Motor Infantry Division"
 		start_experience_factor = 0.3
@@ -115,7 +181,7 @@ units = {
 
 	}
 	division= {			
-		name = "7th Infantry Division"		
+		name = "5th Motor Infantry Division"		
 		location = 11333
 		division_template = "Motor Infantry Division"
 		start_experience_factor = 0.3
@@ -123,7 +189,7 @@ units = {
 
 	}
 	division= {			
-		name = "8th Infantry Division"		
+		name = "6th Motor Infantry Division"		
 		location = 11333
 		division_template = "Motor Infantry Division"
 		start_experience_factor = 0.3
@@ -131,40 +197,166 @@ units = {
 
 	}
 	division= {			
-		name = "9th Infantry Division"		
+		name = "7th Motor Infantry Division"		
 		location = 11333
 		division_template = "Motor Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 
 	}
-	
 	division= {			
-		name = " 10th Iron Division"		
+		name = "8th Motor Infantry Division"		
 		location = 11333
-		division_template = "Armor Division"
-		start_experience_factor = 0.5
+		division_template = "Motor Infantry Division"
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 
 	}
 	division= {			
-		name = " Guard SAS Brigade"		
+		name = "9th Motor Infantry Division"		
+		location = 11333
+		division_template = "Motor Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "10th Motor Infantry Division"		
+		location = 11333
+		division_template = "Motor Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "11th Motor Infantry Division"		
+		location = 11333
+		division_template = "Motor Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "12th Motor Infantry Division"		
+		location = 11333
+		division_template = "Motor Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "13th Motor Infantry Division"		
+		location = 11333
+		division_template = "Motor Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "14th Motor Infantry Division"		
+		location = 11333
+		division_template = "Motor Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "15th Motor Infantry Division"		
+		location = 11333
+		division_template = "Motor Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "1st SAS Brigade"		
 		location = 11333
 		division_template = "SAS Brigade"
-		start_experience_factor = 0.8
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 	division= {			
-		name = " 1st Royal Marines Brigade"		
+		name = "2nd SAS Brigade"		
+		location = 11333
+		division_template = "SAS Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "1st Mechanized Infantry Division"		
+		location = 11333
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "2nd Mechanized Infantry Division"		
+		location = 11333
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "3rd Motor Infantry Division"		
+		location = 11333
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "4th Mechanized Infantry Division"		
+		location = 11333
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "5th Mechanized Infantry Division"		
+		location = 11333
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "6th Mechanized Infantry Division"		
+		location = 11333
+		division_template = "Mechanized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "1st Royal Marines Brigade"		
 		location = 11333
 		division_template = "Royal Marines Brigade"
-		start_experience_factor = 0.8
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "2nd Royal Marines Brigade"		
+		location = 11333
+		division_template = "SAS Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "3rd Royal Marines Brigade"		
+		location = 11333
+		division_template = "Royal Marines Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 }
-
 
 ### Starting Production ###
 instant_effect = {
