@@ -21,6 +21,11 @@ state={
 				set_province_controller = 13385
 			}
 		}
+		1980.1.1 = {
+				ROD = {
+				set_province_controller = 13385
+			}
+		}
 
 	}
 

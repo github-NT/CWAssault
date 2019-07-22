@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "KPA Regiment"
+	name = "Bobyeong Sadan"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -140,58 +140,58 @@ division_template = {
 
 units = {
 	division = {
-		name = "Je 1 Bumun"
+		name = "Je 1 Bobyeong Sadan"
 		location = 7171
-		division_template = "KPA Regiment"
+		division_template = "Bobyeong Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}	
 	division = {
-		name = "Je 2 Bumun"
+		name = "Je 2 Bobyeong Sadan"
 		location = 7171
-		division_template = "KPA Regiment"
+		division_template = "Bobyeong Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 	division = {
-		name = "Je 3 Bumun"
+		name = "Je 3 Bobyeong Sadan"
 		location = 7171
-		division_template = "KPA Regiment"
+		division_template = "Bobyeong Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}	
 	division = {
-		name = "Je 4 Bumun"
+		name = "Je 4 Bobyeong Sadan"
 		location = 7171
-		division_template = "KPA Regiment"
+		division_template = "Bobyeong Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 	division = {
-		name = "Je 5 Bumun"
+		name = "Je 7 Bobyeong Sadan"
 		location = 7171
-		division_template = "KPA Regiment"
+		division_template = "Bobyeong Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}	
 	division = {
-		name = "Je 6 Bumun"
+		name = "Je 8 Bobyeong Sadan"
 		location = 7171
-		division_template = "KPA Regiment"
+		division_template = "Bobyeong Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 	division = {
-		name = "Je 8 Bumun"
+		name = "Je 9 Bobyeong Sadan"
 		location = 7171
-		division_template = "KPA Regiment"
+		division_template = "Bobyeong Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}	
 	division = {
-		name = "Je 9 Bumun"
+		name = "Je 10 Bobyeong Sadan"
 		location = 7171
-		division_template = "KPA Regiment"
+		division_template = "Bobyeong Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
@@ -289,7 +289,7 @@ units = {
 	}
 	
 	division = {
-		name = "Je 1 Guggyeong Subi"
+		name = "Je 2 Guggyeong Subi"
 		location = 7171
 		division_template = "Guggyeong Subi"
 		start_experience_factor = 0.1
@@ -297,7 +297,7 @@ units = {
 	}
 	
 	division = {
-		name = "Je 1 Guggyeong Subi"
+		name = "Je 3 Guggyeong Subi"
 		location = 7171
 		division_template = "Guggyeong Subi"
 		start_experience_factor = 0.1
@@ -305,7 +305,7 @@ units = {
 	}
 	
 	division = {
-		name = "Je 1 Guggyeong Subi"
+		name = "Je 4 Guggyeong Subi"
 		location = 7171
 		division_template = "Guggyeong Subi"
 		start_experience_factor = 0.1
@@ -313,7 +313,7 @@ units = {
 	}
 	
 	division = {
-		name = "Je 1 Guggyeong Subi"
+		name = "Je 5 Guggyeong Subi"
 		location = 7171
 		division_template = "Guggyeong Subi"
 		start_experience_factor = 0.1
@@ -321,7 +321,7 @@ units = {
 	}
 	
 	division = {
-		name = "Je 1 Guggyeong Subi"
+		name = "Je 6 Guggyeong Subi"
 		location = 7171
 		division_template = "Guggyeong Subi"
 		start_experience_factor = 0.1

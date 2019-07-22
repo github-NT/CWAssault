@@ -20,6 +20,9 @@ state={
 		1970.1.1 = {
 		owner = ZAP
 		}
+		1980.1.1 = {
+		owner = ROD
+		}
 		
 		victory_points = {
 			13348 3 
