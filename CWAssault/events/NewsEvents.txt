@@ -14229,3 +14229,19 @@ news_event = {
 		name = news.418.a
 	}
 }
+
+# Invasion of Cyprus
+news_event = {
+	id = news.419
+	title = news.419.t
+	desc = news.419.d
+	picture = GFX_Cyprus_Invasion
+	
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.419.a
+	}
+}

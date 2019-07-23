@@ -36,3 +36,53 @@ political_actions = {
 		}
 	}
 }	
+
+TUR_cyprus_invasion = {
+
+	prepare_for_invasion = {
+
+		available = {
+		TAG = TUR
+		}
+		
+		cost = 50
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+		TAG = TUR
+		GRE = {
+		has_government = democratic
+			}
+		date > 1974.6.10
+		}
+		fire_only_once = no
+		complete_effect = {
+		TUR = {
+		country_event = { id = turkey.1 }
+				}
+		}
+	}
+	
+	demand_the_island = {
+
+		available = {
+		TAG = TUR
+		}
+		
+		cost = 150
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+
+		}
+		fire_only_once = no
+		complete_effect = {
+
+		}
+	}
+	
+}

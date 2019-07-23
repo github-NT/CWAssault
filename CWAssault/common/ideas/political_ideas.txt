@@ -957,8 +957,8 @@ ideas = {
 			picture = GFX_idea_chi_hyper_inflation3
 			
 			modifier = {
-			conscription_factor = 0.2
-			training_time_factor = -0.3
+			army_org = 5
+			training_time_factor = -0.1
 			army_attack_factor = 0.08
 			army_defence_factor = 0.08
 			}
@@ -1226,7 +1226,7 @@ ideas = {
 			picture = GFX_idea_chi_hyper_inflation3
 			
 			modifier = {
-			army_core_defence_factor = 0.25
+			army_core_defence_factor = 0.35
 
 			}
 			

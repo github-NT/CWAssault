@@ -49,7 +49,7 @@ if = {
 	}
 }
 
-set_convoys = 10
+set_convoys = 50
 
 1939.1.1 = {
 	

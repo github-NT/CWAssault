@@ -692,5 +692,9 @@ spriteTypes = {
 		name = "GFX_ICBM_Rocket"
 		texturefile = "gfx/interface/decisions/Damascus Rocket.dds"
 	}
+	spriteType = {
+		name = "GFX_Cyprus_Invasion_Preparations"
+		texturefile = "gfx/interface/decisions/Turks.dds"
+	}
 
 }

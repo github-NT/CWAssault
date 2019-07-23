@@ -2640,4 +2640,8 @@ spriteTypes = {
 		name = "GFX_Christian_Democrat_Rally"
 		texturefile = "gfx/event_pictures/Christian Democrat Rally.dds"
 	}
+	spriteType = {
+		name = "GFX_Cyprus_Invasion"
+		texturefile = "gfx/event_pictures/Cyprus_invasion.dds"
+	}
 }

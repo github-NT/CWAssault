@@ -1,0 +1,25 @@
+################
+##### VIN ######
+################
+
+TUR_cyprus_invasion = {
+	icon = generic_form_nation
+	
+	picture = GFX_Cyprus_Invasion_Preparations
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	available = {
+		original_tag = TUR
+		NOT = {
+		OR = {
+			has_global_flag = greece_folds_cyprus
+			has_global_flag = turkey_invaded_cyprs
+			}
+		}
+	}
+	
+	
+}
